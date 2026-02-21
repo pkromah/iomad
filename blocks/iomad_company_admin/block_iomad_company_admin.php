@@ -84,7 +84,7 @@ class block_iomad_company_admin extends block_base {
     /**
      * Check company status when accessing this block
      */
-    private function check_company_status() {
+    private function check_company_status(): bool {
         global $SESSION, $DB, $USER;
 
         // Get parameters.
@@ -118,8 +118,9 @@ class block_iomad_company_admin extends block_base {
         // Check if there are any companies.
         if (!$companycount = $DB->count_records('company')) {
 
-            // If not redirect to create form.
-            redirect(new moodle_url('/blocks/iomad_company_admin/company_edit_form.php', ['createnew' => 1]));
+            // Do not redirect from block rendering (header may already be printed).
+            // Signal caller to handle empty-company state safely in-page.
+            return false;
         }
 
         // If we don't have one selected pick the first of these.
@@ -142,6 +143,8 @@ class block_iomad_company_admin extends block_base {
                 $company = (object) [];
             }
         }
+
+        return true;
     }
 
     /**
@@ -203,7 +206,18 @@ class block_iomad_company_admin extends block_base {
         $this->page->requires->js_call_amd('block_iomad_company_admin/admin', 'init');
 
         // Get params and session stuff.
-        $this->check_company_status();
+        if (!$this->check_company_status()) {
+            $this->content = (object) [];
+            if (iomad::has_capability('block/iomad_company_admin:company_add', $companycontext)) {
+                $createurl = new moodle_url('/blocks/iomad_company_admin/company_edit_form.php', ['createnew' => 1]);
+                $button = html_writer::link($createurl, get_string('createcompany', 'block_iomad_company_admin'),
+                    ['class' => 'btn btn-primary']);
+                $this->content->text = html_writer::div($button, 'iomad-company-admin-empty');
+            } else {
+                $this->content->text = '';
+            }
+            return $this->content;
+        }
 
         // Selected tab.
         $showsuspendedcompanies = optional_param('showsuspendedcompanies', false, PARAM_BOOL);
