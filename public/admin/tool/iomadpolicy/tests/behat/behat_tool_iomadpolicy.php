@@ -40,7 +40,7 @@ class behat_tool_iomadpolicy extends behat_base {
     /**
      * Click on an entry in the edit menu.
      *
-     * @Given /^the following policies exist:$/
+     * @Given /^the following policies exist: +\# tool_iomadpolicy$/
      *
      * Supported table fields:
      *

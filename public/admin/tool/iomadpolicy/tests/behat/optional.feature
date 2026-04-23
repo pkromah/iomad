@@ -56,7 +56,7 @@ Feature: Optional policies
     Given the following config values are set as admin:
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | ConsentPageOptional1   | full text1 | short text1 | 0              | 1         |
       | ConsentPageOptional2   | full text2 | short text2 | 0              | 1         |
@@ -123,7 +123,7 @@ Feature: Optional policies
     And "Declined" "text" should exist in the "ConsentPageOptional2" "table_row"
 
   Scenario: When a new optional iomadpolicy is added, users are asked to accept/decline it on their next login
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | ConsentPageOptional1   | full text1 | short text1 | 0              | 1         |
       | OwnPageOptional1       | full text5 | short text5 | 1              | 1         |
@@ -148,7 +148,7 @@ Feature: Optional policies
     And "Declined" "text" should exist in the "ConsentPageOptional1" "table_row"
 
   Scenario: Users can withdraw an accepted optional iomadpolicy and re-accept it again (js off)
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | OwnPageOptional1       | full text1 | short text1 | 1              | 1         |
     And I log in as "user1"
@@ -173,7 +173,7 @@ Feature: Optional policies
 
   @javascript
   Scenario: Users can withdraw an accepted optional iomadpolicy and re-accept it again (js on)
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | OwnPageOptional1       | full text1 | short text1 | 1              | 1         |
     And I log in as "user1"
@@ -197,7 +197,7 @@ Feature: Optional policies
     And "Accepted" "text" should exist in the "OwnPageOptional1" "table_row"
 
   Scenario: Managers can see accepted, declined and pending acceptances of optional policies
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | OwnPageOptional1       | full text1 | short text1 | 1              | 1         |
       | OwnPageOptional2       | full text2 | short text2 | 1              | 1         |
@@ -223,7 +223,7 @@ Feature: Optional policies
     And "Withdraw acceptance of OwnPageOptional2" "link" should exist in the "Max Manager" "table_row"
 
   Scenario: Administrators can see accepted, declined and pending acceptances of optional policies and also change them on behalf of other users
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                   | Content    | Summary     | Agreementstyle | Optional  |
       | OwnPageOptional1       | full text1 | short text1 | 1              | 1         |
       | OwnPageOptional2       | full text2 | short text2 | 1              | 1         |

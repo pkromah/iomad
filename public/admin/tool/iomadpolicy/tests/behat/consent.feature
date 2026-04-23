@@ -39,7 +39,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Policy | Name             | Revision | Content    | Summary     | Status   |
       | P1     | This site iomadpolicy |          | full text1 | short text1 | draft |
       | P1     | This privacy iomadpolicy |          | full text2 | short text2 | draft |
@@ -73,7 +73,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Policy | Name             | Revision | Content    | Summary     | Status   |
       | P1     | This site iomadpolicy |          | full text1 | short text1 | archived |
       | P1     | This site iomadpolicy |          | full text2 | short text2 | active   |
@@ -121,7 +121,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -183,7 +183,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
       | agedigitalconsentverification | 1 |
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name             | Revision | Content    | Summary     | Status   |
       | This site iomadpolicy |          | full text2 | short text2 | active   |
     And I am on site homepage
@@ -233,7 +233,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -264,7 +264,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -299,7 +299,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -338,7 +338,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -398,7 +398,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
     And the following "users" exist:
@@ -454,7 +454,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -488,7 +488,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -556,7 +556,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
   Scenario: Accept iomadpolicy while being logged in as another user
     Given the following config values are set as admin:
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -587,7 +587,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
   Scenario: Log in as another user without capability to accept policies on their behalf
     Given the following config values are set as admin:
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Type | Revision | Content    | Summary     | Status   | Audience |
       | This site iomadpolicy    | 0    |          | full text2 | short text2 | active   | all      |
       | This privacy iomadpolicy | 1    |          | full text3 | short text3 | active   | loggedin |
@@ -618,7 +618,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth    | email |
       | passwordiomadpolicy  | 0     |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Policy | Name             | Revision | Content    | Summary     | Status   |
       | P1     | This site iomadpolicy |          | full text1 | short text1 | archived |
       | P1     | This site iomadpolicy |          | full text2 | short text2 | active   |
@@ -670,7 +670,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth      | email       |
       | passwordiomadpolicy    | 0           |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | name                          | summary                   | content             | agreementstyle  |
       | Privacy iomadpolicy                | We scan your thoughts     | Here goes content.  | 0               |
       | Digital maturity declaration  | You declare be old enough | Here goes content.  | 1               |
@@ -740,7 +740,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
   Scenario: Accepting policies on login, multiple policies with different style of giving ageement.
     Given the following config values are set as admin:
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | name                          | summary                   | content             | agreementstyle  |
       | Digital maturity declaration  | You declare be old enough | Here goes content.  | 1               |
       | Privacy iomadpolicy                | We scan your thoughts     | Here goes content.  | 0               |
@@ -798,7 +798,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
   Scenario: Accepting policies on login, all and loggedin policies to be accepted on their own page.
     Given the following config values are set as admin:
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | name                          | summary                   | content             | agreementstyle  | audience  |
       | Privacy iomadpolicy                | We scan your thoughts     | Here goes content.  | 1               | all       |
       | Digital maturity declaration  | You declare be old enough | Here goes content.  | 1               | loggedin  |
@@ -834,7 +834,7 @@ Feature: User must accept iomadpolicy managed by this plugin when logging in and
       | registerauth      | email       |
       | passwordiomadpolicy    | 0           |
       | siteiomadpolicyhandler | tool_iomadpolicy |
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | name                          | summary                   | content             | agreementstyle  | audience  |
       | Privacy iomadpolicy                | We scan your thoughts     | Here goes content.  | 1               | guest     |
       | Digital maturity declaration  | You declare be old enough | Here goes content.  | 1               | all       |

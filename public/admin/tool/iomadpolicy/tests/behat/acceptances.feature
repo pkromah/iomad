@@ -9,7 +9,7 @@ Feature: Viewing acceptances reports and accepting on behalf of other users
       | siteiomadpolicyhandler | tool_iomadpolicy |
     # This is required for now to prevent the overflow region affecting the action menus.
     And I change window size to "large"
-    And the following policies exist:
+    And the following policies exist: # tool_iomadpolicy
       | Name                | Revision | Content    | Summary     | Status   |
       | This site iomadpolicy    |          | full text2 | short text2 | active   |
       | This privacy iomadpolicy |          | full text3 | short text3 | draft    |

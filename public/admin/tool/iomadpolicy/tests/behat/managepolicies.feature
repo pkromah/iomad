@@ -56,7 +56,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit active iomadpolicy and save as minor change
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "manager"
@@ -78,7 +78,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit active iomadpolicy and save as draft
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "manager"
@@ -96,7 +96,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit active iomadpolicy and save as new active version
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "manager"
@@ -122,7 +122,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit draft iomadpolicy and save as draft
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | draft    |
     And I log in as "manager"
@@ -143,7 +143,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit draft iomadpolicy and save as active
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | draft    |
     And I log in as "manager"
@@ -160,7 +160,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Activate draft iomadpolicy
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | draft    |
     And I log in as "manager"
@@ -175,7 +175,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit archived iomadpolicy and save as draft
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "manager"
@@ -213,7 +213,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Edit archived iomadpolicy and save as active
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "manager"
@@ -242,7 +242,7 @@ Feature: Manage policies
     And I log out
 
   Scenario: Current user can go back to previous page in List of active policies page
-    Given the following policies exist:
+    Given the following policies exist: # tool_iomadpolicy
       | Name       | Revision | Content    | Summary     | Status   |
       | Policy1    | v1       | full text2 | short text2 | active   |
     And I log in as "user1"
