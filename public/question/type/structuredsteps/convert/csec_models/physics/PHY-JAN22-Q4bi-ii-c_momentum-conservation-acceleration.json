@@ -1,0 +1,124 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q4bi",
+            "PHY-JAN22-Q4bii",
+            "PHY-JAN22-Q4c"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q4(b)(i), Q4(b)(ii), and Q4(c)",
+        "subject": "Physics",
+        "topic": "Mechanics — Momentum Conservation and Acceleration",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "authored": "2026-04-13",
+        "note": "Caribbean context: Sir George Walter Highway (Antigua). Q4bi 2m: p_truck = 945×20 = 18 900 kg m/s west. Q4bii 4m: conservation — both at rest after → v_car = 18900/630 = 30 m/s east. Q4c 3m: a = (45-20)/10 = 2.5 m/s². Combined into one file."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q4b/c — Momentum Conservation and Acceleration (Sir George Walter Highway)",
+        "text": "<p>A truck, of mass <strong>945 kg</strong>, heading west on the Sir George Walter Highway slammed head-on at <strong>20 m s⁻¹</strong> into a car of mass <strong>630 kg</strong>, heading east.</p><p><strong>(b)(i)</strong> Calculate the initial momentum of the truck. <em>(2 marks)</em></p><p><strong>(b)(ii)</strong> If both vehicles come to rest after the collision, calculate the initial velocity of the car. <em>(4 marks)</em></p><p><strong>(c)</strong> The velocity of a car increases from <strong>20 m s⁻¹</strong> to <strong>45 m s⁻¹</strong> in <strong>10 s</strong>. Calculate the acceleration of the car. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q4b(i) — Initial momentum of truck:</strong></p><p>p = mv = 945 × 20 = <strong>18 900 kg m s⁻¹ (westward)</strong></p><p><strong>Q4b(ii) — Initial velocity of car:</strong></p><p>By the law of conservation of momentum, total momentum before = total momentum after.</p><p>Both vehicles come to rest → total momentum after = 0.</p><p>Taking west as positive:<br>p_truck + p_car = 0<br>(945 × 20) + (630 × (−v_car)) = 0<br>18 900 = 630 × v_car<br>v_car = 18 900 / 630 = <strong>30 m s⁻¹ (eastward)</strong></p><p><strong>Q4c — Acceleration:</strong></p><p>a = (v − u) / t = (45 − 20) / 10 = 25 / 10 = <strong>2.5 m s⁻²</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Truck:</strong> m_T = 945 kg, v_T = 20 m/s west &nbsp;|&nbsp; <strong>Car:</strong> m_C = 630 kg, v_C = ? east<br><strong>After collision:</strong> both at rest (total momentum = 0)<br><strong>Law of conservation of momentum:</strong> total p before = total p after",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_truck_momentum",
+            "label": "Calculate the initial momentum of the truck. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_car_velocity",
+            "label": "Calculate the initial velocity of the car (conservation of momentum). (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step_acceleration",
+            "label": "Calculate the acceleration of the car (20 m/s → 45 m/s in 10 s). (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_truck_momentum",
+            "step_id": "step_truck_momentum",
+            "type": "numberbox",
+            "label": "Initial momentum of truck = _____ kg m s⁻¹",
+            "expected": "18900",
+            "tolerance": 0,
+            "marks": 2.0,
+            "unit": "kg m s⁻¹",
+            "diagnostic_hint": "p = mv = 945 × 20 = 18 900 kg m s⁻¹",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use p = mv, where m is mass in kg and v is speed in m/s.",
+                "SC_CALCULATION_ERROR": "p = 945 × 20 = 18 900 kg m s⁻¹ (westward)."
+            }
+        },
+        {
+            "id": "f2_momentum_equation",
+            "step_id": "step_car_velocity",
+            "type": "choice",
+            "label": "Conservation equation (state the momentum principle applied): _____",
+            "expected": "Total momentum before = total momentum after",
+            "marks": 1.0,
+            "diagnostic_hint": "Since both vehicles come to rest, total momentum after = 0. So total momentum before must also equal 0 (conservation).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Apply the law of conservation of momentum: total momentum before the collision = total momentum after. Since both are at rest after, total momentum after = 0, so total momentum before = 0."
+            },
+            "options": {
+                "Total momentum before = total momentum after": "Total momentum before = total momentum after",
+                "Kinetic energy before = kinetic energy after": "Kinetic energy before = kinetic energy after",
+                "Force × time = change in velocity": "Force × time = change in velocity",
+                "p = mv for each object separately": "p = mv for each object separately"
+            }
+        },
+        {
+            "id": "f3_car_velocity",
+            "step_id": "step_car_velocity",
+            "type": "numberbox",
+            "label": "Initial velocity of car = _____ m s⁻¹",
+            "expected": "30",
+            "tolerance": 0.5,
+            "marks": 3.0,
+            "unit": "m s⁻¹",
+            "diagnostic_hint": "18 900 = 630 × v_car → v_car = 18 900 / 630 = 30 m s⁻¹ (eastward)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "v_car = p_truck / m_car = 18 900 / 630 = 30 m s⁻¹ (eastward). The car must have had exactly equal and opposite momentum to the truck."
+            }
+        },
+        {
+            "id": "f4_acceleration",
+            "step_id": "step_acceleration",
+            "type": "numberbox",
+            "label": "Acceleration of car = _____ m s⁻²",
+            "expected": "2.5",
+            "tolerance": 0.1,
+            "marks": 3.0,
+            "unit": "m s⁻²",
+            "diagnostic_hint": "a = (v − u) / t = (45 − 20) / 10 = 25 / 10 = 2.5 m s⁻²",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use the kinematic formula: a = (v − u) / t, where v is final velocity, u is initial velocity, and t is time.",
+                "SC_CALCULATION_ERROR": "a = (45 − 20) / 10 = 25 / 10 = 2.5 m s⁻²."
+            }
+        }
+    ]
+}

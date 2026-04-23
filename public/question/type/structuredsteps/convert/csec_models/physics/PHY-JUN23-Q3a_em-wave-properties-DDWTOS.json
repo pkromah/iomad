@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q3a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q3(a)",
+        "subject": "Physics",
+        "topic": "Waves — Properties of Electromagnetic Waves",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: state 2 properties of EM waves. 2 slots, 1m each. Multiple correct properties: all travel at same speed in vacuum (3×10⁸ m/s), transverse waves, can travel through vacuum (no medium), transfer energy, obey laws of reflection/refraction."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q3a — State Two Properties of EM Waves",
+        "text": "<p>State TWO properties of electromagnetic waves:</p><p>Property 1: [[1]]</p><p>Property 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Properties of electromagnetic waves (any 2):</strong></p><ul><li><strong>All travel at the same speed in vacuum</strong> — c = 3.0 × 10⁸ m s⁻¹ (the speed of light)</li><li><strong>They are transverse waves</strong> — oscillations are perpendicular to the direction of travel</li><li><strong>They can travel through a vacuum</strong> — they do not require a material medium to propagate</li><li><strong>They transfer energy</strong> — without transferring matter</li><li><strong>They obey the laws of reflection and refraction</strong></li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Property 1: [[1]]</p><p>Property 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "All travel at the same speed in a vacuum (3 × 10⁸ m s⁻¹)",
+                        "correct": true
+                    },
+                    {
+                        "text": "They are transverse waves",
+                        "correct": true
+                    },
+                    {
+                        "text": "They can travel through a vacuum",
+                        "correct": true
+                    },
+                    {
+                        "text": "They transfer energy without transferring matter",
+                        "correct": true
+                    },
+                    {
+                        "text": "They require a medium to travel",
+                        "correct": false
+                    },
+                    {
+                        "text": "They are longitudinal waves",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 1 of all electromagnetic waves",
+                "diagnostic_hint": "All EM waves travel at 3 × 10⁸ m s⁻¹ in a vacuum (the speed of light). They are TRANSVERSE waves that can travel through a vacuum (unlike sound waves)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "All travel at the same speed in a vacuum (3 × 10⁸ m s⁻¹)",
+                        "correct": true
+                    },
+                    {
+                        "text": "They are transverse waves",
+                        "correct": true
+                    },
+                    {
+                        "text": "They can travel through a vacuum",
+                        "correct": true
+                    },
+                    {
+                        "text": "They transfer energy without transferring matter",
+                        "correct": true
+                    },
+                    {
+                        "text": "They require a medium to travel",
+                        "correct": false
+                    },
+                    {
+                        "text": "They are longitudinal waves",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 2 of all electromagnetic waves (different from property 1)",
+                "diagnostic_hint": "A second property: EM waves are TRANSVERSE — oscillations are perpendicular to the direction of travel. Or: they can travel through a vacuum. Or: they transfer energy without transferring matter."
+            }
+        ],
+        "word_bank": [
+            "All travel at the same speed in a vacuum (3 × 10⁸ m s⁻¹)",
+            "They are transverse waves",
+            "They can travel through a vacuum",
+            "They transfer energy without transferring matter",
+            "They require a medium to travel",
+            "They are longitudinal waves"
+        ],
+        "word_bank_note": "6 tokens for 2 slots. 4 correct properties — any 2 of 4 earn full marks. 'They require a medium to travel' is the critical false token: this describes mechanical waves (sound, water waves), NOT EM waves. EM waves specifically DO NOT need a medium. 'They are longitudinal waves' is wrong — EM waves are transverse (oscillations perpendicular to direction of travel); sound is the classic longitudinal wave."
+    }
+}

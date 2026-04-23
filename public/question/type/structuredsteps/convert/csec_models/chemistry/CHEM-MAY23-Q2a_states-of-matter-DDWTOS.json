@@ -1,0 +1,161 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-MAY23-Q2ai",
+            "CHEM-MAY23-Q2aii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 May/June 2023",
+        "question_ref": "Q2(a)(i) and Q2(a)(ii)",
+        "subject": "Chemistry",
+        "topic": "Particulate Nature of Matter — States of Matter and Particle Energy",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q2ai(1m): name 3 states of matter for water in 3 slots. Q2aii(3m): match each state to its particle energy description (1m each). 6 slots total. Combined into one DDWTOS for cohesion. Q2ai slots 1-3: solid/liquid/gas. Q2aii slots 4-6: particle energy description for solid/liquid/gas respectively. Distractors for states: plasma/vapour. Distractors for energy: opposites."
+    },
+    "question": {
+        "name": "CSEC Chem May 2023 Q2a(i)(ii) — States of Matter and Particle Energy",
+        "text": "<p><strong>(i)</strong> Name the THREE states in which water can exist:</p><p>State 1: [[1]] &nbsp;&nbsp;&nbsp; State 2: [[2]] &nbsp;&nbsp;&nbsp; State 3: [[3]]</p><p><strong>(ii)</strong> Describe the energy of the particles in each state:</p><p>[[1]] (State 1): [[4]]</p><p>[[2]] (State 2): [[5]]</p><p>[[3]] (State 3): [[6]]</p>",
+        "general_feedback": "<p><strong>States of matter and particle energy:</strong></p><table><thead><tr><th>State</th><th>Particle energy</th><th>Arrangement</th></tr></thead><tbody><tr><td>Solid</td><td>Lowest energy; particles vibrate in fixed positions</td><td>Closely packed, regular lattice</td></tr><tr><td>Liquid</td><td>Moderate energy; particles can flow past each other</td><td>Close together but random</td></tr><tr><td>Gas</td><td>Highest energy; particles move rapidly and randomly</td><td>Far apart, fill container</td></tr></tbody></table><p><em>Water example:</em> ice (solid) → water (liquid) → steam (gas). Energy increases with each state change (absorbed from surroundings).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>State 1: [[1]] &nbsp; State 2: [[2]] &nbsp; State 3: [[3]]</p><p>[[1]]: [[4]]</p><p>[[2]]: [[5]]</p><p>[[3]]: [[6]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "Solid",
+                        "correct": true
+                    },
+                    {
+                        "text": "Plasma",
+                        "correct": false
+                    },
+                    {
+                        "text": "Vapour",
+                        "correct": false
+                    }
+                ],
+                "label": "State with definite shape and definite volume",
+                "diagnostic_hint": "A SOLID has a definite shape and definite volume. Particles are arranged in a regular lattice and vibrate in fixed positions — they cannot flow or be compressed."
+            },
+            {
+                "id": 2,
+                "marks": 0.25,
+                "options": [
+                    {
+                        "text": "Liquid",
+                        "correct": true
+                    },
+                    {
+                        "text": "Plasma",
+                        "correct": false
+                    },
+                    {
+                        "text": "Vapour",
+                        "correct": false
+                    }
+                ],
+                "label": "State with no definite shape but definite volume",
+                "diagnostic_hint": "A LIQUID has no definite shape (it takes the shape of its container) but has a definite volume. Particles are close together but free to move/slide past each other."
+            },
+            {
+                "id": 3,
+                "marks": 0.25,
+                "options": [
+                    {
+                        "text": "Gas",
+                        "correct": true
+                    },
+                    {
+                        "text": "Plasma",
+                        "correct": false
+                    },
+                    {
+                        "text": "Vapour",
+                        "correct": false
+                    }
+                ],
+                "label": "State with no definite shape and no definite volume",
+                "diagnostic_hint": "A GAS has no definite shape and no definite volume. Particles are far apart, moving rapidly and randomly, and can be compressed."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Particles have the lowest energy; they vibrate in fixed positions",
+                        "correct": true
+                    },
+                    {
+                        "text": "Particles have moderate energy; they can flow and slide past each other",
+                        "correct": false
+                    },
+                    {
+                        "text": "Particles have the highest energy; they move rapidly and randomly",
+                        "correct": false
+                    }
+                ],
+                "label": "Particle energy description — Solid",
+                "diagnostic_hint": "Solid particles have the LOWEST energy — they only vibrate about fixed positions in a regular lattice. They cannot move past each other."
+            },
+            {
+                "id": 5,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Particles have the lowest energy; they vibrate in fixed positions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Particles have moderate energy; they can flow and slide past each other",
+                        "correct": true
+                    },
+                    {
+                        "text": "Particles have the highest energy; they move rapidly and randomly",
+                        "correct": false
+                    }
+                ],
+                "label": "Particle energy description — Liquid",
+                "diagnostic_hint": "Liquid particles have MODERATE energy — enough to move and flow past each other, but not enough to overcome intermolecular forces and escape into the gas phase."
+            },
+            {
+                "id": 6,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Particles have the lowest energy; they vibrate in fixed positions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Particles have moderate energy; they can flow and slide past each other",
+                        "correct": false
+                    },
+                    {
+                        "text": "Particles have the highest energy; they move rapidly and randomly",
+                        "correct": true
+                    }
+                ],
+                "label": "Particle energy description — Gas",
+                "diagnostic_hint": "Gas particles have the HIGHEST energy — they move rapidly and randomly, with large distances between them. They can fill any container and be compressed."
+            }
+        ],
+        "word_bank": [
+            "Solid",
+            "Liquid",
+            "Gas",
+            "Plasma",
+            "Vapour",
+            "Particles have the lowest energy; they vibrate in fixed positions",
+            "Particles have moderate energy; they can flow and slide past each other",
+            "Particles have the highest energy; they move rapidly and randomly"
+        ],
+        "word_bank_note": "8 tokens for 6 slots. States word bank (slots 1-3): 'Plasma' is the fourth state of matter but not relevant to water at normal conditions; 'Vapour' is sometimes used colloquially for steam but is not the correct scientific term for the gaseous state in this context (gas is the state, vapour implies near-liquid conditions). Energy descriptions (slots 4-6): each description is uniquely matched to its state — students must know the energy ordering: solid (lowest) < liquid (moderate) < gas (highest). The descriptions include both the energy level and the particle motion, requiring understanding rather than recall."
+    }
+}

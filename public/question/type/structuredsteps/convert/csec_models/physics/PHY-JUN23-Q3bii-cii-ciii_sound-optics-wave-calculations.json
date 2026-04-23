@@ -1,0 +1,112 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q3bii", "PHY-JUN23-Q3cii", "PHY-JUN23-Q3ciii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q3(b)(ii), Q3(c)(ii), and Q3(c)(iii)",
+        "subject": "Physics",
+        "topic": "Waves and Optics — Sound Wavelength, Speed of Light in Water, Critical Angle",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q3bii 3m: λ=v/f=330/11000=0.030m=3.0cm. Q3cii 2m: v=c/n=3×10⁸/1.3=2.31×10⁸ m/s. Q3ciii 3m: sin(c)=1/1.3=0.7692; c=arcsin(0.7692)=50.28°≈50.3°. Combined into one file."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q3 — Sound Wavelength, Speed in Water, Critical Angle",
+        "text": "<p><strong>(b)(ii)</strong> A note is produced by a musical instrument at a frequency of <strong>11 000 Hz</strong>. The speed of sound in air is <strong>330 m s⁻¹</strong>. Calculate the wavelength of this sound wave. <em>(3 marks)</em></p><p><strong>(c)(ii)</strong> Light travels from air into water. The refractive index of water is <strong>1.3</strong>. Calculate the speed of light in water. <em>(2 marks)</em></p><p><strong>(c)(iii)</strong> Calculate the critical angle for the water-air boundary. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q3b(ii) — Wavelength of sound:</strong></p><p>v = fλ → λ = v/f = 330 / 11 000 = <strong>0.030 m = 3.0 cm</strong></p><p><strong>Q3c(ii) — Speed of light in water:</strong></p><p>n = c_air / c_water → c_water = c_air / n = (3.0 × 10⁸) / 1.3 ≈ <strong>2.31 × 10⁸ m s⁻¹</strong></p><p><strong>Q3c(iii) — Critical angle:</strong></p><p>sin(c) = 1/n = 1/1.3 = 0.7692</p><p>c = arcsin(0.7692) ≈ <strong>50.3°</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Sound:</strong> f = 11 000 Hz | v_sound = 330 m/s<br><strong>Light in water:</strong> n = 1.3 | c_air = 3.0×10⁸ m/s<br><strong>Formulas:</strong> v = fλ | n = c_air/c_medium | sin(critical angle) = 1/n",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_wavelength",
+            "label": "Calculate the wavelength of the sound wave. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_speed_water",
+            "label": "Calculate the speed of light in water. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_critical_angle",
+            "label": "Calculate the critical angle for the water-air boundary. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_wavelength",
+            "step_id": "step_wavelength",
+            "type": "numberbox",
+            "label": "Wavelength λ = _____ m",
+            "expected": "0.030",
+            "tolerance": 0.001,
+            "marks": 3.0,
+            "unit": "m",
+            "diagnostic_hint": "λ = v/f = 330/11000 = 0.030 m (= 3.0 cm)",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use the wave equation: v = fλ, rearranged as λ = v/f.",
+                "SC_CALCULATION_ERROR": "λ = 330 / 11 000 = 0.030 m = 3.0 cm."
+            }
+        },
+        {
+            "id": "f2_speed_water",
+            "step_id": "step_speed_water",
+            "type": "numberbox",
+            "label": "Speed of light in water = _____ × 10⁸ m s⁻¹",
+            "expected": "2.31",
+            "tolerance": 0.05,
+            "marks": 2.0,
+            "unit": "× 10⁸ m s⁻¹",
+            "diagnostic_hint": "c_water = c_air/n = 3.0×10⁸/1.3 = 2.31×10⁸ m s⁻¹",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Rearrange n = c_air/c_medium to get c_medium = c_air/n.",
+                "SC_CALCULATION_ERROR": "c_water = 3.0×10⁸ / 1.3 ≈ 2.31×10⁸ m s⁻¹."
+            }
+        },
+        {
+            "id": "f3_sin_c",
+            "step_id": "step_critical_angle",
+            "type": "numberbox",
+            "label": "sin(critical angle) = 1/n = _____",
+            "expected": "0.7692",
+            "tolerance": 0.005,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "sin(c) = 1/n = 1/1.3 = 0.7692",
+            "error_codes": {"SC_FORMULA_SELECTION_ERROR": "At the critical angle: sin(c) = 1/n. Here, sin(c) = 1/1.3 = 0.7692."}
+        },
+        {
+            "id": "f4_critical_angle",
+            "step_id": "step_critical_angle",
+            "type": "numberbox",
+            "label": "Critical angle c = _____ °",
+            "expected": "50.3",
+            "tolerance": 0.5,
+            "marks": 2.0,
+            "unit": "°",
+            "diagnostic_hint": "c = arcsin(0.7692) ≈ 50.3°",
+            "error_codes": {"SC_CALCULATION_ERROR": "c = arcsin(1/1.3) = arcsin(0.7692) ≈ 50.3°. Use the sin⁻¹ function on your calculator."}
+        }
+    ]
+}

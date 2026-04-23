@@ -1,0 +1,147 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q5aii"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q5(a)(ii)",
+        "subject": "Biology",
+        "topic": "Transport — Substances Found in Blood (other than cells and platelets)",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "3m: name THREE other substances found in blood. 5 correct options for 3 slots — any 3 of 5 earn full marks. Follows Q5a(i) where students identified RBC/WBC/Platelet functions. 'Other substances' means dissolved/transported substances in plasma, not the cellular components."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q5a(ii) — Name Three Other Substances Found in Blood",
+        "text": "<p>Name THREE other substances which are found in the blood:</p><p>Substance 1: [[1]]</p><p>Substance 2: [[2]]</p><p>Substance 3: [[3]]</p>",
+        "general_feedback": "<p><strong>Other substances found in blood (in addition to blood cells and platelets):</strong></p><ul><li><strong>Plasma</strong> — the liquid part of blood (mainly water) that carries all other substances</li><li><strong>Glucose</strong> — dissolved sugar transported from the digestive system to body cells for respiration</li><li><strong>Hormones</strong> — chemical messengers (e.g. insulin, adrenaline) transported from glands to target organs</li><li><strong>Urea</strong> — metabolic waste product from protein breakdown, transported to the kidneys for excretion</li><li><strong>Antibodies</strong> — proteins produced by white blood cells to combat pathogens</li></ul><p><em>Also acceptable:</em> Oxygen (dissolved/carried by haemoglobin), Carbon dioxide, Mineral salts, Amino acids, Fatty acids, Vitamins, Fibrinogen (clotting protein)</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Substance 1: [[1]]</p><p>Substance 2: [[2]]</p><p>Substance 3: [[3]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Plasma (liquid component of blood)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hormones",
+                        "correct": true
+                    },
+                    {
+                        "text": "Urea",
+                        "correct": true
+                    },
+                    {
+                        "text": "Antibodies",
+                        "correct": true
+                    },
+                    {
+                        "text": "Red blood cells",
+                        "correct": false
+                    },
+                    {
+                        "text": "Haemoglobin (in cells only, not dissolved)",
+                        "correct": false
+                    }
+                ],
+                "label": "First substance transported in blood (other than cells)",
+                "diagnostic_hint": "Many substances are transported dissolved in blood plasma. Common examples include glucose (energy), hormones (chemical messengers), urea (waste), and antibodies (immune proteins)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Plasma (liquid component of blood)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hormones",
+                        "correct": true
+                    },
+                    {
+                        "text": "Urea",
+                        "correct": true
+                    },
+                    {
+                        "text": "Antibodies",
+                        "correct": true
+                    },
+                    {
+                        "text": "Red blood cells",
+                        "correct": false
+                    },
+                    {
+                        "text": "Haemoglobin (in cells only, not dissolved)",
+                        "correct": false
+                    }
+                ],
+                "label": "Second substance transported in blood (other than cells)",
+                "diagnostic_hint": "Select a substance different from your first answer. Red blood cells and haemoglobin are disqualifiers — the question asks for substances OTHER than named blood cells."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Plasma (liquid component of blood)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hormones",
+                        "correct": true
+                    },
+                    {
+                        "text": "Urea",
+                        "correct": true
+                    },
+                    {
+                        "text": "Antibodies",
+                        "correct": true
+                    },
+                    {
+                        "text": "Red blood cells",
+                        "correct": false
+                    },
+                    {
+                        "text": "Haemoglobin (in cells only, not dissolved)",
+                        "correct": false
+                    }
+                ],
+                "label": "Third substance transported in blood (other than cells)",
+                "diagnostic_hint": "A third distinct substance. Note: haemoglobin is found INSIDE red blood cells, not dissolved freely in plasma — it does not count as a dissolved blood substance."
+            }
+        ],
+        "word_bank": [
+            "Plasma (liquid component of blood)",
+            "Glucose",
+            "Hormones",
+            "Urea",
+            "Antibodies",
+            "Red blood cells",
+            "Haemoglobin (in cells only, not dissolved)"
+        ],
+        "word_bank_note": "7 tokens for 3 slots. 5 correct substances — any 3 of 5 earn full marks (engine awards mark for any correct token in each slot; student must not repeat the same token). 'Red blood cells' is the trap distractor: the question specifies 'other substances' meaning substances OTHER THAN blood cells/platelets (which were named in Q5a(i)). 'Haemoglobin (in cells only)' is a subtle distractor — haemoglobin is found inside RBCs, not freely dissolved in plasma in a healthy person; CSEC mark schemes do not accept this as a blood substance in the plasma sense. Plasma is itself a correct answer (it IS a substance found in blood, distinct from cells). All 5 correct tokens represent common, expected CSEC answers: plasma/glucose/hormones/urea/antibodies."
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q6biii"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q6(b)(iii)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Mass-Energy Equivalence: E = Δmc² for Rn-222 Alpha Decay",
+        "marks_total": 4,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Masses given in paper: Rn-222=368.54918×10⁻²⁷ kg, Po=361.89489×10⁻²⁷ kg, alpha=6.64466×10⁻²⁷ kg. c=3.0×10⁸ m/s. Δm = 0.00963×10⁻²⁷ = 9.63×10⁻³⁰ kg. E = 9.63×10⁻³⁰ × (3×10⁸)² = 8.67×10⁻¹³ J. A and Z values (Q6b(ii)) are covered in PHY-JAN22-Q6bc_radon-decay.json. Half-life mass (Q6c(ii)) also in that file."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q6b(iii) — E=mc² Energy from Rn-222 Alpha Decay",
+        "text": "<p>Radon-222 decays by alpha particle emission:</p><p style='text-align:center;'>\\({}^{222}_{86}\\text{Rn} \\rightarrow {}^{218}_{84}\\text{Po} + {}^{4}_{2}\\alpha\\)</p><p>The masses of the nuclides are:</p><ul><li>\\({}^{222}_{86}\\text{Rn} = 368.54918 \\times 10^{-27}\\text{ kg}\\)</li><li>\\({}^{218}_{84}\\text{Po} = 361.89489 \\times 10^{-27}\\text{ kg}\\)</li><li>\\({}^{4}_{2}\\alpha = 6.64466 \\times 10^{-27}\\text{ kg}\\)</li></ul><p>Use Einstein's mass-energy equation to calculate the energy released during this reaction. [c = 3.0 × 10⁸ m s⁻¹] (4 marks)</p>",
+        "general_feedback": "<p><strong>Step 1 — Mass defect:</strong><br>Δm = m(Rn) − m(Po) − m(α)<br>= (368.54918 − 361.89489 − 6.64466) × 10⁻²⁷<br>= 0.00963 × 10⁻²⁷ kg = 9.63 × 10⁻³⁰ kg</p><p><strong>Step 2 — Energy:</strong><br>E = Δm × c² = 9.63 × 10⁻³⁰ × (3.0 × 10⁸)²<br>= 9.63 × 10⁻³⁰ × 9.0 × 10¹⁶<br>= <strong>8.67 × 10⁻¹³ J</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given masses (×10⁻²⁷ kg):</strong> Rn-222 = 368.54918 &nbsp;|&nbsp; Po-218 = 361.89489 &nbsp;|&nbsp; alpha = 6.64466<br><strong>Formula:</strong> Δm = m(reactants) − m(products) &nbsp;|&nbsp; E = Δm × c² &nbsp;|&nbsp; c = 3.0 × 10⁸ m s⁻¹",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_mass_defect",
+            "label": "Calculate the mass defect Δm. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_energy",
+            "label": "Calculate the energy released E = Δmc². (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_sum_products",
+            "step_id": "step_mass_defect",
+            "type": "numberbox",
+            "label": "m(Po) + m(α) = _____ × 10⁻²⁷ kg",
+            "expected": "368.53955",
+            "tolerance": 0.0005,
+            "marks": 1.0,
+            "unit": "× 10⁻²⁷ kg",
+            "diagnostic_hint": "m(Po) + m(α) = 361.89489 + 6.64466 = 368.53955 × 10⁻²⁷ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Add the product masses: 361.89489 + 6.64466 = 368.53955 (× 10⁻²⁷ kg)."
+            }
+        },
+        {
+            "id": "f2_delta_m",
+            "step_id": "step_mass_defect",
+            "type": "numberbox",
+            "label": "Mass defect Δm = _____ × 10⁻³⁰ kg",
+            "expected": "9.63",
+            "tolerance": 0.05,
+            "marks": 1.0,
+            "unit": "× 10⁻³⁰ kg",
+            "diagnostic_hint": "Δm = (368.54918 − 368.53955) × 10⁻²⁷ = 0.00963 × 10⁻²⁷ = 9.63 × 10⁻³⁰ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Δm = m(Rn) − [m(Po) + m(α)] = 368.54918 − 368.53955 = 0.00963 × 10⁻²⁷ kg = 9.63 × 10⁻³⁰ kg."
+            }
+        },
+        {
+            "id": "f3_c_squared",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "c² = (3.0 × 10⁸)² = _____ × 10¹⁶ m² s⁻²",
+            "expected": "9.0",
+            "tolerance": 0.05,
+            "marks": 0.5,
+            "unit": "× 10¹⁶ m² s⁻²",
+            "diagnostic_hint": "c² = (3.0 × 10⁸)² = 9.0 × 10¹⁶ m² s⁻²",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c² = (3.0 × 10⁸)² = 3.0² × (10⁸)² = 9.0 × 10¹⁶ m² s⁻²."
+            }
+        },
+        {
+            "id": "f4_energy",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "Energy released E = Δmc² = _____ × 10⁻¹³ J",
+            "expected": "8.67",
+            "tolerance": 0.05,
+            "marks": 1.5,
+            "unit": "× 10⁻¹³ J",
+            "diagnostic_hint": "E = 9.63 × 10⁻³⁰ × 9.0 × 10¹⁶ = 86.67 × 10⁻¹⁴ = 8.667 × 10⁻¹³ J",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "E = Δm × c² = 9.63 × 10⁻³⁰ × 9.0 × 10¹⁶ = 8.67 × 10⁻¹³ J."
+            }
+        }
+    ]
+}

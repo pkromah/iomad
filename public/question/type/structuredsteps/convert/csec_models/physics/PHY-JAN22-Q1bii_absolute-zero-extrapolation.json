@@ -1,0 +1,80 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q1bii"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q1(b)(ii)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Extrapolating Pressure-Temperature Graph to Find Absolute Zero",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "P vs θ graph from Table 1 is perfectly linear; extrapolated to P=0, it crosses θ-axis at −273°C. Marks: 1m for stating/reading −273°C (or −270 to −275°C range), 1m for naming it 'absolute zero', 1m for recognising this implies P∝T (Kelvin). Follows Q1b(i) (graph plotting — not auto-gradeable)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q1b(ii) — Extrapolate Graph to Find Absolute Zero",
+        "text": "<p>Extrapolate (extend) the best-fit line on the pressure–temperature (P vs θ) graph until it meets the temperature axis. Mark this point X on your graph.</p><p><strong>(ii)</strong> State:</p><ul><li>The temperature value at point X</li><li>The name given to this temperature value</li></ul><p>(3 marks)</p>",
+        "general_feedback": "<p><strong>Extrapolation result:</strong><br>The P vs θ graph, when extrapolated to P = 0, crosses the temperature axis at <strong>θ = −273 °C</strong>.</p><p><strong>Name:</strong> This temperature is called <strong>absolute zero</strong> — the lowest theoretically possible temperature, at which all particle motion effectively ceases and gas pressure would reach zero.</p><p>In SI units, absolute zero = <strong>0 K</strong> (Kelvin). The Kelvin scale starts at absolute zero: T(K) = θ(°C) + 273.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Graph data:</strong> P vs θ is perfectly linear — extrapolating gives P = 0 at θ = −273 °C<br><strong>Physical meaning:</strong> This is the temperature at which the gas would exert zero pressure — the lowest possible temperature",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_extrapolate",
+            "label": "State the temperature value at point X (where the graph crosses the temperature axis). (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_temperature",
+            "step_id": "step_extrapolate",
+            "type": "numberbox",
+            "label": "Temperature at point X = _____ °C",
+            "expected": "-273",
+            "tolerance": 3,
+            "marks": 2.0,
+            "unit": "°C",
+            "diagnostic_hint": "Extrapolating the P vs θ line to P = 0 gives θ = −273 °C",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Extend (extrapolate) the best-fit line beyond the data points until it meets the x-axis (where P = 0). The x-intercept is approximately −273 °C."
+            }
+        },
+        {
+            "id": "f2_name",
+            "step_id": "step_extrapolate",
+            "type": "choice",
+            "label": "Name given to this temperature: _____",
+            "expected": "Absolute zero",
+            "marks": 1.0,
+            "diagnostic_hint": "This temperature (−273 °C = 0 K) is called absolute zero",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The name of the temperature at which gas pressure would be zero is 'absolute zero'. It equals 0 K (zero kelvin) = −273 °C."
+            },
+            "options": {
+                "Absolute zero": "Absolute zero",
+                "Absolute temperature": "Absolute temperature",
+                "Minimum Kelvin point": "Minimum Kelvin point",
+                "Zero degrees Celsius": "Zero degrees Celsius"
+            }
+        }
+    ]
+}

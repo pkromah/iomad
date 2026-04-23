@@ -1,0 +1,144 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN23-Q1ai"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q1(a)(i)",
+        "subject": "Chemistry",
+        "topic": "Acids, Bases, Salts — Definition of a Normal Salt",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: define normal salt. Cloze: [[1]](0.5m) the replaceable [[2]](0.5m) of [[3]](0.5m) have been replaced by [[4]](0.5m). Key discriminator: ALL replaceable H⁺ — 'partial' is wrong (that describes an acid salt). 'OH⁻' and 'base' are distractors."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q1a(i) — Define Normal Salt",
+        "text": "<p>Define the term <strong>'normal salt'</strong> by completing the statement below:</p><p>A normal salt is formed when [[1]] the replaceable [[2]] of [[3]] have been replaced by [[4]].</p>",
+        "general_feedback": "<p><strong>Normal salt definition:</strong></p><p>A normal salt is formed when <strong>ALL</strong> the replaceable <strong>hydrogen atoms (H⁺ ions)</strong> of <strong>an acid</strong> have been replaced by <strong>a metal (or ammonium ion)</strong>.</p><p><em>Examples:</em> NaCl (sodium chloride), Na₂SO₄ (sodium sulphate), CaCO₃ (calcium carbonate)</p><p><em>Contrast:</em> An <strong>acid salt</strong> is formed when only <strong>SOME</strong> of the replaceable hydrogen atoms are replaced — e.g., NaHSO₄ (sodium hydrogensulphate) or NaHCO₃ (sodium hydrogencarbonate).</p><p><em>Note:</em> The key word is <strong>ALL</strong> — this distinguishes a normal salt from an acid salt.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>A normal salt is formed when [[1]] the replaceable [[2]] of [[3]] have been replaced by [[4]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "all",
+                        "correct": true
+                    },
+                    {
+                        "text": "some",
+                        "correct": false
+                    },
+                    {
+                        "text": "partial",
+                        "correct": false
+                    },
+                    {
+                        "text": "none",
+                        "correct": false
+                    }
+                ],
+                "label": "Normal salt — ___ hydrogen atoms replaced",
+                "diagnostic_hint": "In a normal salt ALL acidic hydrogen atoms of the parent acid are replaced by metal ions (or ammonium). If only SOME are replaced it is an acid salt, not a normal salt."
+            },
+            {
+                "id": 2,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "hydrogen atoms",
+                        "correct": true
+                    },
+                    {
+                        "text": "H⁺ ions",
+                        "correct": true
+                    },
+                    {
+                        "text": "OH⁻ ions",
+                        "correct": false
+                    },
+                    {
+                        "text": "electrons",
+                        "correct": false
+                    }
+                ],
+                "label": "Normal salt — replaces ___ from the acid",
+                "diagnostic_hint": "The particles replaced are the hydrogen atoms (H⁺ ions) from the acid. For example, in HCl both H and Cl make HCl, but in NaCl the Na has replaced the H⁺."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "an acid",
+                        "correct": true
+                    },
+                    {
+                        "text": "the acid",
+                        "correct": true
+                    },
+                    {
+                        "text": "a base",
+                        "correct": false
+                    },
+                    {
+                        "text": "an alkali",
+                        "correct": false
+                    }
+                ],
+                "label": "Normal salt — formed from ___",
+                "diagnostic_hint": "A salt is formed when a metal (or ammonium) replaces the hydrogen of an acid. The source is always an acid — a base/alkali provides the metal ion, but the salt itself comes from the acid framework."
+            },
+            {
+                "id": 4,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "a metal or ammonium ion",
+                        "correct": true
+                    },
+                    {
+                        "text": "a metal",
+                        "correct": true
+                    },
+                    {
+                        "text": "a non-metal",
+                        "correct": false
+                    },
+                    {
+                        "text": "OH⁻ ions",
+                        "correct": false
+                    }
+                ],
+                "label": "Normal salt — the replacing ion is ___",
+                "diagnostic_hint": "The hydrogen is replaced by a metal ion (e.g. Na⁺, Ca²⁺) or ammonium ion (NH₄⁺). Non-metals and OH⁻ ions do not replace H⁺ to form a normal salt."
+            }
+        ],
+        "word_bank": [
+            "all",
+            "some",
+            "partial",
+            "none",
+            "hydrogen atoms",
+            "H⁺ ions",
+            "OH⁻ ions",
+            "electrons",
+            "an acid",
+            "the acid",
+            "a base",
+            "an alkali",
+            "a metal or ammonium ion",
+            "a metal",
+            "a non-metal",
+            "OH⁻ ions"
+        ],
+        "word_bank_note": "16 tokens for 4 slots. Slot 1 (all/some/partial/none): 'some' is the key distractor — choosing 'some' describes an ACID salt (e.g. NaHSO₄), not a normal salt. 'Partial' and 'none' are also wrong. Slot 2 (hydrogen atoms or H⁺ ions): both accepted as equivalent. 'OH⁻ ions' is wrong — OH⁻ comes from bases, not acids. Slot 3 (an acid / the acid): both accepted. 'A base' and 'an alkali' are wrong — the definition concerns the acid's H⁺. Slot 4 (a metal / a metal or ammonium): both accepted. 'Non-metal' and 'OH⁻ ions' are wrong replacements."
+    }
+}

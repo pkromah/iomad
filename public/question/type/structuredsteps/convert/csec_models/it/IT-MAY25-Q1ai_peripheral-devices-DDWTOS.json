@@ -1,0 +1,56 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["IT-MAY25-Q1ai"],
+        "source_paper": "CSEC Information Technology Paper 02 May/June 2025",
+        "question_ref": "Q1(a)(i)",
+        "subject": "Information Technology",
+        "topic": "Hardware — Identifying Peripheral Devices",
+        "marks_total": 2,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Original question asks students to 'circle TWO peripheral devices' from: Motherboard, Keyboard, Microphone, Monitor, Compact disc, Mouse. Peripherals (correct): Keyboard, Microphone, Monitor, Mouse. Non-peripherals (wrong): Motherboard (internal component) and Compact disc (storage medium, not directly connected/controlled). Any 2 of the 4 correct devices earns 2 marks. DDWTOS marks all 4 peripheral options as correct=true so any valid pair earns full credit."
+    },
+    "question": {
+        "name": "CSEC IT May 2025 Q1a(i) — Identify Two Peripheral Devices",
+        "text": "<p>Peripheral devices are those which are usually added to a computer system, connected to and controlled by the CPU.</p><p>Select <strong>TWO</strong> peripheral devices from the list below by dragging them into the blank slots.</p><p>Peripheral device 1: [[1]] &nbsp;&nbsp;&nbsp; Peripheral device 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Peripheral devices from the list:</strong> Keyboard, Microphone, Monitor, Mouse — all are external devices connected to and controlled by the CPU.</p><p><strong>NOT peripheral devices:</strong><br><strong>Motherboard</strong> — an internal component (not added externally; it IS the main circuit board of the computer)<br><strong>Compact disc</strong> — a storage medium, not a device connected to and controlled by the CPU in the same way</p><p>Any TWO of {Keyboard, Microphone, Monitor, Mouse} earn full marks.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Peripheral device 1: [[1]] &nbsp;&nbsp;&nbsp; Peripheral device 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {"text": "Keyboard", "correct": true},
+                    {"text": "Microphone", "correct": true},
+                    {"text": "Monitor", "correct": true},
+                    {"text": "Mouse", "correct": true},
+                    {"text": "Motherboard", "correct": false},
+                    {"text": "Compact disc", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {"text": "Keyboard", "correct": true},
+                    {"text": "Microphone", "correct": true},
+                    {"text": "Monitor", "correct": true},
+                    {"text": "Mouse", "correct": true},
+                    {"text": "Motherboard", "correct": false},
+                    {"text": "Compact disc", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "Keyboard", "Microphone", "Monitor", "Mouse",
+            "Motherboard", "Compact disc"
+        ],
+        "word_bank_note": "6 tokens for 2 slots. Any 2 of {Keyboard, Microphone, Monitor, Mouse} are correct — all 4 marked correct=true. Motherboard (internal) and Compact disc (storage medium) are the distractors — both marked correct=false. Engine awards 1m per correct token placed; duplicating the same device in both slots is a student-facing UX concern, not modelled here."
+    }
+}

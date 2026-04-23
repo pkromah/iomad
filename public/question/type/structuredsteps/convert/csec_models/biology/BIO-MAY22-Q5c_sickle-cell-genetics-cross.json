@@ -1,0 +1,204 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q5c"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q5(c)",
+        "subject": "Biology",
+        "topic": "Genetics — Sickle Cell Anaemia: Genetic Cross (SS × SA)",
+        "marks_total": 7,
+        "difficulty": "P1",
+        "caribbean_context": true,
+        "authored": "2026-04-13",
+        "note": "7m: draw/complete genetic diagram for cross SS (sickle cell disease) × SA (sickle cell trait/carrier). S=sickle allele, A=normal allele. Offspring: 50% SS (sickle cell disease), 50% SA (sickle cell trait). Steps: define alleles(1m) + parent phenotypes(1m) + parent genotypes(1m) + gametes/Punnett square(2m) + offspring genotypes(1m) + offspring phenotypes(1m). Sickle cell disease is prevalent in Caribbean and African populations — caribbean_context true for cultural/health relevance."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q5c — Sickle Cell Genetics: SS × SA Cross",
+        "text": "<p>Sickle cell anaemia is a genetic disease. Use S to represent the sickle cell allele and A to represent the normal allele.</p><p>A person with sickle cell disease (SS) has a child with a person who has sickle cell trait (SA).</p><p>Draw a <strong>genetic diagram</strong> to show the possible genotypes and phenotypes of their offspring. <em>(7 marks)</em></p>",
+        "general_feedback": "<p><strong>Sickle cell genetics — SS × SA cross:</strong></p><p><strong>Alleles:</strong> S = sickle cell allele; A = normal allele</p><p><strong>Genotypes and phenotypes:</strong></p><ul><li>SS = sickle cell disease (affected)</li><li>SA = sickle cell trait (carrier — usually healthy but can show mild symptoms under low oxygen conditions)</li><li>AA = normal (healthy)</li></ul><p><strong>Parents:</strong></p><p>Sickle cell disease (SS) × Sickle cell trait (SA)</p><p><strong>Gametes:</strong></p><p>SS parent: S and S &nbsp;|&nbsp; SA parent: S and A</p><p><strong>Punnett square:</strong></p><table><thead><tr><th></th><th>S (from SS parent)</th><th>S (from SS parent)</th></tr></thead><tbody><tr><td>S (from SA parent)</td><td>SS</td><td>SS</td></tr><tr><td>A (from SA parent)</td><td>SA</td><td>SA</td></tr></tbody></table><p><strong>Offspring genotypes:</strong> 50% SS : 50% SA (ratio 1:1)</p><p><strong>Offspring phenotypes:</strong> 50% sickle cell disease : 50% sickle cell trait</p><p><em>Note:</em> Every child has at least one S allele — none will be completely unaffected (AA).</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Alleles:</strong> S = sickle cell allele | A = normal allele<br><strong>SS</strong> = sickle cell disease | <strong>SA</strong> = sickle cell trait | <strong>AA</strong> = normal<br><strong>Cross:</strong> SS parent × SA parent",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_alleles_phenotypes",
+            "label": "Define alleles and state parent phenotypes. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_parent_genotypes_gametes",
+            "label": "State parent genotypes and gametes produced. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_punnett_offspring",
+            "label": "Complete Punnett square and state offspring genotypes and phenotypes. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_allele_S",
+            "step_id": "step_alleles_phenotypes",
+            "type": "choice",
+            "label": "What does allele S represent? _____",
+            "expected": "Sickle cell allele",
+            "marks": 0.5,
+            "diagnostic_hint": "S is the allele for the sickle cell form of haemoglobin.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "S represents the sickle cell allele (coding for abnormal haemoglobin HbS). A represents the normal allele (coding for normal haemoglobin HbA)."
+            },
+            "options": {
+                "Sickle cell allele": "Sickle cell allele (codes for abnormal HbS haemoglobin)",
+                "Normal allele": "Normal allele (codes for normal HbA haemoglobin)",
+                "Dominant allele for tall": "Dominant allele for tall stem",
+                "Allele for normal haemoglobin": "Allele for normal haemoglobin"
+            }
+        },
+        {
+            "id": "f2_parent1_phenotype",
+            "step_id": "step_alleles_phenotypes",
+            "type": "choice",
+            "label": "Phenotype of the SS parent = _____",
+            "expected": "Sickle cell disease",
+            "marks": 0.5,
+            "diagnostic_hint": "A person with genotype SS has sickle cell disease (both alleles produce abnormal haemoglobin).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Genotype SS means both alleles are sickle cell alleles → the person has sickle cell disease (sickle cell anaemia). They produce only abnormal haemoglobin and suffer from the full disease."
+            },
+            "options": {
+                "Sickle cell disease": "Sickle cell disease (affected)",
+                "Sickle cell trait": "Sickle cell trait (carrier)",
+                "Normal / unaffected": "Normal / unaffected (AA)",
+                "Heterozygous carrier": "Heterozygous carrier"
+            }
+        },
+        {
+            "id": "f3_parent2_phenotype",
+            "step_id": "step_alleles_phenotypes",
+            "type": "choice",
+            "label": "Phenotype of the SA parent = _____",
+            "expected": "Sickle cell trait",
+            "marks": 0.5,
+            "diagnostic_hint": "A person with genotype SA has sickle cell trait — they carry one sickle allele but are usually healthy (they produce both normal and abnormal haemoglobin).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Genotype SA means one sickle allele (S) and one normal allele (A). This gives sickle cell TRAIT — the person is a carrier. They are usually healthy under normal conditions."
+            },
+            "options": {
+                "Sickle cell disease": "Sickle cell disease (affected)",
+                "Sickle cell trait": "Sickle cell trait (carrier)",
+                "Normal / unaffected": "Normal / unaffected (AA)",
+                "Heterozygous carrier": "Heterozygous carrier"
+            }
+        },
+        {
+            "id": "f4_gametes_SS",
+            "step_id": "step_parent_genotypes_gametes",
+            "type": "choice",
+            "label": "Gametes produced by the SS parent = _____",
+            "expected": "S and S (only S gametes)",
+            "marks": 0.5,
+            "diagnostic_hint": "The SS parent can only produce gametes with the S allele (meiosis separates the two S alleles into separate gametes).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The SS parent has two S alleles. During meiosis, alleles separate. So all gametes from the SS parent carry the S allele only."
+            },
+            "options": {
+                "S and S (only S gametes)": "S and S (only S gametes)",
+                "S and A gametes": "S and A gametes",
+                "A and A gametes": "A and A gametes (only A gametes)",
+                "S, A, and AA gametes": "S, A, and AA gametes"
+            }
+        },
+        {
+            "id": "f5_gametes_SA",
+            "step_id": "step_parent_genotypes_gametes",
+            "type": "choice",
+            "label": "Gametes produced by the SA parent = _____",
+            "expected": "S and A",
+            "marks": 0.5,
+            "diagnostic_hint": "The SA parent produces two types of gametes: 50% with the S allele and 50% with the A allele.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The SA parent has one S allele and one A allele. During meiosis, these separate: 50% of gametes carry S and 50% carry A."
+            },
+            "options": {
+                "S and A": "S and A (50% each)",
+                "S and S only": "S and S only",
+                "A and A only": "A and A only",
+                "S, S, and A": "S, S, and A (three types)"
+            }
+        },
+        {
+            "id": "f6_offspring_genotypes",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "Offspring genotypes from the Punnett square = _____",
+            "expected": "SS and SA (50% SS : 50% SA)",
+            "marks": 1.0,
+            "diagnostic_hint": "From the Punnett square: SS parent gametes (S, S) × SA parent gametes (S, A) → SS, SS, SA, SA = 50% SS : 50% SA.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Punnett square: (S and S) × (S and A) gives: S+S=SS, S+A=SA, S+S=SS, S+A=SA. Results: 2 SS and 2 SA → 50% SS : 50% SA."
+            },
+            "options": {
+                "SS and SA (50% SS : 50% SA)": "SS and SA (50% SS : 50% SA)",
+                "25% SS : 50% SA : 25% AA": "25% SS : 50% SA : 25% AA",
+                "All SA (100% SA)": "All SA (100% SA)",
+                "50% SS : 50% AA": "50% SS : 50% AA"
+            }
+        },
+        {
+            "id": "f7_offspring_phenotypes",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "Offspring phenotypes and ratio = _____",
+            "expected": "50% sickle cell disease : 50% sickle cell trait",
+            "marks": 1.0,
+            "diagnostic_hint": "All offspring have at least one S allele. 50% will have sickle cell disease (SS), 50% will have sickle cell trait (SA). No offspring will have the normal AA genotype.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "From the Punnett square: SS offspring → sickle cell disease; SA offspring → sickle cell trait. Ratio = 1 sickle cell disease : 1 sickle cell trait (50%:50%). No offspring will be completely normal (AA) because the SS parent can only pass on S alleles."
+            },
+            "options": {
+                "50% sickle cell disease : 50% sickle cell trait": "50% sickle cell disease : 50% sickle cell trait",
+                "25% disease : 50% trait : 25% normal": "25% disease : 50% trait : 25% normal",
+                "All sickle cell trait (100% carriers)": "All sickle cell trait (100% carriers)",
+                "100% sickle cell disease": "100% sickle cell disease"
+            }
+        },
+        {
+            "id": "f8_punnett_square_note",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "Describe how the Punnett square was set up (gametes on axes): _____",
+            "expected": "SS parent gametes (S,S) on one axis; SA parent gametes (S,A) on other axis",
+            "marks": 0.5,
+            "diagnostic_hint": "Set up the Punnett square with the SS parent gametes (S, S) on one axis and the SA parent gametes (S, A) on the other axis.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Label the Punnett square axes with parent gametes: SS parent contributes gametes S and S; SA parent contributes gametes S and A. Fill in the boxes by combining the alleles."
+            },
+            "options": {
+                "SS parent gametes (S,S) on one axis; SA parent gametes (S,A) on other axis": "SS parent: S,S on one axis; SA parent: S,A on other axis",
+                "SS parent gametes (S,A) on one axis; SA parent gametes (S,S) on other axis": "SS parent: S,A on one axis; SA parent: S,S on other axis",
+                "Both parents contribute only S gametes on both axes": "Both parents contribute only S gametes",
+                "SA gametes (S,A) on both axes": "SA gametes (S,A) on both axes"
+            }
+        }
+    ]
+}

@@ -34,13 +34,25 @@ class qtype_structuredsteps extends question_type {
 
         parent::save_question_options($question);
 
-        $modeljson = trim((string) ($question->model_json ?? '{}'));
-        $schema = '1.0';
-        $engineversion = '1.0';
+        $engine = (string)($question->engine ?? 'long_multiplication');
+        $modeljson = trim((string)($question->model_json ?? ''));
+        if ($modeljson === '') {
+            $modeljson = \qtype_structuredsteps\local\model_template_factory::starter_json($engine);
+        }
+
+        $validator = new \qtype_structuredsteps\local\model_validator();
+        $error = $validator->validate($modeljson, $engine);
+        if ($error !== null) {
+            throw new \moodle_exception('invalidmodeljson', 'qtype_structuredsteps', '', $error);
+        }
+
+        $model = json_decode($modeljson, true, 512, JSON_THROW_ON_ERROR);
+        $schema = (string)($model['schema_version'] ?? '1.0');
+        $engineversion = (string)($model['engine_version'] ?? '1.0');
 
         if ($record = $DB->get_record('qtype_structuredsteps_options', ['questionid' => $question->id])) {
             $record->schema_version = $schema;
-            $record->engine = (string) ($question->engine ?? 'long_multiplication');
+            $record->engine = $engine;
             $record->engine_version = $engineversion;
             $record->model_json = $modeljson;
             $record->timemodified = time();
@@ -49,7 +61,7 @@ class qtype_structuredsteps extends question_type {
             $record = new stdClass();
             $record->questionid = $question->id;
             $record->schema_version = $schema;
-            $record->engine = (string) ($question->engine ?? 'long_multiplication');
+            $record->engine = $engine;
             $record->engine_version = $engineversion;
             $record->model_json = $modeljson;
             $record->timecreated = time();

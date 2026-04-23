@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN24-Q2biv"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q2(b)(iv)",
+        "subject": "Chemistry",
+        "topic": "Reactivity Series — Balanced Equation: Calcium + Dilute Hydrochloric Acid",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: write balanced symbol equation for metal X (calcium) reacting with dilute HCl. Ca(s) + 2HCl(aq) → CaCl₂(aq) + H₂(g). Marks: 1m correct formulae; 1m balanced (1:2:1:1 ratio); 1m correct state symbols. Context: reactivity series experiment where different metals are added to acid to observe rate of reaction."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q2b(iv) — Balanced Equation: Calcium + Dilute HCl",
+        "text": "<p>In an experiment, metal X (calcium) was added to dilute hydrochloric acid and bubbles were observed.</p><p>Write a <strong>balanced symbol equation</strong>, including state symbols, for the reaction of calcium with dilute hydrochloric acid. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Calcium + dilute hydrochloric acid:</strong></p><p style=\"font-size:1.1em;\"><strong>Ca(s) + 2HCl(aq) → CaCl₂(aq) + H₂(g)</strong></p><p><strong>Checking the balance:</strong></p><table><thead><tr><th>Atom/Ion</th><th>Reactant side</th><th>Product side</th></tr></thead><tbody><tr><td>Ca</td><td>1</td><td>1 ✓</td></tr><tr><td>H</td><td>2</td><td>2 (in H₂) ✓</td></tr><tr><td>Cl</td><td>2</td><td>2 (in CaCl₂) ✓</td></tr></tbody></table><p><strong>State symbols:</strong></p><ul><li>Ca(s) — calcium is a solid metal</li><li>HCl(aq) — hydrochloric acid is in aqueous solution</li><li>CaCl₂(aq) — calcium chloride dissolves in water</li><li>H₂(g) — hydrogen is produced as a gas (the bubbles observed)</li></ul><p><em>Why 2HCl?</em> Calcium forms Ca²⁺ ions, so 2 Cl⁻ ions are needed to balance the charge → 2HCl as reactant.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Reactants:</strong> Ca + HCl &nbsp;|&nbsp; <strong>Products:</strong> CaCl₂ + H₂<br><strong>Ca forms:</strong> Ca²⁺ ions → needs 2 Cl⁻ → coefficient 2 in front of HCl",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_equation",
+            "label": "Write the balanced symbol equation with state symbols. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_formulae",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Correct formulae for all species (reactants and products): _____",
+            "expected": "Ca + HCl → CaCl₂ + H₂",
+            "marks": 1.0,
+            "diagnostic_hint": "Reactants: Ca (calcium metal) and HCl (hydrochloric acid). Products: CaCl₂ (calcium chloride) and H₂ (hydrogen gas).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "When a metal reacts with an acid: metal + acid → salt + hydrogen. Calcium + HCl → calcium chloride (CaCl₂) + hydrogen (H₂). The salt is CaCl₂ because Ca²⁺ needs two Cl⁻ ions."
+            },
+            "options": {
+                "Ca + HCl → CaCl₂ + H₂": "Ca + HCl → CaCl₂ + H₂",
+                "Ca + HCl → CaCl + H₂": "Ca + HCl → CaCl + H₂",
+                "Ca + HCl → CaH₂ + Cl₂": "Ca + HCl → CaH₂ + Cl₂",
+                "Ca + H₂SO₄ → CaSO₄ + H₂": "Ca + H₂SO₄ → CaSO₄ + H₂"
+            }
+        },
+        {
+            "id": "f2_balanced",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Balanced equation (correct coefficients): _____",
+            "expected": "Ca + 2HCl → CaCl₂ + H₂",
+            "marks": 1.0,
+            "diagnostic_hint": "Need 2HCl to provide the 2 Cl⁻ ions for CaCl₂. Check: Ca:1/1 ✓, H:2/2 ✓, Cl:2/2 ✓.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Ca + 2HCl → CaCl₂ + H₂. The coefficient 2 in front of HCl is essential: CaCl₂ has 2 chlorine atoms, so 2 HCl molecules are needed. This also balances the hydrogen (2H from 2HCl → H₂)."
+            },
+            "options": {
+                "Ca + 2HCl → CaCl₂ + H₂": "Ca + 2HCl → CaCl₂ + H₂",
+                "Ca + HCl → CaCl₂ + H₂": "Ca + HCl → CaCl₂ + H₂ (unbalanced)",
+                "2Ca + HCl → Ca₂Cl + H₂": "2Ca + HCl → Ca₂Cl + H₂",
+                "Ca + 2HCl → CaCl₂ + 2H": "Ca + 2HCl → CaCl₂ + 2H"
+            }
+        },
+        {
+            "id": "f3_state_symbols",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Correct state symbols for all species: _____",
+            "expected": "Ca(s), HCl(aq), CaCl₂(aq), H₂(g)",
+            "marks": 1.0,
+            "diagnostic_hint": "Ca is solid (s); HCl is in aqueous solution (aq); CaCl₂ dissolves in water (aq); H₂ is gas evolved (g).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "State symbols: Ca is a solid metal (s); HCl is dissolved in water — aqueous (aq); CaCl₂ is soluble in water (aq); H₂ is the gas that causes bubbling (g)."
+            },
+            "options": {
+                "Ca(s), HCl(aq), CaCl₂(aq), H₂(g)": "Ca(s), HCl(aq), CaCl₂(aq), H₂(g)",
+                "Ca(aq), HCl(aq), CaCl₂(aq), H₂(g)": "Ca(aq), HCl(aq), CaCl₂(aq), H₂(g)",
+                "Ca(s), HCl(g), CaCl₂(aq), H₂(g)": "Ca(s), HCl(g), CaCl₂(aq), H₂(g)",
+                "Ca(s), HCl(aq), CaCl₂(s), H₂(g)": "Ca(s), HCl(aq), CaCl₂(s), H₂(g)"
+            }
+        }
+    ]
+}

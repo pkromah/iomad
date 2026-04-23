@@ -1,0 +1,68 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["IT-MAY25-Q1c"],
+        "source_paper": "CSEC Information Technology Paper 02 May/June 2025",
+        "question_ref": "Q1(c)",
+        "subject": "Information Technology",
+        "topic": "Hardware — Laser vs Inkjet Printer: Advantages of Laser",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Question: 'Provide THREE reasons why a laser printer should be chosen over an inkjet printer.' Context: musician sourcing a printer. Modelled as DDWTOS with 3 slots from a word bank of 5 correct+distractor phrases. 1m per slot."
+    },
+    "question": {
+        "name": "CSEC IT May 2025 Q1c — Why Choose Laser Over Inkjet?",
+        "text": "<p>A musician is in the process of sourcing a printer. Provide <strong>THREE reasons</strong> why a <strong>laser printer</strong> should be chosen over an <strong>inkjet printer</strong> by dragging the correct reasons into the blanks below.</p><p><strong>Reason 1:</strong> [[1]]</p><p><strong>Reason 2:</strong> [[2]]</p><p><strong>Reason 3:</strong> [[3]]</p>",
+        "general_feedback": "<p><strong>Advantages of laser over inkjet:</strong></p><ol><li><strong>Faster printing speed</strong> — laser printers print significantly more pages per minute than inkjet printers, important for high-volume printing.</li><li><strong>Lower cost per page</strong> — toner cartridges last longer and produce more pages than ink cartridges, reducing per-page cost over time.</li><li><strong>Higher quality text output</strong> — laser printers produce sharper, crisper text using a dry powder (toner) process, whereas inkjet ink can bleed or smear.</li></ol><p><em>Inkjet distractors to avoid:</em> Inkjet printers are better for photo-quality color printing (not laser); inkjet ink smears more easily; inkjet printers have higher per-page costs for heavy use.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Reason 1:</strong> [[1]]</p><p><strong>Reason 2:</strong> [[2]]</p><p><strong>Reason 3:</strong> [[3]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {"text": "Faster printing speed", "correct": true},
+                    {"text": "Better at printing high-quality color photographs", "correct": false},
+                    {"text": "Lower cost per page for high-volume printing", "correct": true},
+                    {"text": "Ink smears easily after printing", "correct": false},
+                    {"text": "Produces sharper, higher quality text output", "correct": true}
+                ]
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {"text": "Faster printing speed", "correct": true},
+                    {"text": "Better at printing high-quality color photographs", "correct": false},
+                    {"text": "Lower cost per page for high-volume printing", "correct": true},
+                    {"text": "Ink smears easily after printing", "correct": false},
+                    {"text": "Produces sharper, higher quality text output", "correct": true}
+                ]
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {"text": "Faster printing speed", "correct": true},
+                    {"text": "Better at printing high-quality color photographs", "correct": false},
+                    {"text": "Lower cost per page for high-volume printing", "correct": true},
+                    {"text": "Ink smears easily after printing", "correct": false},
+                    {"text": "Produces sharper, higher quality text output", "correct": true}
+                ]
+            }
+        ],
+        "word_bank": [
+            "Faster printing speed",
+            "Lower cost per page for high-volume printing",
+            "Produces sharper, higher quality text output",
+            "Better at printing high-quality color photographs",
+            "Ink smears easily after printing"
+        ],
+        "word_bank_note": "5 tokens for 3 slots; 3 correct + 2 distractors. Distractors: 'Better at printing high-quality color photographs' — this is actually an INKJET advantage (not laser), so it's a plausible wrong choice. 'Ink smears easily after printing' — this describes an inkjet DISADVANTAGE but is not a laser ADVANTAGE per se. Students who choose it are describing the wrong device. The 3 correct reasons reflect standard CSEC IT marking scheme responses."
+    }
+}

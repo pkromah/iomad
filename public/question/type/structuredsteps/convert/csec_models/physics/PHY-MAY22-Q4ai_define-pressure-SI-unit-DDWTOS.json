@@ -1,0 +1,115 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q4ai"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q4(a)(i)",
+        "subject": "Physics",
+        "topic": "Forces and Pressure — Definition of Pressure and SI Unit",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: define pressure (P = F/A) and state its SI unit. 3 slots: pressure is the [[1]](1m) per unit [[2]](1m); SI unit is the [[3]](1m). Key: force/area/pascal. Distractors: mass/volume/newton/joule."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q4a(i) — Define Pressure and State SI Unit",
+        "text": "<p>Define the term <strong>'pressure'</strong> by completing the statement, and state its SI unit.</p><p>Pressure is the [[1]] acting per unit [[2]].</p><p>The SI unit of pressure is the [[3]].</p>",
+        "general_feedback": "<p><strong>Pressure definition:</strong></p><p>Pressure is the <strong>force</strong> acting per unit <strong>area</strong>.</p><p><strong>Formula:</strong> P = F / A</p><p><strong>SI unit:</strong> Pascal (Pa) = N m⁻² (Newton per square metre)</p><p><em>Examples:</em></p><ul><li>A sharp knife has a small area → large pressure per unit area → cuts easily</li><li>Snowshoes spread weight over large area → reduce pressure → prevent sinking in snow</li><li>Atmospheric pressure at sea level ≈ 101 325 Pa ≈ 1 × 10⁵ Pa</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Pressure is the [[1]] acting per unit [[2]].</p><p>The SI unit of pressure is the [[3]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "force",
+                        "correct": true
+                    },
+                    {
+                        "text": "mass",
+                        "correct": false
+                    },
+                    {
+                        "text": "weight",
+                        "correct": false
+                    },
+                    {
+                        "text": "energy",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure = ___ per unit area",
+                "diagnostic_hint": "Pressure = FORCE per unit area (P = F/A). Force is applied perpendicular to the surface. Greater force or smaller area → greater pressure."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "area",
+                        "correct": true
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    },
+                    {
+                        "text": "length",
+                        "correct": false
+                    },
+                    {
+                        "text": "mass",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure = force per unit ___",
+                "diagnostic_hint": "Pressure = force per unit AREA. The area is the surface area over which the force is distributed. Smaller area = more concentrated force = higher pressure."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "pascal (Pa)",
+                        "correct": true
+                    },
+                    {
+                        "text": "newton (N)",
+                        "correct": false
+                    },
+                    {
+                        "text": "joule (J)",
+                        "correct": false
+                    },
+                    {
+                        "text": "watt (W)",
+                        "correct": false
+                    }
+                ],
+                "label": "SI unit of pressure",
+                "diagnostic_hint": "The SI unit of pressure is the PASCAL (Pa), equivalent to 1 N m⁻² (newton per square metre). Named after Blaise Pascal."
+            }
+        ],
+        "word_bank": [
+            "force",
+            "mass",
+            "weight",
+            "energy",
+            "area",
+            "volume",
+            "length",
+            "pascal (Pa)",
+            "newton (N)",
+            "joule (J)",
+            "watt (W)"
+        ],
+        "word_bank_note": "11 tokens for 3 slots. Slot 1 (force): 'mass' is wrong — mass is not a force. 'Weight' is a force (mg) but pressure is defined using generic 'force', not specifically weight. 'Energy' is wrong. Slot 2 (area): 'volume' is wrong — pressure is per unit AREA (2D), not volume (3D). That would be concentration or energy density. Slot 3 (pascal): the newton is the unit of FORCE (not pressure). The joule is the unit of energy. The watt is power."
+    }
+}

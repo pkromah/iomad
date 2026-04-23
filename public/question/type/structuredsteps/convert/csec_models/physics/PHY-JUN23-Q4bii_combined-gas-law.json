@@ -1,0 +1,110 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q4bii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q4(b)(ii)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Combined Gas Law: Final Volume of Heated Gas",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Fixed mass of gas in a cylinder heated from 27°C to 627°C while pressure drops from 1.0×10⁵ Pa to 1.8×10⁴ Pa. Classic combined gas law application. Q4b(i) is kinetic theory explanation — open/deferred."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q4b(ii) — Combined Gas Law: Final Volume",
+        "text": "<p>A fixed mass of gas is trapped in a cylinder by a movable piston. An electrical heater raises the temperature from initial to final conditions:</p><ul><li>Initial: P₁ = <strong>1.0 × 10⁵ Pa</strong>, V₁ = <strong>1.9 × 10⁻⁴ m³</strong>, T₁ = <strong>27°C</strong></li><li>Final: P₂ = <strong>1.8 × 10⁴ Pa</strong>, T₂ = <strong>627°C</strong></li></ul><p>Calculate the <strong>final volume V₂</strong> of the gas. (6 marks)</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Step 1: T₁ = 27 + 273 = <strong>300 K</strong><br>Step 2: T₂ = 627 + 273 = <strong>900 K</strong><br>Step 3: Apply P₁V₁/T₁ = P₂V₂/T₂<br>V₂ = (P₁ × V₁ × T₂) / (P₂ × T₁) = (1.0×10⁵ × 1.9×10⁻⁴ × 900) / (1.8×10⁴ × 300)<br>= 17 100 / 5 400 000 = <strong>3.17 × 10⁻³ m³</strong></p><p><em>Sense check:</em> Temperature tripled (300→900 K) and pressure dropped to 18% of initial — volume should increase significantly. V₂ ≈ 16.7 × V₁ ✓</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> P₁ = 1.0×10⁵ Pa &nbsp;|&nbsp; V₁ = 1.9×10⁻⁴ m³ &nbsp;|&nbsp; T₁ = 27°C &nbsp;|&nbsp; P₂ = 1.8×10⁴ Pa &nbsp;|&nbsp; T₂ = 627°C<br><strong>Formula:</strong> P₁V₁/T₁ = P₂V₂/T₂ (temperatures MUST be in Kelvin)<br><strong>Convert:</strong> T(K) = θ(°C) + 273",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Convert both temperatures to Kelvin. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step2",
+            "label": "Apply the combined gas law to find V₂. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_T1",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "T₁ = _____ K",
+            "expected": "300",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "K",
+            "diagnostic_hint": "T₁ = 27 + 273 = 300 K",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert °C to K: add 273. T₁ = 27 + 273 = 300 K."
+            }
+        },
+        {
+            "id": "f2_T2",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "T₂ = _____ K",
+            "expected": "900",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "K",
+            "diagnostic_hint": "T₂ = 627 + 273 = 900 K",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "T₂ = 627 + 273 = 900 K."
+            }
+        },
+        {
+            "id": "f3_numerator",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "P₁ × V₁ × T₂ = _____",
+            "expected": "17100",
+            "tolerance": 200,
+            "marks": 2.0,
+            "unit": "",
+            "diagnostic_hint": "P₁ × V₁ × T₂ = 1.0×10⁵ × 1.9×10⁻⁴ × 900 = 19 × 900 = 17 100",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "(1.0×10⁵) × (1.9×10⁻⁴) = 19. Then 19 × 900 = 17 100.",
+                "SC_METHOD_ERROR": "Rearrange P₁V₁/T₁ = P₂V₂/T₂ to get V₂ = (P₁ × V₁ × T₂) / (P₂ × T₁)."
+            }
+        },
+        {
+            "id": "f4_V2",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Final volume V₂ = _____ × 10⁻³ m³",
+            "expected": "3.167",
+            "tolerance": 0.063,
+            "marks": 2.0,
+            "unit": "× 10⁻³ m³",
+            "diagnostic_hint": "V₂ = 17 100 / (1.8×10⁴ × 300) = 17 100 / 5 400 000 = 3.17×10⁻³ m³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V₂ = P₁V₁T₂ / (P₂T₁) = 17 100 / (1.8×10⁴ × 300) = 17 100 / 5 400 000 = 3.17×10⁻³ m³.",
+                "SC_FORMULA_SELECTION_ERROR": "V₂ = (P₁ × V₁ × T₂) / (P₂ × T₁). Make sure T is in Kelvin (not Celsius)."
+            }
+        }
+    ]
+}

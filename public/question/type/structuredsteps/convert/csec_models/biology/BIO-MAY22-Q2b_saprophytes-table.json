@@ -1,0 +1,129 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q2b"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q2(b)",
+        "subject": "Biology",
+        "topic": "Nutrition — Saprophytes and Their Food Sources",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "4m: complete table with 2 saprophytes and their food sources. 2 rows × 2 cells (name + food source) = 4 fields × 1m each. Multiple correct saprophytes: Mucor, Rhizopus, Aspergillus, Penicillium (fungi); Bacillus, Pseudomonas (bacteria). Food sources = dead/decaying organic matter (bread, leaves, wood, dead animals)."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q2b — Saprophytes and Their Food Sources",
+        "text": "<p>Complete Table 2 by identifying TWO saprophytes and their food sources.</p><table><thead><tr><th></th><th>Saprophyte</th><th>Food Source</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>?</td><td>?</td></tr><tr><td><strong>2</strong></td><td>?</td><td>?</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Saprophytes and their food sources:</strong></p><p>Saprophytes are organisms that feed on dead and decaying organic matter by secreting digestive enzymes and absorbing the products.</p><table><thead><tr><th></th><th>Saprophyte</th><th>Food Source</th></tr></thead><tbody><tr><td>1</td><td>Mucor (bread mould fungus)</td><td>Bread / decaying organic material</td></tr><tr><td>2</td><td>Rhizopus (black bread mould)</td><td>Bread / decaying fruits/vegetables</td></tr></tbody></table><p><em>Other valid examples:</em></p><ul><li>Aspergillus — decaying organic matter, stored grain</li><li>Penicillium — decaying fruits (blue/green mould)</li><li>Putrefying bacteria (e.g. Bacillus, Clostridium) — dead animals/plants</li></ul>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Saprophyte:</strong> an organism that feeds on dead/decaying organic matter (extracellular digestion)<br><strong>Examples:</strong> Fungi (Mucor, Rhizopus, Aspergillus, Penicillium) | Bacteria (Bacillus, Pseudomonas)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_row1",
+            "label": "Row 1 — name one saprophyte and its food source. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_row2",
+            "label": "Row 2 — name a different saprophyte and its food source. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_saprophyte1",
+            "step_id": "step_row1",
+            "type": "choice",
+            "label": "Saprophyte 1 (name) = _____",
+            "expected": "Mucor",
+            "marks": 1.0,
+            "diagnostic_hint": "Saprophytes include fungi such as Mucor and Rhizopus, or decomposing bacteria",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Saprophytes are organisms that digest and absorb nutrients from dead/decaying matter. Examples include Mucor (bread mould), Rhizopus, Aspergillus, or decomposing bacteria."
+            },
+            "options": {
+                "Mucor": "Mucor (bread mould)",
+                "Rhizopus": "Rhizopus (black bread mould)",
+                "Aspergillus": "Aspergillus",
+                "Penicillium": "Penicillium",
+                "Bacillus": "Bacillus (bacterium)"
+            }
+        },
+        {
+            "id": "f2_food1",
+            "step_id": "step_row1",
+            "type": "choice",
+            "label": "Food source for Saprophyte 1 = _____",
+            "expected": "Bread / decaying organic matter",
+            "marks": 1.0,
+            "diagnostic_hint": "Saprophytes feed on dead or decaying organic matter (bread, leaves, dead animals/plants)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The food source for a saprophyte is any dead/decaying organic material — bread, leaves, dead animals, rotting fruit, etc."
+            },
+            "options": {
+                "Bread / decaying organic matter": "Bread / decaying organic matter",
+                "Living plant tissue": "Living plant tissue",
+                "Sugars from photosynthesis": "Sugars from photosynthesis",
+                "Inorganic minerals from soil": "Inorganic minerals from soil"
+            }
+        },
+        {
+            "id": "f3_saprophyte2",
+            "step_id": "step_row2",
+            "type": "choice",
+            "label": "Saprophyte 2 (different from Row 1) = _____",
+            "expected": "Rhizopus",
+            "marks": 1.0,
+            "diagnostic_hint": "Name a different saprophyte from Row 1",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Provide a different saprophyte from Row 1. Examples: Aspergillus, Penicillium, Rhizopus, or decomposing bacteria such as Bacillus."
+            },
+            "options": {
+                "Mucor": "Mucor (bread mould)",
+                "Rhizopus": "Rhizopus (black bread mould)",
+                "Aspergillus": "Aspergillus",
+                "Penicillium": "Penicillium",
+                "Bacillus": "Bacillus (bacterium)"
+            }
+        },
+        {
+            "id": "f4_food2",
+            "step_id": "step_row2",
+            "type": "choice",
+            "label": "Food source for Saprophyte 2 = _____",
+            "expected": "Bread / decaying organic matter",
+            "marks": 1.0,
+            "diagnostic_hint": "Saprophytes feed on dead or decaying organic matter",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The food source is any dead/decaying organic material."
+            },
+            "options": {
+                "Bread / decaying organic matter": "Bread / decaying organic matter",
+                "Living plant tissue": "Living plant tissue",
+                "Sugars from photosynthesis": "Sugars from photosynthesis",
+                "Inorganic minerals from soil": "Inorganic minerals from soil"
+            }
+        }
+    ]
+}

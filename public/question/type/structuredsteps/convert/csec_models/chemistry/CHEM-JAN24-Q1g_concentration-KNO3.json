@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN24-Q1g"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q1(g)",
+        "subject": "Chemistry",
+        "topic": "Quantitative Chemistry — Molar Concentration from Solubility",
+        "marks_total": 4,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Follows CHEM-JAN24-Q1bc. Solubility at 35°C is read from graph (interpolated between 30°C=42g and 40°C=54g → 48g per 100cm³). This graph-reading step is pre-given in the question context since it is not auto-gradeable."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q1g — Concentration of Saturated KNO₃ at 35°C",
+        "text": "<p>From the solubility graph, the solubility of potassium nitrate (KNO₃) at <strong>35°C</strong> is approximately <strong>48 g per 100 cm³</strong> of water.</p><p>Calculate the <strong>concentration in mol dm⁻³</strong> of a saturated solution of potassium nitrate at 35°C.</p><p><em>R.A.M.: K = 39, N = 14, O = 16</em></p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Step 1: Molar mass of KNO₃ = 39 + 14 + 3(16) = 39 + 14 + 48 = <strong>101 g mol⁻¹</strong><br>Step 2: Moles of KNO₃ in 48 g = 48 ÷ 101 = <strong>0.475 mol</strong><br>Step 3: Convert volume to dm³: 100 cm³ = <strong>0.1 dm³</strong><br>Step 4: Concentration = moles ÷ volume = 0.475 ÷ 0.1 = <strong>4.75 mol dm⁻³</strong></p><p><em>Common errors:</em> Forgetting to divide by volume (0.1 dm³ not 100 cm³); using wrong molar mass for KNO₃.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Solubility of KNO₃ at 35°C = 48 g per 100 cm³ &nbsp;|&nbsp; RAM: K = 39, N = 14, O = 16<br><strong>Formula:</strong> c (mol dm⁻³) = n / V &nbsp;&nbsp; n = mass ÷ molar mass &nbsp;&nbsp; 100 cm³ = 0.1 dm³",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Calculate the <strong>molar mass of KNO₃</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step2",
+            "label": "Calculate the <strong>moles of KNO₃</strong> in 48 g. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step3",
+            "label": "Calculate the <strong>concentration</strong> in mol dm⁻³. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_molar_mass",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Molar mass of KNO₃ = _____ g mol⁻¹",
+            "expected": "101",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "g mol⁻¹",
+            "diagnostic_hint": "M(KNO₃) = M(K) + M(N) + 3×M(O) = 39 + 14 + 3(16) = 39 + 14 + 48 = 101 g mol⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Molar mass = K + N + 3×O = 39 + 14 + 48 = 101 g/mol. Don't forget oxygen has 3 atoms in NO₃⁻."
+            }
+        },
+        {
+            "id": "f2_moles",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Moles of KNO₃ = _____ mol",
+            "expected": "0.4752",
+            "tolerance": 0.01,
+            "marks": 1.0,
+            "unit": "mol",
+            "diagnostic_hint": "n = mass ÷ molar mass = 48 ÷ 101 = 0.475 mol",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "n = 48 ÷ 101 = 0.475 mol. Divide the mass of KNO₃ by its molar mass.",
+                "SC_FORMULA_SELECTION_ERROR": "Moles = mass ÷ molar mass. n = 48 ÷ 101 = 0.475 mol."
+            }
+        },
+        {
+            "id": "f3_volume_dm3",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Volume in dm³ = _____ dm³",
+            "expected": "0.1",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "dm³",
+            "diagnostic_hint": "Convert 100 cm³ to dm³: divide by 1000. 100 ÷ 1000 = 0.1 dm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "1 dm³ = 1000 cm³. So 100 cm³ ÷ 1000 = 0.1 dm³. You must convert before calculating concentration."
+            }
+        },
+        {
+            "id": "f4_concentration",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Concentration = _____ mol dm⁻³",
+            "expected": "4.752",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "mol dm⁻³",
+            "diagnostic_hint": "c = n ÷ V = 0.475 ÷ 0.1 = 4.75 mol dm⁻³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c = moles ÷ volume (in dm³) = 0.475 ÷ 0.1 = 4.75 mol dm⁻³.",
+                "SC_FORMULA_SELECTION_ERROR": "Concentration (mol/dm³) = moles ÷ volume (dm³). Make sure volume is in dm³, not cm³."
+            }
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY23-Q1bii"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2023",
+        "question_ref": "Q1(b)(ii)",
+        "subject": "Biology",
+        "topic": "Cell Biology — Bacterial Cell Structures and Infection",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "6 marks for 3 structure explanations (2 marks each). Pili/fimbriae is given as an example. Students explain how Flagellum, Slime capsule, and Cell wall each help bacteria infect organisms. Graded as key-phrase matching. Original question requires written explanations; this model uses keyword-anchored structured_text with 2 sub-fields per structure."
+    },
+    "question": {
+        "name": "CSEC Bio May 2023 Q1b(ii) — Bacterial Structures and Infection Benefits",
+        "text": "<p>The diagram in Figure 2 shows the general structure of a bacterial cell (bacillus shape) with the following structures labelled:</p><ul><li>Outer layers: cell membrane, cell wall, slime capsule</li><li>Appendages: pili/fimbriae (short hair-like projections), flagella (long whip-like tails)</li><li>Internal: nucleoid (circular DNA), plasmids, ribosomes</li></ul><p>Table 1 lists four structures. The first row is completed as an example:</p><p><em>Pili or fimbriae → Protect bacterial cell from being eaten by phagocytes so the bacteria continue to survive and multiply.</em></p><p>Complete the table by explaining how EACH of the following structures helps the bacterium to infect organisms. (6 marks)</p>",
+        "general_feedback": "<p><strong>Model answers (2 marks per structure — 1 for mechanism + 1 for benefit/consequence):</strong></p><p><strong>Flagellum:</strong> Provides motility (allows the bacterium to move / swim). This enables it to reach and penetrate host cells / target organs / navigate through body fluids to reach the site of infection.</p><p><strong>Slime capsule:</strong> Protects the bacterium from being engulfed by phagocytes (white blood cells) of the host immune system. This allows bacteria to survive and multiply within the host / helps bacteria adhere to host cell surfaces.</p><p><strong>Cell wall:</strong> Provides structural support and maintains the shape of the bacterium. Protects the cell from osmotic pressure / from bursting in hypotonic environments / from host antibodies, allowing bacteria to survive and remain infectious.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": true
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given example:</strong> Pili/fimbriae → Protect bacterial cell from being eaten by phagocytes so the bacteria continue to survive and multiply.<br><strong>Pattern:</strong> State the structure's action (mechanism) AND its benefit to infection/survival.",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "flagellum",
+            "label": "Explain how the <strong>Flagellum</strong> helps bacteria to infect organisms. (2 marks: 1 for mechanism + 1 for benefit)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "capsule",
+            "label": "Explain how the <strong>Slime capsule</strong> helps bacteria to infect organisms. (2 marks: 1 for mechanism + 1 for benefit)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "wall",
+            "label": "Explain how the <strong>Cell wall</strong> helps bacteria to infect organisms. (2 marks: 1 for mechanism + 1 for benefit)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_flagellum_mechanism",
+            "step_id": "flagellum",
+            "type": "choice",
+            "label": "Flagellum — how it works (mechanism): _____",
+            "expected": "Provides movement / motility",
+            "marks": 1.0,
+            "diagnostic_hint": "The flagellum is a whip-like tail that spins to propel the bacterium — it provides movement/motility.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The flagellum's function is locomotion — it rotates like a propeller to allow the bacterium to swim/move through fluids."
+            },
+            "options": {
+                "Provides movement / motility": "Provides movement / motility",
+                "Protects from phagocytes / immune system": "Protects from phagocytes / immune system",
+                "Provides structural support and shape": "Provides structural support and shape"
+            }
+        },
+        {
+            "id": "f2_flagellum_benefit",
+            "step_id": "flagellum",
+            "type": "choice",
+            "label": "Flagellum — benefit to infection (consequence): _____",
+            "expected": "Allows bacteria to reach host cells / infection site",
+            "marks": 1.0,
+            "diagnostic_hint": "Movement allows the bacterium to navigate to host cells/organs or the site of infection.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Explain WHY movement is useful for infection: it allows bacteria to reach/penetrate host tissue or navigate to target sites in the body."
+            },
+            "options": {
+                "Allows bacteria to reach host cells / infection site": "Allows bacteria to reach host cells / infection site",
+                "Allows bacteria to survive and multiply in the host": "Allows bacteria to survive and multiply in the host",
+                "Maintains bacterial integrity inside the host": "Maintains bacterial integrity inside the host"
+            }
+        },
+        {
+            "id": "f3_capsule_mechanism",
+            "step_id": "capsule",
+            "type": "choice",
+            "label": "Slime capsule — how it works (mechanism): _____",
+            "expected": "Protects from phagocytes / immune system",
+            "marks": 1.0,
+            "diagnostic_hint": "The slime capsule makes the bacterium difficult to engulf (phagocytose) — it protects against the host's immune system.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The slime capsule is a thick protective layer that prevents phagocytes (white blood cells) from engulfing and destroying the bacterium."
+            },
+            "options": {
+                "Provides movement / motility": "Provides movement / motility",
+                "Protects from phagocytes / immune system": "Protects from phagocytes / immune system",
+                "Provides structural support and shape": "Provides structural support and shape"
+            }
+        },
+        {
+            "id": "f4_capsule_benefit",
+            "step_id": "capsule",
+            "type": "choice",
+            "label": "Slime capsule — benefit to infection (consequence): _____",
+            "expected": "Allows bacteria to survive and multiply in the host",
+            "marks": 1.0,
+            "diagnostic_hint": "Escaping phagocytosis allows bacteria to survive and multiply inside the host, prolonging and worsening infection.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "State the consequence: because the capsule protects from phagocytes, bacteria can survive and multiply inside the host / remain infective for longer."
+            },
+            "options": {
+                "Allows bacteria to reach host cells / infection site": "Allows bacteria to reach host cells / infection site",
+                "Allows bacteria to survive and multiply in the host": "Allows bacteria to survive and multiply in the host",
+                "Maintains bacterial integrity inside the host": "Maintains bacterial integrity inside the host"
+            }
+        },
+        {
+            "id": "f5_wall_mechanism",
+            "step_id": "wall",
+            "type": "choice",
+            "label": "Cell wall — how it works (mechanism): _____",
+            "expected": "Provides structural support and shape",
+            "marks": 1.0,
+            "diagnostic_hint": "The cell wall provides structural support and protects the bacterium from osmotic pressure (bursting).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The cell wall maintains cell shape and resists osmotic pressure — it prevents the bacterial cell from swelling and bursting in hypotonic environments."
+            },
+            "options": {
+                "Provides movement / motility": "Provides movement / motility",
+                "Protects from phagocytes / immune system": "Protects from phagocytes / immune system",
+                "Provides structural support and shape": "Provides structural support and shape"
+            }
+        },
+        {
+            "id": "f6_wall_benefit",
+            "step_id": "wall",
+            "type": "choice",
+            "label": "Cell wall — benefit to infection (consequence): _____",
+            "expected": "Maintains bacterial integrity inside the host",
+            "marks": 1.0,
+            "diagnostic_hint": "By maintaining structural integrity, the cell wall keeps the bacterium alive in the hostile body environment, allowing it to continue infecting the host.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "State the consequence: the rigid wall keeps bacteria intact and viable inside the host / protects them from the host's defensive environment, allowing infection to continue."
+            },
+            "options": {
+                "Allows bacteria to reach host cells / infection site": "Allows bacteria to reach host cells / infection site",
+                "Allows bacteria to survive and multiply in the host": "Allows bacteria to survive and multiply in the host",
+                "Maintains bacterial integrity inside the host": "Maintains bacterial integrity inside the host"
+            }
+        }
+    ]
+}

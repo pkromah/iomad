@@ -1,0 +1,94 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q5ci", "PHY-JAN23-Q5cii"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q5(c)(i) and Q5(c)(ii)",
+        "subject": "Physics",
+        "topic": "Electricity — Charge Stored in Battery and Resistance",
+        "marks_total": 7,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Electric car battery charged at I=11A for t=8h. Q5ci 4m: Q=It=11×(8×3600)=316800C. Q5cii 3m: R=V/I=220/11=20Ω."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q5c(i/ii) — Electric Car Battery Charge and Resistance",
+        "text": "<p>The battery in an electric car can be charged by passing a current of <strong>11 A</strong> through it.</p><p><strong>(i)</strong> Calculate the charge stored in the battery after <strong>8 hours</strong>. <em>(4 marks)</em></p><p><strong>(ii)</strong> Calculate the resistance of the battery given that the voltage used is <strong>220 V</strong>. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q5c(i) — Charge stored:</strong></p><p>Q = It</p><p>Convert time: t = 8 h = 8 × 3600 = 28 800 s</p><p>Q = 11 × 28 800 = <strong>316 800 C ≈ 3.17 × 10⁵ C</strong></p><p><strong>Q5c(ii) — Resistance:</strong></p><p>R = V / I = 220 / 11 = <strong>20 Ω</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> I = 11 A | t = 8 h | V = 220 V<br><strong>Formulas:</strong> Q = It | R = V/I (Ohm's law)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_charge",
+            "label": "Calculate the charge stored after 8 hours. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step_resistance",
+            "label": "Calculate the resistance of the battery. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_time_s",
+            "step_id": "step_charge",
+            "type": "numberbox",
+            "label": "Time in seconds t = _____ s",
+            "expected": "28800",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "s",
+            "diagnostic_hint": "t = 8 hours × 3600 s/hour = 28 800 s",
+            "error_codes": {"SC_CALCULATION_ERROR": "Convert hours to seconds: t = 8 × 3600 = 28 800 s."}
+        },
+        {
+            "id": "f2_charge",
+            "step_id": "step_charge",
+            "type": "numberbox",
+            "label": "Charge stored Q = _____ C",
+            "expected": "316800",
+            "tolerance": 500,
+            "marks": 3.0,
+            "unit": "C",
+            "diagnostic_hint": "Q = I × t = 11 × 28 800 = 316 800 C",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use Q = It, where I is current in amperes and t is time in seconds.",
+                "SC_CALCULATION_ERROR": "Q = 11 × 28 800 = 316 800 C (≈ 3.17 × 10⁵ C)."
+            }
+        },
+        {
+            "id": "f3_resistance",
+            "step_id": "step_resistance",
+            "type": "numberbox",
+            "label": "Resistance R = _____ Ω",
+            "expected": "20",
+            "tolerance": 0.1,
+            "marks": 3.0,
+            "unit": "Ω",
+            "diagnostic_hint": "R = V/I = 220/11 = 20 Ω",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use Ohm's law: R = V/I, where V is voltage in volts and I is current in amperes.",
+                "SC_CALCULATION_ERROR": "R = 220 / 11 = 20 Ω."
+            }
+        }
+    ]
+}

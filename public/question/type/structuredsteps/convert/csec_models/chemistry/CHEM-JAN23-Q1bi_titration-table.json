@@ -1,0 +1,185 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN23-Q1bi"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q1(b)(i)",
+        "subject": "Chemistry",
+        "topic": "Quantitative Chemistry — Titration Data Recording",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Highest mark single table in the dataset. Students read burette meniscus values from Figure 1 and complete the 3×3 titration table. Continue with CHEM-JAN23-Q1b_moles-and-mass.json for parts (iii)(vi)(vii)."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q1b(i) — Titration Data Table",
+        "text": "<p>A titration was performed using dilute <strong>sulfuric acid (4.9 g dm⁻³)</strong> from a burette against <strong>sodium hydroxide solution</strong> in a conical flask, with methyl orange indicator.</p><p>The burette readings from Figure 1 are summarised below. Read each diagram carefully and complete the table.</p><table border='1' cellpadding='6' style='border-collapse:collapse;'><thead><tr><th>Burette Reading / cm³</th><th>Titration 1 (Rough)</th><th>Titration 2</th><th>Titration 3</th></tr></thead><tbody><tr><td>Final reading</td><td><em>(T1 final)</em></td><td><em>(T2 final)</em></td><td><em>(T3 final)</em></td></tr><tr><td>Initial reading</td><td><em>(T1 initial)</em></td><td><em>(T2 initial)</em></td><td><em>(T3 initial)</em></td></tr><tr><td>Volume of acid used</td><td><em>(T1 volume)</em></td><td><em>(T2 volume)</em></td><td><em>(T3 volume)</em></td></tr></tbody></table><p><strong>Burette readings from Figure 1:</strong><br>Titration 1: Initial = 0.5 cm³, Final = 25.5 cm³<br>Titration 2: Initial = 12.2 cm³, Final = 37.2 cm³<br>Titration 3: Initial = 15.5 cm³, Final = 40.5 cm³</p>",
+        "general_feedback": "<p><strong>Complete table:</strong></p><table border='1' cellpadding='6' style='border-collapse:collapse;'><thead><tr><th>Burette Reading / cm³</th><th>Titration 1</th><th>Titration 2</th><th>Titration 3</th></tr></thead><tbody><tr><td>Final reading</td><td>25.5</td><td>37.2</td><td>40.5</td></tr><tr><td>Initial reading</td><td>0.5</td><td>12.2</td><td>15.5</td></tr><tr><td>Volume of acid used</td><td>25.0</td><td>25.0</td><td>25.0</td></tr></tbody></table><p>Volumes are all 25.0 cm³ — Titrations 2 and 3 are concordant (within 0.1 cm³ of each other) and are used for the average.</p><p><strong>Key skill:</strong> Read from the bottom of the meniscus. Burette markings increase downward, so final reading > initial reading.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Burette reading rule:</strong> Always read from the bottom of the meniscus. Burette numbers increase downward — the final reading is always greater than the initial reading.<br><strong>Volume formula:</strong> Volume used = Final reading − Initial reading",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "finals",
+            "label": "Record the <strong>final burette readings</strong> for all three titrations. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "initials",
+            "label": "Record the <strong>initial burette readings</strong> for all three titrations. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "volumes",
+            "label": "Calculate the <strong>volume of acid used</strong> (final − initial) for each titration. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_t1_final",
+            "step_id": "finals",
+            "type": "numberbox",
+            "label": "Titration 1 — Final reading = _____ cm³",
+            "expected": "25.5",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 1 final: the meniscus is exactly halfway between 25 and 26 = 25.5 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Read from the BOTTOM of the meniscus. The final reading for Titration 1 is halfway between 25 and 26 = 25.5 cm³. Remember burette numbers increase going down."
+            }
+        },
+        {
+            "id": "f2_t2_final",
+            "step_id": "finals",
+            "type": "numberbox",
+            "label": "Titration 2 — Final reading = _____ cm³",
+            "expected": "37.2",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 2 final: the meniscus is two small increments below 37 = 37.2 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Each small division on a burette = 0.1 cm³. Two increments below 37 means 37 + 0.2 = 37.2 cm³."
+            }
+        },
+        {
+            "id": "f3_t3_final",
+            "step_id": "finals",
+            "type": "numberbox",
+            "label": "Titration 3 — Final reading = _____ cm³",
+            "expected": "40.5",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 3 final: the meniscus is halfway between 40 and 41 = 40.5 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Halfway between 40 and 41 = 40.5 cm³."
+            }
+        },
+        {
+            "id": "f4_t1_initial",
+            "step_id": "initials",
+            "type": "numberbox",
+            "label": "Titration 1 — Initial reading = _____ cm³",
+            "expected": "0.5",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 1 initial: the meniscus is halfway between 0 and 1 = 0.5 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The initial reading for Titration 1 is halfway between 0 and 1 = 0.5 cm³."
+            }
+        },
+        {
+            "id": "f5_t2_initial",
+            "step_id": "initials",
+            "type": "numberbox",
+            "label": "Titration 2 — Initial reading = _____ cm³",
+            "expected": "12.2",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 2 initial: the meniscus is two small increments below 12 = 12.2 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Two small divisions (each 0.1 cm³) below 12 = 12.2 cm³."
+            }
+        },
+        {
+            "id": "f6_t3_initial",
+            "step_id": "initials",
+            "type": "numberbox",
+            "label": "Titration 3 — Initial reading = _____ cm³",
+            "expected": "15.5",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Titration 3 initial: the meniscus is halfway between 15 and 16 = 15.5 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Halfway between 15 and 16 = 15.5 cm³."
+            }
+        },
+        {
+            "id": "f7_t1_volume",
+            "step_id": "volumes",
+            "type": "numberbox",
+            "label": "Titration 1 — Volume of acid used = _____ cm³",
+            "expected": "25.0",
+            "tolerance": 0.2,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Volume = Final − Initial = 25.5 − 0.5 = 25.0 cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Volume = Final reading − Initial reading = 25.5 − 0.5 = 25.0 cm³."
+            }
+        },
+        {
+            "id": "f8_t2_volume",
+            "step_id": "volumes",
+            "type": "numberbox",
+            "label": "Titration 2 — Volume of acid used = _____ cm³",
+            "expected": "25.0",
+            "tolerance": 0.2,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Volume = Final − Initial = 37.2 − 12.2 = 25.0 cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Volume = Final reading − Initial reading = 37.2 − 12.2 = 25.0 cm³."
+            }
+        },
+        {
+            "id": "f9_t3_volume",
+            "step_id": "volumes",
+            "type": "numberbox",
+            "label": "Titration 3 — Volume of acid used = _____ cm³",
+            "expected": "25.0",
+            "tolerance": 0.2,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Volume = Final − Initial = 40.5 − 15.5 = 25.0 cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Volume = Final reading − Initial reading = 40.5 − 15.5 = 25.0 cm³."
+            }
+        }
+    ]
+}

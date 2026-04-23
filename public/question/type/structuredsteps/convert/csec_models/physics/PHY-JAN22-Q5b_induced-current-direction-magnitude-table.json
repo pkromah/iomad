@@ -1,0 +1,149 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q5b"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q5(b)",
+        "subject": "Physics",
+        "topic": "Electromagnetism — Induced Current: Direction and Magnitude for Three Scenarios",
+        "marks_total": 6,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "6m: 3 rows × 2 columns (direction of induced current + change in magnitude), 1m per cell. Fig 7: N-pole moved toward coil → current A→B, magnitude doubles (faster/stronger). Fig 8: N-pole moved away from coil → current reverses B→A, magnitude doubles. Fig 9: magnet stationary inside coil → no current (none), magnitude unchanged. All fields changed to choice to eliminate keyboard friction."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q5b — Induced Current: Direction and Magnitude Table",
+        "text": "<p>Three figures (Figures 7, 8, and 9) show a bar magnet and a coil connected to an ammeter with terminals A and B.</p><ul><li><strong>Figure 7:</strong> The magnet is moved <em>towards</em> the coil at TWICE the original speed.</li><li><strong>Figure 8:</strong> The magnet is moved <em>away from</em> the coil at TWICE the original speed.</li><li><strong>Figure 9:</strong> The magnet is held <em>stationary</em> inside the coil.</li></ul><p>Complete Table 2 to show the direction of the induced current through the ammeter and the change in the magnitude of the current compared with the original.</p><table><thead><tr><th>Figure</th><th>Direction of induced current</th><th>Change in magnitude</th></tr></thead><tbody><tr><td>Figure 7</td><td>[[1]]</td><td>[[2]]</td></tr><tr><td>Figure 8</td><td>[[3]]</td><td>[[4]]</td></tr><tr><td>Figure 9</td><td>[[5]]</td><td>[[6]]</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Electromagnetic induction — key principles:</strong></p><p><strong>Faraday's Law:</strong> The magnitude of the induced EMF is proportional to the rate of change of magnetic flux. Faster movement or a stronger field → greater induced EMF and current.</p><p><strong>Lenz's Law:</strong> The direction of the induced current opposes the change causing it (like a braking force).</p><table><thead><tr><th>Figure</th><th>Scenario</th><th>Direction</th><th>Magnitude change</th></tr></thead><tbody><tr><td>Fig 7</td><td>N-pole moved TOWARD coil at 2× speed</td><td>A→B</td><td>Doubles (2× original speed → 2× rate of flux change)</td></tr><tr><td>Fig 8</td><td>N-pole moved AWAY from coil at 2× speed</td><td>B→A</td><td>Doubles (moving away reverses direction; same speed as Fig 7)</td></tr><tr><td>Fig 9</td><td>Magnet STATIONARY inside coil</td><td>None (no current)</td><td>Unchanged — remains zero (no flux change → no induced EMF)</td></tr></tbody></table><p><em>Why direction reverses in Fig 8:</em> Moving the magnet away reduces the flux through the coil — the induced current flows in the opposite direction to oppose this decrease (Lenz's Law).</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Faraday's Law:</strong> EMF ∝ rate of change of flux &nbsp;|&nbsp; Faster speed → greater EMF/current<br><strong>Lenz's Law:</strong> Induced current opposes the change causing it → direction reverses when magnet moves away",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_fig7",
+            "label": "Complete Fig 7 row: magnet moved toward coil at 2× speed. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_fig8",
+            "label": "Complete Fig 8 row: magnet moved away from coil at 2× speed. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_fig9",
+            "label": "Complete Fig 9 row: magnet stationary inside coil. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_fig7_direction",
+            "step_id": "step_fig7",
+            "type": "choice",
+            "label": "Fig 7 — direction of induced current",
+            "expected": "A→B",
+            "options": {
+                "A→B": "A→B",
+                "B→A": "B→A",
+                "None": "None (no current)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "When the N-pole moves toward the coil, the induced current flows A→B (by Lenz's Law, opposing the increasing flux).",
+            "error_codes": {"SC_METHOD_ERROR": "Fig 7: N-pole moves TOWARD coil → flux through coil increases → induced current flows in the direction that opposes the increase → current direction is A→B through the external ammeter."}
+        },
+        {
+            "id": "f2_fig7_magnitude",
+            "step_id": "step_fig7",
+            "type": "choice",
+            "label": "Fig 7 — change in magnitude compared with original",
+            "expected": "Doubles",
+            "options": {
+                "Doubles": "Doubles (2× original)",
+                "Halves": "Halves (½× original)",
+                "Unchanged": "Unchanged (remains the same)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Moving at twice the speed doubles the rate of flux change, so by Faraday's Law the induced EMF and current double.",
+            "error_codes": {"SC_METHOD_ERROR": "Faraday's Law: induced EMF ∝ rate of change of magnetic flux. Moving at 2× the original speed doubles the rate of flux change → the induced current doubles."}
+        },
+        {
+            "id": "f3_fig8_direction",
+            "step_id": "step_fig8",
+            "type": "choice",
+            "label": "Fig 8 — direction of induced current",
+            "expected": "B→A",
+            "options": {
+                "A→B": "A→B",
+                "B→A": "B→A",
+                "None": "None (no current)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "When the N-pole moves away from the coil, the flux is decreasing, so the induced current reverses direction: B→A.",
+            "error_codes": {"SC_METHOD_ERROR": "Fig 8: N-pole moves AWAY from coil → flux decreases → Lenz's Law says induced current opposes the decrease → current reverses direction compared to Fig 7 → current is B→A."}
+        },
+        {
+            "id": "f4_fig8_magnitude",
+            "step_id": "step_fig8",
+            "type": "choice",
+            "label": "Fig 8 — change in magnitude compared with original",
+            "expected": "Doubles",
+            "options": {
+                "Doubles": "Doubles (2× original)",
+                "Halves": "Halves (½× original)",
+                "Unchanged": "Unchanged (remains the same)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Moving away at 2× speed also doubles the rate of flux change — same magnitude increase as Fig 7, just reversed direction.",
+            "error_codes": {"SC_METHOD_ERROR": "Fig 8: same speed (2× original) as Fig 7, so the magnitude of the induced current is also doubled. Only the direction differs."}
+        },
+        {
+            "id": "f5_fig9_direction",
+            "step_id": "step_fig9",
+            "type": "choice",
+            "label": "Fig 9 — direction of induced current",
+            "expected": "None",
+            "options": {
+                "A→B": "A→B",
+                "B→A": "B→A",
+                "None": "None (no current)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "A stationary magnet produces no change in flux → no induced EMF → no current flows.",
+            "error_codes": {"SC_METHOD_ERROR": "Fig 9: magnet is stationary → no change in magnetic flux through the coil → no induced EMF (Faraday's Law: EMF = 0 when rate of flux change = 0) → no current flows."}
+        },
+        {
+            "id": "f6_fig9_magnitude",
+            "step_id": "step_fig9",
+            "type": "choice",
+            "label": "Fig 9 — change in magnitude compared with original",
+            "expected": "Unchanged",
+            "options": {
+                "Doubles": "Doubles (2× original)",
+                "Halves": "Halves (½× original)",
+                "Unchanged": "Unchanged (remains zero)"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "No current flows in Fig 9 — the magnitude is zero/unchanged from the stationary baseline.",
+            "error_codes": {"SC_METHOD_ERROR": "Fig 9: stationary magnet → no induced current → the magnitude is unchanged at zero. There is no current to have a magnitude."}
+        }
+    ]
+}

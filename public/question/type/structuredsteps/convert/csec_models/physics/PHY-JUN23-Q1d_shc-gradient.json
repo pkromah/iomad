@@ -1,0 +1,88 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q1d"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q1(d)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Gradient of Temperature-Time Graph (SHC Experiment)",
+        "marks_total": 5,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Data: θ/°C = {25.3, 30.5, 34.9, 41.2, 46.4, 51.5, 56.8} at t/s = {0, 60, 120, 180, 240, 300, 360}. Heater P=105W, m=300g liquid. Using extreme points: G = (56.8−25.3)/(360−0) = 31.5/360 = 0.0875 °C/s. Wide tolerances accommodate own-figure from student-plotted best-fit line. Follows Q1c (plotting — not auto-gradeable)."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q1d — Gradient of θ vs t Graph",
+        "text": "<p>An experiment is conducted to determine the specific heat capacity of <strong>300 g</strong> of a liquid using a heater with power rating <strong>105 W</strong>. Temperature data from the experiment is shown in Table 1 below:</p><table border='1' style='border-collapse:collapse; text-align:center; width:60%; margin:0.5em auto;'><tr><th>Temperature θ / °C</th><th>Time t / s</th></tr><tr><td>25.3</td><td>0</td></tr><tr><td>30.5</td><td>60</td></tr><tr><td>34.9</td><td>120</td></tr><tr><td>41.2</td><td>180</td></tr><tr><td>46.4</td><td>240</td></tr><tr><td>51.5</td><td>300</td></tr><tr><td>56.8</td><td>360</td></tr></table><p>Calculate the <strong>gradient G</strong> of the temperature-time graph using two well-separated points on your best-fit line. (5 marks)</p>",
+        "general_feedback": "<p><strong>Model gradient (using extreme data points):</strong><br>Δθ = 56.8 − 25.3 = 31.5 °C<br>Δt = 360 − 0 = 360 s<br>G = Δθ / Δt = 31.5 / 360 = <strong>0.0875 °C s⁻¹</strong></p><p><em>Own-figure marking:</em> Full marks if gradient is correctly calculated from two clearly identified, well-separated points on the best-fit line. Accepted range: 0.080–0.095 °C/s.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Gradient formula:</strong> G = Δθ / Δt (rise over run from two well-separated points on the best-fit line)<br><strong>Data range:</strong> θ from 25.3°C (t=0) to 56.8°C (t=360s) — use points near the ends of the line for the most accurate gradient",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_gradient",
+            "label": "Calculate the gradient G of the θ vs t graph using two well-separated points. (5 marks)",
+            "type": "computational",
+            "marks": 5
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_delta_theta",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "Δθ (change in temperature between your chosen points) = _____ °C",
+            "expected": "31.5",
+            "tolerance": 5.0,
+            "marks": 2.0,
+            "unit": "°C",
+            "diagnostic_hint": "Using extreme points: Δθ = 56.8 − 25.3 = 31.5 °C",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Choose two points far apart on the best-fit line. Δθ = upper temperature − lower temperature from your chosen pair."
+            }
+        },
+        {
+            "id": "f2_delta_t",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "Δt (change in time between your chosen points) = _____ s",
+            "expected": "360",
+            "tolerance": 60.0,
+            "marks": 1.0,
+            "unit": "s",
+            "diagnostic_hint": "Δt = t₂ − t₁ = 360 − 0 = 360 s (using extreme points)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Δt = the difference in time values for your two chosen points on the best-fit line."
+            }
+        },
+        {
+            "id": "f3_gradient",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "Gradient G = Δθ/Δt = _____ °C s⁻¹",
+            "expected": "0.0875",
+            "tolerance": 0.0075,
+            "marks": 2.0,
+            "unit": "°C s⁻¹",
+            "diagnostic_hint": "G = 31.5 / 360 = 0.0875 °C s⁻¹ (accept 0.080–0.095 °C/s from own-figure marking)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "G = Δθ ÷ Δt = 31.5 ÷ 360 = 0.0875 °C/s. Divide the change in temperature by the change in time."
+            }
+        }
+    ]
+}

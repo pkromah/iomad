@@ -1,0 +1,111 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY23-Q1aiii"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2023",
+        "question_ref": "Q1(a)(iii)",
+        "subject": "Biology",
+        "topic": "Cell Biology — Similarities Between Plant and Animal Cells",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: list TWO similarities between plant and animal cells. 2 slots, 1m each. Multiple correct: both have nucleus, cell membrane, cytoplasm, mitochondria, ribosomes, DNA. Distractors are features UNIQUE to plants (cell wall, chloroplasts, large vacuole) or UNIQUE to animals (no cell wall, no chloroplasts, centrioles)."
+    },
+    "question": {
+        "name": "CSEC Bio May 2023 Q1a(iii) — Two Similarities Between Plant Cell and Animal Cell",
+        "text": "<p>List TWO similarities between the plant cell and the animal cell shown in the micrographs:</p><p>Similarity 1: [[1]]</p><p>Similarity 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Similarities between plant cells and animal cells:</strong></p><p>Both types of cell contain:</p><ul><li><strong>Nucleus</strong> — contains DNA; controls cell activities</li><li><strong>Cell membrane</strong> — controls what enters and leaves the cell</li><li><strong>Cytoplasm</strong> — liquid medium where chemical reactions occur</li><li><strong>Mitochondria</strong> — site of aerobic respiration (produces ATP)</li><li><strong>Ribosomes</strong> — site of protein synthesis</li></ul><p><em>NOT similarities:</em> cell wall (plant only), chloroplasts (plant only), large central vacuole (plant only), centrioles (animal only in most cases).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Similarity 1: [[1]]</p><p>Similarity 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Both have a nucleus",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a cell membrane",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have cytoplasm",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have mitochondria",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a cell wall",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have chloroplasts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have a large central vacuole",
+                        "correct": false
+                    }
+                ],
+                "label": "First similarity between plant cell and animal cell",
+                "diagnostic_hint": "Both plant and animal cells are eukaryotic. Shared structures include: nucleus (contains DNA), cell membrane (controls entry/exit), cytoplasm (site of reactions), and mitochondria (energy production)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Both have a nucleus",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a cell membrane",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have cytoplasm",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have mitochondria",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a cell wall",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have chloroplasts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have a large central vacuole",
+                        "correct": false
+                    }
+                ],
+                "label": "Second similarity between plant cell and animal cell (different from first)",
+                "diagnostic_hint": "Choose a different shared structure. Structures found ONLY in plants (cell wall, chloroplasts, large central vacuole) are NOT similarities — they are differences."
+            }
+        ],
+        "word_bank": [
+            "Both have a nucleus",
+            "Both have a cell membrane",
+            "Both have cytoplasm",
+            "Both have mitochondria",
+            "Both have a cell wall",
+            "Both have chloroplasts",
+            "Both have a large central vacuole"
+        ],
+        "word_bank_note": "7 tokens for 2 slots. 4 correct similarities (any 2 of 4 earn full marks). 'Cell wall' is a plant-only feature (not present in animal cells). 'Chloroplasts' are plant-only (or some protists). 'Large central vacuole' is a plant feature — animal cells have small, temporary vacuoles only. The 3 false tokens represent the three classic plant-specific structures that students may incorrectly believe both cell types share."
+    }
+}

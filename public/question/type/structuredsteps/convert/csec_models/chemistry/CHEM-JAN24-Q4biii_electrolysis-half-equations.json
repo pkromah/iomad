@@ -1,0 +1,126 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN24-Q4biii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q4(b)(iii)",
+        "subject": "Chemistry",
+        "topic": "Electrochemistry — Half-Equations at Cathode and Anode (Electrolysis of HCl)",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "4m: write ionic half-equations at cathode and anode during electrolysis of dilute hydrochloric acid. Cathode (reduction): 2H⁺ + 2e⁻ → H₂ (2m). Anode (oxidation): 2Cl⁻ → Cl₂ + 2e⁻ (2m). Marks per half-equation: 1m correct species, 1m balanced electrons. Context: electrolysis of HCl(aq)."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q4b(iii) — Half-Equations at Cathode and Anode",
+        "text": "<p>During electrolysis of <strong>dilute hydrochloric acid (HCl)</strong>, ions are discharged at each electrode.</p><p>Write <strong>ionic half-equations</strong> for the reactions occurring at each electrode. <em>(4 marks)</em></p><p>Cathode (negative electrode): <em>(2 marks)</em></p><p>Anode (positive electrode): <em>(2 marks)</em></p>",
+        "general_feedback": "<p><strong>Electrolysis of dilute hydrochloric acid:</strong></p><p><strong>Ions present:</strong> H⁺(aq), Cl⁻(aq), OH⁻(aq) (from water), Na⁺ or other cations if present</p><p><strong>Cathode (negative electrode — REDUCTION, OIL RIG: gain electrons):</strong></p><p style=\"font-size:1.1em;\"><strong>2H⁺(aq) + 2e⁻ → H₂(g)</strong></p><p>H⁺ ions are attracted to the negative electrode. They gain electrons and are reduced to hydrogen gas.</p><p><strong>Anode (positive electrode — OXIDATION, OIL RIG: lose electrons):</strong></p><p style=\"font-size:1.1em;\"><strong>2Cl⁻(aq) → Cl₂(g) + 2e⁻</strong></p><p>Cl⁻ ions are attracted to the positive electrode. They lose electrons and are oxidised to chlorine gas.</p><p><em>Memory aid (OIL RIG):</em> Oxidation Is Loss of electrons; Reduction Is Gain of electrons.</p><p><em>Note:</em> In dilute acid, OH⁻ ions are also present but Cl⁻ is preferentially discharged at the anode in concentrated acid. In dilute HCl, both Cl₂ and O₂ may form at the anode, but the expected CSEC answer is Cl₂.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Cathode (−):</strong> positive ions (cations) attracted → gain electrons → REDUCTION<br><strong>Anode (+):</strong> negative ions (anions) attracted → lose electrons → OXIDATION<br><strong>Ions in HCl(aq):</strong> H⁺ and Cl⁻",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_cathode",
+            "label": "Write the half-equation at the cathode. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_anode",
+            "label": "Write the half-equation at the anode. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_cathode_species",
+            "step_id": "step_cathode",
+            "type": "choice",
+            "label": "Cathode: ion discharged and product formed = _____",
+            "expected": "H⁺ → H₂ (hydrogen gas produced)",
+            "marks": 1.0,
+            "diagnostic_hint": "At the cathode, H⁺ ions from the acid are attracted, gain electrons, and are reduced to H₂ gas.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At the cathode (negative electrode), positive ions (cations) are discharged. In HCl solution, H⁺ ions are attracted to the cathode, gain electrons (reduction), and form hydrogen gas H₂."
+            },
+            "options": {
+                "H⁺ → H₂ (hydrogen gas produced)": "H⁺ → H₂ (hydrogen gas produced)",
+                "Cl⁻ → Cl₂ (chlorine gas produced)": "Cl⁻ → Cl₂ (chlorine gas produced)",
+                "Na⁺ → Na (sodium metal deposited)": "Na⁺ → Na (sodium metal deposited)",
+                "OH⁻ → O₂ (oxygen gas produced)": "OH⁻ → O₂ (oxygen gas produced)"
+            }
+        },
+        {
+            "id": "f2_cathode_balanced",
+            "step_id": "step_cathode",
+            "type": "choice",
+            "label": "Balanced cathode half-equation (with electrons): _____",
+            "expected": "2H⁺(aq) + 2e⁻ → H₂(g)",
+            "marks": 1.0,
+            "diagnostic_hint": "2H⁺ + 2e⁻ → H₂. Two hydrogen ions each gain one electron to form one H₂ molecule. Charge: left = 2(+1) + 2(−1) = 0; right = 0 ✓.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Cathode half-equation: 2H⁺(aq) + 2e⁻ → H₂(g). Check charge balance: left = 2(+) + 2(−) = 0; right = 0 ✓. Check atom balance: 2H left, 2H right ✓."
+            },
+            "options": {
+                "2H⁺(aq) + 2e⁻ → H₂(g)": "2H⁺(aq) + 2e⁻ → H₂(g)",
+                "H⁺(aq) + e⁻ → H(g)": "H⁺(aq) + e⁻ → H(g)",
+                "2H⁺(aq) → H₂(g) + 2e⁻": "2H⁺(aq) → H₂(g) + 2e⁻",
+                "H₂(g) + 2e⁻ → 2H⁺(aq)": "H₂(g) + 2e⁻ → 2H⁺(aq)"
+            }
+        },
+        {
+            "id": "f3_anode_species",
+            "step_id": "step_anode",
+            "type": "choice",
+            "label": "Anode: ion discharged and product formed = _____",
+            "expected": "Cl⁻ → Cl₂ (chlorine gas produced)",
+            "marks": 1.0,
+            "diagnostic_hint": "At the anode, Cl⁻ ions are attracted, lose electrons, and are oxidised to Cl₂ gas.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At the anode (positive electrode), negative ions (anions) are discharged. In HCl solution, Cl⁻ ions are attracted to the anode, lose electrons (oxidation), and form chlorine gas Cl₂."
+            },
+            "options": {
+                "H⁺ → H₂ (hydrogen gas produced)": "H⁺ → H₂ (hydrogen gas produced)",
+                "Cl⁻ → Cl₂ (chlorine gas produced)": "Cl⁻ → Cl₂ (chlorine gas produced)",
+                "Na⁺ → Na (sodium metal deposited)": "Na⁺ → Na (sodium metal deposited)",
+                "OH⁻ → O₂ (oxygen gas produced)": "OH⁻ → O₂ (oxygen gas produced)"
+            }
+        },
+        {
+            "id": "f4_anode_balanced",
+            "step_id": "step_anode",
+            "type": "choice",
+            "label": "Balanced anode half-equation (with electrons): _____",
+            "expected": "2Cl⁻(aq) → Cl₂(g) + 2e⁻",
+            "marks": 1.0,
+            "diagnostic_hint": "2Cl⁻ → Cl₂ + 2e⁻. Two chloride ions each lose one electron to form one Cl₂ molecule. Charge: left = 2(−1) = −2; right = 2(−1) = −2 ✓.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Anode half-equation: 2Cl⁻(aq) → Cl₂(g) + 2e⁻. Check charge balance: left = 2(−1) = −2; right = 0 + 2(−1) = −2 ✓. Check atom balance: 2Cl left, 2Cl right ✓."
+            },
+            "options": {
+                "2Cl⁻(aq) → Cl₂(g) + 2e⁻": "2Cl⁻(aq) → Cl₂(g) + 2e⁻",
+                "Cl₂(g) + 2e⁻ → 2Cl⁻(aq)": "Cl₂(g) + 2e⁻ → 2Cl⁻(aq)",
+                "2Cl⁻(aq) + 2e⁻ → Cl₂(g)": "2Cl⁻(aq) + 2e⁻ → Cl₂(g)",
+                "Cl⁻(aq) → Cl₂(g) + e⁻": "Cl⁻(aq) → Cl₂(g) + e⁻"
+            }
+        }
+    ]
+}

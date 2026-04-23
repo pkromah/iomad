@@ -1,0 +1,115 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q2ci", "PHY-JUN23-Q2cii", "PHY-JUN23-Q2ciii"],
+        "source_paper": "CSEC Physics Paper 02 05 June 2023",
+        "question_ref": "Q2(c)",
+        "subject": "Physics",
+        "topic": "Energy — Kinetic Energy, Power, Efficiency",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Wind turbines are used across Caribbean islands as renewable energy sources",
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q2c — Wind Turbine Efficiency",
+        "text": "<p>A wind turbine is used in some Caribbean countries as an alternative energy source. The mass of air passing through the circular area swept by the turbine blades <strong>every second</strong> is <strong>8.5 kg</strong>, and its kinetic energy during this time is <strong>2 500 J</strong>.</p><p>The output power of the generator is <strong>1 350 W</strong>.</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>(i) KE = ½mv² → v = √(2KE/m) = √(2 × 2500 / 8.5) = √(588.24) = <strong>24.2 m s⁻¹</strong> (accept 24–25)<br>(ii) P_input = KE per second = 2500 J / 1 s = <strong>2 500 W</strong><br>(iii) Efficiency = (P_output / P_input) × 100 = (1350 / 2500) × 100 = <strong>54%</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Mass of air per second m = 8.5 kg &nbsp;|&nbsp; KE per second = 2 500 J &nbsp;|&nbsp; P<sub>output</sub> = 1 350 W<br><strong>Formulas:</strong> KE = ½mv² &nbsp;&nbsp; Efficiency = (P<sub>out</sub> / P<sub>in</sub>) × 100%",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Calculate the <strong>speed of the air</strong> passing through the turbine blades. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step2",
+            "label": "Calculate the <strong>input power</strong> of the air. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step3",
+            "label": "Calculate the <strong>efficiency</strong> of the wind turbine. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_rearrange",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Rearrange KE = ½mv² to find v²: &nbsp; v² = _____",
+            "expected": "588.24",
+            "tolerance": 5,
+            "marks": 1.0,
+            "unit": "m²/s²",
+            "diagnostic_hint": "v² = 2 × KE / m = 2 × 2500 / 8.5 = 588.24",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Rearrange KE = ½mv² → v² = 2×KE ÷ m = 2×2500 ÷ 8.5"
+            }
+        },
+        {
+            "id": "f2_speed",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Speed of air v = _____ m s⁻¹",
+            "expected": "24.25",
+            "tolerance": 0.5,
+            "marks": 2.0,
+            "unit": "m/s",
+            "diagnostic_hint": "v = √(588.24) ≈ 24.2 m s⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "v = √(v²) = √(588.24) ≈ 24.2 m s⁻¹. Remember to take the square root."
+            }
+        },
+        {
+            "id": "f3_P_in",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Input power P<sub>input</sub> = _____ W",
+            "expected": "2500",
+            "tolerance": 25,
+            "marks": 2.0,
+            "unit": "W",
+            "diagnostic_hint": "Input power = KE transferred per second = 2500 J/s = 2500 W",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Power = energy per unit time. The KE given (2500 J) is already per second, so P_input = 2500 W."
+            }
+        },
+        {
+            "id": "f4_efficiency",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Efficiency = _____ %",
+            "expected": "54",
+            "tolerance": 1,
+            "marks": 3.0,
+            "unit": "%",
+            "diagnostic_hint": "Efficiency = (P_out / P_in) × 100 = (1350 / 2500) × 100 = 54%",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Efficiency (%) = output power ÷ input power × 100 = 1350 ÷ 2500 × 100",
+                "SC_FORMULA_SELECTION_ERROR": "Efficiency = useful output power / total input power. Do not use P_in / P_out."
+            }
+        }
+    ]
+}

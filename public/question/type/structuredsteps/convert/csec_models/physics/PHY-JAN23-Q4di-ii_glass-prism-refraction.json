@@ -1,0 +1,122 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q4di", "PHY-JAN23-Q4dii"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q4(d)(i) and Q4(d)(ii)",
+        "subject": "Physics",
+        "topic": "Optics — Snell's Law: Refraction Angle in Glass and Critical Angle for Glass-Air",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Figure 7: triangular glass prism. Ray strikes face XY at S; angle between ray and face XY = 55°, so angle of incidence = 90° − 55° = 35°. Refractive index n = 1.5. Q4d(i): find refraction angle in glass. Q4d(iii) (1m, identify c in diagram) is not auto-gradeable — excluded."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q4d(i/ii) — Refraction in Glass Prism and Critical Angle",
+        "text": "<p>A ray of red light strikes the face XY of a glass prism at point S (Figure 7). The angle between the incident ray and the face XY is <strong>55°</strong>. The refractive index of the glass for red light is <strong>n = 1.5</strong>.</p><p><strong>Part (d)(i):</strong> Calculate the angle of refraction in the glass at S. (3 marks)</p><p><strong>Part (d)(ii):</strong> Calculate the critical angle, <em>c</em>, for glass to air. (3 marks)</p>",
+        "general_feedback": "<p><strong>Q4d(i) — Angle of refraction:</strong><br>The angle of incidence = 90° − 55° = 35° (angle measured from the normal, not the surface)<br>Snell's Law: n₁ sin(θ₁) = n₂ sin(θ₂)<br>1.0 × sin(35°) = 1.5 × sin(θ₂)<br>sin(θ₂) = 0.5736 / 1.5 = 0.3824<br>θ₂ = arcsin(0.3824) = <strong>22.5°</strong></p><p><strong>Q4d(ii) — Critical angle:</strong><br>At the critical angle, the refracted ray travels along the glass-air boundary (θ_refracted = 90°).<br>sin(c) = 1/n = 1/1.5 = 0.6667<br>c = arcsin(0.6667) = <strong>41.8°</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Angle between ray and face XY = 55° &nbsp;|&nbsp; n = 1.5 (glass)<br><strong>Key step:</strong> Angle of incidence at S = 90° − 55° = 35° (angle is measured from the normal, not the surface)<br><strong>Snell's Law:</strong> n₁ sin(θ₁) = n₂ sin(θ₂) &nbsp;|&nbsp; <strong>Critical angle:</strong> sin(c) = 1/n (when n₁ = glass, n₂ = air)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_refraction",
+            "label": "Q4d(i) — Calculate the angle of refraction in the glass at S. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_critical",
+            "label": "Q4d(ii) — Calculate the critical angle c for glass to air. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_angle_incidence",
+            "step_id": "step_refraction",
+            "type": "numberbox",
+            "label": "Angle of incidence θ₁ at S = _____ °",
+            "expected": "35",
+            "tolerance": 0.5,
+            "marks": 1.0,
+            "unit": "°",
+            "diagnostic_hint": "θ₁ = 90° − 55° = 35° (the 55° is measured from the face, so the angle from the normal = 90° − 55°)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The angle of incidence is measured from the NORMAL (a line perpendicular to the surface). Since the ray makes 55° with the face itself, the angle from the normal = 90° − 55° = 35°."
+            }
+        },
+        {
+            "id": "f2_sin_theta2",
+            "step_id": "step_refraction",
+            "type": "numberbox",
+            "label": "sin(θ₂) = sin(35°)/1.5 = _____",
+            "expected": "0.3824",
+            "tolerance": 0.005,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "sin(θ₂) = sin(35°)/n = 0.5736/1.5 = 0.3824",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Snell's Law: sin(θ₂) = n₁ × sin(θ₁) / n₂ = 1.0 × sin(35°) / 1.5 = 0.5736 / 1.5 = 0.3824."
+            }
+        },
+        {
+            "id": "f3_theta2",
+            "step_id": "step_refraction",
+            "type": "numberbox",
+            "label": "Angle of refraction θ₂ = _____ °",
+            "expected": "22.48",
+            "tolerance": 0.5,
+            "marks": 1.0,
+            "unit": "°",
+            "diagnostic_hint": "θ₂ = arcsin(0.3824) = 22.5°",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "θ₂ = arcsin(0.3824) ≈ 22.5°. Use the inverse sine (sin⁻¹) function on your calculator."
+            }
+        },
+        {
+            "id": "f4_sin_c",
+            "step_id": "step_critical",
+            "type": "numberbox",
+            "label": "sin(c) = 1/n = _____",
+            "expected": "0.6667",
+            "tolerance": 0.002,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "sin(c) = 1/n = 1/1.5 = 0.6667",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "At the critical angle: n₁ × sin(c) = n₂ × sin(90°) = 1 × 1. So sin(c) = n₂/n₁ = 1/1.5 = 0.6667 (for glass-to-air, n₁ = 1.5, n₂ = 1.0)."
+            }
+        },
+        {
+            "id": "f5_critical_angle",
+            "step_id": "step_critical",
+            "type": "numberbox",
+            "label": "Critical angle c = _____ °",
+            "expected": "41.81",
+            "tolerance": 0.5,
+            "marks": 2.0,
+            "unit": "°",
+            "diagnostic_hint": "c = arcsin(1/1.5) = arcsin(0.6667) = 41.8°",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c = arcsin(1/1.5) = arcsin(0.6667) ≈ 41.8°. Use sin⁻¹ on your calculator."
+            }
+        }
+    ]
+}

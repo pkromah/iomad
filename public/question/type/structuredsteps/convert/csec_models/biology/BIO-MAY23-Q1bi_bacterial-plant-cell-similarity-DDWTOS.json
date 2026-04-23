@@ -1,0 +1,70 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY23-Q1bi"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2023",
+        "question_ref": "Q1(b)(i)",
+        "subject": "Biology",
+        "topic": "Cell Biology — Similarity Between Bacterial Cell and Plant Cell",
+        "marks_total": 1,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "1m: ONE similarity between bacterial cell and plant cell. Key answer: both have a cell wall. Both also have cell membrane and ribosomes — all accepted. Distractors: nucleus (bacteria have nucleoid, not membrane-bound nucleus), chloroplasts (bacteria lack these except cyanobacteria), mitochondria (bacteria lack these)."
+    },
+    "question": {
+        "name": "CSEC Bio May 2023 Q1b(i) — One Similarity Between Bacterial Cell and Plant Cell",
+        "text": "<p>Identify ONE similarity between the bacterial cell and a plant cell:</p><p>Similarity: [[1]]</p>",
+        "general_feedback": "<p><strong>Similarities between bacterial and plant cells:</strong></p><ul><li><strong>Both have a cell wall</strong> — (plant: cellulose; bacteria: peptidoglycan) — the classic CSEC answer</li><li><strong>Both have a cell membrane</strong> — controls what enters and leaves</li><li><strong>Both have ribosomes</strong> — for protein synthesis (though bacterial ribosomes are smaller, 70S vs 80S)</li></ul><p><em>Key differences:</em> Bacteria lack a membrane-bound nucleus (they have a nucleoid region), chloroplasts, and mitochondria. These are present in plant cells but absent in bacteria.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Similarity: [[1]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Both have a cell wall",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a cell membrane",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have ribosomes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both have a nucleus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have chloroplasts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both have mitochondria",
+                        "correct": false
+                    }
+                ],
+                "label": "One similarity between a bacterial cell and a plant cell",
+                "diagnostic_hint": "Both bacterial and plant cells have a cell wall (though bacterial walls are peptidoglycan and plant walls are cellulose). Both also have a cell membrane and ribosomes. Bacteria lack a nucleus, chloroplasts, and mitochondria — these are NOT similarities."
+            }
+        ],
+        "word_bank": [
+            "Both have a cell wall",
+            "Both have a cell membrane",
+            "Both have ribosomes",
+            "Both have a nucleus",
+            "Both have chloroplasts",
+            "Both have mitochondria"
+        ],
+        "word_bank_note": "6 tokens for 1 slot. 3 correct (any 1 earns the mark). 'Cell wall' is the standard CSEC answer — the most visible similarity from diagram context. 'Cell membrane' and 'ribosomes' are also valid and accepted. 'Nucleus' is wrong — bacteria have a nucleoid (no membrane-bound nucleus). 'Chloroplasts' are absent in bacteria (except cyanobacteria, not tested at CSEC). 'Mitochondria' are absent in bacteria — bacteria carry out respiration across their cell membrane."
+    }
+}

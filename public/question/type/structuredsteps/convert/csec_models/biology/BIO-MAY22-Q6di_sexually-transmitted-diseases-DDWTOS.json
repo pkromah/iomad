@@ -1,0 +1,111 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q6di"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q6(d)(i)",
+        "subject": "Biology",
+        "topic": "Reproduction — Sexually Transmitted Diseases (STDs)",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: state TWO sexually transmitted diseases. 5 correct options for 2 slots (any 2 of 5). 1m per slot. Common CSEC answers: Gonorrhoea, Syphilis, Chlamydia, HIV/AIDS, Genital Herpes."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q6d(i) — State Two Sexually Transmitted Diseases",
+        "text": "<p>State TWO sexually transmitted diseases (STDs):</p><p>STD 1: [[1]]</p><p>STD 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Sexually Transmitted Diseases (STDs):</strong></p><p>Any TWO of the following:</p><ul><li><strong>Gonorrhoea</strong> — bacterial STD caused by <em>Neisseria gonorrhoeae</em>; causes discharge and burning urination</li><li><strong>Syphilis</strong> — bacterial STD caused by <em>Treponema pallidum</em>; progresses in stages</li><li><strong>Chlamydia</strong> — bacterial STD; often asymptomatic; can cause infertility</li><li><strong>HIV/AIDS</strong> — viral STD; attacks the immune system; no cure, managed with antiretroviral drugs</li><li><strong>Genital Herpes</strong> — viral STD caused by Herpes Simplex Virus (HSV-2)</li></ul><p><em>Prevention:</em> Condoms are the only barrier method that protects against both pregnancy and STDs.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>STD 1: [[1]]</p><p>STD 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Gonorrhoea",
+                        "correct": true
+                    },
+                    {
+                        "text": "Syphilis",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chlamydia",
+                        "correct": true
+                    },
+                    {
+                        "text": "HIV/AIDS",
+                        "correct": true
+                    },
+                    {
+                        "text": "Genital Herpes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Malaria",
+                        "correct": false
+                    },
+                    {
+                        "text": "Dengue fever",
+                        "correct": false
+                    }
+                ],
+                "label": "First sexually transmitted disease (STD)",
+                "diagnostic_hint": "STDs are infections spread primarily through sexual contact. CSEC-expected examples include Gonorrhoea, Syphilis, Chlamydia, HIV/AIDS, and Genital Herpes. Malaria and Dengue are vector-borne, not sexually transmitted."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Gonorrhoea",
+                        "correct": true
+                    },
+                    {
+                        "text": "Syphilis",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chlamydia",
+                        "correct": true
+                    },
+                    {
+                        "text": "HIV/AIDS",
+                        "correct": true
+                    },
+                    {
+                        "text": "Genital Herpes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Malaria",
+                        "correct": false
+                    },
+                    {
+                        "text": "Dengue fever",
+                        "correct": false
+                    }
+                ],
+                "label": "Second sexually transmitted disease (different from first)",
+                "diagnostic_hint": "Name a second, different STD. Malaria is transmitted by mosquitoes and Dengue by Aedes mosquitoes — neither is an STD."
+            }
+        ],
+        "word_bank": [
+            "Gonorrhoea",
+            "Syphilis",
+            "Chlamydia",
+            "HIV/AIDS",
+            "Genital Herpes",
+            "Malaria",
+            "Dengue fever"
+        ],
+        "word_bank_note": "7 tokens for 2 slots. 5 correct STDs — student picks any 2. 'Malaria' is a Caribbean-context trap: it is a significant disease in the region but is transmitted by mosquitoes (Anopheles), not sexually. 'Dengue fever' is also mosquito-borne (Aedes aegypti) — very common in Caribbean countries, making it a plausible but incorrect distractor for Caribbean students."
+    }
+}

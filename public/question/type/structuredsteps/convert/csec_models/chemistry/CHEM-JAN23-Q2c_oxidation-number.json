@@ -1,0 +1,104 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN23-Q2c"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q2(c)",
+        "subject": "Chemistry",
+        "topic": "Redox Chemistry — Oxidation Numbers in NaClO",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Context: sodium hypochlorite (NaClO) as the active ingredient in chlorine bleach, a common Caribbean household chemical",
+        "authored": "2026-04-12",
+        "note": "Part of Q2 bleach/redox sequence: Q2a (use of bleach, open), Q2b (define oxidising agent/oxidation, open), Q2c (this), Q2d (Cl₂→Cl⁻ change + lab test, open/deferred), Q2e (H₂O₂ redox, 4 marks — see separate file)."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q2c — Oxidation Number of Cl in NaClO",
+        "text": "<p>One of the main active ingredients in chlorine bleach is the oxidising agent, sodium hypochlorite (NaClO). Bleach reacts with water as follows:</p><p style='text-align:center;'>NaClO + H₂O → HOCl + NaOH</p><p>Deduce the <strong>oxidation number of Cl</strong> in the formula NaClO. Show your working.</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Oxidation number rules applied to NaClO:<br>• Na = <strong>+1</strong> (Group I metal — always +1 in compounds)<br>• O = <strong>−2</strong> (oxygen in compounds, standard rule)<br>• Sum of oxidation numbers in a neutral compound = 0:<br>&emsp;(+1) + Cl + (−2) = 0<br>&emsp;Cl = 0 − 1 + 2 = <strong>+1</strong></p><p><em>Key distractor:</em> Students often confuse this with Cl in NaCl (which is −1). In NaClO, oxygen forces Cl to be positive.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Oxidation number rules:</strong><br>1. Neutral compound: sum of all oxidation numbers = 0<br>2. Group I metals (Na, K, Li): always +1 in compounds<br>3. Oxygen: usually −2 in compounds (except peroxides)<br>4. Assign unknown element last, using the sum = 0 rule",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Assign known oxidation numbers and solve for Cl in NaClO. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_ox_Na",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Oxidation number of Na in NaClO = _____",
+            "expected": "+1",
+            "marks": 1.0,
+            "diagnostic_hint": "Na is a Group I metal — its oxidation number is always +1 in ionic/covalent compounds.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Group I elements (Na, K, Li) always have oxidation number +1 in compounds. So Na = +1."
+            },
+            "options": {
+                "+1": "+1",
+                "+2": "+2",
+                "-1": "-1",
+                "0": "0"
+            }
+        },
+        {
+            "id": "f2_ox_O",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Oxidation number of O in NaClO = _____",
+            "expected": "-2",
+            "marks": 1.0,
+            "diagnostic_hint": "Oxygen has oxidation number −2 in most compounds (except peroxides like H₂O₂ where it is −1).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "In most compounds, oxygen = −2. NaClO is not a peroxide, so O = −2 applies here."
+            },
+            "options": {
+                "-2": "-2",
+                "-1": "-1",
+                "+2": "+2",
+                "0": "0"
+            }
+        },
+        {
+            "id": "f3_ox_Cl",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Oxidation number of Cl in NaClO = _____",
+            "expected": "+1",
+            "marks": 1.0,
+            "diagnostic_hint": "Sum = 0: Na + Cl + O = 0 → (+1) + Cl + (−2) = 0 → Cl = +1",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Set up: (+1) + Cl + (−2) = 0. Solving: Cl = 0 − 1 + 2 = +1. The Cl in bleach is +1, unlike NaCl where Cl is −1.",
+                "SC_METHOD_ERROR": "Apply: sum of oxidation numbers = 0 for neutral compound. (+1) + Cl + (−2) = 0 → Cl = +1. Don't confuse with Cl in NaCl (which is −1)."
+            },
+            "options": {
+                "+1": "+1",
+                "-1": "-1",
+                "+7": "+7",
+                "0": "0"
+            }
+        }
+    ]
+}

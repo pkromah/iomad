@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q4a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q4(a)",
+        "subject": "Physics",
+        "topic": "Waves — Electromagnetic Spectrum: Identifying Named Regions",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Figure 5 shows a horizontal EM spectrum bar with regions from left (long wavelength/low frequency) to right (short wavelength/high frequency): A | Infrared | Visible light | B | X-rays | C. A = Microwaves, B = Ultraviolet, C = Gamma rays. 1 mark per correct identification. Word bank has 5 tokens (3 correct + 2 distractors)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q4a — Electromagnetic Spectrum Regions",
+        "text": "<p>The diagram below shows the electromagnetic spectrum. Three regions are labelled A, B, and C. Drag the correct name into each blank.</p><p style='text-align:center; font-size:1.05em;'>← longer wavelength &nbsp; [[1]] | Infrared | Visible | [[2]] | X-rays | [[3]] &nbsp; shorter wavelength →</p>",
+        "general_feedback": "<p><strong>Electromagnetic spectrum (long wavelength → short wavelength):</strong></p><p style='text-align:center;'>Radio → <strong>Microwaves</strong> → Infrared → Visible → <strong>Ultraviolet</strong> → X-rays → <strong>Gamma rays</strong></p><p><strong>A = Microwaves</strong> (immediately to the left of infrared, lower frequency than visible light)<br><strong>B = Ultraviolet</strong> (between visible light and X-rays — causes sunburn, detected by fluorescent materials)<br><strong>C = Gamma rays</strong> (shortest wavelength, highest frequency — emitted by radioactive nuclei)</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p style='text-align:center; font-size:1.05em;'>← longer wavelength &nbsp;&nbsp; [[1]] | Infrared | Visible | [[2]] | X-rays | [[3]] &nbsp;&nbsp; shorter wavelength →</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Microwaves",
+                        "correct": true
+                    },
+                    {
+                        "text": "Radio waves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ultraviolet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gamma rays",
+                        "correct": false
+                    },
+                    {
+                        "text": "Infrared",
+                        "correct": false
+                    }
+                ],
+                "label": "EM region between radio waves and infrared (used for cooking)",
+                "diagnostic_hint": "MICROWAVES sit between radio waves and infrared. They are used in microwave ovens and mobile communications. Their wavelength is millimetres to centimetres."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Ultraviolet",
+                        "correct": true
+                    },
+                    {
+                        "text": "Microwaves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Radio waves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gamma rays",
+                        "correct": false
+                    },
+                    {
+                        "text": "Infrared",
+                        "correct": false
+                    }
+                ],
+                "label": "EM region between visible light and X-rays (causes sunburn)",
+                "diagnostic_hint": "ULTRAVIOLET (UV) radiation sits just above visible light in frequency. It causes tanning and sunburn, is used in sterilisation, and is blocked by ozone."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Gamma rays",
+                        "correct": true
+                    },
+                    {
+                        "text": "Radio waves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ultraviolet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Microwaves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Infrared",
+                        "correct": false
+                    }
+                ],
+                "label": "EM region with highest frequency (nuclear emissions)",
+                "diagnostic_hint": "GAMMA RAYS have the highest frequency and energy of all EM radiation. They are emitted by radioactive nuclei and are used in cancer treatment and sterilisation."
+            }
+        ],
+        "word_bank": [
+            "Microwaves",
+            "Ultraviolet",
+            "Gamma rays",
+            "Radio waves",
+            "Infrared"
+        ],
+        "word_bank_note": "5 tokens for 3 slots. Radio waves: plausible distractor for A since both have longer wavelengths than infrared — tests whether students distinguish radio from microwave. Infrared: re-used as a distractor for B to catch students who confuse the ordering around visible light. The diagram already labels Infrared and X-rays, so students who read carefully should avoid placing them again."
+    }
+}

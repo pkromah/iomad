@@ -1,0 +1,38 @@
+{
+    "schema_version": "1.0",
+    "engine": "AlgorithmicWorkingEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "source": "cloze_conversion",
+        "source_name": "Time 20103 Jr1",
+        "source_category": "Time drill",
+        "converted_at": "2026-04-10",
+        "sea_marking": true
+    },
+    "params": {
+        "partial_credit_enabled": false,
+        "method_marks_enabled": false
+    },
+    "grading": {
+        "mode": "field_sum",
+        "partial_credit_enabled": false
+    },
+    "steps": [
+        {
+            "id": "step1",
+            "label": "Calculate",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1",
+            "step_id": "step1",
+            "type": "numberbox",
+            "expected": "60",
+            "tolerance": 0,
+            "marks": 1.0
+        }
+    ]
+}

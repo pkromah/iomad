@@ -1,0 +1,114 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q6b"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q6(b)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — U-235 Fission: Mass Totals, Mass Difference, and E=mc²",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Reaction: ²³⁵U + ¹n → ¹⁴¹Ba + ⁹²Kr + 3¹n + γ. Masses in kg: U-235=3.902×10⁻²⁵, n=1.675×10⁻²⁷, Ba-141=2.289×10⁻²⁵, Kr-92=1.575×10⁻²⁵. Reactants total=3.91875×10⁻²⁵; Products total=3.91425×10⁻²⁵; Δm=4.50×10⁻²⁸ kg; E=4.05×10⁻¹¹ J. Q6a (radiation paths in electric field, 6m) is text/diagram — not auto-gradeable. Audit listed 8m; actual breakdown is 4+2+3=9m per paper."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q6b — U-235 Fission: Mass Totals and Energy Released",
+        "text": "<p>The equation below represents a nuclear fission reaction utilized in power plants:</p><p style='text-align:center;'>\\({}^{235}_{92}\\text{U} + {}^{1}_{0}\\text{n} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3{}^{1}_{0}\\text{n} + \\gamma\\)</p><p>Masses:</p><ul><li>\\({}^{235}_{92}\\text{U} = 3.902 \\times 10^{-25}\\text{ kg}\\)</li><li>\\({}^{1}_{0}\\text{n} = 1.675 \\times 10^{-27}\\text{ kg}\\)</li><li>\\({}^{141}_{56}\\text{Ba} = 2.289 \\times 10^{-25}\\text{ kg}\\)</li><li>\\({}^{92}_{36}\\text{Kr} = 1.575 \\times 10^{-25}\\text{ kg}\\)</li></ul><p><strong>(i)</strong> Calculate the total mass of the particles on the left-hand side (reactants) and the right-hand side (products). (4 marks)</p><p><strong>(ii)</strong> Calculate the mass difference. (2 marks)</p><p><strong>(iii)</strong> Calculate the energy released. [c = 3.0 × 10⁸ m s⁻¹] (3 marks)</p>",
+        "general_feedback": "<p><strong>Q6b(i) — Total masses:</strong><br>Reactants: m(U) + m(n) = 3.902×10⁻²⁵ + 1.675×10⁻²⁷ = 390.2×10⁻²⁷ + 1.675×10⁻²⁷ = <strong>391.875 × 10⁻²⁷ kg = 3.91875 × 10⁻²⁵ kg</strong><br>Products: m(Ba) + m(Kr) + 3m(n) = 2.289×10⁻²⁵ + 1.575×10⁻²⁵ + 3×1.675×10⁻²⁷ = 228.9 + 157.5 + 5.025 = <strong>391.425 × 10⁻²⁷ kg = 3.91425 × 10⁻²⁵ kg</strong></p><p><strong>Q6b(ii) — Mass difference:</strong><br>Δm = 3.91875×10⁻²⁵ − 3.91425×10⁻²⁵ = 0.00450×10⁻²⁵ = <strong>4.50 × 10⁻²⁸ kg</strong></p><p><strong>Q6b(iii) — Energy:</strong><br>E = Δm × c² = 4.50×10⁻²⁸ × (3.0×10⁸)² = 4.50×10⁻²⁸ × 9.0×10¹⁶ = <strong>4.05 × 10⁻¹¹ J</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Conversion tip:</strong> Express all masses in the same power (×10⁻²⁷ kg): U = 390.2, n = 1.675, Ba = 228.9, Kr = 157.5<br><strong>Formula:</strong> Δm = m(reactants) − m(products) &nbsp;|&nbsp; E = Δm × c²",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_totals",
+            "label": "Q6b(i) — Calculate the total mass of reactants and total mass of products. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step_delta_m",
+            "label": "Q6b(ii) — Calculate the mass difference Δm. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_energy",
+            "label": "Q6b(iii) — Calculate the energy released E = Δmc². (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_reactants",
+            "step_id": "step_totals",
+            "type": "numberbox",
+            "label": "Total mass of reactants = _____ × 10⁻²⁵ kg",
+            "expected": "3.91875",
+            "tolerance": 0.0005,
+            "marks": 2.0,
+            "unit": "× 10⁻²⁵ kg",
+            "diagnostic_hint": "Reactants: U-235 + 1 neutron = 3.902×10⁻²⁵ + 1.675×10⁻²⁷ = 390.2×10⁻²⁷ + 1.675×10⁻²⁷ = 391.875×10⁻²⁷ = 3.91875×10⁻²⁵ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Reactants: m(U) + m(n) = 3.902×10⁻²⁵ + 1.675×10⁻²⁷. Convert to same power: 390.2×10⁻²⁷ + 1.675×10⁻²⁷ = 391.875×10⁻²⁷ = 3.91875×10⁻²⁵ kg."
+            }
+        },
+        {
+            "id": "f2_products",
+            "step_id": "step_totals",
+            "type": "numberbox",
+            "label": "Total mass of products = _____ × 10⁻²⁵ kg",
+            "expected": "3.91425",
+            "tolerance": 0.0005,
+            "marks": 2.0,
+            "unit": "× 10⁻²⁵ kg",
+            "diagnostic_hint": "Products: m(Ba) + m(Kr) + 3×m(n) = 228.9 + 157.5 + 3×1.675 = 228.9 + 157.5 + 5.025 = 391.425 × 10⁻²⁷ = 3.91425 × 10⁻²⁵ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Products: m(Ba-141) + m(Kr-92) + 3×m(n) = 2.289×10⁻²⁵ + 1.575×10⁻²⁵ + 3×1.675×10⁻²⁷ = 228.9 + 157.5 + 5.025 = 391.425 (×10⁻²⁷ kg). Note: 3 neutrons are produced, not 1."
+            }
+        },
+        {
+            "id": "f3_delta_m",
+            "step_id": "step_delta_m",
+            "type": "numberbox",
+            "label": "Mass difference Δm = _____ × 10⁻²⁸ kg",
+            "expected": "4.50",
+            "tolerance": 0.05,
+            "marks": 2.0,
+            "unit": "× 10⁻²⁸ kg",
+            "diagnostic_hint": "Δm = 3.91875×10⁻²⁵ − 3.91425×10⁻²⁵ = 0.00450×10⁻²⁵ = 4.50×10⁻²⁸ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Δm = m(reactants) − m(products) = 391.875 − 391.425 = 0.450 (×10⁻²⁷ kg) = 4.50×10⁻²⁸ kg."
+            }
+        },
+        {
+            "id": "f4_energy",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "Energy released E = _____ × 10⁻¹¹ J",
+            "expected": "4.05",
+            "tolerance": 0.05,
+            "marks": 3.0,
+            "unit": "× 10⁻¹¹ J",
+            "diagnostic_hint": "E = Δm × c² = 4.50×10⁻²⁸ × (3.0×10⁸)² = 4.50×10⁻²⁸ × 9.0×10¹⁶ = 40.5×10⁻¹² = 4.05×10⁻¹¹ J",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "E = Δm × c² = 4.50×10⁻²⁸ × 9.0×10¹⁶ = 40.5×10⁻¹² = 4.05×10⁻¹¹ J."
+            }
+        }
+    ]
+}

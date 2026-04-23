@@ -1,0 +1,95 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q5di", "PHY-MAY22-Q5dii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q5(d)(i) and Q5(d)(ii)",
+        "subject": "Physics",
+        "topic": "Optics — Converging Lens: Image Distance and Magnification",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q5d — Converging Lens: Image Distance and Magnification",
+        "text": "<p>A converging lens has a <strong>focal length f = 10 cm</strong>. An object is placed <strong>15 cm</strong> from the lens.</p><p>Calculate:</p><ol><li>The image distance v (4 marks)</li><li>The magnification produced (2 marks)</li></ol>",
+        "general_feedback": "<p><strong>(i) Image distance:</strong><br>Lens formula: 1/v = 1/f − 1/u = 1/10 − 1/15 = 3/30 − 2/30 = 1/30<br>v = <strong>30 cm</strong> (real, inverted image)</p><p><strong>(ii) Magnification:</strong><br>m = v/u = 30/15 = <strong>2</strong></p><p><em>Note:</em> Since v > 0 and m > 0 (using real-is-positive convention), the image is real, inverted, and magnified.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> f = 10 cm &nbsp;|&nbsp; u = 15 cm (object distance)<br><strong>Lens formula:</strong> 1/v = 1/f − 1/u &nbsp;&nbsp; <strong>Magnification:</strong> m = v/u",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part (i) — Calculate the <strong>image distance v</strong> using the lens formula. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step2",
+            "label": "Part (ii) — Calculate the <strong>magnification</strong>. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_reciprocal_calc",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "1/f − 1/u = 1/v = _____",
+            "expected": "0.03333",
+            "tolerance": 0.001,
+            "marks": 2.0,
+            "unit": "",
+            "diagnostic_hint": "1/v = 1/10 − 1/15 = 3/30 − 2/30 = 1/30 = 0.0333",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "1/v = 1/f − 1/u = 1/10 − 1/15. Find a common denominator (30): 3/30 − 2/30 = 1/30 = 0.0333.",
+                "SC_FORMULA_SELECTION_ERROR": "Lens formula: 1/v = 1/f − 1/u (not 1/f + 1/u). Subtract the reciprocal of the object distance from the reciprocal of the focal length."
+            }
+        },
+        {
+            "id": "f2_image_distance",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Image distance v = _____ cm",
+            "expected": "30",
+            "tolerance": 0,
+            "marks": 2.0,
+            "unit": "cm",
+            "diagnostic_hint": "v = 1 / (1/30) = 30 cm",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "v = 1 ÷ (1/30) = 30 cm. Take the reciprocal of your answer for 1/v."
+            }
+        },
+        {
+            "id": "f3_magnification",
+            "step_id": "step2",
+            "type": "digitbox",
+            "label": "Magnification m = _____",
+            "expected": "2",
+            "tolerance": 0,
+            "marks": 2.0,
+            "unit": "",
+            "diagnostic_hint": "m = v/u = 30/15 = 2",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "m = v ÷ u = 30 ÷ 15 = 2.",
+                "SC_FORMULA_SELECTION_ERROR": "Magnification formula: m = v/u (image distance divided by object distance)."
+            }
+        }
+    ]
+}

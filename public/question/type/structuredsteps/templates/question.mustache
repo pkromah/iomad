@@ -1,0 +1,26 @@
+<div class="qtext">{{{qtext}}}</div>
+
+<div class="ablock structuredsteps-form structuredsteps-mobile-first ss-question" data-ss-config="{{runtimeconfig}}">
+  <div class="sr-only visually-hidden" aria-live="polite" data-ss-live-region="1"></div>
+  {{#hasstructuredfields}}
+    {{#steps}}
+      {{> qtype_structuredsteps/step_section}}
+    {{/steps}}
+  {{/hasstructuredfields}}
+
+  {{^hasstructuredfields}}
+    {{{fallbackhtml}}}
+  {{/hasstructuredfields}}
+
+  {{#hasstructuredfields}}
+    <div class="ss-input-dock" data-ss-input-dock="1" aria-label="{{dock_nav_region_label}}" hidden>
+      <div class="ss-input-dock-actions">
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-ss-action="prev" aria-label="{{dock_prev_aria}}">{{dock_prev_label}}</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-ss-action="next" aria-label="{{dock_next_aria}}">{{dock_next_label}}</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-ss-action="backspace" aria-label="{{dock_backspace_aria}}">{{dock_backspace_label}}</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-ss-action="clear" aria-label="{{dock_clear_aria}}">{{dock_clear_label}}</button>
+        <button type="button" class="btn btn-sm btn-primary" data-ss-action="done" aria-label="{{dock_done_aria}}">{{dock_done_label}}</button>
+      </div>
+    </div>
+  {{/hasstructuredfields}}
+</div>

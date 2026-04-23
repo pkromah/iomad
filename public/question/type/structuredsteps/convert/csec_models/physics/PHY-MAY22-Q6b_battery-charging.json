@@ -1,0 +1,103 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q6bi", "PHY-MAY22-Q6bii", "PHY-MAY22-Q6biii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q6(b)(i), Q6(b)(ii), Q6(b)(iii)",
+        "subject": "Physics",
+        "topic": "Electricity — Battery Charging: Time, Voltage, and Work Done",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Three-step chain: Q=9600C, I=0.8A, P=4.4W. Part (i) time → Part (ii) voltage → Part (iii) work done. All three feed into each other or use given data."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q6b — Battery Charging Chain",
+        "text": "<p>A battery charger is used to charge a battery. The charger delivers a current of <strong>0.8 A</strong> to the battery.</p><ul><li>Total charge stored: <strong>Q = 9 600 C</strong></li><li>Power input of charger: <strong>P = 4.4 W</strong></li></ul>",
+        "general_feedback": "<p><strong>(i) Time to charge:</strong> Q = It → t = Q/I = 9 600 / 0.8 = <strong>12 000 s</strong></p><p><strong>(ii) Voltage:</strong> P = VI → V = P/I = 4.4 / 0.8 = <strong>5.5 V</strong></p><p><strong>(iii) Work done:</strong> W = QV = 9 600 × 5.5 = <strong>52 800 J</strong></p><p><em>Alternative for (iii):</em> W = Pt = 4.4 × 12 000 = 52 800 J ✓</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> I = 0.8 A &nbsp;|&nbsp; Q = 9 600 C &nbsp;|&nbsp; P = 4.4 W<br><strong>Formulas:</strong> Q = It &nbsp;&nbsp; P = VI &nbsp;&nbsp; W = QV (or W = Pt)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part (i) — Calculate the <strong>time</strong> taken to charge the battery. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step2",
+            "label": "Part (ii) — Calculate the <strong>voltage</strong> across the battery. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step3",
+            "label": "Part (iii) — Calculate the <strong>work done</strong> to charge the battery. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_time",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Time t = _____ s",
+            "expected": "12000",
+            "tolerance": 120,
+            "marks": 3.0,
+            "unit": "s",
+            "diagnostic_hint": "Q = It → t = Q/I = 9 600 / 0.8 = 12 000 s",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "t = Q ÷ I = 9 600 ÷ 0.8 = 12 000 s.",
+                "SC_FORMULA_SELECTION_ERROR": "Rearrange Q = It to get t = Q/I. Divide total charge by current."
+            }
+        },
+        {
+            "id": "f2_voltage",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Voltage V = _____ V",
+            "expected": "5.5",
+            "tolerance": 0.055,
+            "marks": 3.0,
+            "unit": "V",
+            "diagnostic_hint": "P = VI → V = P/I = 4.4 / 0.8 = 5.5 V",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V = P ÷ I = 4.4 ÷ 0.8 = 5.5 V.",
+                "SC_FORMULA_SELECTION_ERROR": "Power formula: P = VI. Rearrange to V = P/I = 4.4 / 0.8 = 5.5 V."
+            }
+        },
+        {
+            "id": "f3_work_done",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Work done W = _____ J",
+            "expected": "52800",
+            "tolerance": 528,
+            "marks": 3.0,
+            "unit": "J",
+            "diagnostic_hint": "W = QV = 9 600 × 5.5 = 52 800 J (or W = Pt = 4.4 × 12 000 = 52 800 J)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "W = Q × V = 9 600 × 5.5 = 52 800 J. Alternatively, W = P × t = 4.4 × 12 000 = 52 800 J.",
+                "SC_FORMULA_SELECTION_ERROR": "Work done = charge × voltage (W = QV), or equivalently W = P × t."
+            }
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["BIO-JAN24-Q2aii"],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q2(a)(ii)",
+        "subject": "Biology",
+        "topic": "Plant Biology — Balanced Chemical Equation for Photosynthesis",
+        "marks_total": 2,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q2a(i) 'define photosynthesis' is open-ended — not auto-gradeable. This file covers only Q2a(ii). 2 marks awarded: 1 mark for correctly balanced reactants, 1 mark for correctly balanced products."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q2a(ii) — Balanced Equation for Photosynthesis",
+        "text": "<p>Write a balanced chemical equation for the process of photosynthesis by completing the equation below. Drag the correct coefficient or formula into each blank.</p>",
+        "general_feedback": "<p><strong>Balanced equation:</strong></p><p style='text-align:center; font-size:1.1em;'>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</p><p>(Requires light energy and chlorophyll — often shown above the arrow)</p><p><strong>Reactants (1 mark):</strong> 6CO₂ + 6H₂O — six molecules of carbon dioxide and six of water<br><strong>Products (1 mark):</strong> C₆H₁₂O₆ (glucose) + 6O₂ — one glucose molecule and six oxygen molecules</p><p><em>Key check:</em> Count atoms: Left: 6C, 12H, 18O — Right: 6C + 12H + 6O + 6O = 6C, 12H, 18O ✓</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p style='text-align:center; font-size:1.1em;'>[[1]] CO₂ + [[2]] H₂O → [[3]] + [[4]] O₂</p>",
+        "groups": [
+            {
+                "id": 1,
+                "label": "Coefficient of CO₂",
+                "marks": 0.5,
+                "diagnostic_hint": "Count the carbon atoms: glucose (C₆H₁₂O₆) has 6 carbons, so you need 6 CO₂ molecules on the left side.",
+                "options": [
+                    {"text": "6", "correct": true},
+                    {"text": "12", "correct": false},
+                    {"text": "3", "correct": false},
+                    {"text": "1", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "label": "Coefficient of H₂O",
+                "marks": 0.5,
+                "diagnostic_hint": "Count the hydrogen atoms: glucose has 12 H, and each H₂O provides 2 H, so you need 6 H₂O molecules.",
+                "options": [
+                    {"text": "6", "correct": true},
+                    {"text": "12", "correct": false},
+                    {"text": "2", "correct": false},
+                    {"text": "1", "correct": false}
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Glucose formula",
+                "marks": 0.5,
+                "diagnostic_hint": "Glucose is a 6-carbon monosaccharide with the molecular formula C₆H₁₂O₆. C₃H₆O₃ is a 3-carbon sugar (half a glucose); C₆H₁₂O₃ has the wrong oxygen count.",
+                "options": [
+                    {"text": "C₆H₁₂O₆", "correct": true},
+                    {"text": "C₃H₆O₃", "correct": false},
+                    {"text": "C₆H₁₂O₃", "correct": false},
+                    {"text": "ATP", "correct": false}
+                ]
+            },
+            {
+                "id": 4,
+                "label": "Coefficient of O₂",
+                "marks": 0.5,
+                "diagnostic_hint": "Count the oxygen atoms on the right: glucose has 6 O, and you need a total of 18 O (from 6 CO₂ on the left). 18 − 6 = 12 O needed as O₂ → 6 O₂ molecules.",
+                "options": [
+                    {"text": "6", "correct": true},
+                    {"text": "12", "correct": false},
+                    {"text": "1", "correct": false},
+                    {"text": "2", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "6", "12", "3", "1", "2",
+            "C₆H₁₂O₆", "C₃H₆O₃", "C₆H₁₂O₃", "ATP"
+        ],
+        "word_bank_note": "9 tokens for 4 slots. Key distractors: C₃H₆O₃ (half-glucose/3-carbon sugar confusing students who know glycolysis); C₆H₁₂O₃ (wrong H:O ratio); 12 (common error for water coefficient from confusion with 12H₂O in C4 plants or light-dependent reactions); ATP (high-value distractor for students who know ATP is produced but confuse it with glucose)."
+    }
+}

@@ -1,0 +1,155 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-JAN24-Q1bi",
+            "BIO-JAN24-Q1bii"
+        ],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q1(b)(i) and Q1(b)(ii)",
+        "subject": "Biology",
+        "topic": "Nutrition and Health — Dietary Management of Diabetes",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q1bi(2m): 2 dietary changes for Roy (Type 2 diabetes). 2 slots, 1m each. Correct: reduce carbohydrate intake / avoid sugar / increase fibre. Q1bii(2m): consequence if each dietary change is NOT followed. 2 slots, 1m each. Consequences: high blood glucose/hyperglycaemia; complications (kidney damage/blindness/nerve damage). Combined into one file for context cohesion."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q1b(i)(ii) — Diabetes: Dietary Changes and Consequences",
+        "text": "<p>Roy has been diagnosed with Type 2 diabetes. He is advised to make dietary changes.</p><p><strong>(i)</strong> Suggest TWO dietary changes Roy should make: <em>(2 marks)</em></p><p>Change 1: [[1]]</p><p>Change 2: [[2]]</p><p><strong>(ii)</strong> State ONE consequence for Roy if he does NOT follow each dietary change: <em>(2 marks)</em></p><p>Consequence of not following Change 1: [[3]]</p><p>Consequence of not following Change 2: [[4]]</p>",
+        "general_feedback": "<p><strong>Dietary management of Type 2 diabetes:</strong></p><p><strong>Recommended changes:</strong></p><ul><li><strong>Reduce carbohydrate intake</strong> — carbohydrates are broken down to glucose; excess glucose raises blood sugar</li><li><strong>Avoid/reduce sugar and sugary foods</strong> — sugar directly raises blood glucose levels</li><li><strong>Increase dietary fibre</strong> — fibre slows glucose absorption, preventing blood sugar spikes</li><li><strong>Maintain a healthy weight</strong> — obesity worsens insulin resistance</li></ul><p><strong>Consequences if changes are NOT followed:</strong></p><ul><li>Persistently <strong>high blood glucose (hyperglycaemia)</strong></li><li><strong>Damage to blood vessels and nerves</strong> — leading to complications such as kidney disease (nephropathy), loss of vision (retinopathy), nerve damage (neuropathy), poor wound healing</li><li><strong>Risk of diabetic coma</strong> (diabetic ketoacidosis in severe cases)</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Change 1: [[1]]</p><p>Change 2: [[2]]</p><p>Consequence of not following Change 1: [[3]]</p><p>Consequence of not following Change 2: [[4]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Reduce carbohydrate intake",
+                        "correct": true
+                    },
+                    {
+                        "text": "Avoid sugary foods and drinks",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase dietary fibre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase fat intake",
+                        "correct": false
+                    },
+                    {
+                        "text": "Avoid protein foods",
+                        "correct": false
+                    }
+                ],
+                "label": "Dietary change 1 for managing diabetes",
+                "diagnostic_hint": "Diabetes management focuses on keeping blood glucose stable. Reducing carbohydrates and avoiding sugary foods directly reduces the glucose load entering the blood."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Reduce carbohydrate intake",
+                        "correct": true
+                    },
+                    {
+                        "text": "Avoid sugary foods and drinks",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase dietary fibre",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase fat intake",
+                        "correct": false
+                    },
+                    {
+                        "text": "Avoid protein foods",
+                        "correct": false
+                    }
+                ],
+                "label": "Dietary change 2 for managing diabetes",
+                "diagnostic_hint": "A second dietary change addresses a different aspect: increasing dietary fibre slows glucose absorption, preventing sharp glucose spikes after meals."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Blood glucose remains persistently high (hyperglycaemia)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Damage to kidneys, eyes, or nerves from prolonged high blood glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "Risk of diabetic coma or ketoacidosis",
+                        "correct": true
+                    },
+                    {
+                        "text": "Blood glucose drops too low (hypoglycaemia)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Increased risk of vitamin C deficiency",
+                        "correct": false
+                    }
+                ],
+                "label": "Consequence 1 of not managing diabetes diet",
+                "diagnostic_hint": "Without dietary management, blood glucose stays persistently high — a condition called hyperglycaemia. This is the primary consequence of uncontrolled diabetes."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Blood glucose remains persistently high (hyperglycaemia)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Damage to kidneys, eyes, or nerves from prolonged high blood glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "Risk of diabetic coma or ketoacidosis",
+                        "correct": true
+                    },
+                    {
+                        "text": "Blood glucose drops too low (hypoglycaemia)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Increased risk of vitamin C deficiency",
+                        "correct": false
+                    }
+                ],
+                "label": "Consequence 2 of not managing diabetes diet",
+                "diagnostic_hint": "Prolonged hyperglycaemia damages small blood vessels, causing complications in the kidneys (nephropathy), eyes (retinopathy), and nerves (neuropathy)."
+            }
+        ],
+        "word_bank": [
+            "Reduce carbohydrate intake",
+            "Avoid sugary foods and drinks",
+            "Increase dietary fibre",
+            "Increase fat intake",
+            "Avoid protein foods",
+            "Blood glucose remains persistently high (hyperglycaemia)",
+            "Damage to kidneys, eyes, or nerves from prolonged high blood glucose",
+            "Risk of diabetic coma or ketoacidosis",
+            "Blood glucose drops too low (hypoglycaemia)",
+            "Increased risk of vitamin C deficiency"
+        ],
+        "word_bank_note": "10 tokens for 4 slots. Dietary changes (slots 1-2): any 2 of the 3 correct changes earn full marks. 'Increase fat intake' is wrong — high fat worsens cardiovascular risk in diabetes. 'Avoid protein' is wrong — protein does not raise blood glucose and is not restricted in standard diabetic diet advice. Consequences (slots 3-4): any 2 of the 3 correct consequences earn full marks. 'Hypoglycaemia (low blood glucose)' is the OPPOSITE problem — it results from too much insulin or insufficient eating, not from failing to follow a diabetic diet. 'Vitamin C deficiency' is irrelevant to blood glucose management."
+    }
+}

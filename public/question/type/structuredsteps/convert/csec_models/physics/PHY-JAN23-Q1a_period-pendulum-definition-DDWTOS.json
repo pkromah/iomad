@@ -1,0 +1,88 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q1a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q1(a)",
+        "subject": "Physics",
+        "topic": "Mechanics — Definition of Period of a Simple Pendulum",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: define period of a simple pendulum. 2-slot cloze: 'time(1m) / one complete oscillation(1m)'. Key discriminator: 'one complete oscillation/swing' not 'half swing' (a to b only = half period)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q1a — Define Period of a Simple Pendulum",
+        "text": "<p>Define the <strong>period</strong> of a simple pendulum by completing the statement below:</p><p>The period of a simple pendulum is the [[1]] taken for the pendulum to complete [[2]].</p>",
+        "general_feedback": "<p><strong>Period of a simple pendulum:</strong></p><p>The period (T) is the <strong>time</strong> taken for the pendulum to complete <strong>one complete oscillation</strong> (one full swing — from A to B and back to A).</p><p><em>Key points:</em></p><ul><li>A 'complete oscillation' = back and forth = from one extreme, to the other extreme, and back to the starting position.</li><li>Half a swing (A to B only) = half a period — a common error.</li><li>SI unit of period: seconds (s).</li><li>Related: frequency f = 1/T (Hz).</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>The period of a simple pendulum is the [[1]] taken for the pendulum to complete [[2]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "time",
+                        "correct": true
+                    },
+                    {
+                        "text": "distance",
+                        "correct": false
+                    },
+                    {
+                        "text": "frequency",
+                        "correct": false
+                    },
+                    {
+                        "text": "speed",
+                        "correct": false
+                    }
+                ],
+                "label": "Period is the ___ taken for...",
+                "diagnostic_hint": "Period is measured in TIME (seconds). It answers \"how long does one oscillation take?\" — a duration, not a distance or frequency."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "one complete oscillation",
+                        "correct": true
+                    },
+                    {
+                        "text": "one complete swing",
+                        "correct": true
+                    },
+                    {
+                        "text": "half a swing",
+                        "correct": false
+                    },
+                    {
+                        "text": "ten oscillations",
+                        "correct": false
+                    }
+                ],
+                "label": "Period is the time taken for ___",
+                "diagnostic_hint": "ONE COMPLETE OSCILLATION (or one complete swing). A \"complete swing\" means the bob travels from start → one extreme → the other extreme → back to start. Half a swing is only half a period."
+            }
+        ],
+        "word_bank": [
+            "time",
+            "distance",
+            "frequency",
+            "speed",
+            "one complete oscillation",
+            "one complete swing",
+            "half a swing",
+            "ten oscillations"
+        ],
+        "word_bank_note": "8 tokens for 2 slots. Slot 1 (time): 'distance' is unrelated to the definition of period. 'Frequency' is the reciprocal of period (f = 1/T) — students who confuse frequency with period select this. 'Speed' is irrelevant. Slot 2 (one complete oscillation/swing): both accepted. 'Half a swing' is the critical trap — swinging from the rest position to one extreme = one quarter period; extreme to extreme = half period. 'Ten oscillations' describes a technique for averaging timing (time 10 oscillations then divide) but is not the definition."
+    }
+}

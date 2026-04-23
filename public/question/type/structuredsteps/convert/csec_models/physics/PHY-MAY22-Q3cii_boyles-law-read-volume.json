@@ -1,0 +1,85 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q3cii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q3(c)(ii)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Boyle's Law: Read Volume from P vs 1/V Graph",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: read volume at P=250kPa from the P vs 1/V graph. Graph is linear through origin; given point (1/V=0.030 cm⁻³, P=400kPa). Gradient = PV = 400/0.030 = 13333 kPa·cm³. At P=250kPa: 1/V = 250/13333 = 0.01875 cm⁻³ → V = 53.3 cm³. Q3c(iii) uses this as V₁ (already authored in Q3ciii file)."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q3c(ii) — Boyle's Law: Determine Volume at P = 250 kPa",
+        "text": "<p>The graph of pressure (p) versus inverse volume (1/V) is a straight line through the origin. The line passes through the point (1/V = 0.030 cm⁻³, p = 400 kPa).</p><p><strong>(ii)</strong> Use the graph to determine the volume when the pressure is <strong>250 kPa</strong>. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Reading V at P = 250 kPa from the P vs 1/V graph:</strong></p><p>The graph is linear through origin, so: P = k × (1/V) where k = PV = constant.</p><p>From the given point: k = 400 × (1/0.030) = 400/0.030 × cm³ → wait: k = P/(1/V) = P × V = 400 kPa × (1/0.030 cm⁻³) — no:</p><p>Since y = P and x = 1/V, gradient = P/(1/V) = P×V = k = 400/0.030 = 13 333 kPa cm³</p><p>At P = 250 kPa: 1/V = P/k = 250/13 333 = 0.01875 cm⁻³</p><p>V = 1/0.01875 = <strong>53.3 cm³</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Graph:</strong> P vs 1/V is linear through origin | Known point: (1/V = 0.030 cm⁻³, P = 400 kPa)<br><strong>Gradient (= PV constant):</strong> k = P ÷ (1/V) = P × V",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_read_volume",
+            "label": "Determine V when P = 250 kPa. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_gradient",
+            "step_id": "step_read_volume",
+            "type": "numberbox",
+            "label": "Gradient k = P × V = _____ kPa cm³",
+            "expected": "13333",
+            "tolerance": 200,
+            "marks": 1.0,
+            "unit": "kPa cm³",
+            "diagnostic_hint": "k = P/(1/V) = 400/0.030 = 13 333 kPa cm³ (from the given graph point)",
+            "error_codes": {"SC_METHOD_ERROR": "From the graph, at 1/V = 0.030 cm⁻³, P = 400 kPa. Gradient = P ÷ (1/V) = 400 ÷ 0.030 = 13 333 kPa cm³. This equals PV = constant (Boyle's law)."}
+        },
+        {
+            "id": "f2_inv_V",
+            "step_id": "step_read_volume",
+            "type": "numberbox",
+            "label": "1/V at P = 250 kPa = _____ cm⁻³",
+            "expected": "0.01875",
+            "tolerance": 0.002,
+            "marks": 0.5,
+            "unit": "cm⁻³",
+            "diagnostic_hint": "1/V = P/k = 250/13333 = 0.01875 cm⁻³",
+            "error_codes": {"SC_CALCULATION_ERROR": "1/V = P/gradient = 250/13333 = 0.01875 cm⁻³."}
+        },
+        {
+            "id": "f3_volume",
+            "step_id": "step_read_volume",
+            "type": "numberbox",
+            "label": "Volume V at P = 250 kPa = _____ cm³",
+            "expected": "53.3",
+            "tolerance": 2.0,
+            "marks": 1.5,
+            "unit": "cm³",
+            "diagnostic_hint": "V = 1/(1/V) = 1/0.01875 = 53.3 cm³. Accept 51–55 cm³ for graph-reading variation.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V = 1/(1/V) = 1/0.01875 = 53.3 cm³.",
+                "SC_METHOD_ERROR": "From the graph: at P = 250 kPa, read off the 1/V value, then take the reciprocal to get V."
+            }
+        }
+    ]
+}

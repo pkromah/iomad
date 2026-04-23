@@ -1,0 +1,132 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN24-Q4c"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q4(c)",
+        "subject": "Chemistry",
+        "topic": "Electrochemistry — Faraday's Law: Volume of H₂ at Electrolysis",
+        "marks_total": 5,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Uses dilute aqueous sodium chloride electrolysis. Reaction at cathode: 2H⁺ + 2e⁻ → H₂. F = 96 500 C mol⁻¹, molar volume at RTP = 24 dm³ mol⁻¹."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q4c — Electrolysis: Volume of H₂ Produced",
+        "text": "<p>During the electrolysis of <strong>dilute aqueous sodium chloride</strong> using a current of <strong>1.0 A</strong> for <strong>30 minutes</strong>, hydrogen gas is produced at the cathode.</p><p>Calculate the <strong>volume of hydrogen produced</strong>, measured at room temperature and pressure (rtp).</p><p><strong>Given:</strong><br>F = 9.65 × 10⁴ C mol⁻¹ (Faraday constant)<br>Molar volume of gas at rtp = 24 dm³ mol⁻¹<br>Half equation at cathode: 2H⁺ + 2e⁻ → H₂</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Step 1: Convert time → t = 30 × 60 = <strong>1 800 s</strong><br>Step 2: Calculate charge → Q = I × t = 1.0 × 1 800 = <strong>1 800 C</strong><br>Step 3: Moles of electrons → n(e⁻) = Q / F = 1 800 / 96 500 = <strong>0.01865 mol</strong><br>Step 4: Moles of H₂ → n(H₂) = n(e⁻) / 2 = 0.01865 / 2 = <strong>0.009326 mol</strong> (from 2e⁻ per H₂)<br>Step 5: Volume at rtp → V = n × 24 = 0.009326 × 24 = <strong>0.224 dm³</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> I = 1.0 A &nbsp;|&nbsp; t = 30 min &nbsp;|&nbsp; F = 96 500 C mol⁻¹ &nbsp;|&nbsp; molar volume at rtp = 24 dm³ mol⁻¹<br><strong>Cathode equation:</strong> 2H⁺ + 2e⁻ → H₂ (2 moles of electrons produce 1 mole of H₂)<br><strong>Chain:</strong> t(s) → Q = It → mol e⁻ = Q/F → mol H₂ = mol e⁻ / 2 → V = mol H₂ × 24",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Convert time and calculate charge Q. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step2",
+            "label": "Calculate moles of electrons transferred. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step3",
+            "label": "Calculate moles of H₂ and its volume at rtp. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_time_s",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Time t = _____ s",
+            "expected": "1800",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "s",
+            "diagnostic_hint": "Convert 30 minutes to seconds: 30 × 60 = 1 800 s",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Time must be in seconds. 30 minutes × 60 s/min = 1 800 s."
+            }
+        },
+        {
+            "id": "f2_charge",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Charge Q = _____ C",
+            "expected": "1800",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "C",
+            "diagnostic_hint": "Q = I × t = 1.0 A × 1 800 s = 1 800 C",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Q = I × t = 1.0 × 1 800 = 1 800 C. Did you convert 30 min to seconds first?",
+                "SC_FORMULA_SELECTION_ERROR": "Charge formula: Q = I × t (current in amps × time in seconds)."
+            }
+        },
+        {
+            "id": "f3_mol_electrons",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Moles of electrons n(e⁻) = _____ mol",
+            "expected": "0.01865",
+            "tolerance": 0.0004,
+            "marks": 1.0,
+            "unit": "mol",
+            "diagnostic_hint": "n(e⁻) = Q / F = 1 800 / 96 500 = 0.01865 mol",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "n(e⁻) = Q ÷ F = 1 800 ÷ 96 500 = 0.01865 mol.",
+                "SC_FORMULA_SELECTION_ERROR": "Moles of electrons = total charge ÷ Faraday constant (96 500 C/mol)."
+            }
+        },
+        {
+            "id": "f4_mol_H2",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Moles of H₂ produced n(H₂) = _____ mol",
+            "expected": "0.009326",
+            "tolerance": 0.0002,
+            "marks": 1.0,
+            "unit": "mol",
+            "diagnostic_hint": "From 2H⁺ + 2e⁻ → H₂: 2 mol electrons → 1 mol H₂. So n(H₂) = n(e⁻) ÷ 2 = 0.01865 ÷ 2 = 0.009326 mol",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "n(H₂) = n(e⁻) / 2. Each H₂ molecule requires 2 electrons. So 0.01865 ÷ 2 = 0.009326 mol H₂.",
+                "SC_METHOD_ERROR": "Check the half equation: 2H⁺ + 2e⁻ → H₂. The ratio of electrons to H₂ is 2:1 — divide moles of electrons by 2."
+            }
+        },
+        {
+            "id": "f5_volume",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Volume of H₂ at rtp = _____ dm³",
+            "expected": "0.224",
+            "tolerance": 0.005,
+            "marks": 1.0,
+            "unit": "dm³",
+            "diagnostic_hint": "V = n × molar volume = 0.009326 × 24 = 0.224 dm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V = n(H₂) × 24 dm³/mol = 0.009326 × 24 = 0.224 dm³.",
+                "SC_FORMULA_SELECTION_ERROR": "At rtp, volume = moles × 24 dm³/mol. Multiply moles of H₂ by 24."
+            }
+        }
+    ]
+}

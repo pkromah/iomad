@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN24-Q3bi"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q3(b)(i)",
+        "subject": "Chemistry",
+        "topic": "Organic Chemistry — Characteristics of a Homologous Series",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Three characteristics of a homologous series: (1) same general formula, (2) members differ by CH₂, (3) gradual/similar change in physical/chemical properties. 3 slots × 1m each. Word bank: 5 tokens."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q3b(i) — Characteristics of a Homologous Series",
+        "text": "<p>List <strong>THREE</strong> characteristics of a homologous series by selecting the correct statements below.</p><p>Characteristic 1: [[1]]</p><p>Characteristic 2: [[2]]</p><p>Characteristic 3: [[3]]</p>",
+        "general_feedback": "<p><strong>Characteristics of a homologous series:</strong></p><ol><li><strong>Same general formula</strong> — all members can be represented by one general formula (e.g. alkanes: CₙH₂ₙ₊₂)</li><li><strong>Members differ by CH₂</strong> — consecutive members differ by one methylene (CH₂) group in their molecular formula</li><li><strong>Gradual change in physical properties</strong> — boiling point, melting point, and density increase gradually with increasing chain length</li></ol><p><em>Also accepted:</em> Similar chemical properties (same functional group), prepared by similar methods.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Characteristic 1: [[1]]</p><p>Characteristic 2: [[2]]</p><p>Characteristic 3: [[3]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "All members have the same general formula",
+                        "correct": true
+                    },
+                    {
+                        "text": "Consecutive members differ by a CH₂ unit",
+                        "correct": true
+                    },
+                    {
+                        "text": "Physical properties change gradually with chain length",
+                        "correct": true
+                    },
+                    {
+                        "text": "All members have the same boiling point",
+                        "correct": false
+                    },
+                    {
+                        "text": "Members have the same molecular formula",
+                        "correct": false
+                    }
+                ],
+                "label": "Characteristic 1 of a homologous series",
+                "diagnostic_hint": "One key characteristic is that all members share the same general formula (e.g., CₙH₂ₙ₊₂ for alkanes). This means their molecular formulae follow a pattern."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "All members have the same general formula",
+                        "correct": true
+                    },
+                    {
+                        "text": "Consecutive members differ by a CH₂ unit",
+                        "correct": true
+                    },
+                    {
+                        "text": "Physical properties change gradually with chain length",
+                        "correct": true
+                    },
+                    {
+                        "text": "All members have the same boiling point",
+                        "correct": false
+                    },
+                    {
+                        "text": "Members have the same molecular formula",
+                        "correct": false
+                    }
+                ],
+                "label": "Characteristic 2 of a homologous series",
+                "diagnostic_hint": "A second characteristic: consecutive members differ by exactly one CH₂ unit (14 mass units). This regular increment is what makes it a \"series\"."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "All members have the same general formula",
+                        "correct": true
+                    },
+                    {
+                        "text": "Consecutive members differ by a CH₂ unit",
+                        "correct": true
+                    },
+                    {
+                        "text": "Physical properties change gradually with chain length",
+                        "correct": true
+                    },
+                    {
+                        "text": "All members have the same boiling point",
+                        "correct": false
+                    },
+                    {
+                        "text": "Members have the same molecular formula",
+                        "correct": false
+                    }
+                ],
+                "label": "Characteristic 3 of a homologous series",
+                "diagnostic_hint": "Physical properties (boiling point, viscosity, density) change gradually and predictably as chain length increases — longer chains have stronger London dispersion forces."
+            }
+        ],
+        "word_bank": [
+            "All members have the same general formula",
+            "Consecutive members differ by a CH₂ unit",
+            "Physical properties change gradually with chain length",
+            "All members have the same boiling point",
+            "Members have the same molecular formula"
+        ],
+        "word_bank_note": "5 tokens for 3 slots; 3 correct + 2 distractors. 'All members have the same boiling point' — incorrect; boiling points INCREASE with chain length (same general formula ≠ same boiling point). Tests a common misconception. 'Members have the same molecular formula' — members of a homologous series have the SAME GENERAL formula but DIFFERENT molecular formulae. Engine awards 1m for any of the 3 correct tokens in each slot; de-duplication is a UX concern not modelled here."
+    }
+}

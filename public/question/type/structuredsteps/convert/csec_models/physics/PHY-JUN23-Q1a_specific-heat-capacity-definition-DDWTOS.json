@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q1a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q1(a)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Definition of Specific Heat Capacity",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: define specific heat capacity. 3-slot cloze: energy/heat(0.5m) + 1 kg of substance(1.5m) + 1°C or 1K(1m). Key discriminator: must specify BOTH '1 kg' AND '1°C'. Missing either drops the mark."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q1a — Define Specific Heat Capacity",
+        "text": "<p>Define the term <strong>'specific heat capacity'</strong> by completing the statement below:</p><p>The specific heat capacity of a substance is the amount of [[1]] required to raise the temperature of [[2]] of the substance by [[3]].</p>",
+        "general_feedback": "<p><strong>Specific heat capacity (c):</strong></p><p>The specific heat capacity of a substance is the amount of <strong>thermal energy (heat)</strong> required to raise the temperature of <strong>1 kg</strong> of the substance by <strong>1 °C (or 1 K)</strong>.</p><p><strong>Formula:</strong> Q = mcΔθ → c = Q/(mΔθ)</p><p><strong>SI unit:</strong> J kg⁻¹ °C⁻¹ or J kg⁻¹ K⁻¹</p><p><em>Example:</em> Water has c = 4200 J kg⁻¹ °C⁻¹ — it takes 4200 J to heat 1 kg of water by 1 °C. This high value explains why oceans moderate climate.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>The specific heat capacity of a substance is the amount of [[1]] required to raise the temperature of [[2]] of the substance by [[3]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "thermal energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "heat energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "power",
+                        "correct": false
+                    },
+                    {
+                        "text": "work done",
+                        "correct": false
+                    }
+                ],
+                "label": "SHC — amount of ___ required",
+                "diagnostic_hint": "Specific heat capacity is the amount of THERMAL ENERGY (heat energy) required. \"Energy\" alone is accepted at CSEC level."
+            },
+            {
+                "id": 2,
+                "marks": 1.5,
+                "options": [
+                    {
+                        "text": "1 kg",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 gram",
+                        "correct": false
+                    },
+                    {
+                        "text": "1 mole",
+                        "correct": false
+                    },
+                    {
+                        "text": "any mass",
+                        "correct": false
+                    }
+                ],
+                "label": "SHC — energy to raise the temperature of ___ of substance",
+                "diagnostic_hint": "The \"specific\" in SHC means PER UNIT MASS, specifically 1 kg. If you had 2 kg, you would need twice as much energy."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "1 °C",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 K",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 °F",
+                        "correct": false
+                    },
+                    {
+                        "text": "100 °C",
+                        "correct": false
+                    }
+                ],
+                "label": "SHC — energy to raise temperature by ___",
+                "diagnostic_hint": "SHC is defined for a temperature rise of 1°C (or equivalently 1 K — the same size interval). Q = mcΔT, so c = Q/(mΔT)."
+            }
+        ],
+        "word_bank": [
+            "thermal energy",
+            "heat energy",
+            "energy",
+            "power",
+            "work done",
+            "1 kg",
+            "1 gram",
+            "1 mole",
+            "any mass",
+            "1 °C",
+            "1 K",
+            "1 °F",
+            "100 °C"
+        ],
+        "word_bank_note": "13 tokens for 3 slots. Slot 1 (energy type): thermal energy/heat energy/energy all accepted — these are synonymous in this context. 'Power' is wrong (energy per unit time, W). 'Work done' is technically energy but implies a mechanical context. Slot 2 (1 kg): '1 gram' is wrong — the specific heat capacity uses 1 kg (SI base unit). Some textbooks define molar heat capacity (1 mole) but CSEC uses the 1 kg definition. 'Any mass' is wrong — the definition requires a specific standard mass. Slot 3 (1°C / 1K): both accepted — a change of 1°C equals a change of 1K. '1°F' uses Fahrenheit (non-SI). '100°C' is wrong — that is the temperature change for an entirely different concept."
+    }
+}

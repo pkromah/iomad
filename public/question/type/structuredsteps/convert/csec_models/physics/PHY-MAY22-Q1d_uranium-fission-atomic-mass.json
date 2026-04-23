@@ -1,0 +1,128 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q1d"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q1(d)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — U-235 Fission Energy via Atomic Mass Units",
+        "marks_total": 7,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Reaction: ²³⁵U + ¹n → ⁹⁰Kr + ¹⁴⁴Ba + 2¹n + energy. Masses in atomic mass units: U=235.118, Ba-144=143.881, Kr-90=89.847, n=1.009. u=1.66×10⁻²⁷ kg, c=3.0×10⁸ m/s. Reactants=236.127u; Products=235.746u; Δm=0.381u=6.3246×10⁻²⁸ kg; E=5.69×10⁻¹¹ J."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q1d — U-235 Fission Energy (Atomic Mass Units)",
+        "text": "<p>The equation below represents a nuclear fission reaction:</p><p style='text-align:center;'>\\({}^{235}_{92}\\text{U} + {}^{1}_{0}\\text{n} \\rightarrow {}^{90}_{36}\\text{Kr} + {}^{144}_{56}\\text{Ba} + 2{}^{1}_{0}\\text{n} + \\text{energy}\\)</p><p>Using the atomic mass data in Table 2, calculate the <strong>energy released</strong> in the reaction. State your answer in joules.</p><table border='1' style='border-collapse:collapse; text-align:center; width:55%; margin:0.5em auto;'><tr><th>Nuclide</th><th>Atomic Mass / u</th></tr><tr><td>\\({}^{235}_{92}\\text{U}\\)</td><td>235.118</td></tr><tr><td>\\({}^{144}_{56}\\text{Ba}\\)</td><td>143.881</td></tr><tr><td>\\({}^{90}_{36}\\text{Kr}\\)</td><td>89.847</td></tr><tr><td>\\({}^{1}_{0}\\text{n}\\)</td><td>1.009</td></tr></table><p>[where u = 1.66 × 10⁻²⁷ kg &nbsp;|&nbsp; c = 3.0 × 10⁸ m s⁻¹] (7 marks)</p>",
+        "general_feedback": "<p><strong>Reactants:</strong> m(U) + m(n) = 235.118 + 1.009 = 236.127 u<br><strong>Products:</strong> m(Kr) + m(Ba) + 2×m(n) = 89.847 + 143.881 + 2×1.009 = 89.847 + 143.881 + 2.018 = 235.746 u<br><strong>Mass defect:</strong> Δm = 236.127 − 235.746 = 0.381 u<br><strong>Convert to kg:</strong> 0.381 × 1.66×10⁻²⁷ = 6.3246×10⁻²⁸ kg<br><strong>Energy:</strong> E = Δm × c² = 6.3246×10⁻²⁸ × 9.0×10¹⁶ = <strong>5.69 × 10⁻¹¹ J</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> u = 1.66×10⁻²⁷ kg &nbsp;|&nbsp; c = 3.0×10⁸ m/s<br><strong>Method:</strong> Total mass of reactants − Total mass of products = Δm (in u) → convert to kg → E = Δm × c²",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_totals",
+            "label": "Calculate the total atomic mass of reactants and products. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_delta_m_kg",
+            "label": "Calculate Δm in u and convert to kg. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_energy",
+            "label": "Calculate the energy released E = Δmc². (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_reactants_u",
+            "step_id": "step_totals",
+            "type": "numberbox",
+            "label": "Total mass of reactants = _____ u",
+            "expected": "236.127",
+            "tolerance": 0.001,
+            "marks": 1.5,
+            "unit": "u",
+            "diagnostic_hint": "Reactants: m(U-235) + m(n) = 235.118 + 1.009 = 236.127 u",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Add the masses of the reactants: 235.118 + 1.009 = 236.127 u."
+            }
+        },
+        {
+            "id": "f2_products_u",
+            "step_id": "step_totals",
+            "type": "numberbox",
+            "label": "Total mass of products = _____ u",
+            "expected": "235.746",
+            "tolerance": 0.001,
+            "marks": 1.5,
+            "unit": "u",
+            "diagnostic_hint": "Products: m(Kr-90) + m(Ba-144) + 2×m(n) = 89.847 + 143.881 + 2×1.009 = 235.746 u",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Products: 89.847 + 143.881 + 2×1.009 = 89.847 + 143.881 + 2.018 = 235.746 u. Note: 2 neutrons are produced."
+            }
+        },
+        {
+            "id": "f3_delta_m_u",
+            "step_id": "step_delta_m_kg",
+            "type": "numberbox",
+            "label": "Mass defect Δm = _____ u",
+            "expected": "0.381",
+            "tolerance": 0.001,
+            "marks": 1.0,
+            "unit": "u",
+            "diagnostic_hint": "Δm = 236.127 − 235.746 = 0.381 u",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Δm = m(reactants) − m(products) = 236.127 − 235.746 = 0.381 u."
+            }
+        },
+        {
+            "id": "f4_delta_m_kg",
+            "step_id": "step_delta_m_kg",
+            "type": "numberbox",
+            "label": "Δm in kg = _____ × 10⁻²⁸ kg",
+            "expected": "6.3246",
+            "tolerance": 0.05,
+            "marks": 1.0,
+            "unit": "× 10⁻²⁸ kg",
+            "diagnostic_hint": "Δm = 0.381 × 1.66×10⁻²⁷ = 6.3246×10⁻²⁸ kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Δm(kg) = Δm(u) × u = 0.381 × 1.66×10⁻²⁷ = 0.63246×10⁻²⁷ = 6.3246×10⁻²⁸ kg."
+            }
+        },
+        {
+            "id": "f5_energy",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "Energy released E = _____ × 10⁻¹¹ J",
+            "expected": "5.692",
+            "tolerance": 0.05,
+            "marks": 2.0,
+            "unit": "× 10⁻¹¹ J",
+            "diagnostic_hint": "E = Δm × c² = 6.3246×10⁻²⁸ × (3.0×10⁸)² = 6.3246×10⁻²⁸ × 9.0×10¹⁶ = 56.92×10⁻¹² = 5.692×10⁻¹¹ J",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "E = Δm × c² = 6.3246×10⁻²⁸ × 9.0×10¹⁶ = 56.92×10⁻¹² = 5.69×10⁻¹¹ J."
+            }
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q3ciii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q3(c)(iii)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Boyle's Law: New Volume at Higher Pressure",
+        "marks_total": 4,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Follows Q3c(ii) graph-reading (not auto-gradeable). V₁ ≈ 53.3 cm³ at P₁ = 250 kPa is derived from graph (gradient = 13 333 kPa⋅cm³ at point 0.030, 400). Wide tolerance accommodates 'own figure' marking where students used different V₁ readings."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q3c(iii) — Boyle's Law: Volume at 975 kPa",
+        "text": "<p>From the graph in Q3c(ii), the volume of the gas at a pressure of <strong>250 kPa</strong> is approximately <strong>53.3 cm³</strong>.</p><p>Using Boyle's Law, calculate the <strong>new volume</strong> of the gas when the pressure is increased from <strong>250 kPa</strong> to <strong>975 kPa</strong> (temperature constant). (4 marks)</p>",
+        "general_feedback": "<p><strong>Model solution (using graph-read V₁ = 53.3 cm³):</strong><br>Boyle's Law: P₁V₁ = P₂V₂ (constant temperature)<br>P₁V₁ = 250 × 53.3 = 13 325 kPa⋅cm³<br>V₂ = P₁V₁ / P₂ = 13 325 / 975 = <strong>13.7 cm³</strong></p><p><em>Own figure marking:</em> CSEC awards full marks if Boyle's law is correctly applied to whatever V₁ the student read from the graph.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> P₁ = 250 kPa, V₁ = 53.3 cm³ (from graph) &nbsp;|&nbsp; P₂ = 975 kPa<br><strong>Boyle's Law:</strong> P₁V₁ = P₂V₂ (at constant temperature)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Calculate P₁ × V₁ and find V₂. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_P1V1",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "P₁ × V₁ = _____ kPa⋅cm³",
+            "expected": "13325",
+            "tolerance": 500,
+            "marks": 1.0,
+            "unit": "kPa⋅cm³",
+            "diagnostic_hint": "P₁V₁ = 250 × 53.3 = 13 325 kPa⋅cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "P₁ × V₁ = 250 × 53.3 = 13 325. Multiply initial pressure by initial volume."
+            }
+        },
+        {
+            "id": "f2_V2",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "New volume V₂ = _____ cm³",
+            "expected": "13.67",
+            "tolerance": 2.0,
+            "marks": 3.0,
+            "unit": "cm³",
+            "diagnostic_hint": "V₂ = P₁V₁ / P₂ = 13 325 / 975 = 13.7 cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V₂ = (P₁ × V₁) ÷ P₂ = 13 325 ÷ 975 = 13.7 cm³.",
+                "SC_FORMULA_SELECTION_ERROR": "Boyle's Law: P₁V₁ = P₂V₂ → V₂ = P₁V₁/P₂. Divide the product P₁V₁ by P₂ = 975 kPa."
+            }
+        }
+    ]
+}

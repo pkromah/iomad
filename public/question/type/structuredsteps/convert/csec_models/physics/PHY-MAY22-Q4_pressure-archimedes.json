@@ -1,0 +1,124 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q4aii", "PHY-MAY22-Q4bii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q4(a)(ii) and Q4(b)(ii)",
+        "subject": "Physics",
+        "topic": "Pressure and Archimedes' Principle — Caribbean Sea Context",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Questions set in the Caribbean Sea; diver depth and floating boat scenarios",
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q4 — Liquid Pressure and Archimedes",
+        "text": "<p>This question uses two scenarios involving the Caribbean Sea (density of sea water ρ = 1 025 kg m⁻³, g = 10 N kg⁻¹).</p><p><strong>Part A:</strong> A diver is at a depth of <strong>0.5 km</strong> below the surface of the Caribbean Sea.</p><p><strong>Part B:</strong> A boat with a weight of <strong>83 000 N</strong> floats in the same sea water.</p>",
+        "general_feedback": "<p><strong>Part A — Liquid pressure:</strong><br>P = ρgh = 1025 × 10 × 500 = <strong>5 125 000 Pa</strong> (= 5.125 × 10⁶ Pa)</p><p><strong>Part B — Volume displaced:</strong><br>Upthrust = weight = 83 000 N → mass displaced = 83000/10 = 8300 kg → V = m/ρ = 8300/1025 = <strong>8.10 m³</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> ρ<sub>sea water</sub> = 1 025 kg m⁻³ &nbsp;|&nbsp; g = 10 N kg⁻¹<br><strong>Formulas:</strong> P = ρgh &nbsp;&nbsp; Upthrust = weight of fluid displaced &nbsp;&nbsp; ρ = m/V",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part A — Calculate the <strong>liquid pressure</strong> on a diver at 0.5 km depth. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step2",
+            "label": "Part B — A boat (weight = 83 000 N) floats in sea water. Calculate the <strong>volume of sea water displaced</strong>. (5 marks)",
+            "type": "computational",
+            "marks": 5
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_depth_m",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Convert depth: 0.5 km = _____ m",
+            "expected": "500",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "m",
+            "diagnostic_hint": "1 km = 1000 m, so 0.5 km = 500 m",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert km to m: 0.5 × 1000 = 500 m"
+            }
+        },
+        {
+            "id": "f2_pressure",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Liquid pressure P = _____ Pa",
+            "expected": "5125000",
+            "tolerance": 102500,
+            "marks": 3.0,
+            "unit": "Pa",
+            "diagnostic_hint": "P = ρ × g × h = 1025 × 10 × 500 = 5 125 000 Pa",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "P = ρgh = 1025 × 10 × 500. Check you converted 0.5 km to 500 m first.",
+                "SC_FORMULA_SELECTION_ERROR": "Use P = ρgh (not P = F/A here — we are calculating liquid pressure at depth)."
+            }
+        },
+        {
+            "id": "f3_upthrust",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Upthrust on the floating boat = _____ N",
+            "expected": "83000",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "N",
+            "diagnostic_hint": "A floating object: upthrust = weight of object = 83 000 N (Archimedes' principle)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "For a floating object, upthrust equals the weight of the object. So upthrust = 83 000 N."
+            }
+        },
+        {
+            "id": "f4_mass_displaced",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Mass of sea water displaced = _____ kg",
+            "expected": "8300",
+            "tolerance": 83,
+            "marks": 2.0,
+            "unit": "kg",
+            "diagnostic_hint": "Upthrust = m × g → m = Upthrust / g = 83000 / 10 = 8300 kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "mass = upthrust ÷ g = 83000 ÷ 10 = 8300 kg"
+            }
+        },
+        {
+            "id": "f5_volume",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Volume of sea water displaced V = _____ m³",
+            "expected": "8.098",
+            "tolerance": 0.16,
+            "marks": 2.0,
+            "unit": "m³",
+            "diagnostic_hint": "V = m / ρ = 8300 / 1025 = 8.10 m³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V = mass ÷ density = 8300 ÷ 1025 = 8.10 m³",
+                "SC_FORMULA_SELECTION_ERROR": "Use ρ = m/V rearranged to V = m/ρ"
+            }
+        }
+    ]
+}

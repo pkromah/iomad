@@ -1,0 +1,134 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q5ai"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q5(a)(i)",
+        "subject": "Biology",
+        "topic": "Blood — Functions of Blood Components: Red Blood Cells, White Blood Cells, Platelets",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Table has 3 rows: component (given) and function (to complete). RBC=carry oxygen/haemoglobin transport; WBC=fight infection/phagocytosis/produce antibodies; Platelets=blood clotting/seal wounds. 1m per correct function. Word bank: 6 tokens (3 correct + 3 distractors)."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q5a(i) — Functions of Blood Components",
+        "text": "<p>Complete the table below by dragging the correct function into each blank for the three blood components shown.</p><table border='1' style='border-collapse:collapse; text-align:center; width:65%; margin:0.5em auto;'><tr><th>Blood Component</th><th>Function</th></tr><tr><td>Red blood cells (RBC)</td><td>[[1]]</td></tr><tr><td>White blood cells (WBC)</td><td>[[2]]</td></tr><tr><td>Platelets</td><td>[[3]]</td></tr></table>",
+        "general_feedback": "<p><strong>Functions of blood components:</strong></p><ul><li><strong>Red blood cells (RBC):</strong> Transport/carry oxygen from the lungs to body tissues (via haemoglobin)</li><li><strong>White blood cells (WBC):</strong> Fight infection — destroy pathogens by phagocytosis or by producing antibodies</li><li><strong>Platelets:</strong> Blood clotting — seal wounds and prevent excessive blood loss</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<table border='1' style='border-collapse:collapse; text-align:center; width:65%; margin:0.5em auto;'><tr><th>Blood Component</th><th>Function</th></tr><tr><td>Red blood cells (RBC)</td><td>[[1]]</td></tr><tr><td>White blood cells (WBC)</td><td>[[2]]</td></tr><tr><td>Platelets</td><td>[[3]]</td></tr></table>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Transport oxygen to body tissues",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fight infection and destroy pathogens",
+                        "correct": false
+                    },
+                    {
+                        "text": "Assist in blood clotting to seal wounds",
+                        "correct": false
+                    },
+                    {
+                        "text": "Regulate body temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carry carbon dioxide to the lungs only",
+                        "correct": false
+                    },
+                    {
+                        "text": "Produce hormones for immune response",
+                        "correct": false
+                    }
+                ],
+                "label": "Function of red blood cells",
+                "diagnostic_hint": "Red blood cells contain haemoglobin which binds oxygen in the lungs and releases it to body tissues. They have no nucleus, giving more space for haemoglobin."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Transport oxygen to body tissues",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fight infection and destroy pathogens",
+                        "correct": true
+                    },
+                    {
+                        "text": "Assist in blood clotting to seal wounds",
+                        "correct": false
+                    },
+                    {
+                        "text": "Regulate body temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carry carbon dioxide to the lungs only",
+                        "correct": false
+                    },
+                    {
+                        "text": "Produce hormones for immune response",
+                        "correct": false
+                    }
+                ],
+                "label": "Function of white blood cells",
+                "diagnostic_hint": "White blood cells are part of the immune system. They fight infection by engulfing pathogens (phagocytosis) or producing antibodies (lymphocytes)."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Transport oxygen to body tissues",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fight infection and destroy pathogens",
+                        "correct": false
+                    },
+                    {
+                        "text": "Assist in blood clotting to seal wounds",
+                        "correct": true
+                    },
+                    {
+                        "text": "Regulate body temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carry carbon dioxide to the lungs only",
+                        "correct": false
+                    },
+                    {
+                        "text": "Produce hormones for immune response",
+                        "correct": false
+                    }
+                ],
+                "label": "Function of platelets",
+                "diagnostic_hint": "Platelets are cell fragments that initiate blood clotting (coagulation) at wound sites, preventing excessive blood loss and infection entry."
+            }
+        ],
+        "word_bank": [
+            "Transport oxygen to body tissues",
+            "Fight infection and destroy pathogens",
+            "Assist in blood clotting to seal wounds",
+            "Regulate body temperature",
+            "Carry carbon dioxide to the lungs only",
+            "Produce hormones for immune response"
+        ],
+        "word_bank_note": "6 tokens for 3 slots. 3 correct + 3 distractors. 'Regulate body temperature' — plausible but not the primary function of any of the three components listed. 'Carry carbon dioxide to the lungs only' — RBCs do transport CO₂ but this is incomplete/misleading (RBCs primarily carry O₂); serves as a distractor for slot 1. 'Produce hormones for immune response' — WBCs produce antibodies (not hormones), so this catches terminology confusion."
+    }
+}

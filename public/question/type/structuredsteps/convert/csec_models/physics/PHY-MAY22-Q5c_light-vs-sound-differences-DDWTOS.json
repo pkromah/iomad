@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q5c"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q5(c)",
+        "subject": "Physics",
+        "topic": "Waves — Differences Between Light Waves and Sound Waves",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: state TWO differences between light waves and sound waves. 2 slots, 1m each. Multiple correct: light=transverse/sound=longitudinal; light travels in vacuum/sound needs medium; light~3×10⁸ m/s/sound~330 m/s; light=EM wave/sound=mechanical wave."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q5c — Two Differences Between Light Waves and Sound Waves",
+        "text": "<p>State TWO differences between 'light waves' and 'sound waves':</p><p>Difference 1: [[1]]</p><p>Difference 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Differences between light waves and sound waves:</strong></p><table><thead><tr><th>Property</th><th>Light</th><th>Sound</th></tr></thead><tbody><tr><td>Wave type</td><td>Transverse (EM)</td><td>Longitudinal (mechanical)</td></tr><tr><td>Medium</td><td>Can travel through vacuum</td><td>Requires a material medium</td></tr><tr><td>Speed</td><td>~3 × 10⁸ m s⁻¹ (in air)</td><td>~330 m s⁻¹ (in air)</td></tr><tr><td>Nature</td><td>Electromagnetic wave</td><td>Mechanical (pressure) wave</td></tr></tbody></table>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Difference 1: [[1]]</p><p>Difference 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Light is transverse; sound is longitudinal",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light can travel through a vacuum; sound cannot",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light travels much faster than sound",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light is an electromagnetic wave; sound is a mechanical wave",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light and sound both travel through a vacuum",
+                        "correct": false
+                    },
+                    {
+                        "text": "Light and sound travel at the same speed",
+                        "correct": false
+                    }
+                ],
+                "label": "Difference 1 between light waves and sound waves",
+                "diagnostic_hint": "Light is TRANSVERSE and an electromagnetic wave; sound is LONGITUDINAL and a mechanical wave. Or: light can travel through a vacuum; sound cannot. Choose any one well-explained difference."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Light is transverse; sound is longitudinal",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light can travel through a vacuum; sound cannot",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light travels much faster than sound",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light is an electromagnetic wave; sound is a mechanical wave",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light and sound both travel through a vacuum",
+                        "correct": false
+                    },
+                    {
+                        "text": "Light and sound travel at the same speed",
+                        "correct": false
+                    }
+                ],
+                "label": "Difference 2 between light waves and sound waves (different from difference 1)",
+                "diagnostic_hint": "A second, distinct difference. Common choices: light travels at 3×10⁸ m/s, sound at ~340 m/s in air; light needs no medium, sound does; light is transverse, sound is longitudinal. Do not repeat your first answer."
+            }
+        ],
+        "word_bank": [
+            "Light is transverse; sound is longitudinal",
+            "Light can travel through a vacuum; sound cannot",
+            "Light travels much faster than sound",
+            "Light is an electromagnetic wave; sound is a mechanical wave",
+            "Light and sound both travel through a vacuum",
+            "Light and sound travel at the same speed"
+        ],
+        "word_bank_note": "6 tokens for 2 slots. 4 correct differences — any 2 of 4 earn full marks. 'Light and sound both travel through a vacuum' is false — sound requires a medium (vacuum = no medium = no sound). 'Light and sound travel at the same speed' is false — light is ~10⁶ times faster than sound (this is why lightning precedes thunder)."
+    }
+}

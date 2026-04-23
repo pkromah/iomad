@@ -1,0 +1,129 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["BIO-JAN24-Q1ai", "BIO-JAN24-Q1aii"],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q1(a)(i) and Q1(a)(ii)",
+        "subject": "Biology",
+        "topic": "Nutrition — End Products of Digestion: Carbohydrates and Proteins",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": true,
+        "authored": "2026-04-12",
+        "revised": "2026-04-14",
+        "revision_note": "Restructured from DDWTOS to StepCalculationEngine with distinct sub-questions per slot. Original DDWTOS had multi-correct groups (Glucose+Maltose, Amino acids+Peptides) that collapsed to identical expected values on both sibling fields, causing order-dependent grading and rewarding duplicate selection. Fix: each slot now targets a specific product (final vs intermediate) with a unique, unambiguous expected value. No expected_alternatives or unique_within_step needed."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q1a(i/ii) — Products of Carbohydrate and Protein Digestion",
+        "text": "<p>Roy's lunch consists of roti (made from wheat flour, a source of <strong>starch</strong>) and <strong>chicken</strong> (a source of protein).</p><p><strong>(a)(i)</strong> Name <strong>TWO</strong> products of the digestion of starch. <em>(2 marks)</em></p><p><strong>(a)(ii)</strong> Name <strong>TWO</strong> products of the digestion of protein. <em>(2 marks)</em></p>",
+        "general_feedback": "<p><strong>Q1a(i) — Starch digestion:</strong><br>Starch (polysaccharide) → amylase → <strong>Maltose</strong> (disaccharide, intermediate) → maltase → <strong>Glucose</strong> (monosaccharide, final product)<br>Both Glucose and Maltose are accepted products of starch digestion.</p><p><strong>Q1a(ii) — Protein digestion:</strong><br>Protein → proteases (pepsin, trypsin) → <strong>Peptides</strong> (intermediate) → peptidases → <strong>Amino acids</strong> (final product)<br>Both Amino acids and Peptides are accepted products of protein digestion.</p><p><em>Key distinction across macronutrients:</em><br>Carbohydrates → sugars (Glucose, Maltose) | Fats → Fatty acids + Glycerol | Proteins → Amino acids, Peptides</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Digestion pathway:</strong> Starch → Maltose → Glucose (via amylase, then maltase) &nbsp;|&nbsp; Protein → Peptides → Amino acids (via proteases, then peptidases)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_starch",
+            "label": "Name two products of starch digestion. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_protein",
+            "label": "Name two products of protein digestion. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_starch_final",
+            "step_id": "step_starch",
+            "type": "choice",
+            "label": "Final product of starch digestion",
+            "expected": "Glucose",
+            "options": {
+                "Glucose": "Glucose",
+                "Maltose": "Maltose",
+                "Amino acids": "Amino acids",
+                "Fatty acids": "Fatty acids",
+                "Glycerol": "Glycerol"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Starch is fully broken down to Glucose — the monosaccharide that cells absorb and use for energy. Amylase breaks starch into maltose, then maltase breaks maltose into glucose.",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "The FINAL product of starch digestion is Glucose (a monosaccharide). Starch → (amylase) → Maltose → (maltase) → Glucose. Glucose is small enough to be absorbed through the villi of the small intestine."
+            }
+        },
+        {
+            "id": "f2_starch_intermediate",
+            "step_id": "step_starch",
+            "type": "choice",
+            "label": "Intermediate product of starch digestion",
+            "expected": "Maltose",
+            "options": {
+                "Glucose": "Glucose",
+                "Maltose": "Maltose",
+                "Amino acids": "Amino acids",
+                "Fatty acids": "Fatty acids",
+                "Glycerol": "Glycerol"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Maltose is the disaccharide formed when amylase breaks down starch. It is an intermediate — it still needs maltase to convert it to glucose before absorption.",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "The INTERMEDIATE product of starch digestion is Maltose (a disaccharide). Salivary amylase and pancreatic amylase both break starch down to maltose. Maltose is then converted to glucose by maltase in the small intestine."
+            }
+        },
+        {
+            "id": "f3_protein_final",
+            "step_id": "step_protein",
+            "type": "choice",
+            "label": "Final product of protein digestion",
+            "expected": "Amino acids",
+            "options": {
+                "Amino acids": "Amino acids",
+                "Peptides": "Peptides",
+                "Glucose": "Glucose",
+                "Fatty acids": "Fatty acids",
+                "Glycerol": "Glycerol"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Amino acids are the final, absorbable products of protein digestion. They are produced when peptidases break down peptides into individual amino acid units.",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "The FINAL product of protein digestion is Amino acids. Proteins are broken down by proteases (pepsin in the stomach, trypsin in the small intestine) into peptides, then by peptidases into amino acids. Amino acids are absorbed through the villi."
+            }
+        },
+        {
+            "id": "f4_protein_intermediate",
+            "step_id": "step_protein",
+            "type": "choice",
+            "label": "Intermediate product of protein digestion",
+            "expected": "Peptides",
+            "options": {
+                "Amino acids": "Amino acids",
+                "Peptides": "Peptides",
+                "Glucose": "Glucose",
+                "Fatty acids": "Fatty acids",
+                "Glycerol": "Glycerol"
+            },
+            "marks": 1.0,
+            "diagnostic_hint": "Peptides are chains of amino acids formed when proteases (pepsin, trypsin) begin breaking down proteins. They are intermediates — peptidases must break them further into individual amino acids.",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "The INTERMEDIATE product of protein digestion is Peptides (short chains of amino acids). Proteases (pepsin in the stomach, trypsin from the pancreas) cleave proteins into peptide fragments. Peptidases in the small intestine complete the breakdown to amino acids."
+            }
+        }
+    ]
+}

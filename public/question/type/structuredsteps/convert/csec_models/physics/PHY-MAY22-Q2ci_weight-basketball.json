@@ -1,0 +1,75 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-MAY22-Q2ci"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q2(c)(i)",
+        "subject": "Physics",
+        "topic": "Mechanics — Weight: W = mg",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "A basketball has mass 500 g. Student must convert grams to kilograms (1m) and apply W = mg (2m). g = 10 m/s² given. Q2c(ii) is a vector diagram to complete — not auto-gradeable."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q2c(i) — Weight of a Basketball",
+        "text": "<p>A basketball has a mass of <strong>500 g</strong>.</p><p>Calculate its weight in newtons. [Acceleration due to gravity, <em>g</em> = 10 m s⁻²] (3 marks)</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Convert: m = 500 g = 0.5 kg<br>W = mg = 0.5 × 10 = <strong>5 N</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> mass = 500 g &nbsp;|&nbsp; g = 10 m s⁻²<br><strong>Formula:</strong> W = mg &nbsp;|&nbsp; <strong>Unit conversion:</strong> 1 kg = 1000 g",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Convert mass to kg, then calculate the weight W. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_kg",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Mass m = _____ kg",
+            "expected": "0.5",
+            "tolerance": 0.001,
+            "marks": 1.0,
+            "unit": "kg",
+            "diagnostic_hint": "500 g ÷ 1000 = 0.5 kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert grams to kilograms: m = 500 ÷ 1000 = 0.5 kg."
+            }
+        },
+        {
+            "id": "f2_weight",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Weight W = mg = _____ N",
+            "expected": "5.0",
+            "tolerance": 0.1,
+            "marks": 2.0,
+            "unit": "N",
+            "diagnostic_hint": "W = mg = 0.5 × 10 = 5 N",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "W = m × g = 0.5 × 10 = 5 N.",
+                "SC_FORMULA_SELECTION_ERROR": "Weight W = mg. Multiply mass (in kg) by g = 10 m/s²."
+            }
+        }
+    ]
+}

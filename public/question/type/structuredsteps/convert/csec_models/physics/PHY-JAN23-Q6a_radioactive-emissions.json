@@ -1,0 +1,163 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q6a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(a)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Radioactive Emissions and Properties",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Part of Q6 sequence: Q6a (this) → Q6c (atom structure/isotopes, deferred) → Q6d (alpha decay + half-life, see separate files)"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6a — Radioactive Emissions Table",
+        "text": "<p>Complete the table below by inserting the <strong>type of radioactive emission</strong> and its missing properties for each row.</p><table border='1' cellpadding='6' style='border-collapse:collapse;'><thead><tr><th>Radioactive Emission</th><th>Nature</th><th>Range in Air</th><th>Stopped By</th></tr></thead><tbody><tr><td><em>(your answer)</em></td><td>Electromagnetic radiation</td><td>Several kilometres</td><td><em>(your answer)</em></td></tr><tr><td><em>(your answer)</em></td><td>Helium nucleus</td><td><em>(your answer)</em></td><td>1 sheet of paper</td></tr><tr><td><em>(your answer)</em></td><td>Electron</td><td>A few metres</td><td><em>(your answer)</em></td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Complete table:</strong></p><table border='1' cellpadding='6' style='border-collapse:collapse;'><thead><tr><th>Emission</th><th>Nature</th><th>Range in Air</th><th>Stopped By</th></tr></thead><tbody><tr><td><strong>Gamma (γ)</strong></td><td>Electromagnetic radiation</td><td>Several kilometres</td><td><strong>Thick lead / dense concrete</strong></td></tr><tr><td><strong>Alpha (α)</strong></td><td>Helium nucleus</td><td><strong>A few centimetres (~3–7 cm)</strong></td><td>1 sheet of paper</td></tr><tr><td><strong>Beta (β)</strong></td><td>Electron</td><td>A few metres</td><td><strong>A few mm of aluminium</strong></td></tr></tbody></table><p><strong>Key facts:</strong> Alpha is the most ionising but least penetrating. Gamma is the least ionising but most penetrating. Beta is intermediate in both ionisation and penetration.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Radioactive emissions overview:</strong><br><em>There are three types: alpha (α), beta (β), gamma (γ)</em><br><em>Each differs in nature, penetrating power, and ionising ability.</em><br><em>The three pre-filled columns give clues — use them to identify the emission type and complete the missing cell in each row.</em>",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "row1",
+            "label": "Row 1: Electromagnetic radiation, range of several kilometres — identify this emission and state what stops it. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "row2",
+            "label": "Row 2: Helium nucleus, stopped by paper — identify this emission and state its range in air. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "row3",
+            "label": "Row 3: Electron, range of a few metres — identify this emission and state what stops it. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_row1_type",
+            "step_id": "row1",
+            "type": "choice",
+            "label": "Row 1 — Emission type: _____",
+            "expected": "Gamma",
+            "marks": 0.5,
+            "diagnostic_hint": "Electromagnetic radiation with kilometre range = gamma (γ) radiation",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Electromagnetic radiation with very long range is gamma (γ). Alpha is a helium nucleus; beta is an electron — neither is electromagnetic."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f2_row1_stopped",
+            "step_id": "row1",
+            "type": "choice",
+            "label": "Row 1 — Stopped by: _____",
+            "expected": "Thick lead",
+            "marks": 0.5,
+            "diagnostic_hint": "Gamma radiation requires thick, dense material to stop it — typically several centimetres of lead or thick concrete.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Gamma is the most penetrating: paper stops alpha; mm of aluminium stops beta; only thick lead or dense concrete stops gamma."
+            },
+            "options": {
+                "Thick lead": "Thick lead (or dense concrete)",
+                "Thin aluminium": "Thin aluminium sheet (~3 mm)",
+                "Paper": "A single sheet of paper"
+            }
+        },
+        {
+            "id": "f3_row2_type",
+            "step_id": "row2",
+            "type": "choice",
+            "label": "Row 2 — Emission type: _____",
+            "expected": "Alpha",
+            "marks": 0.5,
+            "diagnostic_hint": "Helium nucleus, stopped by paper = alpha (α) particle",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The alpha particle IS a helium nucleus (2 protons + 2 neutrons). It is stopped by a single sheet of paper because it is large and highly ionising."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f4_row2_range",
+            "step_id": "row2",
+            "type": "choice",
+            "label": "Row 2 — Range in air: _____",
+            "expected": "A few centimetres",
+            "marks": 0.5,
+            "diagnostic_hint": "Alpha particles have very short range in air — only a few centimetres (typically 3–7 cm) before they are absorbed.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Alpha is the LEAST penetrating: its range in air is just a few centimetres (3–7 cm). Gamma travels kilometres; beta travels a few metres."
+            },
+            "options": {
+                "A few centimetres": "A few centimetres (~3–7 cm)",
+                "A few metres": "A few metres (~1–3 m)",
+                "Several kilometres": "Several kilometres"
+            }
+        },
+        {
+            "id": "f5_row3_type",
+            "step_id": "row3",
+            "type": "choice",
+            "label": "Row 3 — Emission type: _____",
+            "expected": "Beta",
+            "marks": 0.5,
+            "diagnostic_hint": "Electron emitted from nucleus, range of a few metres = beta (β) particle",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Beta particles are high-speed electrons emitted from the nucleus. Their range of a few metres in air and medium penetrating ability distinguish them from alpha and gamma."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f6_row3_stopped",
+            "step_id": "row3",
+            "type": "choice",
+            "label": "Row 3 — Stopped by: _____",
+            "expected": "Thin aluminium",
+            "marks": 0.5,
+            "diagnostic_hint": "Beta particles are stopped by a few millimetres of aluminium (or similar thin metal sheet).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Beta particles are stopped by a few mm of aluminium. Paper is insufficient (only stops alpha); you need thick lead for gamma."
+            },
+            "options": {
+                "Thick lead": "Thick lead (or dense concrete)",
+                "Thin aluminium": "Thin aluminium sheet (~3 mm)",
+                "Paper": "A single sheet of paper"
+            }
+        }
+    ]
+}

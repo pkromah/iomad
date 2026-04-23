@@ -1,0 +1,58 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-MAY23-Q1f"],
+        "source_paper": "CSEC Chemistry Paper 02 May/June 2023",
+        "question_ref": "Q1(f)",
+        "subject": "Chemistry",
+        "topic": "Rates of Reaction — Mass of H₂O₂ from Concentration",
+        "marks_total": 1,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "1m: calculate mass of H₂O₂ given c=0.40 mol/dm³, V=1 dm³, M(H₂O₂)=34.01 g/mol. mass = c × V × M = 0.40 × 1 × 34.01 = 13.6g ±2%. Depends on Q1eii graph-read concentration (~0.40 mol/dm³). Own-figure answer accepted."
+    },
+    "question": {
+        "name": "CSEC Chem May 2023 Q1f — Mass of H₂O₂ at Given Concentration",
+        "text": "<p>The concentration of hydrogen peroxide at which the rate of reaction equals 0.045 s⁻¹ was determined from the graph to be approximately <strong>0.40 mol dm⁻³</strong>.</p><p>Calculate the <strong>mass</strong> of hydrogen peroxide (H₂O₂) dissolved in <strong>1 dm³</strong> of solution at this concentration.</p><p>[M(H₂O₂) = 34.01 g mol⁻¹] <em>(1 mark)</em></p>",
+        "general_feedback": "<p><strong>Calculating mass from concentration:</strong></p><p><strong>Formula:</strong> mass = concentration × volume × molar mass</p><p>mass = c × V × M</p><p>mass = 0.40 mol dm⁻³ × 1 dm³ × 34.01 g mol⁻¹</p><p>mass = 0.40 × 34.01 = <strong>13.6 g</strong></p><p><em>Derivation:</em> n = c × V = 0.40 × 1 = 0.40 mol; mass = n × M = 0.40 × 34.01 = 13.6 g</p><p><em>Molar mass check:</em> H₂O₂: (2 × 1) + (2 × 16) = 2 + 32 = 34 g mol⁻¹ ✓</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> c = 0.40 mol dm⁻³ | V = 1 dm³ | M(H₂O₂) = 34.01 g mol⁻¹<br><strong>Formula:</strong> mass = c × V × M (or: n = cV, then mass = nM)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_mass",
+            "label": "Calculate the mass of H₂O₂. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass",
+            "step_id": "step_mass",
+            "type": "numberbox",
+            "label": "Mass of H₂O₂ = _____ g",
+            "expected": "13.6",
+            "tolerance": 0.3,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "mass = c × V × M = 0.40 × 1 × 34.01 = 13.6 g. Own-figure: if your concentration from the graph differs, apply the same formula with your value.",
+            "error_codes": {"SC_CALCULATION_ERROR": "mass = n × M = (c × V) × M = (0.40 × 1) × 34.01 = 0.40 × 34.01 = 13.6 g. Accept own-figure (your graph concentration × 34.01 g/mol)."}
+        }
+    ]
+}

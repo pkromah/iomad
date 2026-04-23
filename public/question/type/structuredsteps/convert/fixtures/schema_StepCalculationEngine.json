@@ -1,0 +1,52 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "source": "cloze_conversion",
+        "source_name": "Area and Perimeter Q1",
+        "source_category": "Area and Perimeter",
+        "converted_at": "2026-04-10",
+        "sea_marking": true
+    },
+    "params": {
+        "partial_credit_enabled": false,
+        "method_marks_enabled": false
+    },
+    "grading": {
+        "mode": "field_sum",
+        "partial_credit_enabled": false
+    },
+    "steps": [
+        {
+            "id": "step1",
+            "label": "Step 1: Find the length",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step2",
+            "label": "Step 2: Calculate the area",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1",
+            "step_id": "step1",
+            "type": "numberbox",
+            "expected": "8",
+            "tolerance": 0,
+            "marks": 1.0
+        },
+        {
+            "id": "f2",
+            "step_id": "step2",
+            "type": "numberbox",
+            "expected": "40",
+            "tolerance": 0,
+            "marks": 1.0
+        }
+    ]
+}

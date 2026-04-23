@@ -1,0 +1,16 @@
+<div class="{{rowclass}}" data-ss-field-id="{{fieldid}}" data-ss-field-type="{{fieldtype}}" data-ss-step-id="{{stepid}}" role="group">
+  <div class="col-md-4 col-12 mb-1">
+    {{{labelhtml}}}
+  </div>
+  <div class="col-md-8 col-12">
+    {{{controlhtml}}}
+    {{#hashint}}
+      <button type="button" class="btn btn-sm btn-outline-secondary mt-2" data-ss-hint-toggle="1" data-ss-target="{{hint_id}}" aria-expanded="false">{{hint_toggle_label}}</button>
+      <div id="{{hint_id}}" class="ss-hint-panel mt-2" hidden>
+        {{hint_text}}
+      </div>
+    {{/hashint}}
+    {{{helperhtml}}}
+    {{{feedbackhtml}}}
+  </div>
+</div>

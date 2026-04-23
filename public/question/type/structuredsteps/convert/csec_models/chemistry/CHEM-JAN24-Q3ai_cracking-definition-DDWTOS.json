@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN24-Q3ai"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q3(a)(i)",
+        "subject": "Chemistry",
+        "topic": "Organic Chemistry — Definition of Cracking",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Definition: Cracking is the process in which large hydrocarbon molecules are broken down into smaller, more useful molecules. 3-token DDWTOS completing a cloze definition. Distractors from polymerisation and combination reaction vocabulary."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q3a(i) — Define Cracking",
+        "text": "<p>Define the term <strong>'cracking'</strong> by completing the statement below:</p><p>Cracking is a process in which [[1]] hydrocarbon molecules are [[2]] into [[3]] molecules.</p>",
+        "general_feedback": "<p><strong>Cracking:</strong> A process in which <strong>large</strong> hydrocarbon molecules are <strong>broken down</strong> into <strong>smaller</strong> molecules.</p><p>Cracking is used in the petrochemical industry to convert heavier, less useful fractions of crude oil (e.g. heavy fuel oil) into lighter, more valuable products (e.g. petrol, ethene for plastics).</p><p>Two types: <strong>thermal cracking</strong> (high temperature and pressure) and <strong>catalytic cracking</strong> (uses a catalyst at lower temperature).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Cracking is a process in which [[1]] hydrocarbon molecules are [[2]] into [[3]] molecules.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "large",
+                        "correct": true
+                    },
+                    {
+                        "text": "small",
+                        "correct": false
+                    },
+                    {
+                        "text": "simple",
+                        "correct": false
+                    },
+                    {
+                        "text": "unsaturated",
+                        "correct": false
+                    }
+                ],
+                "label": "Cracking — ___ hydrocarbon molecules",
+                "diagnostic_hint": "Cracking starts with LARGE (long-chain) hydrocarbon molecules — typically from the heavy fractions of crude oil such as fuel oil that are less in demand."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "broken down",
+                        "correct": true
+                    },
+                    {
+                        "text": "combined",
+                        "correct": false
+                    },
+                    {
+                        "text": "polymerised",
+                        "correct": false
+                    },
+                    {
+                        "text": "heated under pressure",
+                        "correct": false
+                    }
+                ],
+                "label": "Cracking — molecules are ___",
+                "diagnostic_hint": "The large molecules are BROKEN DOWN (cracked) — this is the reverse of polymerisation. The breaking occurs at high temperature and/or with a catalyst."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "smaller",
+                        "correct": true
+                    },
+                    {
+                        "text": "larger",
+                        "correct": false
+                    },
+                    {
+                        "text": "identical",
+                        "correct": false
+                    },
+                    {
+                        "text": "polymer",
+                        "correct": false
+                    }
+                ],
+                "label": "Cracking — produces ___ molecules",
+                "diagnostic_hint": "Cracking produces SMALLER molecules — including short-chain alkanes (petrol) and alkenes (for plastics). This is why cracking is commercially important."
+            }
+        ],
+        "word_bank": [
+            "large",
+            "small",
+            "simple",
+            "unsaturated",
+            "broken down",
+            "combined",
+            "polymerised",
+            "heated under pressure",
+            "smaller",
+            "larger",
+            "identical",
+            "polymer"
+        ],
+        "word_bank_note": "12 tokens for 3 slots. Key distractors: 'combined' and 'polymerised' — students who confuse cracking with polymerisation (addition polymerisation joins monomers; cracking breaks chains). 'unsaturated' — students may recall that cracking produces unsaturated products (alkenes) but the INPUT molecules are saturated alkanes; this tests precision. 'heated under pressure' — this describes a METHOD of cracking, not what cracking IS (process of breaking bonds)."
+    }
+}

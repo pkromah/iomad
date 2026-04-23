@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q1bi"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q1(b)(i)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Definition of Half-Life",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "2m: define half-life. Cloze: 'time(0.5m) / activity or number of radioactive nuclei(1m) / half(0.5m)'. Key discriminator: students must specify WHAT halves (activity OR number of nuclei) — just saying 'time to halve' earns 0m."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q1b(i) — Define Half-Life",
+        "text": "<p>Define the term <strong>'half-life'</strong> by completing the statement below:</p><p>Half-life is the [[1]] taken for the [[2]] of a radioactive sample to decrease to [[3]] of its initial value.</p>",
+        "general_feedback": "<p><strong>Half-life (t½):</strong></p><p>Half-life is the <strong>time</strong> taken for the <strong>activity</strong> (or the number of radioactive nuclei) of a radioactive sample to decrease to <strong>half</strong> its initial value.</p><p><em>Note:</em> The activity (disintegrations per second) and the number of undecayed nuclei both halve in one half-life — either is acceptable in the definition.</p><p><em>Example:</em> If a sample has activity 800 Bq and t½ = 2 hours, after 2 hours activity = 400 Bq; after 4 hours = 200 Bq, and so on.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Half-life is the [[1]] taken for the [[2]] of a radioactive sample to decrease to [[3]] of its initial value.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "time",
+                        "correct": true
+                    },
+                    {
+                        "text": "energy",
+                        "correct": false
+                    },
+                    {
+                        "text": "rate",
+                        "correct": false
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    }
+                ],
+                "label": "Half-life is the ___ taken for...",
+                "diagnostic_hint": "Half-life is a TIME (measured in seconds, minutes, years, etc.). It measures duration, not energy or temperature."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "activity",
+                        "correct": true
+                    },
+                    {
+                        "text": "number of radioactive nuclei",
+                        "correct": true
+                    },
+                    {
+                        "text": "mass",
+                        "correct": false
+                    },
+                    {
+                        "text": "radiation dose",
+                        "correct": false
+                    }
+                ],
+                "label": "Half-life — ___ to fall to half",
+                "diagnostic_hint": "The ACTIVITY (or number of radioactive nuclei, or count rate) falls to HALF its original value in one half-life. \"Mass\" is sometimes accepted but activity/count rate is more precise."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "half",
+                        "correct": true
+                    },
+                    {
+                        "text": "one quarter",
+                        "correct": false
+                    },
+                    {
+                        "text": "one tenth",
+                        "correct": false
+                    },
+                    {
+                        "text": "zero",
+                        "correct": false
+                    }
+                ],
+                "label": "Half-life — falls to ___ its original value",
+                "diagnostic_hint": "After one half-life, exactly HALF the original activity remains. After two half-lives, one-quarter remains. After n half-lives: (½)ⁿ of the original activity remains."
+            }
+        ],
+        "word_bank": [
+            "time",
+            "energy",
+            "rate",
+            "temperature",
+            "activity",
+            "number of radioactive nuclei",
+            "mass",
+            "radiation dose",
+            "half",
+            "one quarter",
+            "one tenth",
+            "zero"
+        ],
+        "word_bank_note": "12 tokens for 3 slots. Slot 1 (time): 'energy' and 'temperature' are unrelated to the definition of half-life. 'rate' is tempting since activity is a rate, but the question asks for what is TAKEN (time). Slot 2 (activity/number of nuclei): both correct — CSEC accepts either. 'mass' is a critical distractor: mass does halve eventually (as nuclei decay to stable daughters), but CSEC mark schemes require 'activity' or 'number of (radioactive) nuclei'. 'radiation dose' is vague and refers to absorbed/received dose, not sample property. Slot 3 (half): 'one quarter' is what you get after TWO half-lives — common off-by-one error. 'one tenth' has no special significance. 'zero' is incorrect — radioactivity never reaches exactly zero in finite time (exponential decay)."
+    }
+}

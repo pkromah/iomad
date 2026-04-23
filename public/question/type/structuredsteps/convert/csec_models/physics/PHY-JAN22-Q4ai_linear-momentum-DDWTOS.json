@@ -1,0 +1,143 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q4ai"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q4(a)(i)",
+        "subject": "Physics",
+        "topic": "Mechanics — Definition of Linear Momentum and SI Unit",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "3m: define linear momentum + state SI unit. Cloze: 'product of [mass] and [velocity] / [vector] quantity / SI unit [kg m/s]'. Marks: 1+1+0.5+0.5. Note caribbean context: truck on Sir George Walter Highway is in Q4b (calculation), not this definition sub-part."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q4a(i) — Define Linear Momentum and State SI Unit",
+        "text": "<p>Define the term <strong>'linear momentum'</strong> and state its SI unit by completing the statements below:</p><p>Linear momentum is the product of an object's [[1]] and its [[2]]. It is a [[3]] quantity. Its SI unit is [[4]].</p>",
+        "general_feedback": "<p><strong>Linear momentum (p):</strong></p><p>Linear momentum is the product of an object's <strong>mass</strong> and its <strong>velocity</strong>:</p><p style='text-align:center;'><strong>p = mv</strong></p><p>It is a <strong>vector</strong> quantity — it has both magnitude and direction (in the direction of the velocity).</p><p>Its SI unit is <strong>kg m s⁻¹</strong> (kilogram metre per second), also written as kg·m/s or N·s.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Linear momentum is the product of an object's [[1]] and its [[2]]. It is a [[3]] quantity. Its SI unit is [[4]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "mass",
+                        "correct": true
+                    },
+                    {
+                        "text": "weight",
+                        "correct": false
+                    },
+                    {
+                        "text": "density",
+                        "correct": false
+                    },
+                    {
+                        "text": "acceleration",
+                        "correct": false
+                    }
+                ],
+                "label": "Linear momentum = ___ × velocity",
+                "diagnostic_hint": "Linear momentum = MASS × velocity (p = mv). Mass is the scalar quantity of matter; when multiplied by velocity (a vector) the result is a vector quantity."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "velocity",
+                        "correct": true
+                    },
+                    {
+                        "text": "speed",
+                        "correct": false
+                    },
+                    {
+                        "text": "acceleration",
+                        "correct": false
+                    },
+                    {
+                        "text": "force",
+                        "correct": false
+                    }
+                ],
+                "label": "Linear momentum = mass × ___",
+                "diagnostic_hint": "Linear momentum = mass × VELOCITY (not speed — velocity is the vector, which is why momentum is also a vector). p = mv, units: kg m s⁻¹."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "vector",
+                        "correct": true
+                    },
+                    {
+                        "text": "scalar",
+                        "correct": false
+                    },
+                    {
+                        "text": "derived",
+                        "correct": false
+                    },
+                    {
+                        "text": "base",
+                        "correct": false
+                    }
+                ],
+                "label": "Linear momentum is a ___ quantity",
+                "diagnostic_hint": "Linear momentum is a VECTOR quantity — it has both magnitude and direction. This is why \"conservation of momentum\" must account for direction (e.g., in collisions)."
+            },
+            {
+                "id": 4,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "kg m s⁻¹",
+                        "correct": true
+                    },
+                    {
+                        "text": "kg m s⁻²",
+                        "correct": false
+                    },
+                    {
+                        "text": "N m",
+                        "correct": false
+                    },
+                    {
+                        "text": "J s",
+                        "correct": false
+                    }
+                ],
+                "label": "SI unit of linear momentum",
+                "diagnostic_hint": "Unit = kg m s⁻¹ (kilogram metre per second). Alternative: N s (newton-second), since 1 N s = 1 kg m s⁻¹. NOT kg m s⁻² (that is the unit of force/newton)."
+            }
+        ],
+        "word_bank": [
+            "mass",
+            "weight",
+            "density",
+            "acceleration",
+            "velocity",
+            "speed",
+            "force",
+            "vector",
+            "scalar",
+            "derived",
+            "base",
+            "kg m s⁻¹",
+            "kg m s⁻²",
+            "N m",
+            "J s"
+        ],
+        "word_bank_note": "15 tokens for 4 slots. Slot 1 (mass): 'weight' is a common confusion — weight is a force (N), not mass. 'density' is mass per unit volume. 'acceleration' appears in both slots as a distractor. Slot 2 (velocity): 'speed' is the key distractor — momentum is a vector (mass × velocity, direction matters), not mass × speed. Slot 3 (vector): 'scalar' is wrong — scalar quantities have magnitude only. 'derived' and 'base' describe SI quantity categories, not vector/scalar nature. Slot 4 (kg m s⁻¹): 'kg m s⁻²' is the unit of force (F=ma). 'N m' is newton-metre (torque). 'J s' is joule-second (action/Planck's constant) — common misconception from impulse–momentum (impulse N·s = kg m s⁻¹, which is correct but presented as N s not J s)."
+    }
+}

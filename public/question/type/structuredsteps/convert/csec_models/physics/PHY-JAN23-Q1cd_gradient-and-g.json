@@ -1,0 +1,123 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q1c", "PHY-JAN23-Q1d"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q1(c) and Q1(d)",
+        "subject": "Physics",
+        "topic": "Mechanics — Pendulum: Gradient of T² vs l Graph and Derivation of g",
+        "marks_total": 10,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q1c (6 marks): gradient S of the T² vs l graph using two well-separated points. Q1d (4 marks): calculate g = 4π²/S. Expected gradient S ≈ 4.0–4.12 s²/m; g ≈ 9.6–9.8 m/s². Follows PHY-JAN23-Q1b (T² table) and the graph plotting Q1b(iii) (not auto-graded)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q1c/d — Gradient and g from Pendulum T² Graph",
+        "text": "<p>Using the completed T² vs l graph from Table 1 (where T² values range from 0.59 s² at l=0.15 m to 3.06 s² at l=0.75 m), answer the following:</p><p><strong>Part (c):</strong> Calculate the gradient <em>S</em> of the T² vs l graph. Choose two well-separated points on your best-fit line. (6 marks)</p><p><strong>Part (d):</strong> Given that S = 4π²/g, calculate the acceleration due to gravity <em>g</em>. (4 marks)</p>",
+        "general_feedback": "<p><strong>Q1c — Gradient:</strong><br>Using points (0.15, 0.59) and (0.75, 3.06):<br>S = ΔT²/Δl = (3.06 − 0.59) / (0.75 − 0.15) = 2.47 / 0.60 = <strong>4.12 s² m⁻¹</strong><br>(Accept any two well-separated, clearly identified points from the best-fit line; S should fall in the range 3.9–4.3)</p><p><strong>Q1d — Acceleration due to gravity:</strong><br>S = 4π²/g → g = 4π²/S = 4 × 9.870 / 4.12 = 39.48 / 4.12 ≈ <strong>9.58 m s⁻²</strong><br>(Accept any answer in range 9.2–10.2 m s⁻², depending on gradient chosen)</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Reference T² data:</strong> l=0.15→T²=0.59 &nbsp;|&nbsp; l=0.25→T²=0.98 &nbsp;|&nbsp; l=0.35→T²=1.32 &nbsp;|&nbsp; l=0.45→T²=1.80 &nbsp;|&nbsp; l=0.55→T²=2.19 &nbsp;|&nbsp; l=0.65→T²=2.62 &nbsp;|&nbsp; l=0.75→T²=3.06<br><strong>Gradient formula:</strong> S = ΔT²/Δl (rise over run from two distant points on best-fit line)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_gradient",
+            "label": "Q1c — Calculate the <strong>gradient S</strong> of the T² vs l graph using two well-separated points. (6 marks)",
+            "type": "computational",
+            "marks": 6
+        },
+        {
+            "id": "step_g",
+            "label": "Q1d — Using S = 4π²/g, calculate <strong>g</strong>. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_delta_T2",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "ΔT² (using your two chosen points) = _____ s²",
+            "expected": "2.47",
+            "tolerance": 0.3,
+            "marks": 2.0,
+            "unit": "s²",
+            "diagnostic_hint": "Using the extreme points: ΔT² = T²(0.75) − T²(0.15) = 3.06 − 0.59 = 2.47 s²",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Choose two points that are far apart on the line of best fit. ΔT² = upper T² value − lower T² value from your chosen pair."
+            }
+        },
+        {
+            "id": "f2_delta_l",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "Δl (using your two chosen points) = _____ m",
+            "expected": "0.60",
+            "tolerance": 0.1,
+            "marks": 2.0,
+            "unit": "m",
+            "diagnostic_hint": "Δl = l₂ − l₁ = 0.75 − 0.15 = 0.60 m",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Δl = the difference in l values for your two chosen points on the line of best fit."
+            }
+        },
+        {
+            "id": "f3_gradient",
+            "step_id": "step_gradient",
+            "type": "numberbox",
+            "label": "Gradient S = ΔT²/Δl = _____ s² m⁻¹",
+            "expected": "4.12",
+            "tolerance": 0.21,
+            "marks": 2.0,
+            "unit": "s² m⁻¹",
+            "diagnostic_hint": "S = 2.47 / 0.60 = 4.12 s² m⁻¹ (accept 3.9–4.3 depending on points chosen)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "S = ΔT² ÷ Δl = 2.47 ÷ 0.60 = 4.12 s²/m. Divide the change in T² by the change in l."
+            }
+        },
+        {
+            "id": "f4_4pi2",
+            "step_id": "step_g",
+            "type": "numberbox",
+            "label": "4π² = _____",
+            "expected": "39.48",
+            "tolerance": 0.4,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "4π² = 4 × (3.14159)² = 4 × 9.870 = 39.48",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "4π² = 4 × 9.870 = 39.48. Use π = 3.14159 on your calculator."
+            }
+        },
+        {
+            "id": "f5_g",
+            "step_id": "step_g",
+            "type": "numberbox",
+            "label": "Acceleration due to gravity g = _____ m s⁻²",
+            "expected": "9.58",
+            "tolerance": 0.5,
+            "marks": 3.0,
+            "unit": "m s⁻²",
+            "diagnostic_hint": "g = 4π²/S = 39.48/4.12 = 9.58 m s⁻² (close to the known value of 9.81 m s⁻²)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "g = 4π² ÷ S = 39.48 ÷ 4.12 = 9.58 m/s².",
+                "SC_FORMULA_SELECTION_ERROR": "Rearrange S = 4π²/g to get g = 4π²/S. Divide 4π² by your gradient value."
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q6ai"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q6(a)(i)",
+        "subject": "Biology",
+        "topic": "Reproduction — Sex Hormones of the Menstrual Cycle",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: name the TWO sex hormones associated with the menstrual cycle. Oestrogen(1m) + Progesterone(1m). 2 slots × 1m. Context: 28-day menstrual cycle (Anna). Common error: testosterone (male hormone) or FSH/LH (pituitary, not sex hormones per se)."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q6a(i) — Name the Two Sex Hormones of the Menstrual Cycle",
+        "text": "<p>Name the TWO sex hormones which are associated with the menstrual cycle:</p><p>Hormone 1: [[1]]</p><p>Hormone 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Sex hormones of the menstrual cycle:</strong></p><ol><li><strong>Oestrogen (Estrogen)</strong> — produced by the ovarian follicle (and corpus luteum); causes thickening of the uterine lining in the first half of the cycle (follicular phase); triggers LH surge at ovulation.</li><li><strong>Progesterone</strong> — produced mainly by the corpus luteum after ovulation; maintains and further thickens the uterine lining in the second half of the cycle (luteal phase); inhibits menstruation during pregnancy.</li></ol><p><em>Note:</em> FSH and LH are pituitary hormones that control the cycle but are not the sex hormones. Testosterone is the primary male sex hormone (though females produce small amounts).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Hormone 1: [[1]]</p><p>Hormone 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Oestrogen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Estrogen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Progesterone",
+                        "correct": true
+                    },
+                    {
+                        "text": "Testosterone",
+                        "correct": false
+                    },
+                    {
+                        "text": "FSH",
+                        "correct": false
+                    },
+                    {
+                        "text": "Adrenaline",
+                        "correct": false
+                    }
+                ],
+                "label": "Sex hormone produced during the follicular phase",
+                "diagnostic_hint": "Oestrogen (also spelled Estrogen) is produced by the developing follicle. It causes the uterine lining to thicken and triggers the LH surge that leads to ovulation."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Oestrogen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Estrogen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Progesterone",
+                        "correct": true
+                    },
+                    {
+                        "text": "Testosterone",
+                        "correct": false
+                    },
+                    {
+                        "text": "FSH",
+                        "correct": false
+                    },
+                    {
+                        "text": "Adrenaline",
+                        "correct": false
+                    }
+                ],
+                "label": "Sex hormone produced by the corpus luteum after ovulation",
+                "diagnostic_hint": "Progesterone is produced by the corpus luteum after ovulation. It maintains the uterine lining for possible implantation. If no fertilisation occurs, progesterone levels drop and menstruation begins."
+            }
+        ],
+        "word_bank": [
+            "Oestrogen",
+            "Estrogen",
+            "Progesterone",
+            "Testosterone",
+            "FSH",
+            "Adrenaline"
+        ],
+        "word_bank_note": "6 tokens for 2 slots. Both slots share the same options. Oestrogen and Progesterone are both correct for either slot — student must select both (one per slot) for full marks. 'Estrogen' is the American spelling of oestrogen — both accepted. 'Testosterone' is the primary male sex hormone; females produce trace amounts but it is not a menstrual cycle hormone. 'FSH' (follicle-stimulating hormone) is a pituitary hormone that controls the cycle but is not itself a sex hormone. 'Adrenaline' is the stress hormone (adrenal medulla) — unrelated."
+    }
+}

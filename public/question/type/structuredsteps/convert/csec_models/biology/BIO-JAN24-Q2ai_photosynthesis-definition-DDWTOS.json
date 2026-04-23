@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-JAN24-Q2ai"
+        ],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q2(a)(i)",
+        "subject": "Biology",
+        "topic": "Plants — Definition of Photosynthesis",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "2m: define photosynthesis. 3-slot cloze: 'light energy(0.5m) / carbon dioxide and water(1m) / glucose(0.5m)'. The reactants slot (CO₂ + H₂O) carries the most marks — listing only one reactant earns 0m for that slot. Oxygen is in the fixed frame 'releasing oxygen' — not a graded slot."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q2a(i) — Define Photosynthesis",
+        "text": "<p>Define the term <strong>'photosynthesis'</strong> by completing the statement below:</p><p>Photosynthesis is the process by which green plants use [[1]] to convert [[2]] into [[3]], releasing oxygen.</p>",
+        "general_feedback": "<p><strong>Photosynthesis:</strong></p><p>Photosynthesis is the process by which green plants use <strong>light energy</strong> to convert <strong>carbon dioxide and water</strong> into <strong>glucose</strong>, releasing oxygen.</p><p><strong>Word equation:</strong><br>Carbon dioxide + Water → Glucose + Oxygen<br>(using light energy and chlorophyll)</p><p><strong>Balanced chemical equation:</strong><br>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</p><p><em>Key points:</em> Takes place in chloroplasts, specifically in the chlorophyll pigment. Light energy is converted to chemical energy stored in glucose.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Photosynthesis is the process by which green plants use [[1]] to convert [[2]] into [[3]], releasing oxygen.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "light energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "solar energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "chemical energy",
+                        "correct": false
+                    },
+                    {
+                        "text": "heat energy",
+                        "correct": false
+                    }
+                ],
+                "label": "Photosynthesis uses ___ energy",
+                "diagnostic_hint": "Photosynthesis converts light energy (from the sun) into chemical energy stored in glucose. \"Solar energy\" is an accepted synonym for light energy."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "carbon dioxide and water",
+                        "correct": true
+                    },
+                    {
+                        "text": "carbon dioxide only",
+                        "correct": false
+                    },
+                    {
+                        "text": "water only",
+                        "correct": false
+                    },
+                    {
+                        "text": "oxygen and glucose",
+                        "correct": false
+                    }
+                ],
+                "label": "Raw materials used in photosynthesis",
+                "diagnostic_hint": "The two raw materials (reactants) are carbon dioxide (absorbed through stomata) and water (absorbed by roots). Both are needed to build glucose."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "glucose",
+                        "correct": true
+                    },
+                    {
+                        "text": "starch",
+                        "correct": false
+                    },
+                    {
+                        "text": "protein",
+                        "correct": false
+                    },
+                    {
+                        "text": "carbon dioxide",
+                        "correct": false
+                    }
+                ],
+                "label": "Organic product of photosynthesis",
+                "diagnostic_hint": "The organic product stored is glucose (C₆H₁₂O₆). Oxygen is also released as a by-product. Starch is formed when glucose molecules are polymerised, but glucose is the direct product."
+            }
+        ],
+        "word_bank": [
+            "light energy",
+            "solar energy",
+            "chemical energy",
+            "heat energy",
+            "carbon dioxide and water",
+            "carbon dioxide only",
+            "water only",
+            "oxygen and glucose",
+            "glucose",
+            "starch",
+            "protein",
+            "carbon dioxide"
+        ],
+        "word_bank_note": "12 tokens for 3 slots. Slot 1 (light/solar energy): both accepted — CSEC accepts either term. 'Chemical energy' is wrong — that is the OUTPUT of photosynthesis stored in glucose; plants don't use chemical energy as the input. 'Heat energy' is incorrect. Slot 2 (CO₂ and water): the FULL reactant pair must be selected — the 1m requires both reactants. 'Carbon dioxide only' or 'water only' earn 0m since both are essential. 'Oxygen and glucose' are the PRODUCTS (reversed). Slot 3 (glucose): the immediate product is glucose. 'Starch' is incorrect as a direct product — glucose is later converted to starch for storage, but the equation product is glucose. 'Protein' is wrong. 'Carbon dioxide' is a reactant, not a product."
+    }
+}

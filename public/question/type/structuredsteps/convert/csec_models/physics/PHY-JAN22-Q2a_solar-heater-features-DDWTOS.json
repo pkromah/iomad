@@ -1,0 +1,166 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q2a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q2(a)",
+        "subject": "Physics",
+        "topic": "Thermal Energy — Matching Solar Water Heater Features to Thermal Principles",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": true,
+        "authored": "2026-04-12",
+        "note": "Figure 3 shows a natural convection solar water heating system. Features: black surface (good absorber), copper tubing (good conductor), glass cover (greenhouse effect), water/pipe loop (convection). 4 slots × 1m each. Caribbean context: solar water heating is widely used across the Caribbean. Word bank: 6 tokens (4 correct features + 2 distractors)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q2a — Solar Heater Features and Thermal Principles",
+        "text": "<p>The diagram (Figure 3) shows a natural convection solar water heating system with the following components: a solar collector with a <em>black surface</em>, <em>copper tubing</em>, a <em>glass cover</em>, an insulated backing, and a <em>hot-water tank</em> connected by pipes carrying water in a loop.</p><p>State which feature of the solar water heating system demonstrates <strong>EACH</strong> of the following thermal energy principles. (4 marks)</p><table border='1' style='border-collapse:collapse; width:85%; margin:0.5em auto;'><tr><th>Thermal Energy Principle</th><th>Feature of the System</th></tr><tr><td>(i) Good absorption of heat</td><td>[[1]]</td></tr><tr><td>(ii) Heat transfer by convection</td><td>[[2]]</td></tr><tr><td>(iii) The greenhouse effect</td><td>[[3]]</td></tr><tr><td>(iv) Good heat transfer by conduction</td><td>[[4]]</td></tr></table>",
+        "general_feedback": "<p><strong>Feature–principle matching:</strong></p><ul><li><strong>(i) Good absorption of heat → Black surface</strong> — Dark/black surfaces absorb radiation most efficiently; matt black is the best absorber across all wavelengths.</li><li><strong>(ii) Heat transfer by convection → Water/pipe loop (connecting tank to collector)</strong> — Hot water (less dense) rises from the collector into the tank; cooler water sinks back through the return pipe — natural convection current.</li><li><strong>(iii) The greenhouse effect → Glass cover</strong> — Glass transmits short-wave solar radiation inward but absorbs/reflects longer-wave infrared radiation emitted by the heated surfaces, trapping heat (the greenhouse effect).</li><li><strong>(iv) Good heat transfer by conduction → Copper tubing</strong> — Copper is an excellent thermal conductor; heat transfers rapidly from the sun-heated tubing walls into the water flowing inside.</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<table border='1' style='border-collapse:collapse; width:85%; margin:0.5em auto;'><tr><th>Thermal Energy Principle</th><th>Feature of the System</th></tr><tr><td>(i) Good absorption of heat</td><td>[[1]]</td></tr><tr><td>(ii) Heat transfer by convection</td><td>[[2]]</td></tr><tr><td>(iii) The greenhouse effect</td><td>[[3]]</td></tr><tr><td>(iv) Good heat transfer by conduction</td><td>[[4]]</td></tr></table>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Black surface of the solar collector",
+                        "correct": true
+                    },
+                    {
+                        "text": "Water flowing through the pipe loop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Glass cover over the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copper tubing inside the collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Insulation lining the sides and bottom",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hot-water storage tank at the top",
+                        "correct": false
+                    }
+                ],
+                "label": "Feature that maximises heat absorption",
+                "diagnostic_hint": "The BLACK surface of the solar collector absorbs maximum radiation. Black surfaces are the best absorbers of infrared radiation (they are also the best emitters)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Black surface of the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Water flowing through the pipe loop",
+                        "correct": true
+                    },
+                    {
+                        "text": "Glass cover over the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copper tubing inside the collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Insulation lining the sides and bottom",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hot-water storage tank at the top",
+                        "correct": false
+                    }
+                ],
+                "label": "Feature that transfers heat to the domestic supply",
+                "diagnostic_hint": "WATER flows through the pipe loop, absorbing heat from the collector and carrying it to the storage tank. Water's high specific heat capacity makes it an excellent heat-transfer fluid."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Black surface of the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Water flowing through the pipe loop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Glass cover over the solar collector",
+                        "correct": true
+                    },
+                    {
+                        "text": "Copper tubing inside the collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Insulation lining the sides and bottom",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hot-water storage tank at the top",
+                        "correct": false
+                    }
+                ],
+                "label": "Feature that reduces convection heat loss",
+                "diagnostic_hint": "The GLASS cover traps heat inside the collector (greenhouse effect) and reduces convection heat loss from the black absorber surface to the outside air."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Black surface of the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Water flowing through the pipe loop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Glass cover over the solar collector",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copper tubing inside the collector",
+                        "correct": true
+                    },
+                    {
+                        "text": "Insulation lining the sides and bottom",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hot-water storage tank at the top",
+                        "correct": false
+                    }
+                ],
+                "label": "Feature that conducts heat efficiently from absorber to water",
+                "diagnostic_hint": "COPPER tubing is used because copper has very high thermal conductivity — heat is rapidly conducted from the black absorber plate into the water flowing through the pipes."
+            }
+        ],
+        "word_bank": [
+            "Black surface of the solar collector",
+            "Water flowing through the pipe loop",
+            "Glass cover over the solar collector",
+            "Copper tubing inside the collector",
+            "Insulation lining the sides and bottom",
+            "Hot-water storage tank at the top"
+        ],
+        "word_bank_note": "6 tokens for 4 slots; 4 correct + 2 distractors. 'Insulation lining' — this PREVENTS heat loss (good insulator, not conductor); students may confuse insulation with conduction. 'Hot-water storage tank' — it stores hot water (thermal storage/inertia) but is not the primary demonstrator of any of the 4 listed principles. Key distractor trap: students sometimes choose glass for 'good absorption' (glass does absorb some IR) but the specific CSEC answer for absorption is the black surface."
+    }
+}

@@ -1,0 +1,182 @@
+.ss-question {
+    width: 100%;
+}
+
+.ss-question .card {
+    border-radius: 0.5rem;
+}
+
+.ss-question .structuredsteps-field-row {
+    margin-bottom: 0.75rem;
+}
+
+.ss-question .ss-field {
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.ss-question .ss-field:focus,
+.ss-question .ss-field:focus-visible {
+    outline: 2px solid #0f6cbf;
+    outline-offset: 1px;
+    box-shadow: none;
+}
+
+.ss-question .structuredsteps-graph-canvas {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.ss-question .ss-hint-panel {
+    border: 1px solid #c6d9ef;
+    border-radius: 0.375rem;
+    background: #f4f9ff;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+}
+
+.ss-question .ss-input-dock {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-top: 1px solid #d9e3ef;
+    background: #ffffff;
+}
+
+.ss-question .ss-input-dock-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+    /* QSS-038: prevent fixed input dock from obscuring the last step card. */
+    .ss-question {
+        padding-bottom: 80px;
+    }
+
+    .ss-question .card {
+        margin-bottom: 1rem;
+    }
+
+    .ss-question .card-header {
+        padding: 0.75rem;
+    }
+
+    .ss-question .card-body {
+        padding: 0.75rem;
+    }
+
+    .ss-question .structuredsteps-field-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ss-question .col-md-8,
+    .ss-question .col-md-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ss-question .ss-input-dock {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .ss-question .ss-input-dock .btn {
+        min-height: 44px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ss-question[data-ss-layout="grid"] .structuredsteps-field-row {
+        align-items: center;
+    }
+
+    .ss-question[data-ss-layout="grid"] .card-body {
+        padding: 1rem 1.25rem;
+    }
+}
+
+/* QSS-040: Step badge — numbered circle in card header for answer steps. */
+.ss-question .ss-step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--ss-badge-bg, #0f6cbf);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.ss-question .ss-step-card--complete .ss-step-badge {
+    background: var(--ss-badge-complete-bg, #2d9e5f);
+}
+
+/* QSS-041: Context step (step 0) — visually distinct from answer steps. */
+.ss-question .ss-step-card--context {
+    border-left: 4px solid var(--ss-card-context-border, #5bc0cc);
+    background: var(--ss-card-context-bg, #e8f4f6);
+}
+
+.ss-question .ss-step-card--context .card-header {
+    background: transparent;
+    border-bottom-color: rgba(91, 192, 204, 0.3);
+}
+
+/* QSS-043: Progress bar — thin strip above step cards, AMD-injected. */
+.ss-question .ss-progress-bar-wrap {
+    height: 4px;
+    background: #e9ecef;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.ss-question .ss-progress-bar-fill {
+    height: 100%;
+    background: var(--ss-accent, #0f6cbf);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Readonly field: rendered HTML div replacing the textarea in review mode */
+.ss-question .ss-field-readonly {
+    background: var(--bs-secondary-bg, #f8f9fa);
+    cursor: default;
+    min-height: 44px;
+}
+
+/* Tom Select overrides scoped to structured steps fields */
+.ss-question .ts-control {
+    min-height: 44px;
+}
+
+.ss-question .ts-dropdown {
+    z-index: 1050;
+}
+
+/* Allow LaTeX / HTML content to wrap naturally in option rows */
+.ss-question .ts-dropdown .option {
+    white-space: normal;
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
+    .ss-question .ts-dropdown-content {
+        max-height: 180px;
+    }
+}

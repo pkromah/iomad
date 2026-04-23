@@ -1,0 +1,204 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-JAN24-Q5e"
+        ],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q5(e)",
+        "subject": "Biology",
+        "topic": "Genetics — Monohybrid Cross: Purebred Tall × Unknown",
+        "marks_total": 7,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "7m: cross purebred tall (TT) × unknown; all offspring same phenotype. T=tall (dominant), t=short (recessive). If all offspring are tall, the unknown parent could be TT or Tt (or even tt — since TT×tt gives all Tt which are all tall). Most likely intended scenario: TT × Tt → all tall. Steps: define alleles(1m) + parent phenotypes(1m) + parent genotypes(1m) + gametes(1m) + Punnett square(2m) + offspring phenotype(1m). Accept TT×tt as alternative if student correctly identifies all offspring as Tt (all tall)."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q5e — Genetics Cross: Purebred Tall × Unknown",
+        "text": "<p>In pea plants, tall (T) is dominant over short (t).</p><p>A purebred tall plant was crossed with an unknown plant. ALL offspring from the cross had the same phenotype.</p><p>Draw a <strong>genetic diagram</strong> to show a possible cross that could produce this result. State the phenotype of the offspring. <em>(7 marks)</em></p>",
+        "general_feedback": "<p><strong>Possible crosses (purebred tall TT × unknown) where ALL offspring have same phenotype:</strong></p><p><strong>Option A: TT × TT → all TT (all tall)</strong></p><table><thead><tr><th></th><th>T</th><th>T</th></tr></thead><tbody><tr><td>T</td><td>TT</td><td>TT</td></tr><tr><td>T</td><td>TT</td><td>TT</td></tr></tbody></table><p>All offspring: TT (tall)</p><p><strong>Option B: TT × Tt → 50% TT + 50% Tt (all tall)</strong></p><table><thead><tr><th></th><th>T</th><th>T</th></tr></thead><tbody><tr><td>T</td><td>TT</td><td>TT</td></tr><tr><td>t</td><td>Tt</td><td>Tt</td></tr></tbody></table><p>All offspring: tall (TT or Tt)</p><p><strong>Option C: TT × tt → all Tt (all tall)</strong></p><table><thead><tr><th></th><th>T</th><th>T</th></tr></thead><tbody><tr><td>t</td><td>Tt</td><td>Tt</td></tr><tr><td>t</td><td>Tt</td><td>Tt</td></tr></tbody></table><p>All offspring: Tt (tall — T is dominant over t)</p><p><em>Key point:</em> In all three cases, tall phenotype dominates. The most interesting case is <strong>TT × Tt</strong> (reveals heterozygous parent) or <strong>TT × tt</strong> (all offspring are heterozygous).</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Alleles:</strong> T = tall (dominant) | t = short (recessive)<br><strong>Purebred tall:</strong> TT<br><strong>All offspring same phenotype</strong> → unknown can be TT, Tt, or tt (all give tall offspring when crossed with TT)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_alleles_phenotypes",
+            "label": "Define alleles and state parent phenotypes. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_genotypes_gametes",
+            "label": "State parent genotypes and gametes produced. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_punnett_offspring",
+            "label": "Complete Punnett square and state offspring genotypes and phenotypes. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_allele_T",
+            "step_id": "step_alleles_phenotypes",
+            "type": "choice",
+            "label": "What does T represent? _____",
+            "expected": "Tall (dominant allele)",
+            "marks": 0.5,
+            "diagnostic_hint": "T is the dominant allele that codes for the tall phenotype.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "T represents the dominant allele for tall stem. In genetics, we use capital letters for dominant alleles and lowercase for recessive."
+            },
+            "options": {
+                "Tall (dominant allele)": "Tall (dominant allele)",
+                "Short (recessive allele)": "Short (recessive allele)",
+                "Carrier allele for tallness": "Carrier allele for tallness",
+                "Allele for normal height": "Allele for normal height"
+            }
+        },
+        {
+            "id": "f2_parent1_phenotype",
+            "step_id": "step_alleles_phenotypes",
+            "type": "choice",
+            "label": "Phenotype of the purebred parent = _____",
+            "expected": "Tall",
+            "marks": 0.5,
+            "diagnostic_hint": "The purebred tall parent has genotype TT and phenotype: tall.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Purebred tall means the plant has genotype TT (homozygous dominant). Its phenotype is tall."
+            },
+            "options": {
+                "Tall": "Tall",
+                "Short": "Short",
+                "Carrier": "Carrier",
+                "Unknown": "Unknown"
+            }
+        },
+        {
+            "id": "f3_parent1_genotype",
+            "step_id": "step_genotypes_gametes",
+            "type": "choice",
+            "label": "Genotype of the purebred tall parent = _____",
+            "expected": "TT",
+            "marks": 0.5,
+            "diagnostic_hint": "Purebred = homozygous. Tall and purebred = TT (homozygous dominant).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Purebred (true-breeding) means homozygous. For the dominant tall trait: purebred tall = TT."
+            },
+            "options": {
+                "TT": "TT (homozygous dominant)",
+                "Tt": "Tt (heterozygous)",
+                "tt": "tt (homozygous recessive)",
+                "XT": "XT (sex-linked)"
+            }
+        },
+        {
+            "id": "f4_parent2_genotype",
+            "step_id": "step_genotypes_gametes",
+            "type": "choice",
+            "label": "Genotype of the unknown parent (a valid choice) = _____",
+            "expected": "Tt",
+            "marks": 0.5,
+            "diagnostic_hint": "Any of TT, Tt, or tt is a valid choice for the unknown parent — all give all-tall offspring when crossed with TT. Most commonly tested: Tt or tt.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "When the purebred tall parent (TT) crosses with an unknown: TT×TT → all TT (tall); TT×Tt → 50% TT + 50% Tt (all tall); TT×tt → all Tt (all tall). All three give 'same phenotype' offspring. Any of these is acceptable."
+            },
+            "options": {
+                "TT": "TT (purebred tall)",
+                "Tt": "Tt (hybrid tall / heterozygous)",
+                "tt": "tt (purebred short)",
+                "SA": "SA (wrong allele notation)"
+            }
+        },
+        {
+            "id": "f5_gametes",
+            "step_id": "step_genotypes_gametes",
+            "type": "choice",
+            "label": "Gametes from each parent (e.g. for TT × Tt): _____",
+            "expected": "TT parent: T and T; Tt parent: T and t",
+            "marks": 0.5,
+            "diagnostic_hint": "For TT × Tt: TT parent produces T and T gametes; Tt parent produces T and t gametes.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "During meiosis, alleles separate (Mendel's Law of Segregation). TT parent: both alleles are T, so all gametes carry T. Tt parent: one T allele and one t allele separate, so 50% of gametes carry T and 50% carry t."
+            },
+            "options": {
+                "TT parent: T and T; Tt parent: T and t": "TT → T and T | Tt → T and t",
+                "TT parent: T and t; Tt parent: T and T": "TT → T and t | Tt → T and T",
+                "Both parents produce only T and T": "Both parents: T and T only",
+                "TT parent: T and T; tt parent: t and t": "TT → T and T | tt → t and t"
+            }
+        },
+        {
+            "id": "f6_offspring_genotypes",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "Offspring genotypes from Punnett square (for chosen cross): _____",
+            "expected": "TT and Tt (for TT × Tt cross)",
+            "marks": 1.0,
+            "diagnostic_hint": "For TT × Tt: Punnett square gives TT, TT, Tt, Tt → 50% TT : 50% Tt. For TT × tt: all Tt. For TT × TT: all TT.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "For TT × Tt: cross T,T (from TT) with T,t (from Tt): T+T=TT; T+t=Tt; T+T=TT; T+t=Tt → 2TT : 2Tt = 1:1 ratio. For TT × tt: T+t, T+t, T+t, T+t → all Tt. For TT × TT: all TT."
+            },
+            "options": {
+                "TT and Tt (for TT × Tt cross)": "TT and Tt — 50% each (TT × Tt)",
+                "All Tt only (for TT × tt cross)": "All Tt (TT × tt)",
+                "All TT only (for TT × TT cross)": "All TT (TT × TT)",
+                "TT and tt — 50% each": "TT and tt — 50% each"
+            }
+        },
+        {
+            "id": "f7_offspring_phenotype",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "Phenotype of ALL offspring = _____",
+            "expected": "All tall",
+            "marks": 1.0,
+            "diagnostic_hint": "In all valid crosses (TT×TT, TT×Tt, TT×tt), ALL offspring have at least one T allele → all offspring are tall (T is dominant).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "T is dominant over t. Any offspring with at least one T allele will be tall. Since the TT parent always contributes a T allele, all offspring will be tall regardless of the unknown parent's genotype."
+            },
+            "options": {
+                "All tall": "All tall (100% tall offspring)",
+                "50% tall : 50% short": "50% tall : 50% short",
+                "All short": "All short (100% short offspring)",
+                "25% tall : 75% short": "25% tall : 75% short"
+            }
+        },
+        {
+            "id": "f8_punnett_setup",
+            "step_id": "step_punnett_offspring",
+            "type": "choice",
+            "label": "How was the Punnett square set up? (describe axis labels): _____",
+            "expected": "TT parent gametes (T,T) on one axis; chosen parent gametes on the other axis",
+            "marks": 0.5,
+            "diagnostic_hint": "Label the Punnett square rows and columns with the gametes from each parent, then fill in the boxes by combining alleles.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "A Punnett square has gametes from parent 1 along the top and gametes from parent 2 down the side. Each box is filled by combining the row and column alleles."
+            },
+            "options": {
+                "TT parent gametes (T,T) on one axis; chosen parent gametes on the other axis": "TT parent (T,T) on one axis; other parent gametes on other axis",
+                "TT parent gametes (T,t) on one axis; chosen parent gametes on the other axis": "TT parent (T,t) on one axis — incorrect gametes",
+                "Parent phenotypes on each axis instead of gametes": "Parent phenotypes (not gametes) on each axis",
+                "Both axes labelled with all possible genotypes": "Both axes labelled with all genotypes"
+            }
+        }
+    ]
+}

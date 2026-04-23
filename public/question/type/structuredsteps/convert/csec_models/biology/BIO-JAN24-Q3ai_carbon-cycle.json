@@ -1,0 +1,104 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["BIO-JAN24-Q3ai"],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q3(a)(i)",
+        "subject": "Biology",
+        "topic": "Ecology — Carbon Cycle",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "6 numbered boxes in the carbon cycle flow diagram; 3 marks total at 0.5 marks per correct box. Carbon cycle is a core CSEC Biology topic across all recent papers."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q3a(i) — Carbon Cycle Diagram Completion",
+        "text": "<p>Figure 3 shows the carbon cycle as a flow diagram with six numbered boxes (I–VI) to complete. The diagram shows:</p><ul><li>Box <strong>I</strong> (top) → arrows point DOWN to a tree and a bush</li><li>Arrow from bush → Box <strong>II</strong> → Box I (upward cycle)</li><li>Arrow from tree and cow → Box <strong>IV</strong> → Box I</li><li>Arrow from cow (Death) → Box <strong>V</strong></li><li>Box V → factory (combustion) → Box I</li><li>Box V → Box <strong>III</strong> → Box I</li><li>Box <strong>VI</strong> (very bottom, near Death and decomposition)</li></ul><p>Insert the correct name of the process or substance for each numbered space.</p>",
+        "general_feedback": "<p><strong>Complete carbon cycle:</strong><br>Box I = <strong>Carbon dioxide (CO₂)</strong> — the atmospheric carbon reservoir<br>Box II = <strong>Photosynthesis</strong> — plants absorb CO₂ and fix it into organic compounds<br>Box III = <strong>Decomposition</strong> — decomposers break down dead matter, releasing CO₂<br>Box IV = <strong>Respiration</strong> — living organisms release CO₂ through cellular respiration<br>Box V = <strong>Dead organisms</strong> — remains of dead plants and animals<br>Box VI = <strong>Fossil fuels</strong> — ancient organic matter stored underground; released by combustion</p><p><em>Key concept:</em> Photosynthesis removes CO₂ from the atmosphere; respiration, decomposition, and combustion all return CO₂ to the atmosphere. This balance is being disrupted by burning fossil fuels.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Box I</strong> (top — the atmospheric carbon store): [[1]]</p><p><strong>Box II</strong> (process: plants → atmosphere): [[2]]</p><p><strong>Box III</strong> (process: dead organisms → atmosphere): [[3]]</p><p><strong>Box IV</strong> (process: living organisms → atmosphere): [[4]]</p><p><strong>Box V</strong> (substance: formed when organisms die): [[5]]</p><p><strong>Box VI</strong> (substance at bottom: burned in factory for energy): [[6]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "label": "Box I — the atmospheric carbon store",
+                "marks": 0.5,
+                "diagnostic_hint": "Box I is carbon dioxide (CO₂) — the form of carbon found in the atmosphere. All other carbon cycle processes either remove CO₂ from or return CO₂ to this atmospheric reservoir. Oxygen (O₂) and nitrogen (N₂) are also in the atmosphere but are not the carbon store.",
+                "options": [
+                    {"text": "Carbon dioxide (CO₂)", "correct": true},
+                    {"text": "Oxygen (O₂)", "correct": false},
+                    {"text": "Nitrogen gas (N₂)", "correct": false},
+                    {"text": "Glucose", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "label": "Box II — process by which plants absorb CO₂ from the atmosphere",
+                "marks": 0.5,
+                "diagnostic_hint": "Box II is photosynthesis — the process by which green plants absorb CO₂ from the air and convert it into glucose using sunlight energy. This is the main process that REMOVES carbon from the atmosphere. Respiration does the opposite — it returns CO₂ to the atmosphere.",
+                "options": [
+                    {"text": "Photosynthesis", "correct": true},
+                    {"text": "Respiration", "correct": false},
+                    {"text": "Decomposition", "correct": false},
+                    {"text": "Transpiration", "correct": false}
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Box III — process by which dead organic matter releases CO₂",
+                "marks": 0.5,
+                "diagnostic_hint": "Box III is decomposition — the breakdown of dead organisms by decomposers (bacteria and fungi), releasing CO₂ back into the atmosphere. Don't confuse with combustion (burning) — combustion applies to fossil fuels or wood burned by humans, not biological decomposition of recent dead matter.",
+                "options": [
+                    {"text": "Decomposition", "correct": true},
+                    {"text": "Photosynthesis", "correct": false},
+                    {"text": "Combustion", "correct": false},
+                    {"text": "Respiration", "correct": false}
+                ]
+            },
+            {
+                "id": 4,
+                "label": "Box IV — process by which living organisms release CO₂",
+                "marks": 0.5,
+                "diagnostic_hint": "Box IV is respiration (cellular respiration) — the process by which ALL living organisms (plants, animals, fungi) break down glucose to release energy, releasing CO₂ as a by-product. Both the cow and the tree undergo respiration. Transpiration is the evaporation of water from leaves — not a carbon cycle process.",
+                "options": [
+                    {"text": "Respiration", "correct": true},
+                    {"text": "Photosynthesis", "correct": false},
+                    {"text": "Decomposition", "correct": false},
+                    {"text": "Transpiration", "correct": false}
+                ]
+            },
+            {
+                "id": 5,
+                "label": "Box V — substance formed when organisms die (before decomposition/fossilisation)",
+                "marks": 0.5,
+                "diagnostic_hint": "Box V is dead organisms — the remains of recently dead plants and animals. This is the intermediate store between living organisms and either decomposition (short timescale) or fossilisation into fossil fuels (geological timescale). 'Fossil fuels' is wrong here — fossil fuels are ancient compressed dead organisms, not the fresh remains.",
+                "options": [
+                    {"text": "Dead organisms", "correct": true},
+                    {"text": "Fossil fuels", "correct": false},
+                    {"text": "Decomposers", "correct": false},
+                    {"text": "Organic waste", "correct": false}
+                ]
+            },
+            {
+                "id": 6,
+                "label": "Box VI — ancient carbon substance burned in factory (combustion)",
+                "marks": 0.5,
+                "diagnostic_hint": "Box VI is fossil fuels (coal, oil, natural gas) — formed over millions of years from compressed dead organisms. When burned (combustion) in factories and engines, they release CO₂ back into the atmosphere. This distinguishes them from 'dead organisms' (Box V), which are recent remains undergoing decomposition.",
+                "options": [
+                    {"text": "Fossil fuels", "correct": true},
+                    {"text": "Dead organisms", "correct": false},
+                    {"text": "Coal and oil", "correct": false},
+                    {"text": "Decomposers", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "Carbon dioxide (CO₂)", "Photosynthesis", "Decomposition", "Respiration", "Dead organisms", "Fossil fuels",
+            "Oxygen (O₂)", "Transpiration", "Combustion", "Nitrogen gas (N₂)"
+        ],
+        "word_bank_note": "10 tokens for 6 slots: 6 correct + 4 distractors. Key distractor pairs: Decomposition vs Combustion (both release CO₂ from non-living matter, but different agents); Photosynthesis vs Respiration (opposite processes, high-value distractor); Dead organisms vs Fossil fuels (temporal distinction — recent vs ancient)."
+    }
+}

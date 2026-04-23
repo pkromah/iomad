@@ -1,0 +1,95 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q3e", "PHY-JAN22-Q3fi"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q3(e) and Q3(f)(i)",
+        "subject": "Physics",
+        "topic": "Optics — Wavelength in Water and Critical Angle for Water-Air Boundary",
+        "marks_total": 4,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q3e (2 marks): λ_water = λ_air / n = 532 / 1.33 = 400 nm exactly. Q3f(i) (2 marks): critical angle using sin(c) = 1/n → c = arcsin(1/1.33) = 48.75°. Q3d (derivation of n = λa/λm) is open-ended — not auto-gradeable. Q3f(ii) (1 mark, text: total internal reflection) is excluded."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q3e/f(i) — Wavelength in Water and Critical Angle",
+        "text": "<p>A beam of green laser light of wavelength <strong>532 nm</strong> in air travels in water. The refractive index of water is <strong>1.33</strong>.</p><p><strong>Part (e):</strong> Calculate the wavelength of the laser light in water. (2 marks)</p><p><strong>Part (f)(i):</strong> Calculate the critical angle at the water-air boundary. (2 marks)</p>",
+        "general_feedback": "<p><strong>Q3e — Wavelength in water:</strong><br>Using n = λ_air / λ_water → λ_water = λ_air / n<br>λ_water = 532 / 1.33 = <strong>400 nm</strong></p><p><strong>Q3f(i) — Critical angle:</strong><br>At the critical angle, the refracted ray travels along the boundary (angle of refraction = 90°).<br>sin(c) = 1/n = 1/1.33 = 0.7519<br>c = arcsin(0.7519) = <strong>48.75° ≈ 48.8°</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> λ_air = 532 nm &nbsp;|&nbsp; n (water) = 1.33<br><strong>Formula (e):</strong> n = λ_air / λ_water → λ_water = λ_air / n<br><strong>Formula (f)(i):</strong> sin(c) = 1/n (critical angle condition: refracted ray at 90°)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_wavelength",
+            "label": "Q3e — Calculate the wavelength of laser light in water. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_critical",
+            "label": "Q3f(i) — Calculate the critical angle at the water-air boundary. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_wavelength_water",
+            "step_id": "step_wavelength",
+            "type": "numberbox",
+            "label": "Wavelength of laser light in water λ_water = _____ nm",
+            "expected": "400",
+            "tolerance": 2,
+            "marks": 2.0,
+            "unit": "nm",
+            "diagnostic_hint": "λ_water = λ_air / n = 532 / 1.33 = 400 nm",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "λ_water = λ_air ÷ n = 532 ÷ 1.33 = 400 nm. Divide the air wavelength by the refractive index.",
+                "SC_FORMULA_SELECTION_ERROR": "Use n = λ_air / λ_water, rearranged to λ_water = λ_air / n = 532 / 1.33."
+            }
+        },
+        {
+            "id": "f2_sin_c",
+            "step_id": "step_critical",
+            "type": "numberbox",
+            "label": "sin(c) = 1/n = _____",
+            "expected": "0.7519",
+            "tolerance": 0.005,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "sin(c) = 1/n = 1/1.33 = 0.7519",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "At the critical angle, the refracted ray travels along the surface (90°). By Snell's Law: n × sin(c) = 1 × sin(90°) = 1, so sin(c) = 1/n = 1/1.33."
+            }
+        },
+        {
+            "id": "f3_critical_angle",
+            "step_id": "step_critical",
+            "type": "numberbox",
+            "label": "Critical angle c = _____ °",
+            "expected": "48.75",
+            "tolerance": 0.5,
+            "marks": 1.0,
+            "unit": "°",
+            "diagnostic_hint": "c = arcsin(1/1.33) = arcsin(0.7519) = 48.75°",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c = arcsin(1/1.33) = arcsin(0.7519) ≈ 48.8°. Use the inverse sine (sin⁻¹) function on your calculator."
+            }
+        }
+    ]
+}

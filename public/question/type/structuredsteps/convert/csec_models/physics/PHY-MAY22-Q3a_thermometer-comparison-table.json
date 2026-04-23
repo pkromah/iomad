@@ -1,0 +1,136 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q3a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q3(a)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Thermometer Types: Range and Suitable Use",
+        "marks_total": 5,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "5m: complete table with 3 rows (mercury-in-glass/clinical/thermocouple) and columns for Range and Suitable Use. 5 missing cells from 3 rows × 3-column table (Type | Range | Suitable Use). 1m per cell: mercury-in-glass range(-10°C to 110°C), mercury-in-glass use(lab/general), clinical use(body temp), thermocouple range(-200°C to 1500°C), thermocouple use(high-temp measurement). Row types are pre-filled in the original table."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q3a — Thermometer Comparison Table",
+        "text": "<p>Complete Table 1 about types of thermometers.</p><table><thead><tr><th>Type of Thermometer</th><th>Range (°C)</th><th>Suitable Use</th></tr></thead><tbody><tr><td>Mercury-in-glass</td><td>[[1]]</td><td>[[2]]</td></tr><tr><td>Clinical</td><td>35 to 42</td><td>[[3]]</td></tr><tr><td>Thermocouple</td><td>[[4]]</td><td>[[5]]</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Thermometer comparison:</strong></p><table><thead><tr><th>Type</th><th>Range (°C)</th><th>Suitable Use</th></tr></thead><tbody><tr><td>Mercury-in-glass (laboratory)</td><td>−10 to 110 °C</td><td>General laboratory temperature measurements</td></tr><tr><td>Clinical</td><td>35 to 42 °C</td><td>Measuring human body temperature</td></tr><tr><td>Thermocouple</td><td>−200 to 1500 °C (very wide)</td><td>Measuring very high or very low temperatures (e.g. furnaces, flames, industrial processes)</td></tr></tbody></table><p><em>Key points:</em></p><ul><li>Mercury-in-glass: thermometric property is <strong>expansion of mercury</strong>. The narrow range makes it unsuitable for very high temperatures.</li><li>Clinical: narrow range centred on normal body temp (37 °C); has a constriction to hold the reading after removal from patient.</li><li>Thermocouple: thermometric property is <strong>EMF (voltage)</strong> produced at the hot junction; extremely wide range; responds rapidly; gives electrical output.</li></ul>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Three thermometer types:</strong> Mercury-in-glass | Clinical | Thermocouple<br><strong>Key properties:</strong> thermometric property, temperature range, suitable use",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_table",
+            "label": "Complete all 5 missing cells in the thermometer table. (5 marks)",
+            "type": "computational",
+            "marks": 5
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mercury_range",
+            "step_id": "step_table",
+            "type": "choice",
+            "label": "Range of mercury-in-glass thermometer = _____",
+            "expected": "-10 to 110",
+            "marks": 1.0,
+            "diagnostic_hint": "Mercury-in-glass thermometers typically cover −10 °C to 110 °C (some laboratory versions extend further but the standard CSEC range is approx. −10 to 110).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Mercury-in-glass (laboratory) thermometer range: approximately −10 °C to 110 °C. It cannot measure temperatures above the boiling point of mercury (~357 °C) or below its freezing point (~−39 °C). The CSEC standard quoted range is −10 °C to 110 °C."
+            },
+            "options": {
+                "-10 to 110": "-10 °C to 110 °C",
+                "35 to 42": "35 °C to 42 °C",
+                "-200 to 1500": "-200 °C to 1500 °C",
+                "0 to 100": "0 °C to 100 °C"
+            }
+        },
+        {
+            "id": "f2_mercury_use",
+            "step_id": "step_table",
+            "type": "choice",
+            "label": "Suitable use for mercury-in-glass thermometer = _____",
+            "expected": "General laboratory temperature measurements",
+            "marks": 1.0,
+            "diagnostic_hint": "Mercury-in-glass is used for general laboratory temperature measurements where temperatures are within its range.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Mercury-in-glass thermometers are used for general laboratory temperature measurements. They are NOT suitable for body temperature (too slow/not self-reading), very high temperatures (above 357°C), or very low temperatures."
+            },
+            "options": {
+                "General laboratory temperature measurements": "General laboratory temperature measurements",
+                "Measuring human body temperature": "Measuring human body temperature",
+                "Measuring very high or very low temperatures": "Measuring very high or very low temperatures"
+            }
+        },
+        {
+            "id": "f3_clinical_use",
+            "step_id": "step_table",
+            "type": "choice",
+            "label": "Suitable use for clinical thermometer = _____",
+            "expected": "Measuring human body temperature",
+            "marks": 1.0,
+            "diagnostic_hint": "The clinical thermometer is specifically designed for measuring human body temperature (35–42 °C).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Clinical thermometers are designed specifically to measure human body temperature. Their narrow range (35–42 °C) is centred on the normal body temperature of 37 °C. The constriction in the tube holds the mercury reading after removal from the patient."
+            },
+            "options": {
+                "General laboratory temperature measurements": "General laboratory temperature measurements",
+                "Measuring human body temperature": "Measuring human body temperature",
+                "Measuring very high or very low temperatures": "Measuring very high or very low temperatures"
+            }
+        },
+        {
+            "id": "f4_thermocouple_range",
+            "step_id": "step_table",
+            "type": "choice",
+            "label": "Range of thermocouple thermometer = _____",
+            "expected": "-200 to 1500",
+            "marks": 1.0,
+            "diagnostic_hint": "Thermocouple thermometers have a very wide range, typically −200 °C to 1500 °C (or beyond for specialised types).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Thermocouple thermometers have a very wide temperature range, typically from about −200 °C to +1500 °C. This is far greater than mercury-in-glass (−10 to 110 °C) or clinical (35 to 42 °C) thermometers."
+            },
+            "options": {
+                "-10 to 110": "-10 °C to 110 °C",
+                "35 to 42": "35 °C to 42 °C",
+                "-200 to 1500": "-200 °C to 1500 °C",
+                "0 to 300": "0 °C to 300 °C"
+            }
+        },
+        {
+            "id": "f5_thermocouple_use",
+            "step_id": "step_table",
+            "type": "choice",
+            "label": "Suitable use for thermocouple thermometer = _____",
+            "expected": "Measuring very high or very low temperatures",
+            "marks": 1.0,
+            "diagnostic_hint": "Thermocouples are used for measuring very high or very low temperatures that are outside the range of other thermometers — e.g., furnaces, flames, industrial processes, cryogenic experiments.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Thermocouple thermometers are suitable for measuring very high temperatures (e.g. furnaces, flames, molten metals) or very low temperatures (e.g. liquid nitrogen research) due to their extremely wide range. Their small junction size and fast response also make them suitable for localised and rapidly changing temperatures."
+            },
+            "options": {
+                "General laboratory temperature measurements": "General laboratory temperature measurements",
+                "Measuring human body temperature": "Measuring human body temperature",
+                "Measuring very high or very low temperatures": "Measuring very high or very low temperatures"
+            }
+        }
+    ]
+}

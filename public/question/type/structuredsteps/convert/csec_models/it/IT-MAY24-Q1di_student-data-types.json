@@ -1,0 +1,120 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "IT-MAY24-Q1di"
+        ],
+        "source_paper": "CSEC Information Technology Paper 02 May/June 2024",
+        "question_ref": "Q1(d)(i)",
+        "subject": "Information Technology",
+        "topic": "Databases — Field Data Types in a Student Table",
+        "marks_total": 4,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "STUDENT table fields: Student ID (e.g. CACS0069 — alphanumeric code), Student (name — text), Age (integer), Grade level (integer). Q1d(ii) primary key (1m) and Q1d(iii) linking field (2m) are in IT-MAY24-Q1dii-iii file. Alphanumeric and Text are both accepted for ID and Name fields."
+    },
+    "question": {
+        "name": "CSEC IT May 2024 Q1d(i) — Student Table Data Types",
+        "text": "<p>The following data was taken from a school's database (Student table):</p><table border='1' style='border-collapse:collapse; text-align:center; width:70%; margin:0.5em auto;'><tr><th>Student ID</th><th>Student</th><th>Age</th><th>Grade level</th></tr><tr><td>CACS0069</td><td>Lea, Tomas</td><td>18</td><td>12</td></tr><tr><td>CACS0123</td><td>Hutton, Esther</td><td>15</td><td>10</td></tr></table><p>State the appropriate data type that would be used for EACH of the following field names in the Student table. (4 marks)</p>",
+        "general_feedback": "<p><strong>Data types:</strong><br><strong>Student ID:</strong> Alphanumeric / Text (codes like CACS0069 contain both letters and numbers — cannot be Integer)<br><strong>Student:</strong> Text / String (names are alphabetic strings)<br><strong>Age:</strong> Integer / Number (whole number, no decimals needed)<br><strong>Grade level:</strong> Integer / Number (whole number — grade 7, 8, 9, etc.)</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "require_explanation": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>STUDENT table fields:</strong> Student ID (e.g. CACS0069) | Student (name) | Age | Grade level<br><strong>Common data types:</strong> Text/String — letters/words | Integer/Numeric — whole numbers | Real/Float — decimals | Boolean — true/false | Date — calendar dates | Alphanumeric — mix of letters and numbers",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_types",
+            "label": "State the data type for each field in the Student table. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_student_id",
+            "step_id": "step_types",
+            "type": "choice",
+            "label": "Student ID data type: _____",
+            "expected": "Alphanumeric",
+            "marks": 1.0,
+            "diagnostic_hint": "Student ID (e.g. CACS0069) mixes letters and digits — Alphanumeric or Text",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Student ID values like 'CACS0069' contain both letters (CACS) and numbers (0069). The correct data type is Alphanumeric (or Text — it cannot be Integer since letters are present)."
+            },
+            "options": {
+                "Alphanumeric": "Alphanumeric",
+                "Integer": "Integer",
+                "Boolean": "Boolean",
+                "Date": "Date"
+            }
+        },
+        {
+            "id": "f2_student_name",
+            "step_id": "step_types",
+            "type": "choice",
+            "label": "Student (name) data type: _____",
+            "expected": "Text",
+            "marks": 1.0,
+            "diagnostic_hint": "Student names (e.g. 'Lea, Tomas') are text strings",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Student names are composed of letters and punctuation — the correct data type is Text (or String/Alphanumeric)."
+            },
+            "options": {
+                "Text": "Text / String",
+                "Integer": "Integer",
+                "Boolean": "Boolean",
+                "Real": "Real / Float"
+            }
+        },
+        {
+            "id": "f3_age",
+            "step_id": "step_types",
+            "type": "choice",
+            "label": "Age data type: _____",
+            "expected": "Integer",
+            "marks": 1.0,
+            "diagnostic_hint": "Age is a whole number (no decimal) — Integer or Numeric",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Age is always a whole number (no decimals). The correct type is Integer (or Numeric/Number). It is NOT Text."
+            },
+            "options": {
+                "Integer": "Integer",
+                "Text": "Text / String",
+                "Real": "Real / Float",
+                "Boolean": "Boolean"
+            }
+        },
+        {
+            "id": "f4_grade_level",
+            "step_id": "step_types",
+            "type": "choice",
+            "label": "Grade level data type: _____",
+            "expected": "Integer",
+            "marks": 1.0,
+            "diagnostic_hint": "Grade level (7, 8, 9, ...) is a whole number — Integer or Numeric",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Grade level is a whole number (grade 7, 8, 9, etc.). The correct type is Integer (or Numeric/Number)."
+            },
+            "options": {
+                "Integer": "Integer",
+                "Text": "Text / String",
+                "Real": "Real / Float",
+                "Date": "Date"
+            }
+        }
+    ]
+}

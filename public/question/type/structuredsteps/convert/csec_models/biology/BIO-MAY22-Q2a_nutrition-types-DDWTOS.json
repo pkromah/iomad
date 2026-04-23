@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY22-Q2a"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q2(a)",
+        "subject": "Biology",
+        "topic": "Nutrition — Saprophytic, Heterotrophic, and Autotrophic Nutrition",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Match 3 nutrition terms to their definitions. 3 slots × 1m each. Word bank: 5 definitions (3 correct + 2 distractors). Autotrophic = self-feeding via photosynthesis; Heterotrophic = feeding on other organisms; Saprophytic = feeding on dead/decaying matter via extracellular digestion."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q2a — Define Saprophytic, Heterotrophic, Autotrophic Nutrition",
+        "text": "<p>Match each type of nutrition to its correct definition by dragging the appropriate phrase into each blank:</p><table border='1' style='border-collapse:collapse; width:85%; margin:0.5em auto;'><tr><th>Type of Nutrition</th><th>Definition</th></tr><tr><td><strong>Saprophytic</strong></td><td>[[1]]</td></tr><tr><td><strong>Heterotrophic</strong></td><td>[[2]]</td></tr><tr><td><strong>Autotrophic</strong></td><td>[[3]]</td></tr></table>",
+        "general_feedback": "<p><strong>Types of nutrition:</strong></p><ul><li><strong>Saprophytic:</strong> Obtains nutrition by secreting enzymes onto dead/decaying organic matter and absorbing the digested products (e.g. fungi, some bacteria)</li><li><strong>Heterotrophic:</strong> Cannot manufacture own food; obtains organic nutrients by consuming other organisms or organic matter (e.g. animals, most fungi, most bacteria)</li><li><strong>Autotrophic:</strong> Manufactures own food from simple inorganic molecules (CO₂ and water) using light energy (e.g. green plants, algae, cyanobacteria)</li></ul><p><em>Note:</em> Saprophytic nutrition is a sub-type of heterotrophic nutrition — saprophytes are heterotrophs that feed specifically on dead matter via external digestion.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<table border='1' style='border-collapse:collapse; width:85%; margin:0.5em auto;'><tr><th>Type of Nutrition</th><th>Definition</th></tr><tr><td><strong>Saprophytic</strong></td><td>[[1]]</td></tr><tr><td><strong>Heterotrophic</strong></td><td>[[2]]</td></tr><tr><td><strong>Autotrophic</strong></td><td>[[3]]</td></tr></table>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Feeds on dead or decaying organic matter using external digestion",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cannot make own food; feeds on other living organisms or organic matter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Manufactures own food from simple inorganic substances using light energy",
+                        "correct": false
+                    },
+                    {
+                        "text": "Obtains energy by breaking down inorganic compounds (chemosynthesis)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Feeds by engulfing and internally digesting other whole organisms",
+                        "correct": false
+                    }
+                ],
+                "label": "Define Saprophytic nutrition",
+                "diagnostic_hint": "Saprophytic organisms (fungi, some bacteria) secrete digestive enzymes onto dead matter and absorb the products — this is external digestion. Example: mushrooms decomposing a log."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Feeds on dead or decaying organic matter using external digestion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cannot make own food; feeds on other living organisms or organic matter",
+                        "correct": true
+                    },
+                    {
+                        "text": "Manufactures own food from simple inorganic substances using light energy",
+                        "correct": false
+                    },
+                    {
+                        "text": "Obtains energy by breaking down inorganic compounds (chemosynthesis)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Feeds by engulfing and internally digesting other whole organisms",
+                        "correct": false
+                    }
+                ],
+                "label": "Define Heterotrophic nutrition",
+                "diagnostic_hint": "Heterotrophs cannot make their own food — they must consume organic matter from other organisms. This includes animals, fungi, and most bacteria."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Feeds on dead or decaying organic matter using external digestion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cannot make own food; feeds on other living organisms or organic matter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Manufactures own food from simple inorganic substances using light energy",
+                        "correct": true
+                    },
+                    {
+                        "text": "Obtains energy by breaking down inorganic compounds (chemosynthesis)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Feeds by engulfing and internally digesting other whole organisms",
+                        "correct": false
+                    }
+                ],
+                "label": "Define Autotrophic nutrition",
+                "diagnostic_hint": "Autotrophs manufacture their own food from inorganic substances using an energy source. Green plants use light energy (photosynthesis); some bacteria use chemical energy (chemosynthesis)."
+            }
+        ],
+        "word_bank": [
+            "Feeds on dead or decaying organic matter using external digestion",
+            "Cannot make own food; feeds on other living organisms or organic matter",
+            "Manufactures own food from simple inorganic substances using light energy",
+            "Obtains energy by breaking down inorganic compounds (chemosynthesis)",
+            "Feeds by engulfing and internally digesting other whole organisms"
+        ],
+        "word_bank_note": "5 tokens for 3 slots; 3 correct + 2 distractors. 'Obtains energy by breaking down inorganic compounds (chemosynthesis)' — this describes chemoautotrophy (bacteria like Nitrosomonas), a plausible distractor for autotrophic since it involves inorganic inputs but uses chemical not light energy. 'Feeds by engulfing and internally digesting other whole organisms' — this describes holozoic/phagotrophic heterotrophic nutrition (like Amoeba), a distractor that catches students who confuse holozoic with saprophytic (both are heterotrophic, but the mechanism differs)."
+    }
+}

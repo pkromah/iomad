@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q1c"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q1(c)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Definition of Nuclear Fission",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "2m: define nuclear fission. Cloze: 'large/heavy(0.5m) / splits/breaks up(1m) / two(0.5m)' — key discriminator is 'splits' vs fusion-type language. 'energy' is released but often included as bonus context in mark scheme."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q1c — Define Nuclear Fission",
+        "text": "<p>Define the term <strong>'nuclear fission'</strong> by completing the statement below:</p><p>Nuclear fission is the process in which a [[1]] nucleus [[2]] into [[3]] smaller nuclei, releasing energy.</p>",
+        "general_feedback": "<p><strong>Nuclear fission:</strong></p><p>Nuclear fission is the process in which a <strong>large</strong> (heavy/unstable) nucleus <strong>splits</strong> into <strong>two</strong> smaller nuclei, releasing a large amount of energy (and usually neutrons and gamma radiation).</p><p><strong>Example:</strong> ²³⁵U + ¹n → ⁹⁰Kr + ¹⁴⁴Ba + 2¹n + energy</p><p><em>Compare with nuclear fusion:</em> Fusion is the joining of two small nuclei to form a larger nucleus. Fission = split; Fusion = join.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Nuclear fission is the process in which a [[1]] nucleus [[2]] into [[3]] smaller nuclei, releasing energy.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "large",
+                        "correct": true
+                    },
+                    {
+                        "text": "heavy",
+                        "correct": true
+                    },
+                    {
+                        "text": "small",
+                        "correct": false
+                    },
+                    {
+                        "text": "stable",
+                        "correct": false
+                    }
+                ],
+                "label": "Nuclear fission — a ___ (heavy) nucleus",
+                "diagnostic_hint": "Fission involves a LARGE (heavy) nucleus — typically uranium-235 or plutonium-239. Small nuclei undergo fusion, not fission."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "splits",
+                        "correct": true
+                    },
+                    {
+                        "text": "breaks up",
+                        "correct": true
+                    },
+                    {
+                        "text": "fuses",
+                        "correct": false
+                    },
+                    {
+                        "text": "combines",
+                        "correct": false
+                    }
+                ],
+                "label": "Nuclear fission — the nucleus ___ into smaller nuclei",
+                "diagnostic_hint": "The large nucleus SPLITS (breaks up) into two smaller nuclei (fission products). This is the opposite of fusion where small nuclei combine."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "two",
+                        "correct": true
+                    },
+                    {
+                        "text": "three",
+                        "correct": false
+                    },
+                    {
+                        "text": "four",
+                        "correct": false
+                    },
+                    {
+                        "text": "many",
+                        "correct": false
+                    }
+                ],
+                "label": "Nuclear fission — splits into ___ smaller nuclei",
+                "diagnostic_hint": "Fission typically produces TWO smaller (daughter) nuclei, plus neutrons and gamma radiation. The two daughter nuclei are not always equal in size."
+            }
+        ],
+        "word_bank": [
+            "large",
+            "heavy",
+            "small",
+            "stable",
+            "splits",
+            "breaks up",
+            "fuses",
+            "combines",
+            "two",
+            "three",
+            "four",
+            "many"
+        ],
+        "word_bank_note": "12 tokens for 3 slots. Slot 1 (large/heavy): both correct — CSEC accepts either descriptor for a fissile nucleus (e.g. U-235). 'small' is the opposite and belongs to fusion reactants. 'stable' is wrong — fissile nuclei are typically unstable (they need neutron bombardment to split). Slot 2 (splits/breaks up): both correct — synonymous in this context. 'fuses' is the critical distractor — students who confuse fission and fusion will select this. 'combines' also describes fusion. Slot 3 (two): the standard definition specifies two daughter nuclei (though in reality some fission events produce unequal fragments; for CSEC 'two' is the accepted answer). 'three' and 'four' are wrong numerically. 'many' would describe fragmentation, not fission."
+    }
+}

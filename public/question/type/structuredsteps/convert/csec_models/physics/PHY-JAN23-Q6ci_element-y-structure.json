@@ -1,0 +1,75 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q6ci"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(c)(i)",
+        "subject": "Physics",
+        "topic": "Atomic Structure — Mass Number and Atomic Number from Bohr Model",
+        "marks_total": 2,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Figure 11 shows Element Y with 5 protons (p), 6 neutrons (n), and 5 electrons (e) in two shells (2 inner, 3 outer). Mass number = p + n = 11; atomic number = Z = p = 5. Element Y is Boron-11. Q6c(ii) (write symbol for another isotope, 1m) is open/text — not auto-gradeable."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6c(i) — Mass Number and Atomic Number of Element Y",
+        "text": "<p>Figure 11 shows the structure of an atom of Element Y. The nucleus contains <strong>5 protons</strong> and <strong>6 neutrons</strong>. Two electron shells are visible: the inner shell has 2 electrons and the outer shell has 3 electrons.</p><p>State the <strong>mass number</strong> and <strong>atomic number</strong> of this atom. (2 marks)</p>",
+        "general_feedback": "<p><strong>Mass number:</strong> A = number of protons + number of neutrons = 5 + 6 = <strong>11</strong></p><p><strong>Atomic number:</strong> Z = number of protons = <strong>5</strong></p><p><em>Element Y is Boron-11 (¹¹₅B).</em> Note: The number of electrons (5) confirms the atom is electrically neutral and also equals the atomic number.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>From Figure 11:</strong> Nucleus → 5 protons (p) + 6 neutrons (n) &nbsp;|&nbsp; Electron shells → 2 + 3 = 5 electrons<br><strong>Mass number:</strong> A = p + n &nbsp;|&nbsp; <strong>Atomic number:</strong> Z = number of protons",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_numbers",
+            "label": "State the mass number and atomic number of Element Y. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_number",
+            "step_id": "step_numbers",
+            "type": "digitbox",
+            "label": "Mass number A = _____",
+            "expected": "11",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "A = protons + neutrons = 5 + 6 = 11",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass number = number of protons + number of neutrons = 5 + 6 = 11.",
+                "SC_METHOD_ERROR": "The mass number counts ALL particles in the nucleus: protons AND neutrons. Do not count electrons."
+            }
+        },
+        {
+            "id": "f2_atomic_number",
+            "step_id": "step_numbers",
+            "type": "digitbox",
+            "label": "Atomic number Z = _____",
+            "expected": "5",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "Z = number of protons = 5",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The atomic number equals the number of protons in the nucleus. From Figure 11, the nucleus has 5 protons, so Z = 5."
+            }
+        }
+    ]
+}

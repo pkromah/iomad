@@ -1,0 +1,132 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["BIO-MAY22-Q3ai", "BIO-MAY22-Q3aii"],
+        "source_paper": "CSEC Biology Paper 02 May/June 2022",
+        "question_ref": "Q3(a)(i) and Q3(a)(ii)",
+        "subject": "Biology",
+        "topic": "Cell Biology — Plant and Animal Cell Structures",
+        "marks_total": 7,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q3a(i) 4 marks — identify 4 labelled structures; Q3a(ii) 3 marks — state function of any 3. Combined into one DDWTOS: 4 slots for names (part i) + 4 function-matching slots (part ii, 0.75 marks each). Total = 4 + 3 = 7 marks."
+    },
+    "question": {
+        "name": "CSEC Bio May 2022 Q3a — Plant and Animal Cell Structure Identification",
+        "text": "<p>Figure 2 shows a typical plant cell (rectangular, rigid outer layer, large central space) and a typical animal cell (irregular, flexible boundary). Four structures are labelled A–D.</p><ul><li><strong>Label A:</strong> The thick, rigid outermost layer surrounding the plant cell only</li><li><strong>Label B:</strong> A large, centrally located, fluid-filled sac occupying most of the plant cell volume</li><li><strong>Label C:</strong> A prominent, dense spherical organelle found inside <em>both</em> the plant and animal cell</li><li><strong>Label D:</strong> The thin, flexible boundary layer enclosing the animal cell (also present just inside the outer wall of the plant cell)</li></ul><p><strong>Part (i):</strong> Drag the correct name to identify each labelled structure. (4 marks)<br><strong>Part (ii):</strong> Drag the correct function to match each labelled structure. Award is given for any 3 correct matches. (3 marks)</p>",
+        "general_feedback": "<p><strong>Answers:</strong><br>A = Cell wall — provides rigid support and maintains cell shape; prevents cell from bursting due to osmosis<br>B = Vacuole (central vacuole) — stores water and dissolved substances; maintains turgor pressure in plant cells<br>C = Nucleus — contains DNA (genetic material); controls all cell activities<br>D = Cell membrane — controls what enters and leaves the cell; partially permeable</p><p><em>Key distinction:</em> Cell wall is present in plants AND bacteria (but not animals). Cell membrane is universal. Vacuole is large and permanent in plants; small and temporary in animals.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Part (i) — Identify structures A–D:</strong></p><p>Structure A (rigid outer layer, plant cell only): [[1]]<br>Structure B (large fluid-filled sac, plant cell): [[2]]<br>Structure C (dense spherical organelle, in both cells): [[3]]<br>Structure D (thin flexible boundary layer): [[4]]</p><p><strong>Part (ii) — Match the function to each structure (any 3 correct for full marks):</strong></p><p>Structure A function: [[5]]<br>Structure B function: [[6]]<br>Structure C function: [[7]]<br>Structure D function: [[8]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "label": "Structure A — name the rigid outer layer (plant cell only)",
+                "marks": 1.0,
+                "diagnostic_hint": "Structure A is the cell wall — a thick, rigid layer made of cellulose found only in plant cells (and bacteria). It provides support and prevents the cell from bursting due to osmosis. The cell membrane is inside it and is found in all cells.",
+                "options": [
+                    {"text": "Cell wall", "correct": true},
+                    {"text": "Cell membrane", "correct": false},
+                    {"text": "Vacuole", "correct": false},
+                    {"text": "Chloroplast", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "label": "Structure B — name the large fluid-filled sac (plant cell only)",
+                "marks": 1.0,
+                "diagnostic_hint": "Structure B is the (central) vacuole — a large, permanent, fluid-filled organelle found in plant cells. It stores water and dissolved substances and maintains turgor pressure. Animal cells may have small, temporary vacuoles but not a large central one.",
+                "options": [
+                    {"text": "Vacuole", "correct": true},
+                    {"text": "Nucleus", "correct": false},
+                    {"text": "Chloroplast", "correct": false},
+                    {"text": "Cytoplasm", "correct": false}
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Structure C — name the dense spherical organelle (in both cells)",
+                "marks": 1.0,
+                "diagnostic_hint": "Structure C is the nucleus — a large, dense, spherical organelle present in both plant and animal cells. It contains the cell's DNA and controls all cell activities. Don't confuse with the nucleolus (a region inside the nucleus) or mitochondria (energy organelle).",
+                "options": [
+                    {"text": "Nucleus", "correct": true},
+                    {"text": "Mitochondria", "correct": false},
+                    {"text": "Ribosome", "correct": false},
+                    {"text": "Vacuole", "correct": false}
+                ]
+            },
+            {
+                "id": 4,
+                "label": "Structure D — name the thin flexible boundary layer",
+                "marks": 1.0,
+                "diagnostic_hint": "Structure D is the cell membrane (plasma membrane) — a thin, flexible, partially permeable layer that controls what enters and leaves the cell. It is present in ALL cells (plant, animal, bacterial). In plant cells it sits just inside the cell wall.",
+                "options": [
+                    {"text": "Cell membrane", "correct": true},
+                    {"text": "Cell wall", "correct": false},
+                    {"text": "Tonoplast", "correct": false},
+                    {"text": "Nuclear envelope", "correct": false}
+                ]
+            },
+            {
+                "id": 5,
+                "label": "Function of Structure A (cell wall)",
+                "marks": 0.75,
+                "diagnostic_hint": "The cell wall provides rigid support and maintains the cell's shape. Its rigidity also prevents the cell from bursting when water enters by osmosis (turgor pressure). It does NOT control what enters/leaves — that is the cell membrane's job.",
+                "options": [
+                    {"text": "Provides rigid support; prevents cell bursting", "correct": true},
+                    {"text": "Controls entry and exit of substances", "correct": false},
+                    {"text": "Stores water and dissolved substances", "correct": false},
+                    {"text": "Contains DNA and controls cell activities", "correct": false}
+                ]
+            },
+            {
+                "id": 6,
+                "label": "Function of Structure B (vacuole)",
+                "marks": 0.75,
+                "diagnostic_hint": "The central vacuole stores water and dissolved substances (cell sap). By retaining water it maintains turgor pressure, which keeps plant stems rigid. It is not involved in energy production or genetic control.",
+                "options": [
+                    {"text": "Stores water and dissolved substances; maintains turgor", "correct": true},
+                    {"text": "Provides rigid support; prevents cell bursting", "correct": false},
+                    {"text": "Controls entry and exit of substances", "correct": false},
+                    {"text": "Contains DNA and controls cell activities", "correct": false}
+                ]
+            },
+            {
+                "id": 7,
+                "label": "Function of Structure C (nucleus)",
+                "marks": 0.75,
+                "diagnostic_hint": "The nucleus contains the cell's DNA (genetic material) and directs all cell activities by controlling which proteins are made. It is the 'control centre' of the cell. Don't confuse with mitochondria (energy) or ribosome (protein synthesis site).",
+                "options": [
+                    {"text": "Contains DNA and controls cell activities", "correct": true},
+                    {"text": "Stores water and dissolved substances; maintains turgor", "correct": false},
+                    {"text": "Controls entry and exit of substances", "correct": false},
+                    {"text": "Provides rigid support; prevents cell bursting", "correct": false}
+                ]
+            },
+            {
+                "id": 8,
+                "label": "Function of Structure D (cell membrane)",
+                "marks": 0.75,
+                "diagnostic_hint": "The cell membrane is selectively (partially) permeable — it controls which substances enter and leave the cell. It allows small molecules like water, oxygen, and glucose through while blocking larger or charged molecules. This is different from the cell wall, which is fully permeable.",
+                "options": [
+                    {"text": "Controls entry and exit of substances", "correct": true},
+                    {"text": "Contains DNA and controls cell activities", "correct": false},
+                    {"text": "Provides rigid support; prevents cell bursting", "correct": false},
+                    {"text": "Stores water and dissolved substances; maintains turgor", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "Cell wall", "Vacuole", "Nucleus", "Cell membrane",
+            "Chloroplast", "Mitochondria", "Cytoplasm", "Ribosome",
+            "Provides rigid support; prevents cell bursting",
+            "Stores water and dissolved substances; maintains turgor",
+            "Contains DNA and controls cell activities",
+            "Controls entry and exit of substances"
+        ],
+        "word_bank_note": "12 tokens for 8 slots. Slots 1-4 (structure names) use biological term tokens; slots 5-8 (functions) use full phrase tokens. The 4 function phrases serve as each other's distractors — high discrimination since students must understand what each structure does, not just name it."
+    }
+}

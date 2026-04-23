@@ -1,0 +1,110 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q2bii", "PHY-JAN22-Q2biii"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q2(b)(ii) and Q2(b)(iii)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Specific Heat Capacity and Power Rating",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q2b(ii) 5m: c = Q/(mΔθ) = 15600/(0.2×45) = 1733 J/(kg·°C). Q2b(iii) 3m: P = E/t = 15600/400 = 39 W. Combined file. Given: m=0.2kg, θ_i=25°C, θ_f=70°C, Q=15.6kJ, t=400s."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q2b(ii/iii) — Calculate Specific Heat Capacity and Power Rating",
+        "text": "<p>A group of students used an electrical method to calculate the specific heat capacity of a liquid. The students found that it took <strong>400 s</strong> for the temperature of <strong>0.2 kg</strong> of the liquid to be raised from <strong>25 °C to 70 °C</strong>. The energy supplied by the immersion heater was <strong>15.6 kJ</strong> during this period.</p><p><strong>(ii)</strong> Calculate the value of the specific heat capacity of the liquid. Assume that no heat was lost and ignore the heat capacity of the container. <em>(5 marks)</em></p><p><strong>(iii)</strong> Calculate the power rating of the immersion heater. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q2b(ii) — Specific Heat Capacity:</strong></p><p>Formula: c = Q / (mΔθ)</p><p>Convert energy: Q = 15.6 kJ = 15 600 J</p><p>Temperature change: Δθ = 70 − 25 = 45 °C</p><p>c = 15 600 / (0.2 × 45) = 15 600 / 9 = <strong>1 733 J kg⁻¹ °C⁻¹</strong></p><p><strong>Q2b(iii) — Power Rating:</strong></p><p>Formula: P = E / t</p><p>P = 15 600 / 400 = <strong>39 W</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> m = 0.2 kg | θ_i = 25 °C | θ_f = 70 °C | Q = 15.6 kJ | t = 400 s<br><strong>Formulas:</strong> c = Q/(mΔθ) &nbsp;|&nbsp; P = E/t",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_shc",
+            "label": "Calculate the specific heat capacity of the liquid. (5 marks)",
+            "type": "computational",
+            "marks": 5
+        },
+        {
+            "id": "step_power",
+            "label": "Calculate the power rating of the immersion heater. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_energy_J",
+            "step_id": "step_shc",
+            "type": "numberbox",
+            "label": "Energy supplied Q = _____ J",
+            "expected": "15600",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "J",
+            "diagnostic_hint": "Convert 15.6 kJ to joules: 15.6 × 1000 = 15 600 J",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert kilojoules to joules by multiplying by 1000: Q = 15.6 × 1000 = 15 600 J."
+            }
+        },
+        {
+            "id": "f2_delta_theta",
+            "step_id": "step_shc",
+            "type": "numberbox",
+            "label": "Temperature change Δθ = _____ °C",
+            "expected": "45",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "°C",
+            "diagnostic_hint": "Δθ = θ_final − θ_initial = 70 − 25 = 45 °C",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Subtract the initial temperature from the final temperature: Δθ = 70 − 25 = 45 °C."
+            }
+        },
+        {
+            "id": "f3_shc",
+            "step_id": "step_shc",
+            "type": "numberbox",
+            "label": "Specific heat capacity c = _____ J kg⁻¹ °C⁻¹",
+            "expected": "1733",
+            "tolerance": 10,
+            "marks": 3.0,
+            "unit": "J/(kg·°C)",
+            "diagnostic_hint": "c = Q/(mΔθ) = 15 600 / (0.2 × 45) = 15 600 / 9 = 1 733 J kg⁻¹ °C⁻¹",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use the specific heat capacity formula: c = Q / (m × Δθ), where Q is the energy in joules, m is the mass in kg, and Δθ is the temperature change in °C.",
+                "SC_CALCULATION_ERROR": "c = 15 600 / (0.2 × 45) = 15 600 / 9 = 1 733 J kg⁻¹ °C⁻¹."
+            }
+        },
+        {
+            "id": "f4_power",
+            "step_id": "step_power",
+            "type": "numberbox",
+            "label": "Power rating P = _____ W",
+            "expected": "39",
+            "tolerance": 0.5,
+            "marks": 3.0,
+            "unit": "W",
+            "diagnostic_hint": "P = E/t = 15 600 / 400 = 39 W",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use the power formula: P = E / t, where E is energy in joules and t is time in seconds.",
+                "SC_CALCULATION_ERROR": "P = 15 600 / 400 = 39 W."
+            }
+        }
+    ]
+}

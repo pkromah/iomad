@@ -1,0 +1,109 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q6b", "PHY-JAN22-Q6c"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q6(b)(ii) and Q6(c)(ii)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Alpha Decay Numbers and Half-Life Mass Calculation",
+        "marks_total": 5,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q6b(i) 'define spontaneous' is 1m P3 text-only — not included. Q6b(ii) 2m: A=222-4=218, Z=86-2=84 for Po. Q6b(iii) 4m already authored separately (PHY-JAN22-Q6biii). Q6c(i) 2m definition already authored separately (PHY-MAY22-Q1bi). Q6c(ii) 3m: n=15.2/3.8=4 half-lives → mass=240×(0.5)^4=15g."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q6b(ii)/Q6c(ii) — Rn-222 Decay Values and Half-Life Mass Calculation",
+        "text": "<p>Radon-222 is a radioactive nuclide which decays spontaneously with the emission of an alpha particle to form Polonium (Po). The nuclear equation is:</p><p style='text-align:center;'>²²²₈₆Rn → ᴬ<sub>Z</sub>Po + ⁴₂α</p><p><strong>(b)(ii)</strong> Determine the values of A and Z in the nuclear equation above. <em>(2 marks)</em></p><hr><p>A fresh sample of Radon-222 gas, which has a <strong>half-life of 3.8 days</strong>, was found to have a mass of <strong>240 g</strong>.</p><p><strong>(c)(ii)</strong> Calculate the mass of Radon-222 gas remaining after <strong>15.2 days</strong>, giving your answer to two significant figures. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q6b(ii) — Decay values:</strong></p><p>Conservation of mass number (A): 222 = A + 4 → <strong>A = 218</strong></p><p>Conservation of atomic number (Z): 86 = Z + 2 → <strong>Z = 84</strong></p><p>The product is Polonium-218 (²¹⁸₈₄Po).</p><p><strong>Q6c(ii) — Half-life mass calculation:</strong></p><p>Number of half-lives: n = 15.2 / 3.8 = <strong>4 half-lives</strong></p><p>Mass remaining = 240 × (½)⁴ = 240 × (1/16) = 240 / 16 = <strong>15 g</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Alpha decay:</strong> ²²²₈₆Rn → ᴬ_ZPo + ⁴₂α | Conservation: A_before = A_after; Z_before = Z_after<br><strong>Half-life:</strong> t½ = 3.8 days, initial mass = 240 g, time elapsed = 15.2 days",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_decay_numbers",
+            "label": "Determine A (mass number) and Z (atomic number) for Polonium. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_halflife",
+            "label": "Calculate the mass of Rn-222 remaining after 15.2 days (to 2 s.f.). (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_number_A",
+            "step_id": "step_decay_numbers",
+            "type": "digitbox",
+            "label": "A = _____",
+            "expected": "218",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "Mass number is conserved: A = 222 − 4 = 218",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Conserve mass number: A_Rn = A_Po + A_α → 222 = A + 4 → A = 218."
+            }
+        },
+        {
+            "id": "f2_atomic_number_Z",
+            "step_id": "step_decay_numbers",
+            "type": "digitbox",
+            "label": "Z = _____",
+            "expected": "84",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "Atomic number is conserved: Z = 86 − 2 = 84",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Conserve atomic number (proton number): Z_Rn = Z_Po + Z_α → 86 = Z + 2 → Z = 84. An alpha particle has Z = 2 (2 protons)."
+            }
+        },
+        {
+            "id": "f3_num_halflives",
+            "step_id": "step_halflife",
+            "type": "digitbox",
+            "label": "Number of half-lives elapsed = _____",
+            "expected": "4",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "n = total time / t½ = 15.2 / 3.8 = 4 half-lives",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Number of half-lives = time elapsed ÷ half-life = 15.2 ÷ 3.8 = 4."
+            }
+        },
+        {
+            "id": "f4_remaining_mass",
+            "step_id": "step_halflife",
+            "type": "numberbox",
+            "label": "Mass remaining after 15.2 days = _____ g",
+            "expected": "15",
+            "tolerance": 0.5,
+            "marks": 2.0,
+            "unit": "g",
+            "diagnostic_hint": "mass = 240 × (½)⁴ = 240 × (1/16) = 15 g",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use: remaining mass = initial mass × (½)ⁿ, where n is the number of half-lives.",
+                "SC_CALCULATION_ERROR": "mass = 240 × (½)⁴ = 240 × (1/16) = 15 g. Each half-life halves the mass: 240 → 120 → 60 → 30 → 15 g."
+            }
+        }
+    ]
+}

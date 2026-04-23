@@ -1,0 +1,172 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-MAY23-Q1ai",
+            "CHEM-MAY23-Q1aii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 May/June 2023",
+        "question_ref": "Q1(a)(i) and Q1(a)(ii)",
+        "subject": "Chemistry",
+        "topic": "Rates of Reaction — Definitions of Rate of Reaction and Catalyst",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q1ai(1m): define rate of reaction. Cloze: rate = change in [[1]] / [[2]]. Tokens: concentration (or amount)/time. Q1aii(2m): define catalyst. Cloze: a catalyst [[3]] the rate of reaction without being [[4]] itself; it [[5]] the activation energy. Combined into one file. Total 5 slots."
+    },
+    "question": {
+        "name": "CSEC Chem May 2023 Q1a(i)(ii) — Define Rate of Reaction and Catalyst",
+        "text": "<p><strong>(i)</strong> Define the term <strong>'rate of reaction'</strong>: <em>(1 mark)</em></p><p>Rate of reaction = change in [[1]] ÷ [[2]]</p><p><strong>(ii)</strong> Define the term <strong>'catalyst'</strong>: <em>(2 marks)</em></p><p>A catalyst [[3]] the rate of reaction without being [[4]] itself; it [[5]] the activation energy needed.</p>",
+        "general_feedback": "<p><strong>Rate of reaction:</strong></p><p>Rate of reaction = change in <strong>concentration</strong> (or amount) ÷ <strong>time</strong></p><p>Units: mol dm⁻³ s⁻¹ (or mol s⁻¹ if using amounts)</p><p><strong>Catalyst:</strong></p><p>A catalyst <strong>increases (speeds up)</strong> the rate of reaction without being <strong>used up (consumed/chemically changed)</strong> itself; it <strong>lowers (reduces)</strong> the activation energy needed for the reaction.</p><p><em>How catalysts work:</em> They provide an alternative reaction pathway with a lower activation energy — more reactant particles have enough energy to react, so the reaction proceeds faster.</p><p><em>Note:</em> Catalysts are not consumed — they are regenerated and can catalyse the same reaction repeatedly. The catalyst is unchanged at the end of the reaction.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Rate of reaction = change in [[1]] ÷ [[2]]</p><p>A catalyst [[3]] the rate of reaction without being [[4]] itself; it [[5]] the activation energy needed.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "concentration",
+                        "correct": true
+                    },
+                    {
+                        "text": "amount of substance",
+                        "correct": true
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "pressure",
+                        "correct": false
+                    }
+                ],
+                "label": "Rate of reaction = change in ___ per unit time",
+                "diagnostic_hint": "Rate of reaction = change in concentration (or amount) per unit time. You can also express it as change in mass, volume of gas, or absorbance per unit time."
+            },
+            {
+                "id": 2,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "time",
+                        "correct": true
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    },
+                    {
+                        "text": "moles",
+                        "correct": false
+                    }
+                ],
+                "label": "Rate of reaction = change in concentration per unit ___",
+                "diagnostic_hint": "The \"per unit\" part is per unit TIME (e.g., per second, per minute). Rate has units of mol dm⁻³ s⁻¹ or g s⁻¹, etc."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "increases",
+                        "correct": true
+                    },
+                    {
+                        "text": "speeds up",
+                        "correct": true
+                    },
+                    {
+                        "text": "decreases",
+                        "correct": false
+                    },
+                    {
+                        "text": "does not change",
+                        "correct": false
+                    }
+                ],
+                "label": "Catalyst — ___ the rate of reaction",
+                "diagnostic_hint": "A catalyst INCREASES (speeds up) the rate of reaction by providing an alternative reaction pathway with a lower activation energy."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "used up (consumed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "chemically changed",
+                        "correct": true
+                    },
+                    {
+                        "text": "heated",
+                        "correct": false
+                    },
+                    {
+                        "text": "dissolved",
+                        "correct": false
+                    }
+                ],
+                "label": "Catalyst — is NOT ___ during the reaction",
+                "diagnostic_hint": "A catalyst is NOT used up (consumed) in the reaction — it remains chemically unchanged at the end. This is what makes it a catalyst (not a reactant)."
+            },
+            {
+                "id": 5,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "lowers",
+                        "correct": true
+                    },
+                    {
+                        "text": "reduces",
+                        "correct": true
+                    },
+                    {
+                        "text": "raises",
+                        "correct": false
+                    },
+                    {
+                        "text": "does not affect",
+                        "correct": false
+                    }
+                ],
+                "label": "Catalyst — ___ the activation energy",
+                "diagnostic_hint": "A catalyst LOWERS (reduces) the activation energy, allowing more molecules to have sufficient energy to react, thus increasing the rate."
+            }
+        ],
+        "word_bank": [
+            "concentration",
+            "amount of substance",
+            "temperature",
+            "pressure",
+            "time",
+            "volume",
+            "moles",
+            "increases",
+            "speeds up",
+            "decreases",
+            "does not change",
+            "used up (consumed)",
+            "chemically changed",
+            "heated",
+            "dissolved",
+            "lowers",
+            "reduces",
+            "raises",
+            "does not affect"
+        ],
+        "word_bank_note": "19 tokens for 5 slots. Slot 1 (concentration/amount): both accepted as equivalent representations of how much reactant is present. 'Temperature' is wrong — temperature is a factor affecting rate, not the numerator of the rate expression. Slot 2 (time): the rate denominator; 'volume' is wrong — volume may appear in concentration (mol/dm³) but is not itself the denominator. Slot 3 (increases/speeds up): catalyst increases rate; 'decreases' describes an inhibitor. Slot 4 (used up/chemically changed): the 1m slot — students often think catalysts are consumed (they aren't). Slot 5 (lowers/reduces): catalyst lowers activation energy; 'raises' is the opposite and is wrong."
+    }
+}

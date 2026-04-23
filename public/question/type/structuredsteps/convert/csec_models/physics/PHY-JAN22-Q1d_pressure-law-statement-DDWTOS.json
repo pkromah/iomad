@@ -1,0 +1,132 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q1d"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q1(d)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Pressure Law Statement",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Pair with PHY-JAN22-Q1e (pressure law temperature calculation) as a 2-question sequence"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q1d — Pressure Law Statement (Fill in the Blank)",
+        "text": "<p>The sentence below is an incomplete statement of the pressure law. Drag the correct word or phrase into each blank to complete it.</p>",
+        "general_feedback": "<p>Pressure Law: <em>For a <strong>fixed</strong> mass of gas at constant <strong>volume</strong>, the <strong>pressure</strong> is directly proportional to the <strong>absolute (Kelvin)</strong> temperature of the gas.</em></p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>For a [[1]] mass of gas at constant [[2]], the [[3]] is directly proportional to the [[4]] temperature of the gas.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "options": [
+                    {
+                        "text": "fixed",
+                        "correct": true
+                    },
+                    {
+                        "text": "large",
+                        "correct": false
+                    },
+                    {
+                        "text": "small",
+                        "correct": false
+                    },
+                    {
+                        "text": "expanding",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure Law — gas at ___ volume",
+                "diagnostic_hint": "The Pressure Law (Gay-Lussac's Law) applies at FIXED (constant) volume. The gas is held in a sealed, rigid container so volume cannot change."
+            },
+            {
+                "id": 2,
+                "options": [
+                    {
+                        "text": "volume",
+                        "correct": true
+                    },
+                    {
+                        "text": "pressure",
+                        "correct": false
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "density",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure Law — what is kept constant",
+                "diagnostic_hint": "VOLUME is kept constant. This distinguishes the Pressure Law from Boyle's Law (constant temperature) and Charles's Law (constant pressure)."
+            },
+            {
+                "id": 3,
+                "options": [
+                    {
+                        "text": "pressure",
+                        "correct": true
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    },
+                    {
+                        "text": "density",
+                        "correct": false
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure Law — ___ is directly proportional to temperature",
+                "diagnostic_hint": "PRESSURE is directly proportional to absolute temperature (at constant volume). P ∝ T, so P/T = constant. Doubling the absolute temperature doubles the pressure."
+            },
+            {
+                "id": 4,
+                "options": [
+                    {
+                        "text": "absolute (Kelvin)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Celsius",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fahrenheit",
+                        "correct": false
+                    },
+                    {
+                        "text": "average",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure Law — temperature must be in ___ scale",
+                "diagnostic_hint": "Temperature must be in the ABSOLUTE (Kelvin) scale. Using Celsius gives wrong results because 0°C is NOT zero molecular energy — only 0 K (−273°C) is."
+            }
+        ],
+        "word_bank": [
+            "fixed",
+            "volume",
+            "pressure",
+            "absolute (Kelvin)",
+            "large",
+            "temperature",
+            "density",
+            "Celsius"
+        ],
+        "word_bank_note": "8 tokens for 4 blanks. Key distractor: 'Celsius' — students often forget the pressure law requires Kelvin temperature. 'temperature' appears in bank but is a distractor for slot 2 (constant variable) vs correct answer for slot 3."
+    }
+}

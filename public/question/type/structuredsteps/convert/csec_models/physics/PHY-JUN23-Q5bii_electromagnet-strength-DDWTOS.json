@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q5bii"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q5(b)(ii)",
+        "subject": "Physics",
+        "topic": "Electromagnetism — Factors That Increase Electromagnet Strength",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "2m: list 2 factors that increase electromagnet strength. 2 slots, 1m each. Correct: increase current / increase number of turns on coil / use soft iron core. Distractors: decrease current, decrease turns, use non-magnetic core."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q5b(ii) — Factors That Increase Electromagnet Strength",
+        "text": "<p>List TWO factors that would increase the strength of an electromagnet:</p><p>Factor 1: [[1]]</p><p>Factor 2: [[2]]</p>",
+        "general_feedback": "<p><strong>Ways to increase electromagnet strength:</strong></p><ul><li><strong>Increase the current</strong> through the coil — more current → stronger magnetic field</li><li><strong>Increase the number of turns</strong> on the coil — more turns → more magnetic field lines per unit length</li><li><strong>Use a soft iron core</strong> inside the coil — iron concentrates and amplifies the magnetic field (high permeability)</li></ul><p><em>Note:</em> Lengthening the coil without adding turns decreases field strength. Using a non-magnetic core (e.g. wood, plastic) instead of soft iron greatly reduces strength.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Factor 1: [[1]]</p><p>Factor 2: [[2]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Increase the current through the coil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase the number of turns on the coil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use a soft iron core",
+                        "correct": true
+                    },
+                    {
+                        "text": "Decrease the current through the coil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Decrease the number of turns on the coil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a non-magnetic core (wood or plastic)",
+                        "correct": false
+                    }
+                ],
+                "label": "Factor 1 that increases electromagnet strength",
+                "diagnostic_hint": "INCREASING THE CURRENT through the coil increases the magnetic field strength — more current = more charge flowing per second = stronger magnetic effect."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Increase the current through the coil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase the number of turns on the coil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use a soft iron core",
+                        "correct": true
+                    },
+                    {
+                        "text": "Decrease the current through the coil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Decrease the number of turns on the coil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a non-magnetic core (wood or plastic)",
+                        "correct": false
+                    }
+                ],
+                "label": "Factor 2 that increases electromagnet strength",
+                "diagnostic_hint": "INCREASING THE NUMBER OF TURNS concentrates more wire in the same region, amplifying the cumulative magnetic effect of the current."
+            }
+        ],
+        "word_bank": [
+            "Increase the current through the coil",
+            "Increase the number of turns on the coil",
+            "Use a soft iron core",
+            "Decrease the current through the coil",
+            "Decrease the number of turns on the coil",
+            "Use a non-magnetic core (wood or plastic)"
+        ],
+        "word_bank_note": "6 tokens for 2 slots. 3 correct — any 2 earn full marks. The 3 false tokens are direct opposites of the correct answers, testing whether students know the direction of each factor's effect. 'Decrease the current' and 'decrease the number of turns' are common wrong-direction errors. 'Non-magnetic core' is included because students sometimes confuse core material type."
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q3ci", "PHY-JAN23-Q3cii"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q3(c)(i) and Q3(c)(ii)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Energy Lost by Water and Specific Latent Heat of Fusion of Ice",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q3ci 3m: Q_water = mcΔT = 200×4.2×22 = 18480 J. Q3cii 3m: L = Q/m_ice = 18480/60 = 308 J/g = 308 J g⁻¹. Combined. Assume all heat lost by water = heat gained by ice."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q3c(i/ii) — Thermal Energy Lost by Water and Latent Heat of Fusion of Ice",
+        "text": "<p>A thermometer is placed in a plastic cup containing <strong>200 g of water</strong> at <strong>22 °C</strong>. Small pieces of ice at <strong>0 °C</strong> are added until the temperature of the mixture reaches <strong>0 °C</strong>. The total mass of ice added was <strong>60 g</strong>. The specific heat capacity of water is <strong>4.2 J g⁻¹ °C⁻¹</strong>.</p><p><strong>(i)</strong> Calculate the thermal energy lost by the original volume of water. <em>(3 marks)</em></p><p><strong>(ii)</strong> Assume all the thermal energy lost by the water is transferred to the ice. Calculate the specific latent heat of fusion of ice. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q3c(i) — Energy lost by water:</strong></p><p>Q = mcΔT = 200 g × 4.2 J g⁻¹ °C⁻¹ × (22 − 0) °C = 200 × 4.2 × 22 = <strong>18 480 J</strong></p><p><strong>Q3c(ii) — Specific latent heat of fusion:</strong></p><p>Q = mL → L = Q/m = 18 480 / 60 = <strong>308 J g⁻¹ = 308 000 J kg⁻¹</strong></p><p><em>Context:</em> The accepted value of L_f for ice is about 334 J g⁻¹ — the experiment gives 308 J g⁻¹, slightly low due to heat losses to the cup and surroundings.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Water:</strong> m = 200 g | c = 4.2 J/(g·°C) | Δθ = 22 − 0 = 22 °C<br><strong>Ice:</strong> m_ice = 60 g<br><strong>Formulas:</strong> Q = mcΔθ (sensible heat) | Q = mL (latent heat, no temperature change)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_energy",
+            "label": "Calculate the thermal energy lost by the 200 g of water. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_latent_heat",
+            "label": "Calculate the specific latent heat of fusion of ice. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_delta_theta",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "Temperature change of water Δθ = _____ °C",
+            "expected": "22",
+            "tolerance": 0,
+            "marks": 0.5,
+            "unit": "°C",
+            "diagnostic_hint": "Δθ = 22 − 0 = 22 °C (water cools from 22 °C to 0 °C)",
+            "error_codes": {"SC_CALCULATION_ERROR": "Δθ = initial temperature − final temperature = 22 − 0 = 22 °C."}
+        },
+        {
+            "id": "f2_energy_water",
+            "step_id": "step_energy",
+            "type": "numberbox",
+            "label": "Thermal energy lost by water Q = _____ J",
+            "expected": "18480",
+            "tolerance": 50,
+            "marks": 2.5,
+            "unit": "J",
+            "diagnostic_hint": "Q = mcΔθ = 200 × 4.2 × 22 = 18 480 J",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use Q = mcΔθ where m = mass in grams, c = specific heat capacity in J/(g·°C), Δθ = temperature change in °C.",
+                "SC_CALCULATION_ERROR": "Q = 200 × 4.2 × 22 = 840 × 22 = 18 480 J."
+            }
+        },
+        {
+            "id": "f3_latent_heat",
+            "step_id": "step_latent_heat",
+            "type": "numberbox",
+            "label": "Specific latent heat of fusion L = _____ J g⁻¹",
+            "expected": "308",
+            "tolerance": 5,
+            "marks": 3.0,
+            "unit": "J/g",
+            "diagnostic_hint": "L = Q/m_ice = 18 480/60 = 308 J g⁻¹",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use Q = mL rearranged as L = Q/m. Q is the energy transferred to the ice (= energy lost by water = 18 480 J) and m is the mass of ice (60 g).",
+                "SC_CALCULATION_ERROR": "L = 18 480 / 60 = 308 J g⁻¹ (= 308 000 J kg⁻¹)."
+            }
+        }
+    ]
+}

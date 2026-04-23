@@ -1,0 +1,233 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "IT-MAY25-Q1di",
+            "IT-MAY25-Q1dii",
+            "IT-MAY25-Q1diii",
+            "IT-MAY25-Q1div"
+        ],
+        "source_paper": "CSEC Information Technology Paper 02 May/June 2025",
+        "question_ref": "Q1(d)(i)–(iv)",
+        "subject": "Information Technology",
+        "topic": "Database Concepts — Primary Key, Relationships, Design View, Datasheet View",
+        "marks_total": 10,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Caribbean agricultural context: FARMERS and FARM tables with Caribbean crops (Banana, Orange, Irish potato, Lychee, Sweet pepper) and regional farmer data",
+        "authored": "2026-04-12",
+        "note": "Q1d(i): 1 mark (primary key). Q1d(ii): 2 marks (linked fields). Q1d(iii): 4 marks (Design View fields and tables). Q1d(iv): 3 marks (Datasheet View result). FARMERS has: ID, FirstName, LastName, Gender, Contact, Region. FARM has: FarmID, Crop, Cost Per Produce, FarmerID. FarmerID 1 = Jack Smith, Region 1, with Banana (002) and Orange (192)."
+    },
+    "question": {
+        "name": "CSEC IT May 2025 Q1d — Database Query Design and Results",
+        "text": "<p>Consider the following database with two tables:</p><p><strong>FARMERS</strong></p><table border='1' cellpadding='4' style='border-collapse:collapse; font-size:0.9em;'><thead><tr><th>ID No.</th><th>FirstName</th><th>LastName</th><th>Gender</th><th>Contact Number</th><th>Region</th></tr></thead><tbody><tr><td>1</td><td>Jack</td><td>Smith</td><td>M</td><td>675-8742</td><td>1</td></tr><tr><td>2</td><td>Leslie</td><td>Jacobs</td><td>F</td><td>782-6734</td><td>2</td></tr><tr><td>3</td><td>Bruce</td><td>Jordan</td><td>M</td><td>892-6764</td><td>1</td></tr><tr><td>4</td><td>Karen</td><td>Smith</td><td>F</td><td>323-8792</td><td>7</td></tr><tr><td>5</td><td>Linda</td><td>Daniels</td><td>F</td><td>239-0552</td><td>2</td></tr><tr><td>6</td><td>Jerome</td><td>Levy</td><td>M</td><td>982-1291</td><td>5</td></tr><tr><td>7</td><td>Carlington</td><td>Nichols</td><td>M</td><td>767-2231</td><td>5</td></tr><tr><td>8</td><td>Handel</td><td>Brown</td><td>M</td><td>773-2231</td><td>4</td></tr></tbody></table><p><strong>FARM</strong></p><table border='1' cellpadding='4' style='border-collapse:collapse; font-size:0.9em;'><thead><tr><th>FarmID</th><th>Crop</th><th>Cost Per Produce</th><th>FarmerID</th></tr></thead><tbody><tr><td>002</td><td>Banana</td><td>$10.00</td><td>1</td></tr><tr><td>192</td><td>Orange</td><td>$8.25</td><td>1</td></tr><tr><td>778</td><td>Irish potato</td><td>$30.00</td><td>6</td></tr><tr><td>252</td><td>Lychee</td><td>$25.00</td><td>2</td></tr><tr><td>123</td><td>Sweet pepper</td><td>$15.00</td><td>5</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>(i) Primary key in FARM:</strong> FarmID — uniquely identifies each record in the FARM table.</p><p><strong>(ii) Linked fields for relationship:</strong> FARMERS.ID No. linked to FARM.FarmerID — these form the foreign key relationship between the two tables.</p><p><strong>(iii) Design View for query (Farmer's full name, Region, Crop, FarmID where FarmerID = 1):</strong><br>Field: FirstName | LastName | Region | Crop | FarmID | FarmerID<br>Table: FARMERS | FARMERS | FARMERS | FARM | FARM | FARM<br>Show: ✓ | ✓ | ✓ | ✓ | ✓ | □<br>Criteria: | | | | | 1</p><p><strong>(iv) Datasheet View result:</strong></p><table border='1' cellpadding='4' style='border-collapse:collapse;'><thead><tr><th>FirstName</th><th>Region</th><th>Crop</th><th>FarmID</th></tr></thead><tbody><tr><td>Jack</td><td>1</td><td>Banana</td><td>002</td></tr><tr><td>Jack</td><td>1</td><td>Orange</td><td>192</td></tr></tbody></table><p>Two records returned because FarmerID 1 (Jack Smith) has two entries in the FARM table.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Tables:</strong> FARMERS (ID No., FirstName, LastName, Gender, Contact, Region) &nbsp;|&nbsp; FARM (FarmID, Crop, Cost, FarmerID)<br><strong>Task:</strong> Identify primary key → link tables → design query → produce results for FarmerID = 1",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part (i) — Identify the <strong>primary key</strong> of the FARM table. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step2",
+            "label": "Part (ii) — State the <strong>two fields that must be linked</strong> to create a relationship between the tables. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step3",
+            "label": "Part (iii) — Complete the <strong>Design View</strong> to query Farmer's full name, Region, Crop and FarmID where FarmerID = 1. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step4",
+            "label": "Part (iv) — Complete the <strong>Datasheet View</strong> showing the query results. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_primary_key",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Primary key of FARM table: _____",
+            "expected": "FarmID",
+            "marks": 1.0,
+            "diagnostic_hint": "The primary key uniquely identifies each record. In FARM, each FarmID (002, 192, 778, 252, 123) is unique.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The primary key must be unique for every record. In FARM, FarmID is the only field that never repeats — FarmerID repeats (FarmerID 1 appears twice)."
+            },
+            "options": {
+                "FarmID": "FarmID",
+                "Crop": "Crop",
+                "FarmerID": "FarmerID",
+                "Cost Per Produce": "Cost Per Produce"
+            }
+        },
+        {
+            "id": "f2_link_farmers",
+            "step_id": "step2",
+            "type": "choice",
+            "label": "Field from FARMERS table used to link: _____",
+            "expected": "ID No",
+            "marks": 1.0,
+            "diagnostic_hint": "The FARMERS table identifies each farmer by their ID No. — this must match with a field in FARM.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The primary key of FARMERS is ID No. — this links to the foreign key in FARM."
+            },
+            "options": {
+                "ID No": "ID No. (from FARMERS)",
+                "FirstName": "FirstName (from FARMERS)",
+                "FarmID": "FarmID (from FARM)",
+                "Region": "Region (from FARMERS)"
+            }
+        },
+        {
+            "id": "f3_link_farm",
+            "step_id": "step2",
+            "type": "choice",
+            "label": "Field from FARM table used to link: _____",
+            "expected": "FarmerID",
+            "marks": 1.0,
+            "diagnostic_hint": "FarmerID in the FARM table is the foreign key that links to ID No. in FARMERS.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "FarmerID in FARM matches ID No. in FARMERS — this is the foreign key relationship."
+            },
+            "options": {
+                "FarmerID": "FarmerID (from FARM)",
+                "FarmID": "FarmID (from FARM)",
+                "Crop": "Crop (from FARM)",
+                "ID No": "ID No. (from FARMERS)"
+            }
+        },
+        {
+            "id": "f4_design_name_field",
+            "step_id": "step3",
+            "type": "choice",
+            "label": "Design View — Field(s) for farmer's full name: _____",
+            "expected": "FirstName and LastName",
+            "marks": 1.0,
+            "diagnostic_hint": "Full name requires FirstName and LastName fields, both from the FARMERS table.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "To display a full name in a query, include both FirstName and LastName from the FARMERS table. They appear as separate columns in the Design View."
+            },
+            "options": {
+                "FirstName and LastName": "FirstName and LastName",
+                "FullName": "FullName (single field)",
+                "FirstName": "FirstName only",
+                "LastName": "LastName only"
+            }
+        },
+        {
+            "id": "f5_design_region_crop",
+            "step_id": "step3",
+            "type": "choice",
+            "label": "Design View — Fields for Region and Crop (state field and table for each): _____",
+            "expected": "Region from FARMERS, Crop from FARM",
+            "marks": 1.0,
+            "diagnostic_hint": "Region comes from FARMERS; Crop comes from FARM. Each field must be paired with its correct table in the Design View.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Region belongs to the FARMERS table; Crop belongs to the FARM table. In Design View, each column shows: Field name above and Table name below."
+            },
+            "options": {
+                "Region from FARMERS, Crop from FARM": "Region from FARMERS, Crop from FARM",
+                "Region from FARM, Crop from FARMERS": "Region from FARM, Crop from FARMERS",
+                "Both Region and Crop from FARMERS": "Both Region and Crop from FARMERS",
+                "Both Region and Crop from FARM": "Both Region and Crop from FARM"
+            }
+        },
+        {
+            "id": "f6_design_farmid_criteria",
+            "step_id": "step3",
+            "type": "choice",
+            "label": "Design View — FarmID field and FarmerID criteria (state the criteria value): _____",
+            "expected": "1",
+            "marks": 1.0,
+            "diagnostic_hint": "FarmID (from FARM) is displayed. The Criteria row for FarmerID must be set to '1' to filter for Jack Smith's farms only.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Add FarmerID to the query, uncheck its Show box, and set Criteria = 1. This filters all FARM records to only those belonging to FarmerID 1."
+            },
+            "options": {
+                "1": "1 (FarmerID equals 1)",
+                "2": "2",
+                "FarmID": "FarmID",
+                "FarmerID": "FarmerID"
+            }
+        },
+        {
+            "id": "f7_design_tables",
+            "step_id": "step3",
+            "type": "choice",
+            "label": "Design View — Table names for name/Region fields: _____",
+            "expected": "FARMERS",
+            "marks": 1.0,
+            "diagnostic_hint": "FirstName, LastName, and Region all come from the FARMERS table.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The Table row in Design View must say FARMERS for FirstName, LastName, and Region columns."
+            },
+            "options": {
+                "FARMERS": "FARMERS",
+                "FARM": "FARM",
+                "Both FARMERS and FARM": "Both FARMERS and FARM",
+                "Query": "Query"
+            }
+        },
+        {
+            "id": "f8_datasheet_row1",
+            "step_id": "step4",
+            "type": "choice",
+            "label": "Datasheet View — Row 1 result (name, Region, Crop, FarmID): _____",
+            "expected": "Jack Smith, 1, Banana, 002",
+            "marks": 1.5,
+            "diagnostic_hint": "FarmerID 1 = Jack Smith, Region 1. First farm: FarmID 002, Crop = Banana.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Filter FARM for FarmerID = 1 → Jack Smith (FARMERS row 1) linked to FarmID 002 (Banana) and FarmID 192 (Orange). Row 1: Jack | Smith | 1 | Banana | 002."
+            },
+            "options": {
+                "Jack Smith, 1, Banana, 002": "Jack | Smith | 1 | Banana | 002",
+                "Jack Smith, 1, Orange, 192": "Jack | Smith | 1 | Orange | 192",
+                "Leslie Jacobs, 2, Lychee, 252": "Leslie | Jacobs | 2 | Lychee | 252",
+                "Bruce Jordan, 1, Banana, 002": "Bruce | Jordan | 1 | Banana | 002"
+            }
+        },
+        {
+            "id": "f9_datasheet_row2",
+            "step_id": "step4",
+            "type": "choice",
+            "label": "Datasheet View — Row 2 result (name, Region, Crop, FarmID): _____",
+            "expected": "Jack Smith, 1, Orange, 192",
+            "marks": 1.5,
+            "diagnostic_hint": "FarmerID 1 has two farm records — second record: FarmID 192, Crop = Orange.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "FarmerID 1 appears twice in FARM (FarmID 002 and 192). The query returns 2 rows. Row 2: Jack | Smith | 1 | Orange | 192."
+            },
+            "options": {
+                "Jack Smith, 1, Banana, 002": "Jack | Smith | 1 | Banana | 002",
+                "Jack Smith, 1, Orange, 192": "Jack | Smith | 1 | Orange | 192",
+                "Leslie Jacobs, 2, Lychee, 252": "Leslie | Jacobs | 2 | Lychee | 252",
+                "Bruce Jordan, 1, Irish potato, 778": "Bruce | Jordan | 1 | Irish potato | 778"
+            }
+        }
+    ]
+}

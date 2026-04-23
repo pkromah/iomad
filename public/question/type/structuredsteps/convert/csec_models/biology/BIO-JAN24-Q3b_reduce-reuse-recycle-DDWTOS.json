@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-JAN24-Q3b"
+        ],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q3(b)",
+        "subject": "Biology",
+        "topic": "Ecology — Definitions of Reduce, Reuse, Recycle",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Match each of the 3 'R' environmental terms to its definition. 3 slots × 1m each. Word bank: 5 definition phrases (3 correct + 2 distractors). Definitions are phrased as actions: Reduce=use less, Reuse=use again without processing, Recycle=convert waste into new products."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q3b — Match Reduce, Reuse, Recycle to Definitions",
+        "text": "<p>Match each term to its correct definition by dragging the appropriate phrase into each blank:</p><table border='1' style='border-collapse:collapse; width:80%; margin:0.5em auto;'><tr><th>Term</th><th>Definition</th></tr><tr><td><strong>Reduce</strong></td><td>[[1]]</td></tr><tr><td><strong>Reuse</strong></td><td>[[2]]</td></tr><tr><td><strong>Recycle</strong></td><td>[[3]]</td></tr></table>",
+        "general_feedback": "<p><strong>The Three R's:</strong></p><ul><li><strong>Reduce:</strong> Decrease the amount of waste produced by using fewer resources (e.g. buying only what you need, using less packaging)</li><li><strong>Reuse:</strong> Use an item more than once in its original form without reprocessing (e.g. refilling a water bottle, donating old clothes)</li><li><strong>Recycle:</strong> Convert waste materials into new products through processing (e.g. melting glass bottles into new glass, shredding paper into new paper pulp)</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<table border='1' style='border-collapse:collapse; width:80%; margin:0.5em auto;'><tr><th>Term</th><th>Definition</th></tr><tr><td><strong>Reduce</strong></td><td>[[1]]</td></tr><tr><td><strong>Reuse</strong></td><td>[[2]]</td></tr><tr><td><strong>Recycle</strong></td><td>[[3]]</td></tr></table>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Decrease the amount of waste produced by using fewer resources",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use an item more than once in its original form",
+                        "correct": false
+                    },
+                    {
+                        "text": "Convert waste materials into new products through processing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Dispose of waste in a landfill to prevent pollution",
+                        "correct": false
+                    },
+                    {
+                        "text": "Burn waste to generate energy instead of discarding",
+                        "correct": false
+                    }
+                ],
+                "label": "Definition of Reduce",
+                "diagnostic_hint": "Reduce means to decrease the amount of waste produced by consuming fewer resources in the first place — prevention is better than cure."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Decrease the amount of waste produced by using fewer resources",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use an item more than once in its original form",
+                        "correct": true
+                    },
+                    {
+                        "text": "Convert waste materials into new products through processing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Dispose of waste in a landfill to prevent pollution",
+                        "correct": false
+                    },
+                    {
+                        "text": "Burn waste to generate energy instead of discarding",
+                        "correct": false
+                    }
+                ],
+                "label": "Definition of Reuse",
+                "diagnostic_hint": "Reuse means using an item again in its original form without reprocessing — e.g., refilling a glass bottle instead of buying a new one."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Decrease the amount of waste produced by using fewer resources",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use an item more than once in its original form",
+                        "correct": false
+                    },
+                    {
+                        "text": "Convert waste materials into new products through processing",
+                        "correct": true
+                    },
+                    {
+                        "text": "Dispose of waste in a landfill to prevent pollution",
+                        "correct": false
+                    },
+                    {
+                        "text": "Burn waste to generate energy instead of discarding",
+                        "correct": false
+                    }
+                ],
+                "label": "Definition of Recycle",
+                "diagnostic_hint": "Recycle means processing waste materials to create new products — e.g., melting aluminium cans to make new aluminium products."
+            }
+        ],
+        "word_bank": [
+            "Decrease the amount of waste produced by using fewer resources",
+            "Use an item more than once in its original form",
+            "Convert waste materials into new products through processing",
+            "Dispose of waste in a landfill to prevent pollution",
+            "Burn waste to generate energy instead of discarding"
+        ],
+        "word_bank_note": "5 tokens for 3 slots; 3 correct + 2 distractors. 'Dispose of waste in a landfill' — common misconception; landfill is NOT one of the 3 Rs. 'Burn waste to generate energy' — this is incineration/waste-to-energy, sometimes confused with 'recycle'; it is NOT recycling since original material is not reformed into a new product of the same type."
+    }
+}

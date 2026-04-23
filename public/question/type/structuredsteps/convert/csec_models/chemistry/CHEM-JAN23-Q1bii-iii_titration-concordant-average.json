@@ -1,0 +1,88 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN23-Q1bii",
+            "CHEM-JAN23-Q1biii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q1(b)(ii) and Q1(b)(iii)",
+        "subject": "Chemistry",
+        "topic": "Titration — Concordant Titrations and Average Volume Calculation",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q1b(i) is 9m table-completion (not auto-gradeable — requires burette reading images). Q1b(ii) (1m): identify concordant titrations. Q1b(iii) (1m): calculate average. Burette data: T1(rough)=25.0cm³, T2=25.0cm³, T3=25.0cm³. Concordant = T2 and T3 (T1 excluded as rough). Average = (25.0+25.0)/2 = 25.0cm³. Combined into one file."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q1b(ii/iii) — Concordant Titrations and Average Volume",
+        "text": "<p>The titration results for the reaction of sodium hydroxide with sulfuric acid are shown below:</p><table><thead><tr><th>Burette Reading / cm³</th><th>Titration 1 (Rough)</th><th>Titration 2</th><th>Titration 3</th></tr></thead><tbody><tr><td>Final reading</td><td>25.5</td><td>37.2</td><td>40.5</td></tr><tr><td>Initial reading</td><td>0.5</td><td>12.2</td><td>15.5</td></tr><tr><td>Volume of acid used / cm³</td><td>25.0</td><td>25.0</td><td>25.0</td></tr></tbody></table><p><strong>(ii)</strong> Indicate the titration volumes that will be used to calculate the average volume of sulfuric acid. <em>(1 mark)</em></p><p><strong>(iii)</strong> Calculate the average volume of sulfuric acid used in the titration. <em>(1 mark)</em></p>",
+        "general_feedback": "<p><strong>Q1b(ii) — Concordant titrations:</strong></p><p>Titration 1 is the <em>rough titration</em> — it is always excluded from the average, regardless of its value, because it is used only to find the approximate end point.</p><p>The concordant titrations are <strong>Titration 2</strong> and <strong>Titration 3</strong> (both give 25.0 cm³ — they agree to within 0.1 cm³, so they are concordant).</p><p><strong>Q1b(iii) — Average volume:</strong></p><p>Average = (25.0 + 25.0) ÷ 2 = <strong>25.0 cm³</strong></p><p><em>Rule:</em> Concordant titres agree within 0.1 cm³ of each other. If T2 and T3 differ by more than 0.1 cm³, a T4 would be needed.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Titration data:</strong> T1 (Rough) = 25.0 cm³ | T2 = 25.0 cm³ | T3 = 25.0 cm³<br><strong>Rule:</strong> T1 is always excluded (rough titration). Concordant = T2 and T3 (agree within 0.1 cm³).",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_concordant",
+            "label": "Identify the concordant titrations. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step_average",
+            "label": "Calculate the average volume of sulfuric acid used. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_concordant",
+            "step_id": "step_concordant",
+            "type": "choice",
+            "label": "Concordant titrations used: _____",
+            "expected": "Titration 2 and Titration 3",
+            "marks": 1.0,
+            "diagnostic_hint": "Titration 1 is the rough titration and is always excluded. Titrations 2 and 3 both give 25.0 cm³ — they are concordant.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "In a titration, the first run (Titration 1) is a rough titration used only to find the approximate endpoint — it is always excluded when calculating the average, even if its volume matches the others. Concordant titrations are Titration 2 and Titration 3."
+            },
+            "options": {
+                "Titration 1 and Titration 2": "Titration 1 and Titration 2",
+                "Titration 1 and Titration 3": "Titration 1 and Titration 3",
+                "Titration 2 and Titration 3": "Titration 2 and Titration 3",
+                "All three titrations": "All three titrations"
+            }
+        },
+        {
+            "id": "f2_average",
+            "step_id": "step_average",
+            "type": "numberbox",
+            "label": "Average volume of sulfuric acid = _____ cm³",
+            "expected": "25.0",
+            "tolerance": 0.05,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Average = (25.0 + 25.0) ÷ 2 = 25.0 cm³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Add the two concordant titration volumes (T2 + T3 = 25.0 + 25.0 = 50.0 cm³) and divide by 2 to get the average: 50.0 ÷ 2 = 25.0 cm³.",
+                "SC_METHOD_ERROR": "Do not include the rough titration (T1) in the average. Use only the concordant titres: T2 = 25.0 cm³ and T3 = 25.0 cm³."
+            }
+        }
+    ]
+}

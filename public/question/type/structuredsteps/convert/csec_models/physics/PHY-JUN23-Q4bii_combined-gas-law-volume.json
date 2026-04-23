@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q4bii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q4(b)(ii)",
+        "subject": "Physics",
+        "topic": "Gas Laws — Combined Gas Law: Calculate Final Volume",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "6m: P1=1.0×10⁵ Pa, V1=1.9×10⁻⁴ m³, T1=27°C=300 K, P2=1.8×10⁴ Pa, T2=627°C=900 K. Combined gas law: P1V1/T1=P2V2/T2 → V2=(P1×V1×T2)/(T2×P2)... wait: V2=(P1×V1×T2)/(T1×P2)=(1.0×10⁵×1.9×10⁻⁴×900)/(300×1.8×10⁴)=17.1/5400=3.167×10⁻³ m³. Mark scheme: 1m state formula; 1m T1=300K and T2=900K conversion; 1m substitute correctly; 3m final answer."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q4b(ii) — Combined Gas Law: Find Final Volume",
+        "text": "<p>A fixed mass of gas has the following initial conditions:</p><ul><li>Pressure: P₁ = 1.0 × 10⁵ Pa</li><li>Volume: V₁ = 1.9 × 10⁻⁴ m³</li><li>Temperature: T₁ = 27 °C</li></ul><p>The gas is then heated and allowed to expand until:</p><ul><li>Pressure: P₂ = 1.8 × 10⁴ Pa</li><li>Temperature: T₂ = 627 °C</li></ul><p><strong>(ii)</strong> Calculate the final volume V₂ of the gas. <em>(6 marks)</em></p>",
+        "general_feedback": "<p><strong>Combined gas law:</strong></p><p><strong>Formula:</strong> P₁V₁/T₁ = P₂V₂/T₂</p><p><strong>Step 1 — Convert temperatures to Kelvin:</strong></p><p>T₁ = 27 + 273 = 300 K</p><p>T₂ = 627 + 273 = 900 K</p><p><strong>Step 2 — Rearrange for V₂:</strong></p><p>V₂ = (P₁ × V₁ × T₂) / (T₁ × P₂)</p><p><strong>Step 3 — Substitute:</strong></p><p>V₂ = (1.0 × 10⁵ × 1.9 × 10⁻⁴ × 900) / (300 × 1.8 × 10⁴)</p><p>V₂ = (1.0 × 10⁵ × 1.9 × 10⁻⁴ × 900) / (5.4 × 10⁶)</p><p>Numerator: 1.0 × 10⁵ × 1.9 × 10⁻⁴ = 19.0; 19.0 × 900 = 17 100</p><p>Denominator: 300 × 1.8 × 10⁴ = 5 400 000 = 5.4 × 10⁶</p><p>V₂ = 17 100 / 5 400 000 = <strong>3.17 × 10⁻³ m³</strong></p><p><em>Physical sense check:</em> pressure dropped by factor ~5.6 and temperature increased by factor 3 → volume should increase by ~5.6 × 3 ≈ 16.7× from 1.9 × 10⁻⁴ = 3.17 × 10⁻³ ✓</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> P₁ = 1.0 × 10⁵ Pa | V₁ = 1.9 × 10⁻⁴ m³ | T₁ = 27 °C | P₂ = 1.8 × 10⁴ Pa | T₂ = 627 °C<br><strong>Combined gas law:</strong> P₁V₁/T₁ = P₂V₂/T₂ → V₂ = (P₁ × V₁ × T₂) / (T₁ × P₂)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_temperature_conversion",
+            "label": "Convert temperatures from °C to Kelvin. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step_formula_sub",
+            "label": "State the combined gas law formula and substitute values. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_final_volume",
+            "label": "Calculate the final volume V₂. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_T1_kelvin",
+            "step_id": "step_temperature_conversion",
+            "type": "numberbox",
+            "label": "T₁ in Kelvin = _____ K",
+            "expected": "300",
+            "tolerance": 0,
+            "marks": 0.5,
+            "unit": "K",
+            "diagnostic_hint": "T₁ = 27 + 273 = 300 K",
+            "error_codes": {"SC_METHOD_ERROR": "Convert °C to K by adding 273: T₁ = 27 + 273 = 300 K."}
+        },
+        {
+            "id": "f2_T2_kelvin",
+            "step_id": "step_temperature_conversion",
+            "type": "numberbox",
+            "label": "T₂ in Kelvin = _____ K",
+            "expected": "900",
+            "tolerance": 0,
+            "marks": 0.5,
+            "unit": "K",
+            "diagnostic_hint": "T₂ = 627 + 273 = 900 K",
+            "error_codes": {"SC_METHOD_ERROR": "Convert °C to K by adding 273: T₂ = 627 + 273 = 900 K."}
+        },
+        {
+            "id": "f3_numerator",
+            "step_id": "step_formula_sub",
+            "type": "numberbox",
+            "label": "Numerator P₁ × V₁ × T₂ = _____ Pa·m³·K",
+            "expected": "17100",
+            "tolerance": 100,
+            "marks": 1.0,
+            "unit": "Pa·m³·K",
+            "diagnostic_hint": "Numerator = 1.0 × 10⁵ × 1.9 × 10⁻⁴ × 900 = 19.0 × 900 = 17 100",
+            "error_codes": {"SC_CALCULATION_ERROR": "Numerator = P₁ × V₁ × T₂ = (1.0 × 10⁵) × (1.9 × 10⁻⁴) × 900 = 19.0 × 900 = 17 100 Pa·m³·K."}
+        },
+        {
+            "id": "f4_denominator",
+            "step_id": "step_formula_sub",
+            "type": "numberbox",
+            "label": "Denominator T₁ × P₂ = _____ Pa·K",
+            "expected": "5400000",
+            "tolerance": 10000,
+            "marks": 1.0,
+            "unit": "Pa·K",
+            "diagnostic_hint": "Denominator = T₁ × P₂ = 300 × 1.8 × 10⁴ = 5.4 × 10⁶ Pa·K",
+            "error_codes": {"SC_CALCULATION_ERROR": "Denominator = T₁ × P₂ = 300 × 18 000 = 5 400 000 = 5.4 × 10⁶ Pa·K."}
+        },
+        {
+            "id": "f5_V2",
+            "step_id": "step_final_volume",
+            "type": "numberbox",
+            "label": "Final volume V₂ = _____ × 10⁻³ m³",
+            "expected": "3.17",
+            "tolerance": 0.1,
+            "marks": 3.0,
+            "unit": "× 10⁻³ m³",
+            "diagnostic_hint": "V₂ = 17100 / 5400000 = 3.167 × 10⁻³ m³ ≈ 3.17 × 10⁻³ m³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "V₂ = (P₁ × V₁ × T₂) / (T₁ × P₂) = 17 100 / 5 400 000 = 3.17 × 10⁻³ m³.",
+                "SC_FORMULA_SELECTION_ERROR": "Use the combined gas law: P₁V₁/T₁ = P₂V₂/T₂, rearranged to V₂ = (P₁V₁T₂)/(T₁P₂). Temperatures must be in Kelvin."
+            }
+        }
+    ]
+}

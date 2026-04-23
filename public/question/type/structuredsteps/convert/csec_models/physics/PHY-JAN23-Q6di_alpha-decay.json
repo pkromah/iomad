@@ -1,0 +1,93 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q6di"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(d)(i)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Alpha Decay Equation",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6d(i) — Polonium-210 Alpha Decay",
+        "text": "<p>A polonium-210 nucleus decays by α-particle emission to form a lead (Pb) nucleus.</p><p>Complete the nuclear equation for the decay:</p><p style='font-size:1.1em; text-align:center;'>\\({}^{210}_{84}\\text{Po} \\rightarrow {}^{A}_{Z}\\text{Pb} + {}^{4}_{2}\\alpha\\)</p><p>Determine the values of <strong>A</strong> (mass number) and <strong>Z</strong> (atomic number) of the lead nucleus produced.</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Conservation of mass number: A = 210 − 4 = <strong>206</strong><br>Conservation of atomic number: Z = 84 − 2 = <strong>82</strong><br>The product is <strong>\\({}^{206}_{82}\\text{Pb}\\)</strong> (lead-206).</p><p>Check: mass numbers balance (210 = 206 + 4) ✓ &nbsp; atomic numbers balance (84 = 82 + 2) ✓</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Nuclear decay rules:</strong><br>Mass number (A) is conserved: A<sub>parent</sub> = A<sub>daughter</sub> + A<sub>particle</sub><br>Atomic number (Z) is conserved: Z<sub>parent</sub> = Z<sub>daughter</sub> + Z<sub>particle</sub><br>Alpha particle: \\({}^{4}_{2}\\alpha\\) (mass number 4, atomic number 2)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Find the mass number <strong>A</strong> and atomic number <strong>Z</strong> of the lead nucleus. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_number",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Mass number A = _____",
+            "expected": "206",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "A = 210 − 4 = 206 (mass number of Po minus mass number of alpha)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass number conservation: A(Po) = A(Pb) + A(alpha). So A(Pb) = 210 − 4 = 206."
+            }
+        },
+        {
+            "id": "f2_atomic_number",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Atomic number Z = _____",
+            "expected": "82",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "Z = 84 − 2 = 82 (atomic number of Po minus atomic number of alpha)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Atomic number conservation: Z(Po) = Z(Pb) + Z(alpha). So Z(Pb) = 84 − 2 = 82."
+            }
+        },
+        {
+            "id": "f3_element_name",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Name of element (from periodic table): _____",
+            "expected": "Lead",
+            "marks": 1.0,
+            "diagnostic_hint": "Atomic number 82 = Lead (Pb). Check your periodic table.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Use your periodic table: Z = 82 corresponds to Lead (Pb)."
+            },
+            "options": {
+                "Lead": "Lead (Pb)",
+                "Polonium": "Polonium (Po)",
+                "Bismuth": "Bismuth (Bi)",
+                "Mercury": "Mercury (Hg)"
+            }
+        }
+    ]
+}

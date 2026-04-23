@@ -1,0 +1,207 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q2a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q2(a)",
+        "subject": "Physics",
+        "topic": "Pressure in Fluids — Definitions and Properties",
+        "marks_total": 7,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Context: shipwreck in Caribbean Sea used in Q2b",
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q2a — Pressure Statements (Fill in the Blank)",
+        "text": "<p>Complete the following statements by dragging the correct word or phrase into each blank.</p>",
+        "general_feedback": "<p>Answers: (i) P = Force/Area; pascal; N/m² (ii) equal; depth (iii) upthrust; weight</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>(i)</strong> The formula for pressure is given by P = [[1]] . Its SI unit is [[2]] or [[3]] .</p><p><strong>(ii)</strong> In fluids, pressure at all points on the same horizontal level is [[4]] and pressure increases as the [[5]] increases.</p><p><strong>(iii)</strong> An object will float in a fluid when the [[6]] on the object is equal to the [[7]] of the object.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "options": [
+                    {
+                        "text": "Force ÷ Area",
+                        "correct": true
+                    },
+                    {
+                        "text": "Force × Area",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mass × Acceleration",
+                        "correct": false
+                    },
+                    {
+                        "text": "Force ÷ Volume",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure = ___",
+                "diagnostic_hint": "Pressure = Force ÷ Area (P = F/A). Force is in newtons (N), area in m², giving pressure in N m⁻² (pascals)."
+            },
+            {
+                "id": 2,
+                "options": [
+                    {
+                        "text": "pascal (Pa)",
+                        "correct": true
+                    },
+                    {
+                        "text": "newton (N)",
+                        "correct": false
+                    },
+                    {
+                        "text": "joule (J)",
+                        "correct": false
+                    },
+                    {
+                        "text": "kilogram (kg)",
+                        "correct": false
+                    }
+                ],
+                "label": "SI unit of pressure (name)",
+                "diagnostic_hint": "The SI unit of pressure is the PASCAL (Pa). 1 Pa = 1 N m⁻² = 1 kg m⁻¹ s⁻². Atmospheric pressure is about 101,325 Pa."
+            },
+            {
+                "id": 3,
+                "options": [
+                    {
+                        "text": "N m⁻²",
+                        "correct": true
+                    },
+                    {
+                        "text": "N m²",
+                        "correct": false
+                    },
+                    {
+                        "text": "kg m⁻²",
+                        "correct": false
+                    },
+                    {
+                        "text": "J m⁻¹",
+                        "correct": false
+                    }
+                ],
+                "label": "SI unit of pressure (symbol)",
+                "diagnostic_hint": "N m⁻² is the equivalent symbol for the pascal. 1 pascal = 1 newton per square metre. The pascal is named after Blaise Pascal."
+            },
+            {
+                "id": 4,
+                "options": [
+                    {
+                        "text": "equal",
+                        "correct": true
+                    },
+                    {
+                        "text": "maximum",
+                        "correct": false
+                    },
+                    {
+                        "text": "minimum",
+                        "correct": false
+                    },
+                    {
+                        "text": "zero",
+                        "correct": false
+                    }
+                ],
+                "label": "Pressure acts ___ in all directions in a liquid",
+                "diagnostic_hint": "Pressure in a liquid is EQUAL in all directions at the same depth (Pascal's principle). A liquid at rest transmits pressure uniformly."
+            },
+            {
+                "id": 5,
+                "options": [
+                    {
+                        "text": "depth",
+                        "correct": true
+                    },
+                    {
+                        "text": "temperature",
+                        "correct": false
+                    },
+                    {
+                        "text": "surface area",
+                        "correct": false
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    }
+                ],
+                "label": "Liquid pressure increases with ___",
+                "diagnostic_hint": "Liquid pressure increases with DEPTH. P = ρgh where ρ is density, g is gravitational field strength, h is depth. Greater depth → greater column of liquid above → greater pressure."
+            },
+            {
+                "id": 6,
+                "options": [
+                    {
+                        "text": "upthrust",
+                        "correct": true
+                    },
+                    {
+                        "text": "weight",
+                        "correct": false
+                    },
+                    {
+                        "text": "pressure",
+                        "correct": false
+                    },
+                    {
+                        "text": "normal force",
+                        "correct": false
+                    }
+                ],
+                "label": "Upward force on a floating/submerged object is called ___",
+                "diagnostic_hint": "The upward force exerted by a fluid on a submerged or floating object is called UPTHRUST (or buoyancy force). It arises because fluid pressure increases with depth."
+            },
+            {
+                "id": 7,
+                "options": [
+                    {
+                        "text": "weight",
+                        "correct": true
+                    },
+                    {
+                        "text": "upthrust",
+                        "correct": false
+                    },
+                    {
+                        "text": "mass",
+                        "correct": false
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    }
+                ],
+                "label": "An object floats when upthrust equals ___",
+                "diagnostic_hint": "An object floats when upthrust equals its WEIGHT. If upthrust > weight, it rises; if upthrust < weight, it sinks. At equilibrium (floating): upthrust = weight."
+            }
+        ],
+        "word_bank": [
+            "Force ÷ Area",
+            "pascal (Pa)",
+            "N m⁻²",
+            "equal",
+            "depth",
+            "upthrust",
+            "weight",
+            "Force × Area",
+            "newton (N)",
+            "kg m⁻²",
+            "maximum",
+            "temperature",
+            "pressure",
+            "mass"
+        ],
+        "word_bank_note": "14 tokens in bank for 7 blanks — 7 correct + 7 distractors. Each slot has its own group to prevent cross-contamination. Tokens [[6]] and [[7]] use 'upthrust' and 'weight' as both correct answers and each other's distractor — high pedagogical value."
+    }
+}

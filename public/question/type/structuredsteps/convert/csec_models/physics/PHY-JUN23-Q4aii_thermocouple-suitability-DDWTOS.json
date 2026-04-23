@@ -1,0 +1,147 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q4aii"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q4(a)(ii)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Thermocouple Thermometer Suitability",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: state 3 reasons thermocouple is suitable for measuring the temperature of the blue part of a candle flame. 3 slots × 1m each. Correct reasons: high temperature range / fast response time / small sensing junction / gives electrical output. Distractors: reasons correct for mercury-in-glass or clinical thermometer (large bulb, slow response, low range)."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q4a(ii) — Thermocouple Suitability for Candle Flame",
+        "text": "<p>A thermocouple thermometer is used to measure the temperature of the <strong>blue part</strong> of the flame of a small candle.</p><p>State THREE reasons why a thermocouple thermometer is suitable for this application.</p><p>Reason 1: [[1]]</p><p>Reason 2: [[2]]</p><p>Reason 3: [[3]]</p>",
+        "general_feedback": "<p><strong>Why the thermocouple is suitable for measuring the blue part of a candle flame:</strong></p><ol><li><strong>High temperature range</strong> — thermocouples can measure up to ~1500 °C or more; a candle flame reaches ~1400 °C. Mercury-in-glass thermometers max out at ~350 °C.</li><li><strong>Fast (rapid) response</strong> — the thermocouple junction responds almost instantly to temperature changes, capturing the correct temperature in a small, fluctuating flame.</li><li><strong>Small/fine sensing junction</strong> — the tiny wire junction fits within a specific, localised region of the flame (the blue zone), giving a point measurement rather than an average.</li><li><strong>Gives an electrical output</strong> — the EMF (voltage) can be read on a digital display or recorded by a data logger, allowing accurate readings without the observer needing to be close to the flame.</li></ol>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Reason 1: [[1]]</p><p>Reason 2: [[2]]</p><p>Reason 3: [[3]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "High temperature range (up to ~1500 °C)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fast/rapid response to temperature changes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Small sensing junction — measures a localised region",
+                        "correct": true
+                    },
+                    {
+                        "text": "Gives an electrical output (EMF)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large bulb for good sensitivity",
+                        "correct": false
+                    },
+                    {
+                        "text": "Slow response allows stable reading",
+                        "correct": false
+                    },
+                    {
+                        "text": "Safe to use below 100 °C only",
+                        "correct": false
+                    }
+                ],
+                "label": "Reason 1 thermocouple suits candle flame measurement",
+                "diagnostic_hint": "The thermocouple has a HIGH TEMPERATURE RANGE (up to ~1500°C), making it suitable for a candle flame (~1400°C). A liquid-in-glass thermometer would vaporise."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "High temperature range (up to ~1500 °C)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fast/rapid response to temperature changes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Small sensing junction — measures a localised region",
+                        "correct": true
+                    },
+                    {
+                        "text": "Gives an electrical output (EMF)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large bulb for good sensitivity",
+                        "correct": false
+                    },
+                    {
+                        "text": "Slow response allows stable reading",
+                        "correct": false
+                    },
+                    {
+                        "text": "Safe to use below 100 °C only",
+                        "correct": false
+                    }
+                ],
+                "label": "Reason 2 thermocouple suits candle flame measurement",
+                "diagnostic_hint": "A thermocouple has a FAST RESPONSE — it responds almost instantly to temperature changes, important for measuring a fluctuating flame."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "High temperature range (up to ~1500 °C)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fast/rapid response to temperature changes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Small sensing junction — measures a localised region",
+                        "correct": true
+                    },
+                    {
+                        "text": "Gives an electrical output (EMF)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Large bulb for good sensitivity",
+                        "correct": false
+                    },
+                    {
+                        "text": "Slow response allows stable reading",
+                        "correct": false
+                    },
+                    {
+                        "text": "Safe to use below 100 °C only",
+                        "correct": false
+                    }
+                ],
+                "label": "Reason 3 thermocouple suits candle flame measurement",
+                "diagnostic_hint": "The thermocouple junction is SMALL — it can be inserted into the localised region of the flame without significantly disturbing it."
+            }
+        ],
+        "word_bank": [
+            "High temperature range (up to ~1500 °C)",
+            "Fast/rapid response to temperature changes",
+            "Small sensing junction — measures a localised region",
+            "Gives an electrical output (EMF)",
+            "Large bulb for good sensitivity",
+            "Slow response allows stable reading",
+            "Safe to use below 100 °C only"
+        ],
+        "word_bank_note": "7 tokens for 3 slots. 4 correct — any 3 earn full marks. 'Large bulb for good sensitivity' describes a mercury-in-glass thermometer and is irrelevant (a large bulb cannot fit in the blue zone of a candle flame). 'Slow response allows stable reading' is wrong — a slow response would miss the actual peak temperature of a fluctuating flame. 'Safe to use below 100°C only' is a limitation, not a suitability reason, and incorrectly describes a thermocouple (which operates well above 100°C)."
+    }
+}

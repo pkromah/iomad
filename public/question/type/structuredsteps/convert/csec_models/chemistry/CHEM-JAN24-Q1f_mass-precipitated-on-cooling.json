@@ -1,0 +1,88 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN24-Q1eii", "CHEM-JAN24-Q1f"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q1(e)(ii) and Q1(f)",
+        "subject": "Chemistry",
+        "topic": "Solubility — Reading Solubility from Graph and Calculating Mass Precipitated on Cooling",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q1eii(1m): read solubility at 65°C from graph → ~100g per 100cm³. Q1f(2m): calculate mass precipitated when 100g/100cm³ solution cooled to 35°C where solubility≈48g/100cm³. Mass precipitated = 100 - 48 = 52g ±5%. Combined into one file. Own-figure tolerance wide for graph-dependent Q1eii."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q1e(ii) and Q1f — Solubility Graph: Read and Calculate Mass Precipitated",
+        "text": "<p>A solubility curve shows how the solubility of a salt changes with temperature.</p><p><strong>(e)(ii)</strong> Use the graph to determine the solubility of the salt at <strong>65 °C</strong>. <em>(1 mark)</em></p><p>Solubility at 65 °C = [[1]] g per 100 cm³</p><p><strong>(f)</strong> A saturated solution of the salt is prepared at 65 °C using 100 cm³ of water. The solution is then cooled to <strong>35 °C</strong>.</p><p>Calculate the <strong>mass of salt that precipitates</strong> when the solution is cooled from 65 °C to 35 °C. <em>(2 marks)</em></p>",
+        "general_feedback": "<p><strong>Reading solubility from the curve:</strong></p><p>At 65 °C: solubility ≈ <strong>100 g per 100 cm³</strong></p><p>At 35 °C: solubility ≈ <strong>48 g per 100 cm³</strong></p><p><strong>Calculating mass precipitated:</strong></p><p>Mass precipitated = solubility at 65°C − solubility at 35°C</p><p>= 100 − 48 = <strong>52 g</strong></p><p><em>Why?</em> At 65°C, 100g of salt dissolved in 100cm³ water (saturated). At 35°C, only 48g can remain dissolved → the excess (52g) crystallises out as precipitate.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Solubility from graph:</strong> read g per 100 cm³ at each temperature<br>At 65°C: ~100 g/100 cm³ | At 35°C: ~48 g/100 cm³",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_read_graph",
+            "label": "Read solubility at 65 °C from the graph. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step_precipitate",
+            "label": "Calculate mass of salt that precipitates on cooling to 35 °C. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_solubility_65",
+            "step_id": "step_read_graph",
+            "type": "numberbox",
+            "label": "Solubility at 65 °C = _____ g per 100 cm³",
+            "expected": "100",
+            "tolerance": 10,
+            "marks": 1.0,
+            "unit": "g per 100 cm³",
+            "diagnostic_hint": "Read the solubility curve at temperature 65°C. The value should be approximately 100 g per 100 cm³ (accept 90–110 based on graph reading tolerance).",
+            "error_codes": {"SC_METHOD_ERROR": "To read from a solubility curve: find 65°C on the x-axis, draw a vertical line up to the curve, then read horizontally across to the y-axis to get the solubility value in g per 100 cm³."}
+        },
+        {
+            "id": "f2_solubility_35",
+            "step_id": "step_precipitate",
+            "type": "numberbox",
+            "label": "Solubility at 35 °C = _____ g per 100 cm³",
+            "expected": "48",
+            "tolerance": 5,
+            "marks": 0.5,
+            "unit": "g per 100 cm³",
+            "diagnostic_hint": "Read the solubility at 35°C from the graph — approximately 48 g per 100 cm³.",
+            "error_codes": {"SC_METHOD_ERROR": "Read the solubility at 35°C from the curve: approximately 48 g per 100 cm³."}
+        },
+        {
+            "id": "f3_mass_precipitated",
+            "step_id": "step_precipitate",
+            "type": "numberbox",
+            "label": "Mass of salt precipitated = _____ g",
+            "expected": "52",
+            "tolerance": 8,
+            "marks": 1.5,
+            "unit": "g",
+            "diagnostic_hint": "Mass precipitated = solubility at 65°C − solubility at 35°C = 100 − 48 = 52 g. Accept own-figure: (your 65°C value) − (your 35°C value).",
+            "error_codes": {"SC_CALCULATION_ERROR": "Mass precipitated = solubility at start temperature − solubility at end temperature = 100 − 48 = 52 g. The excess that was dissolved at 65°C but can no longer stay in solution at 35°C crystallises out."}
+        }
+    ]
+}

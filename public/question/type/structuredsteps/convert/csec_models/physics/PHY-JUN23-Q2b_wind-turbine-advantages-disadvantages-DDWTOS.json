@@ -1,0 +1,167 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q2b"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q2(b)",
+        "subject": "Physics",
+        "topic": "Energy — Advantages and Disadvantages of Wind Turbines",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": true,
+        "authored": "2026-04-12",
+        "note": "4m: 2 advantages × 1m + 2 disadvantages × 1m. Caribbean context: question explicitly asks about wind turbines 'in some Caribbean countries'. Advantages: renewable / no greenhouse gases. Disadvantages: intermittent (wind-dependent) / high initial cost. Multiple correct tokens per slot — any 2 valid advantages and any 2 valid disadvantages earn full marks."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q2b — Wind Turbine Advantages and Disadvantages (Caribbean)",
+        "text": "<p>State TWO advantages and TWO disadvantages of using wind turbines in some Caribbean countries.</p><p><strong>Advantages:</strong></p><p>Advantage 1: [[1]]</p><p>Advantage 2: [[2]]</p><p><strong>Disadvantages:</strong></p><p>Disadvantage 1: [[3]]</p><p>Disadvantage 2: [[4]]</p>",
+        "general_feedback": "<p><strong>Wind turbines in Caribbean countries:</strong></p><p><strong>Advantages:</strong></p><ul><li><strong>Renewable energy source</strong> — wind is inexhaustible and naturally replenished</li><li><strong>No greenhouse gas emissions</strong> — produces no CO₂ or other pollutants during operation</li><li><strong>Caribbean trade winds</strong> — consistent easterly trade winds provide reliable generation potential</li><li><strong>Low running costs</strong> — once installed, fuel costs are zero</li></ul><p><strong>Disadvantages:</strong></p><ul><li><strong>Intermittent supply</strong> — output depends on wind speed; no generation when wind is calm or too strong</li><li><strong>High initial/installation cost</strong> — turbines and grid connection are expensive to install</li><li><strong>Visual and noise pollution</strong> — large turbines affect landscape and produce low-frequency noise</li><li><strong>Hazard to wildlife</strong> — rotating blades can harm birds and bats</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Advantages:</strong></p><p>Advantage 1: [[1]]</p><p>Advantage 2: [[2]]</p><p><strong>Disadvantages:</strong></p><p>Disadvantage 1: [[3]]</p><p>Disadvantage 2: [[4]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Renewable energy source (wind is inexhaustible)",
+                        "correct": true
+                    },
+                    {
+                        "text": "No greenhouse gas emissions during operation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Low running costs (no fuel needed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reliable 24/7 electricity supply",
+                        "correct": false
+                    },
+                    {
+                        "text": "Intermittent output dependent on wind speed",
+                        "correct": false
+                    },
+                    {
+                        "text": "High initial installation cost",
+                        "correct": false
+                    }
+                ],
+                "label": "Advantage 1 of wind turbines (Caribbean context)",
+                "diagnostic_hint": "Wind is a RENEWABLE energy source — it will not run out. In the Caribbean, consistent trade winds make it particularly viable, unlike coal or oil which must be imported."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Renewable energy source (wind is inexhaustible)",
+                        "correct": true
+                    },
+                    {
+                        "text": "No greenhouse gas emissions during operation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Low running costs (no fuel needed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reliable 24/7 electricity supply",
+                        "correct": false
+                    },
+                    {
+                        "text": "Intermittent output dependent on wind speed",
+                        "correct": false
+                    },
+                    {
+                        "text": "High initial installation cost",
+                        "correct": false
+                    }
+                ],
+                "label": "Advantage 2 of wind turbines (Caribbean context)",
+                "diagnostic_hint": "Wind turbines produce NO greenhouse gas emissions during operation (no combustion). This reduces carbon footprint compared to burning fossil fuels."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Intermittent output dependent on wind speed",
+                        "correct": true
+                    },
+                    {
+                        "text": "High initial installation cost",
+                        "correct": true
+                    },
+                    {
+                        "text": "Visual and noise pollution",
+                        "correct": true
+                    },
+                    {
+                        "text": "Renewable energy source (wind is inexhaustible)",
+                        "correct": false
+                    },
+                    {
+                        "text": "No greenhouse gas emissions during operation",
+                        "correct": false
+                    },
+                    {
+                        "text": "Low running costs (no fuel needed)",
+                        "correct": false
+                    }
+                ],
+                "label": "Disadvantage 1 of wind turbines (Caribbean context)",
+                "diagnostic_hint": "Wind energy is INTERMITTENT — when wind speed is too low or too high, turbines cannot generate electricity reliably. This is a key limitation in areas with variable wind."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Intermittent output dependent on wind speed",
+                        "correct": true
+                    },
+                    {
+                        "text": "High initial installation cost",
+                        "correct": true
+                    },
+                    {
+                        "text": "Visual and noise pollution",
+                        "correct": true
+                    },
+                    {
+                        "text": "Renewable energy source (wind is inexhaustible)",
+                        "correct": false
+                    },
+                    {
+                        "text": "No greenhouse gas emissions during operation",
+                        "correct": false
+                    },
+                    {
+                        "text": "Low running costs (no fuel needed)",
+                        "correct": false
+                    }
+                ],
+                "label": "Disadvantage 2 of wind turbines (Caribbean context)",
+                "diagnostic_hint": "Wind turbines have HIGH initial installation costs. However, running costs are low since no fuel is needed. The payback period can be many years."
+            }
+        ],
+        "word_bank": [
+            "Renewable energy source (wind is inexhaustible)",
+            "No greenhouse gas emissions during operation",
+            "Low running costs (no fuel needed)",
+            "Reliable 24/7 electricity supply",
+            "Intermittent output dependent on wind speed",
+            "High initial installation cost",
+            "Visual and noise pollution"
+        ],
+        "word_bank_note": "7 tokens: 3 advantages (correct for slots 1–2), 3 disadvantages (correct for slots 3–4), 1 trap token. Advantage slots (1 & 2): any 2 of {Renewable, No greenhouse gases, Low running costs} earn marks. 'Reliable 24/7 supply' is the trap — wind is NOT reliable around the clock (it is intermittent), so this is factually wrong as an advantage. Disadvantage slots (3 & 4): any 2 of {Intermittent, High cost, Visual/noise pollution} earn marks. 'Reliable 24/7 supply' is implicitly a disadvantage in disguise but is presented as a token — the negative framing in the word bank prevents confusion. Caribbean-specific note: the question context (Caribbean countries) makes 'trade winds' relevant but the core answers are the same anywhere."
+    }
+}

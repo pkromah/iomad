@@ -1,0 +1,112 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q2bii", "PHY-JAN22-Q2biii"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q2(b)(ii) and Q2(b)(iii)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Specific Heat Capacity and Power",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q2(b)(i) 'define specific heat capacity' is a written-definition task — not auto-gradeable; excluded from this file. This file covers the calculation parts only."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q2b — Specific Heat Capacity Calculation",
+        "text": "<p>A group of students used an electrical method to calculate the specific heat capacity of a liquid.</p><ul><li>Time for heating: <strong>400 s</strong></li><li>Mass of liquid: <strong>0.2 kg</strong></li><li>Initial temperature: <strong>25°C</strong></li><li>Final temperature: <strong>70°C</strong></li><li>Energy supplied by immersion heater: <strong>15.6 kJ</strong></li></ul><p>Assume no heat was lost and ignore the heat capacity of the container.</p>",
+        "general_feedback": "<p><strong>Part (ii) — Specific heat capacity:</strong><br>ΔT = 70 − 25 = 45°C<br>E = 15.6 kJ = 15 600 J<br>c = E / (m × ΔT) = 15 600 / (0.2 × 45) = 15 600 / 9 = <strong>1 733 J kg⁻¹ °C⁻¹</strong></p><p><strong>Part (iii) — Power rating:</strong><br>P = E / t = 15 600 / 400 = <strong>39 W</strong></p><p><em>Common error in (ii): using ΔT = 70 without subtracting initial temperature, or forgetting to convert kJ → J.</em></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> t = 400 s &nbsp;|&nbsp; m = 0.2 kg &nbsp;|&nbsp; θ₁ = 25°C &nbsp;|&nbsp; θ₂ = 70°C &nbsp;|&nbsp; E = 15.6 kJ<br><strong>Formulas:</strong> c = E / (m × ΔT) &nbsp;&nbsp; P = E / t<br><em>Note: convert kJ to J (× 1000) before substituting.</em>",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part (ii) — Calculate the <strong>specific heat capacity</strong> of the liquid. (5 marks)",
+            "type": "computational",
+            "marks": 5
+        },
+        {
+            "id": "step2",
+            "label": "Part (iii) — Calculate the <strong>power rating</strong> of the immersion heater. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_delta_T",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Temperature rise ΔT = _____ °C",
+            "expected": "45",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "°C",
+            "diagnostic_hint": "ΔT = final temperature − initial temperature = 70 − 25 = 45°C",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "ΔT = θ₂ − θ₁ = 70 − 25 = 45°C. You must subtract the initial temperature, not use the final temperature alone."
+            }
+        },
+        {
+            "id": "f2_energy_joules",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Energy E = _____ J",
+            "expected": "15600",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "J",
+            "diagnostic_hint": "Convert 15.6 kJ to joules: 15.6 × 1000 = 15 600 J",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "1 kJ = 1000 J, so 15.6 kJ = 15 600 J. Did you multiply by 1000?"
+            }
+        },
+        {
+            "id": "f3_shc",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Specific heat capacity c = _____ J kg⁻¹ °C⁻¹",
+            "expected": "1733",
+            "tolerance": 35,
+            "marks": 3.0,
+            "unit": "J kg⁻¹ °C⁻¹",
+            "diagnostic_hint": "c = E / (m × ΔT) = 15 600 / (0.2 × 45) = 15 600 / 9 = 1 733 J kg⁻¹ °C⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c = E ÷ (m × ΔT) = 15 600 ÷ (0.2 × 45) = 15 600 ÷ 9 = 1 733 J kg⁻¹ °C⁻¹. Check you used ΔT = 45°C and E = 15 600 J.",
+                "SC_FORMULA_SELECTION_ERROR": "Specific heat capacity formula: c = E / (m × ΔT). Rearrange the formula Q = mcΔT to make c the subject.",
+                "SC_METHOD_ERROR": "Did you use ΔT = 45 (not 70)? And E = 15 600 J (not 15.6)? Substitute carefully: 15 600 ÷ (0.2 × 45)."
+            }
+        },
+        {
+            "id": "f4_power",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Power rating P = _____ W",
+            "expected": "39",
+            "tolerance": 0,
+            "marks": 3.0,
+            "unit": "W",
+            "diagnostic_hint": "P = E / t = 15 600 / 400 = 39 W",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "P = E ÷ t = 15 600 ÷ 400 = 39 W. Use energy in joules (15 600 J) and time in seconds (400 s).",
+                "SC_FORMULA_SELECTION_ERROR": "Power formula: P = E / t (energy divided by time). The unit is watts (W = J/s).",
+                "SC_METHOD_ERROR": "The same energy (15 600 J) is used here as in part (ii). P = 15 600 ÷ 400 = 39 W."
+            }
+        }
+    ]
+}

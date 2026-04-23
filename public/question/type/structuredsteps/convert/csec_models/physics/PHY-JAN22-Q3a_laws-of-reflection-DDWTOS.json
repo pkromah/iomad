@@ -1,0 +1,112 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q3a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q3(a)",
+        "subject": "Physics",
+        "topic": "Optics — Laws of Reflection",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "3m for stating the TWO laws of reflection. Cloze supplies the sentence frame; students select the missing physics terms. Law 1: angle of incidence = angle of reflection (1m each). Law 2: incident ray, reflected ray, and normal lie in the same plane (1m). 3 slots × 1m."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q3a — State the Two Laws of Reflection",
+        "text": "<p>State the TWO laws of reflection by completing the statements below:</p><p><strong>Law 1:</strong> The angle of [[1]] is equal to the angle of [[2]], both measured from the normal.</p><p><strong>Law 2:</strong> The incident ray, the reflected ray, and the normal all lie in the [[3]].</p>",
+        "general_feedback": "<p><strong>Laws of Reflection:</strong></p><ol><li><strong>Law 1:</strong> The angle of <em>incidence</em> is equal to the angle of <em>reflection</em>. (Both angles are measured from the normal to the reflecting surface at the point of incidence.)</li><li><strong>Law 2:</strong> The incident ray, the reflected ray, and the normal at the point of incidence all lie in the <em>same plane</em>.</li></ol><p><em>Mnemonic:</em> i = r (angle of incidence = angle of reflection). The normal is an imaginary line perpendicular to the reflecting surface — not perpendicular to the ray.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Law 1:</strong> The angle of [[1]] is equal to the angle of [[2]], both measured from the normal.</p><p><strong>Law 2:</strong> The incident ray, the reflected ray, and the normal all lie in the [[3]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "incidence",
+                        "correct": true
+                    },
+                    {
+                        "text": "reflection",
+                        "correct": false
+                    },
+                    {
+                        "text": "elevation",
+                        "correct": false
+                    },
+                    {
+                        "text": "refraction",
+                        "correct": false
+                    }
+                ],
+                "label": "First Law — angle of ___ equals angle of reflection",
+                "diagnostic_hint": "The angle of INCIDENCE (measured from the normal to the incoming ray) equals the angle of reflection (measured from the normal to the reflected ray)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "reflection",
+                        "correct": true
+                    },
+                    {
+                        "text": "incidence",
+                        "correct": false
+                    },
+                    {
+                        "text": "refraction",
+                        "correct": false
+                    },
+                    {
+                        "text": "elevation",
+                        "correct": false
+                    }
+                ],
+                "label": "First Law — angle of incidence equals angle of ___",
+                "diagnostic_hint": "The angle of REFLECTION equals the angle of incidence. Both angles are measured from the normal (perpendicular to the reflecting surface at the point of incidence)."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "same plane",
+                        "correct": true
+                    },
+                    {
+                        "text": "perpendicular plane",
+                        "correct": false
+                    },
+                    {
+                        "text": "horizontal plane",
+                        "correct": false
+                    },
+                    {
+                        "text": "parallel planes",
+                        "correct": false
+                    }
+                ],
+                "label": "Second Law — incident ray, reflected ray, and normal are in the ___",
+                "diagnostic_hint": "All three (incident ray, normal, and reflected ray) lie in the SAME PLANE. This means they are coplanar — you can draw all three on a flat piece of paper."
+            }
+        ],
+        "word_bank": [
+            "incidence",
+            "reflection",
+            "elevation",
+            "refraction",
+            "same plane",
+            "perpendicular plane",
+            "horizontal plane",
+            "parallel planes"
+        ],
+        "word_bank_note": "8 tokens for 3 slots. Slots 1 and 2 share the same options — 'incidence' and 'reflection' are swapped to test direction of Law 1. 'elevation' and 'refraction' are distractors: elevation is unrelated; refraction describes the bending of light at a boundary (not reflection). Slot 3: 'same plane' is correct (coplanarity law). 'perpendicular plane' describes a plane at 90° — incorrect. 'horizontal plane' introduces spurious orientation. 'parallel planes' is wrong — the three elements are coplanar (one plane), not in parallel planes."
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q6a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(a)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Radioactive Emissions: Name, Range, Stopped By",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: complete table — identify emission type, fill in range (alpha), fill in 'stopped by' (gamma + beta). 6 cells total but 3 given (nature). Marks: 0.5m per missing cell × 6 = 3m. Row 1=Gamma (EM, km range, lead/concrete). Row 2=Alpha (helium, short range given as 'few cm'→student fills). Row 3=Beta (electron, few metres, aluminium)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6a — Radioactive Emissions Table",
+        "text": "<p>Complete the table below by inserting the types of radioactive emissions and their properties.</p><table><thead><tr><th>Radioactive Emission</th><th>Nature</th><th>Range in Air</th><th>Stopped By</th></tr></thead><tbody><tr><td>?</td><td>Electromagnetic radiation</td><td>Several kilometres</td><td>?</td></tr><tr><td>?</td><td>Helium nucleus</td><td>?</td><td>1 sheet of paper</td></tr><tr><td>?</td><td>Electron</td><td>A few metres</td><td>?</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Radioactive emissions table:</strong></p><table><thead><tr><th>Emission</th><th>Nature</th><th>Range in Air</th><th>Stopped By</th></tr></thead><tbody><tr><td><strong>Gamma (γ)</strong></td><td>Electromagnetic radiation</td><td>Several kilometres</td><td>Thick lead or concrete</td></tr><tr><td><strong>Alpha (α)</strong></td><td>Helium nucleus (²⁴He)</td><td>A few centimetres</td><td>1 sheet of paper</td></tr><tr><td><strong>Beta (β)</strong></td><td>Electron</td><td>A few metres</td><td>Thin aluminium sheet (3 mm Al)</td></tr></tbody></table><p><em>Penetrating power:</em> γ &gt; β &gt; α | <em>Ionising power:</em> α &gt; β &gt; γ</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Three types of nuclear radiation:</strong> Alpha (α), Beta (β), Gamma (γ)<br><strong>Key properties:</strong> Range in air | What material stops each type",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_gamma",
+            "label": "Row 1 — Emission type and what stops it (nature: electromagnetic radiation, range: several km). (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step_alpha",
+            "label": "Row 2 — Emission type and range in air (nature: helium nucleus, stopped by: paper). (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step_beta",
+            "label": "Row 3 — Emission type and what stops it (nature: electron, range: few metres). (1 mark)",
+            "type": "computational",
+            "marks": 1
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_gamma_name",
+            "step_id": "step_gamma",
+            "type": "choice",
+            "label": "Emission name (Row 1 — nature: electromagnetic radiation) = _____",
+            "expected": "Gamma",
+            "marks": 0.5,
+            "diagnostic_hint": "Electromagnetic radiation emitted from a nucleus is gamma (γ) radiation",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The radiation described as 'electromagnetic radiation' with a very long range is gamma (γ) radiation — not alpha or beta."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f2_gamma_stopped",
+            "step_id": "step_gamma",
+            "type": "choice",
+            "label": "Gamma radiation is stopped by = _____",
+            "expected": "Thick lead",
+            "marks": 0.5,
+            "diagnostic_hint": "Gamma rays require thick lead (or concrete) to stop them due to their high penetrating power",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Gamma rays have the highest penetrating power. They require thick lead (several cm) or thick concrete to be effectively stopped."
+            },
+            "options": {
+                "Thick lead": "Thick lead (or dense concrete)",
+                "Thin aluminium": "Thin aluminium sheet (~3 mm)",
+                "Paper": "A single sheet of paper"
+            }
+        },
+        {
+            "id": "f3_alpha_name",
+            "step_id": "step_alpha",
+            "type": "choice",
+            "label": "Emission name (Row 2 — nature: helium nucleus, stopped by: paper) = _____",
+            "expected": "Alpha",
+            "marks": 0.5,
+            "diagnostic_hint": "A helium nucleus (⁴₂He) emitted from a radioactive nucleus is an alpha (α) particle",
+            "error_codes": {
+                "SC_METHOD_ERROR": "A particle described as a 'helium nucleus' is an alpha (α) particle. It consists of 2 protons and 2 neutrons."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f4_alpha_range",
+            "step_id": "step_alpha",
+            "type": "choice",
+            "label": "Range of alpha particles in air = _____",
+            "expected": "A few centimetres",
+            "marks": 0.5,
+            "diagnostic_hint": "Alpha particles have a very short range in air — typically 5–8 cm (a few centimetres)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Alpha particles are heavily ionising but have a very short range in air — approximately 5–8 cm (a few centimetres), not metres or kilometres."
+            },
+            "options": {
+                "A few centimetres": "A few centimetres (~3–7 cm)",
+                "A few metres": "A few metres (~1–3 m)",
+                "Several kilometres": "Several kilometres"
+            }
+        },
+        {
+            "id": "f5_beta_name",
+            "step_id": "step_beta",
+            "type": "choice",
+            "label": "Emission name (Row 3 — nature: electron, range: few metres) = _____",
+            "expected": "Beta",
+            "marks": 0.5,
+            "diagnostic_hint": "An electron emitted from a nucleus is a beta (β) particle",
+            "error_codes": {
+                "SC_METHOD_ERROR": "An electron emitted from a nucleus is a beta (β) particle — produced when a neutron converts to a proton in the nucleus."
+            },
+            "options": {
+                "Alpha": "Alpha (α)",
+                "Beta": "Beta (β)",
+                "Gamma": "Gamma (γ)"
+            }
+        },
+        {
+            "id": "f6_beta_stopped",
+            "step_id": "step_beta",
+            "type": "choice",
+            "label": "Beta particles are stopped by = _____",
+            "expected": "Thin aluminium",
+            "marks": 0.5,
+            "diagnostic_hint": "Beta particles are stopped by a thin sheet of aluminium (approximately 3 mm thick)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Beta particles are stopped by a thin sheet of aluminium (about 3 mm). Paper stops alpha particles but not beta. Lead stops gamma but is overkill for beta."
+            },
+            "options": {
+                "Thick lead": "Thick lead (or dense concrete)",
+                "Thin aluminium": "Thin aluminium sheet (~3 mm)",
+                "Paper": "A single sheet of paper"
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN24-Q4a"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q4(a)",
+        "subject": "Chemistry",
+        "topic": "Electrochemistry — Classifying Conductors and Insulators",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Four items to classify: copper coin (conductor), plastic (insulator), glass (insulator), aluminium can (conductor). 4 slots × 0.5m each = 2m. Modelled as drag-to-label: each item dragged to CONDUCTOR or INSULATOR. Word bank has 2 labels (repeated) — students assign each item to a label."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q4a — Classify Conductors and Insulators",
+        "text": "<p>Classify each of the following materials as a <strong>conductor</strong> or <strong>insulator</strong> of electricity by dragging the correct label into each blank:</p><table border='1' style='border-collapse:collapse; text-align:center; width:60%; margin:0.5em auto;'><tr><th>Material</th><th>Conductor or Insulator?</th></tr><tr><td>Copper coin</td><td>[[1]]</td></tr><tr><td>Plastic</td><td>[[2]]</td></tr><tr><td>Glass</td><td>[[3]]</td></tr><tr><td>Aluminium can</td><td>[[4]]</td></tr></table>",
+        "general_feedback": "<p><strong>Conductors</strong> (allow current to flow — have free electrons):</p><ul><li><strong>Copper coin</strong> — copper is a metal, excellent conductor</li><li><strong>Aluminium can</strong> — aluminium is a metal, good conductor</li></ul><p><strong>Insulators</strong> (do not allow current to flow — no free electrons):</p><ul><li><strong>Plastic</strong> — polymer; electrons tightly bound in covalent bonds</li><li><strong>Glass</strong> — covalent/ionic amorphous solid; no free charge carriers at room temperature</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<table border='1' style='border-collapse:collapse; text-align:center; width:60%; margin:0.5em auto;'><tr><th>Material</th><th>Conductor or Insulator?</th></tr><tr><td>Copper coin</td><td>[[1]]</td></tr><tr><td>Plastic</td><td>[[2]]</td></tr><tr><td>Glass</td><td>[[3]]</td></tr><tr><td>Aluminium can</td><td>[[4]]</td></tr></table>",
+        "groups": [
+            {
+                "id": 1,
+                "label": "Copper coin",
+                "marks": 0.5,
+                "diagnostic_hint": "Copper is a metal. All metals have delocalised (free) electrons that move through the structure and carry charge — so copper is a conductor.",
+                "options": [
+                    {"text": "Conductor", "correct": true},
+                    {"text": "Insulator", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "label": "Plastic",
+                "marks": 0.5,
+                "diagnostic_hint": "Plastic is a polymer where all electrons are tightly bound in covalent bonds — no free charge carriers. Plastic is an insulator.",
+                "options": [
+                    {"text": "Conductor", "correct": false},
+                    {"text": "Insulator", "correct": true}
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Glass",
+                "marks": 0.5,
+                "diagnostic_hint": "Glass is an amorphous solid (covalent/ionic network). At room temperature it has no free electrons or ions to carry charge — glass is an insulator. (Note: graphite is a non-metal that IS a conductor — don't confuse hard solids with conductors.)",
+                "options": [
+                    {"text": "Conductor", "correct": false},
+                    {"text": "Insulator", "correct": true}
+                ]
+            },
+            {
+                "id": 4,
+                "label": "Aluminium can",
+                "marks": 0.5,
+                "diagnostic_hint": "Aluminium is a metal with free electrons in a delocalised sea — it conducts electricity. Aluminium is widely used in electrical wiring and transmission lines.",
+                "options": [
+                    {"text": "Conductor", "correct": true},
+                    {"text": "Insulator", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "Conductor",
+            "Insulator"
+        ],
+        "word_bank_note": "2 reusable tokens for 4 slots. Conductors: Copper coin (slot 1), Aluminium can (slot 4). Insulators: Plastic (slot 2), Glass (slot 3). A binary DDWTOS — students learn the rule that metals are conductors. The key challenge is glass, which some students confuse with graphite (which IS a conductor) or assume all hard materials conduct."
+    }
+}

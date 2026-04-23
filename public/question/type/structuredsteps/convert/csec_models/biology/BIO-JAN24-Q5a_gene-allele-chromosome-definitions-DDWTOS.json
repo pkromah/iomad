@@ -1,0 +1,69 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["BIO-JAN24-Q5a"],
+        "source_paper": "CSEC Biology Paper 02 January 2024",
+        "question_ref": "Q5(a)",
+        "subject": "Biology",
+        "topic": "Genetics — Definitions of Gene, Allele, and Chromosome",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: define gene(1m), allele(1m), chromosome(1m). Three separate cloze sentences, 1 slot each. Key discriminators: gene = section of DNA coding for a protein/trait; allele = alternative form of a gene; chromosome = DNA+protein structure containing many genes."
+    },
+    "question": {
+        "name": "CSEC Bio Jan 2024 Q5a — Define Gene, Allele, Chromosome",
+        "text": "<p>Define EACH of the following terms:</p><p><strong>Gene:</strong> A gene is a section of [[1]] that codes for a specific characteristic or protein.</p><p><strong>Allele:</strong> An allele is an alternative [[2]] of a gene.</p><p><strong>Chromosome:</strong> A chromosome is a thread-like structure made of [[3]] and protein, found in the nucleus of a cell.</p>",
+        "general_feedback": "<p><strong>Gene:</strong> A gene is a section of <strong>DNA</strong> that codes for a specific characteristic (trait) or protein. Genes are located at specific positions (loci) on chromosomes.</p><p><strong>Allele:</strong> An allele is an alternative <strong>form/version</strong> of a gene. For example, the gene for eye colour has alleles for brown eyes and blue eyes.</p><p><strong>Chromosome:</strong> A chromosome is a thread-like structure made of <strong>DNA</strong> and protein, found in the nucleus of a cell. Each chromosome contains many genes.</p><p><em>Relationships:</em> DNA → gene (section of DNA) → allele (version of gene) → chromosome (many genes on one DNA strand + protein).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Gene:</strong> A gene is a section of [[1]] that codes for a specific characteristic or protein.</p><p><strong>Allele:</strong> An allele is an alternative [[2]] of a gene.</p><p><strong>Chromosome:</strong> A chromosome is a thread-like structure made of [[3]] and protein, found in the nucleus of a cell.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "label": "Gene — A gene is a section of ___",
+                "marks": 1.0,
+                "diagnostic_hint": "A gene is a section of DNA. DNA (deoxyribonucleic acid) is the molecule that carries genetic instructions. Each gene occupies a specific position (locus) on a chromosome.",
+                "options": [
+                    {"text": "DNA", "correct": true},
+                    {"text": "RNA", "correct": false},
+                    {"text": "protein", "correct": false},
+                    {"text": "chromatin", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "label": "Allele — An allele is an alternative ___ of a gene",
+                "marks": 1.0,
+                "diagnostic_hint": "An allele is an alternative form (or version) of a gene. For example, the gene for blood type has alleles for types A, B, and O. Alleles occupy the same locus on homologous chromosomes.",
+                "options": [
+                    {"text": "form", "correct": true},
+                    {"text": "version", "correct": true},
+                    {"text": "copy", "correct": false},
+                    {"text": "chromosome", "correct": false}
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Chromosome — A chromosome is made of ___ and protein",
+                "marks": 1.0,
+                "diagnostic_hint": "A chromosome is a thread-like structure made of DNA and protein (histones). It contains many genes. Humans have 46 chromosomes (23 pairs) in most body cells.",
+                "options": [
+                    {"text": "DNA", "correct": true},
+                    {"text": "RNA", "correct": false},
+                    {"text": "glucose", "correct": false},
+                    {"text": "lipids", "correct": false}
+                ]
+            }
+        ],
+        "word_bank": [
+            "DNA", "RNA", "protein", "chromatin",
+            "form", "version", "copy", "chromosome",
+            "glucose", "lipids"
+        ],
+        "word_bank_note": "10 tokens for 3 slots. Slot 1 (DNA for gene): 'RNA' is involved in protein synthesis (mRNA, tRNA) but is NOT the genetic material stored as genes. 'Protein' is what a gene codes FOR, not what it is made of. 'Chromatin' is the complex of DNA and protein — correct context but not the molecule a gene is made of. Slot 2 (form/version of allele): both 'form' and 'version' are accepted — synonymous for CSEC. 'Copy' is wrong — an allele is not a copy of a gene but an alternative variant at the same locus. 'Chromosome' is wrong — a chromosome contains genes, not an alternative form of a gene. Slot 3 (DNA in chromosome): same reasoning as Slot 1. Chromosomes are made of DNA + protein (histones). 'RNA' is not a structural component of chromosomes. 'Glucose' and 'lipids' are macromolecules but not chromosome components."
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN23-Q1biii", "CHEM-JAN23-Q1bvi", "CHEM-JAN23-Q1bvii"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q1(b)(iii), Q1(b)(vi), Q1(b)(vii)",
+        "subject": "Chemistry",
+        "topic": "Quantitative Chemistry — Moles, Concentration, and Salt Mass",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Requires prior completion of CHEM-JAN23-Q1bi_titration-table.json (average volume = 25.0 cm³ feeds this chain). Q1b(ii) (concordant asterisks) and Q1b(iv)(v)(viii) are open-ended/written — not auto-graded."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q1b — Average, Moles, and Salt Mass",
+        "text": "<p>Use the titration results to answer the following. The concordant titration volumes (Titrations 2 and 3) were both <strong>25.0 cm³</strong>.</p><p><strong>Reagents:</strong></p><ul><li>Sulfuric acid: concentration <strong>4.9 g dm⁻³</strong>, molar mass <strong>98 g mol⁻¹</strong></li><li>Sodium hydroxide: <strong>5 g dissolved in 250 cm³</strong></li><li>Balanced equation: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O</li></ul><p><strong>R.A.M.:</strong> Na = 23, O = 16, S = 32</p>",
+        "general_feedback": "<p><strong>(iii) Average volume:</strong> Both concordant titrations gave 25.0 cm³ → average = <strong>25.0 cm³</strong></p><p><strong>(vi) Moles of H₂SO₄:</strong><br>Concentration in mol/dm³ = 4.9 ÷ 98 = 0.05 mol dm⁻³<br>Volume = 25.0 cm³ = 0.025 dm³<br>Moles = 0.05 × 0.025 = <strong>1.25 × 10⁻³ mol</strong></p><p><strong>(vii) Mass of Na₂SO₄:</strong><br>From equation: moles Na₂SO₄ = moles H₂SO₄ = 1.25 × 10⁻³ mol<br>Molar mass Na₂SO₄ = 2(23) + 32 + 4(16) = 142 g mol⁻¹<br>Mass = 1.25 × 10⁻³ × 142 = <strong>0.1775 g</strong> ≈ 0.18 g</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Concordant volumes: T2 = T3 = 25.0 cm³ &nbsp;|&nbsp; H₂SO₄: 4.9 g dm⁻³, M = 98 g mol⁻¹<br><strong>Formulas:</strong> c (mol dm⁻³) = mass concentration ÷ molar mass &nbsp;&nbsp; n = c × V &nbsp;&nbsp; mass = n × M<br><strong>Equation:</strong> H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O (mole ratio 1:1 for H₂SO₄:Na₂SO₄)",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Part (iii) — Calculate the <strong>average volume</strong> of sulfuric acid used. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step2",
+            "label": "Part (vi) — Calculate the <strong>number of moles of H₂SO₄</strong> used. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step3",
+            "label": "Part (vii) — Calculate the <strong>mass of Na₂SO₄</strong> (normal salt) expected. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_avg_volume",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Average volume of H₂SO₄ = _____ cm³",
+            "expected": "25.0",
+            "tolerance": 0.1,
+            "marks": 1.0,
+            "unit": "cm³",
+            "diagnostic_hint": "Both concordant titrations (T2 and T3) gave 25.0 cm³ → average = (25.0 + 25.0) / 2 = 25.0 cm³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Only use the concordant (agreeing) titrations to calculate the average — not the rough titration. Here T2 = T3 = 25.0 cm³, so the average = 25.0 cm³."
+            }
+        },
+        {
+            "id": "f2_concentration_mol",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Concentration of H₂SO₄ = _____ mol dm⁻³",
+            "expected": "0.05",
+            "tolerance": 0.001,
+            "marks": 1.0,
+            "unit": "mol dm⁻³",
+            "diagnostic_hint": "c (mol dm⁻³) = mass concentration ÷ molar mass = 4.9 ÷ 98 = 0.05 mol dm⁻³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Concentration in mol/dm³ = g/dm³ ÷ g/mol = 4.9 ÷ 98 = 0.05 mol dm⁻³.",
+                "SC_FORMULA_SELECTION_ERROR": "Convert g/dm³ to mol/dm³ by dividing by molar mass. c = 4.9 g dm⁻³ ÷ 98 g mol⁻¹ = 0.05 mol dm⁻³."
+            }
+        },
+        {
+            "id": "f3_moles_H2SO4",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Moles of H₂SO₄ = _____ mol",
+            "expected": "0.00125",
+            "tolerance": 0.000025,
+            "marks": 1.0,
+            "unit": "mol",
+            "diagnostic_hint": "n = c × V = 0.05 mol dm⁻³ × 0.025 dm³ = 0.00125 mol (= 1.25 × 10⁻³ mol)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "n = c × V. Convert volume: 25.0 cm³ = 0.025 dm³. Then n = 0.05 × 0.025 = 0.00125 mol.",
+                "SC_METHOD_ERROR": "Did you convert cm³ to dm³? Divide by 1000: 25.0 cm³ ÷ 1000 = 0.025 dm³."
+            }
+        },
+        {
+            "id": "f4_moles_salt",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Moles of Na₂SO₄ produced = _____ mol",
+            "expected": "0.00125",
+            "tolerance": 0.000025,
+            "marks": 1.0,
+            "unit": "mol",
+            "diagnostic_hint": "From H₂SO₄ + 2NaOH → Na₂SO₄: mole ratio H₂SO₄ : Na₂SO₄ = 1:1. So moles Na₂SO₄ = moles H₂SO₄ = 0.00125 mol",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Check the balanced equation: H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. The mole ratio of H₂SO₄ to Na₂SO₄ is 1:1, so moles of salt = moles of acid."
+            }
+        },
+        {
+            "id": "f5_molar_mass_salt",
+            "step_id": "step3",
+            "type": "digitbox",
+            "label": "Molar mass of Na₂SO₄ = _____ g mol⁻¹",
+            "expected": "142",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "g mol⁻¹",
+            "diagnostic_hint": "Na₂SO₄: 2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 g mol⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "M(Na₂SO₄) = 2×M(Na) + M(S) + 4×M(O) = 2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 g mol⁻¹."
+            }
+        },
+        {
+            "id": "f6_mass_salt",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Expected mass of Na₂SO₄ = _____ g",
+            "expected": "0.1775",
+            "tolerance": 0.004,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "mass = n × M = 0.00125 × 142 = 0.1775 g (≈ 0.18 g)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "mass = moles × molar mass = 0.00125 × 142 = 0.1775 g. Accept 0.18 g (2 sig figs).",
+                "SC_FORMULA_SELECTION_ERROR": "mass = n × M. Multiply moles of Na₂SO₄ by its molar mass (142 g/mol)."
+            }
+        }
+    ]
+}

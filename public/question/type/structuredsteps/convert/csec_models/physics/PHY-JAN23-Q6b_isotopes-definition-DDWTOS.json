@@ -1,0 +1,112 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q6b"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(b)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Definition of Isotopes",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "3-token DDWTOS completing the definition: 'Isotopes are atoms of the same [element] with the same number of [protons] but different numbers of [neutrons].' 1m per token. Classic CSEC nuclear physics definition."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6b — Define Isotopes",
+        "text": "<p>Define the term <strong>'isotopes'</strong> by completing the statement below:</p><p>Isotopes are atoms of the same [[1]] that have the same number of [[2]] but different numbers of [[3]] in their nuclei.</p>",
+        "general_feedback": "<p><strong>Definition of isotopes:</strong></p><p>Isotopes are atoms of the same <strong>element</strong> that have the same number of <strong>protons</strong> (same atomic number Z) but different numbers of <strong>neutrons</strong> (different mass numbers A).</p><p><strong>Example:</strong> Carbon-12 (⁶¹²C) and Carbon-14 (⁶¹⁴C) are isotopes — both have 6 protons (Z=6) but C-12 has 6 neutrons and C-14 has 8 neutrons.</p><p><em>Key point:</em> Since the number of protons defines the element, isotopes are always the same element. Isotopes may differ in radioactivity (e.g. C-14 is radioactive; C-12 is stable).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Isotopes are atoms of the same [[1]] that have the same number of [[2]] but different numbers of [[3]] in their nuclei.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "element",
+                        "correct": true
+                    },
+                    {
+                        "text": "mass number",
+                        "correct": false
+                    },
+                    {
+                        "text": "atom",
+                        "correct": false
+                    },
+                    {
+                        "text": "nucleus",
+                        "correct": false
+                    }
+                ],
+                "label": "Isotopes are atoms of the same ___",
+                "diagnostic_hint": "Isotopes are atoms of the same ELEMENT — they have the same number of protons (same atomic number), which defines the element. For example, all carbon isotopes have 6 protons."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "protons",
+                        "correct": true
+                    },
+                    {
+                        "text": "neutrons",
+                        "correct": false
+                    },
+                    {
+                        "text": "electrons",
+                        "correct": false
+                    },
+                    {
+                        "text": "nucleons",
+                        "correct": false
+                    }
+                ],
+                "label": "Isotopes have the same number of ___",
+                "diagnostic_hint": "Isotopes have the same number of PROTONS (= atomic number). This is what makes them the same element. For carbon: always 6 protons, whether C-12, C-13, or C-14."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "neutrons",
+                        "correct": true
+                    },
+                    {
+                        "text": "protons",
+                        "correct": false
+                    },
+                    {
+                        "text": "electrons",
+                        "correct": false
+                    },
+                    {
+                        "text": "nucleons",
+                        "correct": false
+                    }
+                ],
+                "label": "Isotopes differ in the number of ___",
+                "diagnostic_hint": "Isotopes differ in the number of NEUTRONS. Carbon-12 has 6 neutrons, Carbon-13 has 7, Carbon-14 has 8 — all are carbon because they have 6 protons. Different neutron counts give different mass numbers."
+            }
+        ],
+        "word_bank": [
+            "element",
+            "mass number",
+            "atom",
+            "nucleus",
+            "protons",
+            "neutrons",
+            "electrons",
+            "nucleons"
+        ],
+        "word_bank_note": "8 tokens for 3 slots. Group 1 (element): 'mass number' is a critical distractor — students sometimes confuse isotopes (same Z, different A) and confusingly write 'same mass number' which is the opposite. 'atom' and 'nucleus' are too vague. Group 2 (same number of protons): 'electrons' — the number of electrons also equals protons in a neutral atom, so electrons is technically true, but CSEC mark schemes require 'protons' as the defining nuclear property. Group 3 (different neutrons): 'protons' is wrong (swapping protons and neutrons is the most common error in this question). 'nucleons' is wrong — isotopes can differ in nucleon count (A) since A = p + n and n differs."
+    }
+}

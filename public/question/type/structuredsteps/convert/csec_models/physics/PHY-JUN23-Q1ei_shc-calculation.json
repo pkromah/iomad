@@ -1,0 +1,109 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q1ei"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q1(e)(i)",
+        "subject": "Physics",
+        "topic": "Thermal Physics — Specific Heat Capacity from Graph Gradient: c = P/(mG)",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Uses G from PHY-JUN23-Q1d (expected 0.0875 °C/s). P=105W, m=300g=0.3kg. c = P/(mG) = 105/(0.3×0.0875) = 105/0.02625 = 4000 J/(kg·°C). To 1 s.f.: 4000 J/(kg·°C). Wide tolerance (±800) accommodates own-figure from different gradient readings. Answer matches Milk (3900 J/kg/°C) from Q1e(ii)."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q1e(i) — Specific Heat Capacity from c = P/(mG)",
+        "text": "<p>Given that the gradient of the temperature-time graph is <em>G</em>, and that:</p><p style='text-align:center;'><em>G</em> = <em>P</em> / (<em>m</em> × <em>c</em>)</p><p>where <em>P</em> = <strong>105 W</strong> (heater power) and <em>m</em> = <strong>300 g</strong> (mass of liquid), calculate the <strong>specific heat capacity <em>c</em></strong> of the liquid using your gradient from Q1(d).</p><p>Express your answer in SI units, to <strong>one significant figure</strong>. (6 marks)</p>",
+        "general_feedback": "<p><strong>Model solution (using G = 0.0875 °C/s):</strong><br>Rearrange: G = P/(mc) → c = P/(mG)<br>Convert mass: m = 300 g = 0.3 kg<br>c = 105 / (0.3 × 0.0875) = 105 / 0.02625 = 4000 J/(kg·°C)<br><strong>To 1 s.f.: c = 4000 J kg⁻¹ °C⁻¹</strong></p><p><em>Own-figure marking:</em> CSEC awards full marks if the correct formula and mass conversion are used with the student's own G value. Comparing with Table 2: c ≈ 4000 J/kg/°C matches <strong>Milk</strong> (3900 J/kg/°C) most closely.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> P = 105 W &nbsp;|&nbsp; m = 300 g &nbsp;|&nbsp; G = gradient from Q1(d) ≈ 0.0875 °C/s<br><strong>Formula:</strong> G = P/(mc) → rearrange to c = P/(mG)<br><strong>Unit conversion:</strong> 1 kg = 1000 g &nbsp;|&nbsp; SI unit for c: J kg⁻¹ °C⁻¹",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_convert",
+            "label": "Convert mass and set up the formula for c. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_calculate",
+            "label": "Calculate c = P/(mG) and express to one significant figure. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_kg",
+            "step_id": "step_convert",
+            "type": "numberbox",
+            "label": "Mass m = _____ kg",
+            "expected": "0.3",
+            "tolerance": 0.001,
+            "marks": 1.0,
+            "unit": "kg",
+            "diagnostic_hint": "300 g ÷ 1000 = 0.3 kg",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert grams to kilograms: m = 300 ÷ 1000 = 0.3 kg. SI units require kg."
+            }
+        },
+        {
+            "id": "f2_mG",
+            "step_id": "step_convert",
+            "type": "numberbox",
+            "label": "m × G = _____ kg °C s⁻¹",
+            "expected": "0.02625",
+            "tolerance": 0.003,
+            "marks": 1.0,
+            "unit": "kg °C s⁻¹",
+            "diagnostic_hint": "m × G = 0.3 × 0.0875 = 0.02625 kg °C s⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Multiply m (in kg) by G (in °C/s): 0.3 × 0.0875 = 0.02625. Use your own gradient if different."
+            }
+        },
+        {
+            "id": "f3_c_exact",
+            "step_id": "step_calculate",
+            "type": "numberbox",
+            "label": "c = P / (m × G) = _____ J kg⁻¹ °C⁻¹",
+            "expected": "4000",
+            "tolerance": 800,
+            "marks": 3.0,
+            "unit": "J kg⁻¹ °C⁻¹",
+            "diagnostic_hint": "c = P/(mG) = 105/0.02625 = 4000 J/(kg·°C). Divide heater power by (mass × gradient).",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "c = P ÷ (m × G) = 105 ÷ (0.3 × 0.0875) = 105 ÷ 0.02625 = 4000 J/(kg·°C).",
+                "SC_FORMULA_SELECTION_ERROR": "Rearrange G = P/(mc): multiply both sides by c, then divide by G → c = P/(mG)."
+            }
+        },
+        {
+            "id": "f4_c_1sf",
+            "step_id": "step_calculate",
+            "type": "numberbox",
+            "label": "c to 1 significant figure = _____ J kg⁻¹ °C⁻¹",
+            "expected": "4000",
+            "tolerance": 500,
+            "marks": 1.0,
+            "unit": "J kg⁻¹ °C⁻¹",
+            "diagnostic_hint": "4000 is already expressed to 1 significant figure (the leading 4 is the single significant figure)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Round to 1 significant figure: the first non-zero digit counts as 1 s.f. 4000 J/(kg·°C) has 1 s.f. (only the '4' is significant here)."
+            }
+        }
+    ]
+}

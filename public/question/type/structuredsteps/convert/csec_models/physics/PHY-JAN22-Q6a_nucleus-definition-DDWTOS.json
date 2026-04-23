@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q6a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q6(a)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Definition of the Nucleus",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: define 'nucleus of an atom'. 3-slot cloze: small(0.5m) / dense(0.5m) / protons and neutrons(2m). Key mark is the correct particles — electrons orbit outside the nucleus and must not appear."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q6a — Define the Nucleus of an Atom",
+        "text": "<p>What is meant by the term <strong>'nucleus'</strong> of an atom? Complete the statement below:</p><p>The nucleus is the [[1]], [[2]], positively charged central part of an atom, which contains [[3]].</p>",
+        "general_feedback": "<p><strong>The nucleus:</strong></p><p>The nucleus is the <strong>small</strong>, <strong>dense</strong>, positively charged central part of an atom, which contains <strong>protons and neutrons</strong>.</p><ul><li><strong>Small:</strong> The nucleus is approximately 10⁻¹⁵ m in diameter — about 100 000 times smaller than the atom itself.</li><li><strong>Dense:</strong> Almost all the mass of the atom is concentrated in the nucleus.</li><li><strong>Positively charged:</strong> Due to the protons (each carrying +1 charge). Neutrons are neutral.</li><li><strong>Electrons</strong> are NOT in the nucleus — they orbit in shells outside the nucleus.</li></ul>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>The nucleus is the [[1]], [[2]], positively charged central part of an atom, which contains [[3]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "small",
+                        "correct": true
+                    },
+                    {
+                        "text": "large",
+                        "correct": false
+                    },
+                    {
+                        "text": "hollow",
+                        "correct": false
+                    },
+                    {
+                        "text": "diffuse",
+                        "correct": false
+                    }
+                ],
+                "label": "Nucleus is ___ relative to the atom",
+                "diagnostic_hint": "The nucleus is very SMALL — it occupies only about 10⁻¹⁵ m, while the atom is about 10⁻¹⁰ m. The nucleus is roughly 1/100,000th the size of the atom."
+            },
+            {
+                "id": 2,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "dense",
+                        "correct": true
+                    },
+                    {
+                        "text": "light",
+                        "correct": false
+                    },
+                    {
+                        "text": "empty",
+                        "correct": false
+                    },
+                    {
+                        "text": "negative",
+                        "correct": false
+                    }
+                ],
+                "label": "Nucleus is very ___ for its size",
+                "diagnostic_hint": "The nucleus is extremely DENSE — almost all of the atom's mass is concentrated in the tiny nucleus. Nuclear density is approximately 2.3 × 10¹⁷ kg/m³."
+            },
+            {
+                "id": 3,
+                "marks": 2.0,
+                "options": [
+                    {
+                        "text": "protons and neutrons",
+                        "correct": true
+                    },
+                    {
+                        "text": "nucleons",
+                        "correct": true
+                    },
+                    {
+                        "text": "protons only",
+                        "correct": false
+                    },
+                    {
+                        "text": "protons, neutrons and electrons",
+                        "correct": false
+                    },
+                    {
+                        "text": "electrons and protons",
+                        "correct": false
+                    }
+                ],
+                "label": "Nucleus contains ___",
+                "diagnostic_hint": "The nucleus contains PROTONS and NEUTRONS (collectively called nucleons). Electrons orbit the nucleus but are NOT in the nucleus. The number of protons = atomic number."
+            }
+        ],
+        "word_bank": [
+            "small",
+            "large",
+            "hollow",
+            "diffuse",
+            "dense",
+            "light",
+            "empty",
+            "negative",
+            "protons and neutrons",
+            "nucleons",
+            "protons only",
+            "protons, neutrons and electrons",
+            "electrons and protons"
+        ],
+        "word_bank_note": "13 tokens for 3 slots. Slot 1 (small): 'large' and 'diffuse' describe the electron cloud (the atom as a whole); the nucleus is tiny. Slot 2 (dense): 'light' is wrong — the nucleus is very dense (almost all atomic mass is here). 'empty' describes the space between nucleus and electrons. 'negative' is wrong — the nucleus is positively charged. Slot 3 (protons and neutrons / nucleons): Both accepted — 'nucleons' is the collective term for protons and neutrons. 'Protons only' ignores neutrons (hydrogen-1 is the only exception). 'Protons, neutrons AND electrons' is wrong — electrons are NOT in the nucleus (this is the pre-Rutherford 'plum pudding' model). 'Electrons and protons' is also wrong for the same reason."
+    }
+}

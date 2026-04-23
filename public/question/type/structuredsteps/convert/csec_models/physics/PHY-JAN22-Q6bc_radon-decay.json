@@ -1,0 +1,143 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q6b",
+            "PHY-JAN22-Q6cii"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q6(b) and Q6(c)(ii)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Alpha Decay Equation and Half-Life Mass Calculation",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q6b (3 marks): complete Rn-222 alpha decay equation (A, Z, element). Q6c(i) 'define half-life' is open — not auto-gradeable; excluded. Q6c(ii) (3 marks): calculate mass remaining after 4 half-lives."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q6b/c — Radon Alpha Decay and Half-Life",
+        "text": "<p><strong>Part (b):</strong> Radon-222 decays spontaneously by alpha particle emission to form Polonium (Po). Complete the nuclear equation:</p><p style='text-align:center;font-size:1.1em;'>\\({}^{222}_{86}\\text{Rn} \\rightarrow {}^{A}_{Z}\\text{Po} + {}^{4}_{2}\\alpha\\)</p><p>Find A (mass number), Z (atomic number), and name/symbol of the polonium isotope. (3 marks)</p><p><strong>Part (c)(ii):</strong> A fresh sample of Radon-222, with half-life <strong>3.8 days</strong>, has a mass of <strong>240 g</strong>. Calculate the mass remaining after <strong>15.2 days</strong>, to two significant figures. (3 marks)</p>",
+        "general_feedback": "<p><strong>Q6b — Alpha decay:</strong><br>A = 222 − 4 = <strong>218</strong><br>Z = 86 − 2 = <strong>84</strong><br>Element: <strong>Polonium-218</strong> (\\({}^{218}_{84}\\text{Po}\\))</p><p><strong>Q6c(ii) — Half-life:</strong><br>Number of half-lives: n = 15.2 ÷ 3.8 = 4<br>Mass remaining: m = 240 × (½)⁴ = 240 × 1/16 = <strong>15 g</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Alpha decay rules:</strong> Mass number A conserved: A(parent) = A(daughter) + 4 &nbsp;|&nbsp; Atomic number Z conserved: Z(parent) = Z(daughter) + 2<br><strong>Half-life:</strong> m = m₀ × (½)ⁿ &nbsp;where&nbsp; n = time ÷ half-life",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_decay",
+            "label": "Q6b — Complete the alpha decay equation for Rn-222. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_halflife",
+            "label": "Q6c(ii) — Calculate the mass of Rn-222 remaining after 15.2 days. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_mass_number",
+            "step_id": "step_decay",
+            "type": "digitbox",
+            "label": "Mass number A of Polonium = _____",
+            "expected": "218",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "A(Po) = A(Rn) − A(α) = 222 − 4 = 218",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Conservation of mass number: A(Rn) = A(Po) + A(alpha). So A(Po) = 222 − 4 = 218."
+            }
+        },
+        {
+            "id": "f2_atomic_number",
+            "step_id": "step_decay",
+            "type": "digitbox",
+            "label": "Atomic number Z of Polonium = _____",
+            "expected": "84",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "Z(Po) = Z(Rn) − Z(α) = 86 − 2 = 84",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Conservation of atomic number: Z(Rn) = Z(Po) + Z(alpha). So Z(Po) = 86 − 2 = 84."
+            }
+        },
+        {
+            "id": "f3_element",
+            "step_id": "step_decay",
+            "type": "choice",
+            "label": "Name or symbol of product: _____",
+            "expected": "Polonium",
+            "marks": 1.0,
+            "diagnostic_hint": "Atomic number 84 = Polonium (Po). The product is Polonium-218.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The question gives the hint: the product IS Polonium. The isotope is Polonium-218 (²¹⁸₈₄Po)."
+            },
+            "options": {
+                "Polonium": "Polonium (Po)",
+                "Lead": "Lead (Pb)",
+                "Bismuth": "Bismuth (Bi)",
+                "Radium": "Radium (Ra)"
+            }
+        },
+        {
+            "id": "f4_n_halflives",
+            "step_id": "step_halflife",
+            "type": "digitbox",
+            "label": "Number of half-lives n = _____",
+            "expected": "4",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "n = time / half-life = 15.2 / 3.8 = 4 half-lives",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "n = total time ÷ half-life = 15.2 ÷ 3.8 = 4 half-lives."
+            }
+        },
+        {
+            "id": "f5_fraction",
+            "step_id": "step_halflife",
+            "type": "numberbox",
+            "label": "(½)⁴ = _____ (fraction remaining)",
+            "expected": "0.0625",
+            "tolerance": 0.001,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "(½)⁴ = 1/16 = 0.0625",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "(½)⁴ = ½ × ½ × ½ × ½ = 1/16 = 0.0625. After 4 half-lives, 1/16 of the original remains."
+            }
+        },
+        {
+            "id": "f6_mass",
+            "step_id": "step_halflife",
+            "type": "digitbox",
+            "label": "Mass remaining = _____ g",
+            "expected": "15",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "m = m₀ × (½)⁴ = 240 × 0.0625 = 15 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "m = 240 × (1/16) = 240 ÷ 16 = 15 g. To two significant figures: 15 g."
+            }
+        }
+    ]
+}

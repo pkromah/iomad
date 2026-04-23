@@ -1,0 +1,115 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q5a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q5(a)",
+        "subject": "Physics",
+        "topic": "Waves — Definition of a Longitudinal Wave",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "3-token DDWTOS completing: 'A longitudinal wave is one in which the [vibration] of the particles is [parallel] to the [direction of travel] of the wave.' 3 tokens; marks 0.5+1.0+0.5=2m. The key discriminator is 'parallel' (not perpendicular, which describes transverse waves). Distractors: perpendicular/transverse/amplitude."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q5a — Define Longitudinal Wave",
+        "text": "<p>Define the term <strong>'longitudinal wave'</strong> by completing the statement below:</p><p>A longitudinal wave is one in which the [[1]] of the particles is [[2]] to the [[3]] of the wave.</p>",
+        "general_feedback": "<p><strong>Definition:</strong> A longitudinal wave is one in which the <strong>vibration</strong> of the particles is <strong>parallel</strong> to the <strong>direction of travel</strong> of the wave.</p><p><strong>Examples of longitudinal waves:</strong> Sound waves, compression waves in a spring (slinky)</p><p><strong>Compare with transverse waves:</strong> In a transverse wave, the vibration is <strong>perpendicular</strong> to the direction of travel (e.g. light waves, water surface waves).</p><p><em>Key distinction:</em> Longitudinal → parallel | Transverse → perpendicular</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>A longitudinal wave is one in which the [[1]] of the particles is [[2]] to the [[3]] of the wave.</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "vibration",
+                        "correct": true
+                    },
+                    {
+                        "text": "oscillation",
+                        "correct": true
+                    },
+                    {
+                        "text": "amplitude",
+                        "correct": false
+                    },
+                    {
+                        "text": "wavelength",
+                        "correct": false
+                    }
+                ],
+                "label": "Longitudinal wave — ___ of particles is...",
+                "diagnostic_hint": "The VIBRATION (oscillation) of particles is in a specific direction — parallel to wave travel. The motion of particles, not the wave itself, is what this blank describes."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "parallel",
+                        "correct": true
+                    },
+                    {
+                        "text": "perpendicular",
+                        "correct": false
+                    },
+                    {
+                        "text": "transverse",
+                        "correct": false
+                    },
+                    {
+                        "text": "equal",
+                        "correct": false
+                    }
+                ],
+                "label": "Longitudinal wave — vibration is ___ to direction of travel",
+                "diagnostic_hint": "Vibration is PARALLEL to the direction of travel. This distinguishes longitudinal waves (sound, P-waves) from transverse waves (light, S-waves) where vibration is perpendicular."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "direction of travel",
+                        "correct": true
+                    },
+                    {
+                        "text": "direction of propagation",
+                        "correct": true
+                    },
+                    {
+                        "text": "frequency",
+                        "correct": false
+                    },
+                    {
+                        "text": "amplitude",
+                        "correct": false
+                    }
+                ],
+                "label": "Longitudinal wave — parallel to the ___",
+                "diagnostic_hint": "Parallel to the DIRECTION OF TRAVEL (or direction of propagation). In a sound wave, air molecules vibrate back-and-forth in the same direction the wave is moving."
+            }
+        ],
+        "word_bank": [
+            "vibration",
+            "oscillation",
+            "amplitude",
+            "wavelength",
+            "parallel",
+            "perpendicular",
+            "transverse",
+            "equal",
+            "direction of travel",
+            "direction of propagation",
+            "frequency"
+        ],
+        "word_bank_note": "11 tokens for 3 slots. 'parallel' (1m) is the critical term — swapping with 'perpendicular' would make the definition describe a TRANSVERSE wave. 'amplitude' distractor in slot 1: students may confuse properties of wave with the particle motion. 'transverse' distractor in slot 2: students who know the wave TYPE may insert the TYPE name rather than the geometric relationship. Both 'vibration' and 'oscillation' are accepted in slot 1; both 'direction of travel' and 'direction of propagation' are accepted in slot 3."
+    }
+}

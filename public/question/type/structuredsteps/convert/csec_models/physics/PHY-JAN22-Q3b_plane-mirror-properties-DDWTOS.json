@@ -1,0 +1,200 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN22-Q3b"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q3(b)",
+        "subject": "Physics",
+        "topic": "Optics — Properties of a Plane Mirror Image",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "4 properties of a plane mirror image: virtual, same size as object, laterally inverted, same distance behind the mirror as object is in front. 4 slots × 1m each = 4m. Word bank: 8 tokens (4 correct + 4 distractors)."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q3b — Properties of a Plane Mirror Image",
+        "text": "<p>State <strong>FOUR</strong> properties of the image formed by a plane mirror by selecting the correct property for each numbered blank:</p><p>Property 1: [[1]]</p><p>Property 2: [[2]]</p><p>Property 3: [[3]]</p><p>Property 4: [[4]]</p>",
+        "general_feedback": "<p><strong>Properties of a plane mirror image:</strong></p><ol><li><strong>Virtual</strong> — the image cannot be formed on a screen; it appears to be behind the mirror</li><li><strong>Same size as the object</strong> — the image is the same height and width as the object (magnification = 1)</li><li><strong>Laterally inverted</strong> — left and right are swapped (e.g. text appears reversed)</li><li><strong>Same distance behind the mirror as the object is in front</strong> — image distance = object distance (measured perpendicularly to the mirror)</li></ol><p><em>Summary: VSLE — Virtual, Same size, Laterally inverted, Equal distance</em></p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>Property 1: [[1]]</p><p>Property 2: [[2]]</p><p>Property 3: [[3]]</p><p>Property 4: [[4]]</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Virtual (cannot be formed on a screen)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Real (can be projected on a screen)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Same size as the object",
+                        "correct": true
+                    },
+                    {
+                        "text": "Magnified (larger than the object)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Laterally inverted (left-right reversed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Upright and the same way up as the object (not inverted)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Same distance behind the mirror as the object is in front",
+                        "correct": true
+                    },
+                    {
+                        "text": "Inverted (upside down relative to the object)",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 1 of a plane mirror image",
+                "diagnostic_hint": "A plane mirror image is VIRTUAL — it cannot be formed on a screen because the light rays do not actually converge behind the mirror; they only appear to diverge from that point."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Virtual (cannot be formed on a screen)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Real (can be projected on a screen)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Same size as the object",
+                        "correct": true
+                    },
+                    {
+                        "text": "Magnified (larger than the object)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Laterally inverted (left-right reversed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Upright and the same way up as the object (not inverted)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Same distance behind the mirror as the object is in front",
+                        "correct": true
+                    },
+                    {
+                        "text": "Inverted (upside down relative to the object)",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 2 of a plane mirror image",
+                "diagnostic_hint": "The image is the SAME SIZE as the object (magnification = 1). The mirror does not enlarge or shrink the object."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Virtual (cannot be formed on a screen)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Real (can be projected on a screen)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Same size as the object",
+                        "correct": true
+                    },
+                    {
+                        "text": "Magnified (larger than the object)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Laterally inverted (left-right reversed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Upright and the same way up as the object (not inverted)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Same distance behind the mirror as the object is in front",
+                        "correct": true
+                    },
+                    {
+                        "text": "Inverted (upside down relative to the object)",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 3 of a plane mirror image",
+                "diagnostic_hint": "The image is LATERALLY INVERTED — left and right are swapped. For example, your right hand appears as a left hand in a mirror."
+            },
+            {
+                "id": 4,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "Virtual (cannot be formed on a screen)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Real (can be projected on a screen)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Same size as the object",
+                        "correct": true
+                    },
+                    {
+                        "text": "Magnified (larger than the object)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Laterally inverted (left-right reversed)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Upright and the same way up as the object (not inverted)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Same distance behind the mirror as the object is in front",
+                        "correct": true
+                    },
+                    {
+                        "text": "Inverted (upside down relative to the object)",
+                        "correct": false
+                    }
+                ],
+                "label": "Property 4 of a plane mirror image",
+                "diagnostic_hint": "The image is UPRIGHT (same orientation as the object — not flipped upside down) and the same distance BEHIND the mirror as the object is in front."
+            }
+        ],
+        "word_bank": [
+            "Virtual (cannot be formed on a screen)",
+            "Same size as the object",
+            "Laterally inverted (left-right reversed)",
+            "Upright and the same way up as the object (not inverted)",
+            "Same distance behind the mirror as the object is in front",
+            "Real (can be projected on a screen)",
+            "Magnified (larger than the object)",
+            "Inverted (upside down relative to the object)"
+        ],
+        "word_bank_note": "8 tokens for 4 slots; 5 correct properties + 3 wrong. The 5 correct properties are: Virtual, Same size, Laterally inverted, Upright, and Same distance. Students must pick any 4 of the 5 — all 5 are marked correct=true and any valid combination of 4 earns 4m. Wrong tokens: Real (converging lens images are real, not plane mirror), Magnified (curved/concave mirrors may magnify), Inverted (plane mirror images are NOT inverted top-to-bottom, though they ARE laterally inverted). This is a classic CSEC question where knowing 'virtual' vs 'real' is tested."
+    }
+}

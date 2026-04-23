@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN23-Q2bi",
+            "CHEM-JAN23-Q2bii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q2(b)(i) and Q2(b)(ii)",
+        "subject": "Chemistry",
+        "topic": "Electrochemistry — Definitions of Oxidizing Agent and Oxidation",
+        "marks_total": 2,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q2b(i) (1m): Define oxidizing agent — a substance that accepts/gains electrons (and is itself reduced). Q2b(ii) (1m): Define oxidation — loss of electrons OR increase in oxidation number/state. Two separate slots, 1m each. Combined into one file due to common electrochemistry theme."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q2b(i/ii) — Oxidizing Agent and Oxidation Definitions",
+        "text": "<p><strong>Part (b)(i):</strong> Define the term <strong>'oxidizing agent'</strong> by completing the statement:</p><p>An oxidizing agent is a substance that [[1]] electrons from another substance.</p><p><strong>Part (b)(ii):</strong> Define the term <strong>'oxidation'</strong> by completing the statement:</p><p>Oxidation is the [[2]] of electrons (or an increase in [[3]] number).</p>",
+        "general_feedback": "<p><strong>Oxidizing agent:</strong> A substance that <strong>accepts</strong> electrons from another substance (and is itself reduced in the process). Example: Cl₂ in Cl₂ + 2e⁻ → 2Cl⁻ (chlorine is the oxidizing agent; it accepts electrons).</p><p><strong>Oxidation:</strong> The <strong>loss</strong> of electrons OR an increase in <strong>oxidation</strong> number. Mnemonic: OIL RIG — Oxidation Is Loss, Reduction Is Gain (of electrons).</p><p><em>Note:</em> Oxidation and reduction always occur together (redox reactions).</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>An oxidizing agent is a substance that [[1]] electrons from another substance.</p><p>Oxidation is the [[2]] of electrons (or an increase in [[3]] number).</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "accepts",
+                        "correct": true
+                    },
+                    {
+                        "text": "donates",
+                        "correct": false
+                    },
+                    {
+                        "text": "loses",
+                        "correct": false
+                    },
+                    {
+                        "text": "gains",
+                        "correct": true
+                    }
+                ],
+                "label": "Oxidising agent — it ___ electrons",
+                "diagnostic_hint": "An oxidising agent accepts (gains) electrons from another substance — it causes oxidation in the other substance. OIL RIG: Oxidation Is Loss, Reduction Is Gain. The oxidising agent itself is REDUCED."
+            },
+            {
+                "id": 2,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "loss",
+                        "correct": true
+                    },
+                    {
+                        "text": "gain",
+                        "correct": false
+                    },
+                    {
+                        "text": "transfer",
+                        "correct": false
+                    },
+                    {
+                        "text": "reduction",
+                        "correct": false
+                    }
+                ],
+                "label": "Oxidation — ___ of electrons",
+                "diagnostic_hint": "Oxidation is the LOSS of electrons. A species is oxidised when it gives electrons to another species. Remember OIL (Oxidation Is Loss)."
+            },
+            {
+                "id": 3,
+                "marks": 0.5,
+                "options": [
+                    {
+                        "text": "oxidation",
+                        "correct": true
+                    },
+                    {
+                        "text": "reduction",
+                        "correct": false
+                    },
+                    {
+                        "text": "proton",
+                        "correct": false
+                    },
+                    {
+                        "text": "electron",
+                        "correct": false
+                    }
+                ],
+                "label": "Oxidation — involves electron ___",
+                "diagnostic_hint": "The process is called \"oxidation\" — it involves electron loss. The word that completes \"oxidation is the loss of electrons\" is \"oxidation\" itself. The process name is the key term here."
+            }
+        ],
+        "word_bank": [
+            "accepts",
+            "gains",
+            "donates",
+            "loses",
+            "loss",
+            "gain",
+            "transfer",
+            "reduction",
+            "oxidation",
+            "electron",
+            "proton"
+        ],
+        "word_bank_note": "Group 1 (oxidizing agent): 'accepts' and 'gains' are both correct (synonymous in this context — an oxidizing agent accepts/gains electrons). 'donates' and 'loses' describe the REDUCING agent. Group 2 (oxidation process): 'loss' is correct; 'gain' describes REDUCTION (OIL RIG mnemonic). Group 3 (increase in X number): 'oxidation' is correct; 'reduction' describes the opposite process. 'proton' and 'electron' are distractors for students who confuse electron and proton counting in oxidation number changes."
+    }
+}

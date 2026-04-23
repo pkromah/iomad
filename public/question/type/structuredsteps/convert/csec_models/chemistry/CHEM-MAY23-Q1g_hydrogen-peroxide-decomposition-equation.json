@@ -1,0 +1,102 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-MAY23-Q1g"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 May/June 2023",
+        "question_ref": "Q1(g)",
+        "subject": "Chemistry",
+        "topic": "Rates of Reaction — Balanced Equation for Decomposition of H₂O₂",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: write balanced symbol equation for decomposition of hydrogen peroxide. 2H₂O₂(aq) → 2H₂O(l) + O₂(g). Marks: 1m correct formulae (H₂O₂/H₂O/O₂); 1m balanced (2:2:1 ratio); 1m correct state symbols (aq/l/g). Catalyst (MnO₂ or manganese(IV) oxide) may appear above arrow — not required for marks here."
+    },
+    "question": {
+        "name": "CSEC Chem May 2023 Q1g — Balanced Equation: Decomposition of Hydrogen Peroxide",
+        "text": "<p>Hydrogen peroxide decomposes when manganese(IV) oxide (MnO₂) is added as a catalyst.</p><p>Write a <strong>balanced symbol equation</strong>, including state symbols, for the decomposition of hydrogen peroxide. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Decomposition of hydrogen peroxide:</strong></p><p style=\"font-size:1.1em;\"><strong>2H₂O₂(aq) → 2H₂O(l) + O₂(g)</strong></p><p>(The catalyst MnO₂ may be written above the arrow: <strong>2H₂O₂(aq) →<sup>MnO₂</sup> 2H₂O(l) + O₂(g)</strong>)</p><p><strong>Checking the balance:</strong></p><table><thead><tr><th>Atom</th><th>Reactant side</th><th>Product side</th></tr></thead><tbody><tr><td>H</td><td>2×2×2 = 4</td><td>2×2 = 4 ✓</td></tr><tr><td>O</td><td>2×2 = 4</td><td>2×1 + 2 = 4 ✓</td></tr></tbody></table><p><strong>State symbols:</strong> H₂O₂ is in aqueous solution (aq); water is liquid (l); oxygen is a gas (g).</p><p><em>Note:</em> The catalyst MnO₂ is unchanged — it does not appear in the equation as a reactant or product (or can be written above the arrow to indicate its role).</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Reactant:</strong> H₂O₂ (hydrogen peroxide) — decomposes into water and oxygen<br><strong>Catalyst:</strong> MnO₂ (written above arrow, not in equation)<br><strong>Balance:</strong> H and O atoms must be equal on both sides",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_equation",
+            "label": "Write the balanced symbol equation with state symbols. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_formulae",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Correct chemical formulae for all species (reactant and products): _____",
+            "expected": "H₂O₂ → H₂O + O₂",
+            "marks": 1.0,
+            "diagnostic_hint": "Reactant: H₂O₂ (hydrogen peroxide). Products: H₂O (water) and O₂ (oxygen gas).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Hydrogen peroxide (H₂O₂) decomposes into water (H₂O) and oxygen gas (O₂). These are the correct formulae."
+            },
+            "options": {
+                "H₂O₂ → H₂O + O₂": "H₂O₂ → H₂O + O₂",
+                "H₂O₂ → H₂ + O₂": "H₂O₂ → H₂ + O₂",
+                "H₂O₂ → 2H₂O": "H₂O₂ → 2H₂O",
+                "H₂O → H₂O₂ + O₂": "H₂O → H₂O₂ + O₂"
+            }
+        },
+        {
+            "id": "f2_balanced",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Balanced equation (correct coefficients): _____",
+            "expected": "2H₂O₂ → 2H₂O + O₂",
+            "marks": 1.0,
+            "diagnostic_hint": "Use coefficients 2:2:1. Count: Left: 4H + 4O. Right: 4H + 2O (from water) + 2O (from O₂) = 4O ✓.",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "To balance: 2H₂O₂ → 2H₂O + O₂. Check: H: 2×2=4 left, 2×2=4 right ✓; O: 2×2=4 left, 2×1+2=4 right ✓. The coefficient of O₂ is 1 (unwritten)."
+            },
+            "options": {
+                "2H₂O₂ → 2H₂O + O₂": "2H₂O₂ → 2H₂O + O₂",
+                "H₂O₂ → H₂O + O₂": "H₂O₂ → H₂O + O₂ (unbalanced)",
+                "H₂O₂ → H₂O + ½O₂": "H₂O₂ → H₂O + ½O₂",
+                "2H₂O₂ → H₂O + 2O₂": "2H₂O₂ → H₂O + 2O₂"
+            }
+        },
+        {
+            "id": "f3_state_symbols",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Correct state symbols for all three species: _____",
+            "expected": "H₂O₂(aq), H₂O(l), O₂(g)",
+            "marks": 1.0,
+            "diagnostic_hint": "H₂O₂ is dissolved in water → (aq); H₂O is liquid → (l); O₂ is a gas produced → (g).",
+            "error_codes": {
+                "SC_METHOD_ERROR": "State symbols: (aq) = aqueous (dissolved in water); (l) = liquid; (g) = gas; (s) = solid. H₂O₂ solution is aqueous (aq). Water produced is liquid (l). Oxygen gas evolved is (g)."
+            },
+            "options": {
+                "H₂O₂(aq), H₂O(l), O₂(g)": "H₂O₂(aq), H₂O(l), O₂(g)",
+                "H₂O₂(l), H₂O(g), O₂(g)": "H₂O₂(l), H₂O(g), O₂(g)",
+                "H₂O₂(aq), H₂O(g), O₂(l)": "H₂O₂(aq), H₂O(g), O₂(l)",
+                "H₂O₂(g), H₂O(l), O₂(g)": "H₂O₂(g), H₂O(l), O₂(g)"
+            }
+        }
+    ]
+}

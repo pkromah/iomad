@@ -1,0 +1,114 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JAN23-Q4c"
+        ],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q4(c)",
+        "subject": "Physics",
+        "topic": "Optics — Definition of Refractive Index of Glass",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: define refractive index. Two valid approaches: (1) ratio of speeds: n = speed in vacuum / speed in medium; (2) Snell's law: n = sin(i)/sin(r). Cloze covers both: 'speed of light in air(1m) / speed of light in glass(1m) / sin(angle of incidence)/sin(angle of refraction)(1m)'. Marks split 1+1+1."
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q4c — Define Refractive Index of Glass",
+        "text": "<p>Define the term <strong>'refractive index'</strong> of glass by completing the statements below:</p><p><strong>Definition 1 (ratio of speeds):</strong> The refractive index of glass is the ratio of the [[1]] to the [[2]].</p><p><strong>Definition 2 (Snell's law):</strong> The refractive index is also equal to [[3]].</p>",
+        "general_feedback": "<p><strong>Refractive index (n) of glass:</strong></p><p><strong>Definition 1:</strong> n = speed of light in air (vacuum) / speed of light in glass</p><p><strong>Definition 2 (Snell's law):</strong> n = sin(angle of incidence) / sin(angle of refraction) = sin(i) / sin(r)</p><p><em>Key values:</em> n &gt; 1 for glass (light slows down when entering a denser medium). For CSEC Physics, n_glass = 1.5 typically.</p><p><em>Note:</em> Since n = c_air / c_glass and c_glass &lt; c_air, n &gt; 1 for all optical materials.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p><strong>Definition 1:</strong> The refractive index of glass is the ratio of the [[1]] to the [[2]].</p><p><strong>Definition 2:</strong> The refractive index is also equal to [[3]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "speed of light in air",
+                        "correct": true
+                    },
+                    {
+                        "text": "speed of light in vacuum",
+                        "correct": true
+                    },
+                    {
+                        "text": "speed of light in glass",
+                        "correct": false
+                    },
+                    {
+                        "text": "wavelength of light in air",
+                        "correct": false
+                    }
+                ],
+                "label": "Refractive index = ___ (numerator)",
+                "diagnostic_hint": "n = speed of light in air (or vacuum) ÷ speed of light in medium. The numerator is the speed in the LESS DENSE medium (air/vacuum = 3 × 10⁸ m/s)."
+            },
+            {
+                "id": 2,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "speed of light in glass",
+                        "correct": true
+                    },
+                    {
+                        "text": "speed of light in air",
+                        "correct": false
+                    },
+                    {
+                        "text": "wavelength of light in glass",
+                        "correct": false
+                    },
+                    {
+                        "text": "frequency of light",
+                        "correct": false
+                    }
+                ],
+                "label": "Refractive index = speed in air ÷ ___ (denominator)",
+                "diagnostic_hint": "The denominator is the speed of light in the GLASS (the denser medium). Since light slows down in glass, n > 1 for all transparent materials."
+            },
+            {
+                "id": 3,
+                "marks": 1.0,
+                "options": [
+                    {
+                        "text": "sin(i) / sin(r)",
+                        "correct": true
+                    },
+                    {
+                        "text": "sin(angle of incidence) / sin(angle of refraction)",
+                        "correct": true
+                    },
+                    {
+                        "text": "sin(r) / sin(i)",
+                        "correct": false
+                    },
+                    {
+                        "text": "cos(i) / cos(r)",
+                        "correct": false
+                    }
+                ],
+                "label": "Refractive index also equals ___",
+                "diagnostic_hint": "Snell's Law: n = sin(i)/sin(r), where i is the angle of incidence (in air) and r is the angle of refraction (in glass). Both angles are measured from the normal."
+            }
+        ],
+        "word_bank": [
+            "speed of light in air",
+            "speed of light in vacuum",
+            "speed of light in glass",
+            "wavelength of light in air",
+            "wavelength of light in glass",
+            "frequency of light",
+            "sin(i) / sin(r)",
+            "sin(angle of incidence) / sin(angle of refraction)",
+            "sin(r) / sin(i)",
+            "cos(i) / cos(r)"
+        ],
+        "word_bank_note": "10 tokens for 3 slots. Slot 1 (numerator = air/vacuum speed): both air and vacuum are accepted — in CSEC context, speed in air ≈ speed in vacuum. 'Speed in glass' in the numerator gives n < 1 (incorrect for glass). 'Wavelength' — wavelength changes with medium but defining n as a wavelength ratio is not the CSEC definition. Slot 2 (denominator = glass speed): 'Speed in air' in the denominator would give n < 1 (inverted). 'Frequency' does not change with medium — not a valid denominator. Slot 3 (Snell's ratio): both phrasings accepted (sin(i)/sin(r) or the full description). 'sin(r)/sin(i)' is inverted — would give n < 1. 'cos' terms are used in different optical formulas."
+    }
+}

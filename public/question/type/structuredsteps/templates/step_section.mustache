@@ -1,0 +1,19 @@
+<div class="{{cardclass}}" data-ss-step-index="{{stepindex}}">
+  <div class="card-header ss-step-header d-flex align-items-center gap-2">
+    {{#stepbadge}}
+    <span class="ss-step-badge" aria-hidden="true">{{stepbadge}}</span>
+    {{/stepbadge}}
+    <span class="ss-step-label flex-grow-1">{{{steplabel}}}</span>
+    {{#stepcounter}}
+    <span class="ss-step-counter visually-hidden">{{stepcounter}}</span>
+    {{/stepcounter}}
+    {{#hasstepmeta}}
+    {{{stepmetahtml}}}
+    {{/hasstepmeta}}
+  </div>
+  <div class="card-body">
+    {{#fields}}
+      {{> qtype_structuredsteps/field_row}}
+    {{/fields}}
+  </div>
+</div>

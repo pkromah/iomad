@@ -1,0 +1,121 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q2a"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q2(a)",
+        "subject": "Physics",
+        "topic": "Measurement — Physical Quantities and Derived SI Units",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "4m: 4 missing cells in table. Row 1: quantity=Area(1m), unit=m² (given). Row 2: quantity=Density (given), unit=kg m⁻³(1m). Row 3: quantity=Force(1m), unit=kg m s⁻² (given). Row 4: quantity=Velocity (given), unit=m s⁻¹(1m). 1m per missing cell."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q2a — Complete Physical Quantities and Derived SI Units Table",
+        "text": "<p>Complete Table 3 by inserting the missing physical quantities and their derived SI units.</p><table><thead><tr><th>Physical Quantity</th><th>Derived SI Unit</th></tr></thead><tbody><tr><td>?</td><td>m²</td></tr><tr><td>Density</td><td>?</td></tr><tr><td>?</td><td>kg m s⁻²</td></tr><tr><td>Velocity</td><td>?</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Physical quantities and derived SI units:</strong></p><table><thead><tr><th>Physical Quantity</th><th>Derived SI Unit</th></tr></thead><tbody><tr><td>Area</td><td>m² (square metre)</td></tr><tr><td>Density</td><td>kg m⁻³ (kilogram per cubic metre)</td></tr><tr><td>Force</td><td>kg m s⁻² = N (Newton)</td></tr><tr><td>Velocity</td><td>m s⁻¹ (metre per second)</td></tr></tbody></table><p><em>Derivation reminders:</em> Area = length², so unit = m². Density = mass/volume → kg/m³. Force = mass × acceleration → kg × m s⁻² = N. Velocity = displacement/time → m/s.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Derived SI unit:</strong> built from base units (m, kg, s)<br>Area = length²; Density = mass/volume; Force = ma; Velocity = displacement/time",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_quantities",
+            "label": "Complete all 4 missing cells (2 quantities + 2 units). (4 marks)",
+            "type": "computational",
+            "marks": 4
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_area",
+            "step_id": "step_quantities",
+            "type": "choice",
+            "label": "Physical quantity with SI unit m² = _____",
+            "expected": "Area",
+            "marks": 1.0,
+            "diagnostic_hint": "The unit m² (square metre) is the SI unit for area",
+            "error_codes": {
+                "SC_METHOD_ERROR": "The SI unit m² (square metre) measures area. Area = length × length = m × m = m²."
+            },
+            "options": {
+                "Area": "Area",
+                "Volume": "Volume",
+                "Distance": "Distance",
+                "Speed": "Speed"
+            }
+        },
+        {
+            "id": "f2_density_unit",
+            "step_id": "step_quantities",
+            "type": "choice",
+            "label": "Derived SI unit for Density = _____",
+            "expected": "kg m⁻³",
+            "marks": 1.0,
+            "diagnostic_hint": "Density = mass/volume → kg/m³ = kg m⁻³",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Density = mass / volume. Mass unit = kg, volume unit = m³. So density unit = kg/m³ = kg m⁻³."
+            },
+            "options": {
+                "kg m⁻³": "kg m⁻³",
+                "g cm⁻³": "g cm⁻³",
+                "kg m⁻²": "kg m⁻²",
+                "kg m³": "kg m³"
+            }
+        },
+        {
+            "id": "f3_force",
+            "step_id": "step_quantities",
+            "type": "choice",
+            "label": "Physical quantity with SI unit kg m s⁻² = _____",
+            "expected": "Force",
+            "marks": 1.0,
+            "diagnostic_hint": "kg m s⁻² = Newton (N) — the unit of Force (F = ma = kg × m s⁻²)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Force = mass × acceleration = kg × m s⁻² = N (Newton). The unit kg m s⁻² is the Newton, which measures Force."
+            },
+            "options": {
+                "Force": "Force",
+                "Pressure": "Pressure",
+                "Energy": "Energy",
+                "Power": "Power"
+            }
+        },
+        {
+            "id": "f4_velocity_unit",
+            "step_id": "step_quantities",
+            "type": "choice",
+            "label": "Derived SI unit for Velocity = _____",
+            "expected": "m s⁻¹",
+            "marks": 1.0,
+            "diagnostic_hint": "Velocity = displacement/time → m/s = m s⁻¹",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Velocity = displacement / time. Displacement unit = m, time unit = s. So velocity unit = m/s = m s⁻¹."
+            },
+            "options": {
+                "m s⁻¹": "m s⁻¹",
+                "m s⁻²": "m s⁻²",
+                "km h⁻¹": "km h⁻¹",
+                "m/s²": "m/s²"
+            }
+        }
+    ]
+}

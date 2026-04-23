@@ -1,0 +1,231 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["CHEM-JAN24-Q1b", "CHEM-JAN24-Q1c"],
+        "source_paper": "CSEC Chemistry Paper 02 January 2024",
+        "question_ref": "Q1(b) and Q1(c)",
+        "subject": "Chemistry",
+        "topic": "Quantitative Chemistry — Solubility of KNO₃ at Varying Temperatures",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Q1b (5 marks): read balance dial → record mass of beaker+salt solution for 20-60°C (5 fields, 70°C omitted as bonus). Q1c (3 marks): calculate mass of KNO₃ dissolved = dial reading − 110 for 20-70°C (6 fields × 0.5 marks). Row 10°C (146g, 36g) is pre-given in table. Q1d (graph), Q1e (describe/graph-read), Q1f (precipitation), Q1g (concentration) authored separately."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2024 Q1b/c — Solubility Table: Balance Readings and Mass Dissolved",
+        "text": "<p>Marcus investigated the solubility of potassium nitrate (KNO₃) at different temperatures. He weighed a beaker containing 100 cm³ of water (<strong>mass = 110 g</strong>), added KNO₃ until no more dissolved at a set temperature, and reweighed.</p><p><strong>Balance readings from Figure 1 (mass of beaker + salt solution):</strong></p><ul><li>10°C: <strong>146 g</strong> (already recorded — given for you)</li><li>20°C: ___ g</li><li>30°C: ___ g</li><li>40°C: ___ g</li><li>50°C: ___ g</li><li>60°C: ___ g</li><li>70°C: ___ g</li></ul><p><strong>Part (b):</strong> Record the mass of beaker + salt solution for each temperature. (5 marks)<br><strong>Part (c):</strong> Calculate the mass of KNO₃ dissolved = (beaker + salt solution) − 110 g. The first one is done for you: 146 − 110 = <strong>36 g</strong> (3 marks)</p>",
+        "general_feedback": "<p><strong>Complete table:</strong></p><table border='1' cellpadding='6' style='border-collapse:collapse;'><thead><tr><th>Temp (°C)</th><th>Beaker + Water (g)</th><th>Beaker + Salt Solution (g)</th><th>KNO₃ dissolved (g)</th></tr></thead><tbody><tr><td>10</td><td>110</td><td>146</td><td>36 ← given</td></tr><tr><td>20</td><td>110</td><td>148</td><td>38</td></tr><tr><td>30</td><td>110</td><td>152</td><td>42</td></tr><tr><td>40</td><td>110</td><td>164</td><td>54</td></tr><tr><td>50</td><td>110</td><td>176</td><td>66</td></tr><tr><td>60</td><td>110</td><td>196</td><td>86</td></tr><tr><td>70</td><td>110</td><td>226</td><td>116</td></tr></tbody></table><p>Trend: solubility of KNO₃ increases with temperature — approximately doubling from 10°C (36 g) to 70°C (116 g).</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given (already in table):</strong> Temperature 10°C → Beaker + salt solution = 146 g → KNO₃ dissolved = 36 g<br><strong>Formula for Part (c):</strong> KNO₃ dissolved (g) = Mass of beaker + salt solution − 110 g",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "b20",
+            "label": "Part (b) — Record the mass of beaker + salt solution at <strong>20°C</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "b30",
+            "label": "Part (b) — Record the mass of beaker + salt solution at <strong>30°C</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "b40",
+            "label": "Part (b) — Record the mass of beaker + salt solution at <strong>40°C</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "b50",
+            "label": "Part (b) — Record the mass of beaker + salt solution at <strong>50°C</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "b60",
+            "label": "Part (b) — Record the mass of beaker + salt solution at <strong>60°C</strong>. (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "c_dissolved",
+            "label": "Part (c) — Calculate mass of KNO₃ dissolved at each temperature (subtract 110 g). (3 marks total — 0.5 mark each)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_b20",
+            "step_id": "b20",
+            "type": "numberbox",
+            "label": "20°C — Mass of beaker + salt solution = _____ g",
+            "expected": "148",
+            "tolerance": 1,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "At 20°C, the balance dial points just before 150 g = 148 g",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Read the balance dial carefully. At 20°C the pointer is at 148 g (just below the 150 g mark)."
+            }
+        },
+        {
+            "id": "f2_b30",
+            "step_id": "b30",
+            "type": "numberbox",
+            "label": "30°C — Mass of beaker + salt solution = _____ g",
+            "expected": "152",
+            "tolerance": 1,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "At 30°C, the balance dial points just past 150 g = 152 g",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At 30°C the pointer is at 152 g (just above the 150 g mark)."
+            }
+        },
+        {
+            "id": "f3_b40",
+            "step_id": "b40",
+            "type": "numberbox",
+            "label": "40°C — Mass of beaker + salt solution = _____ g",
+            "expected": "164",
+            "tolerance": 1,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "At 40°C, the balance dial points between 160 and 170 g = 164 g",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At 40°C the pointer is at 164 g (between 160 and 170)."
+            }
+        },
+        {
+            "id": "f4_b50",
+            "step_id": "b50",
+            "type": "numberbox",
+            "label": "50°C — Mass of beaker + salt solution = _____ g",
+            "expected": "176",
+            "tolerance": 1,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "At 50°C, the balance dial points between 170 and 180 g = 176 g",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At 50°C the pointer is at 176 g (between 170 and 180)."
+            }
+        },
+        {
+            "id": "f5_b60",
+            "step_id": "b60",
+            "type": "numberbox",
+            "label": "60°C — Mass of beaker + salt solution = _____ g",
+            "expected": "196",
+            "tolerance": 1,
+            "marks": 1.0,
+            "unit": "g",
+            "diagnostic_hint": "At 60°C, the balance dial points between 190 and 200 g = 196 g",
+            "error_codes": {
+                "SC_METHOD_ERROR": "At 60°C the pointer is at 196 g (between 190 and 200)."
+            }
+        },
+        {
+            "id": "f6_c20",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "20°C — KNO₃ dissolved = _____ g",
+            "expected": "38",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "148 − 110 = 38 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = beaker+salt − beaker+water = 148 − 110 = 38 g."
+            }
+        },
+        {
+            "id": "f7_c30",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "30°C — KNO₃ dissolved = _____ g",
+            "expected": "42",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "152 − 110 = 42 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = 152 − 110 = 42 g."
+            }
+        },
+        {
+            "id": "f8_c40",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "40°C — KNO₃ dissolved = _____ g",
+            "expected": "54",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "164 − 110 = 54 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = 164 − 110 = 54 g."
+            }
+        },
+        {
+            "id": "f9_c50",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "50°C — KNO₃ dissolved = _____ g",
+            "expected": "66",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "176 − 110 = 66 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = 176 − 110 = 66 g."
+            }
+        },
+        {
+            "id": "f10_c60",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "60°C — KNO₃ dissolved = _____ g",
+            "expected": "86",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "196 − 110 = 86 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = 196 − 110 = 86 g."
+            }
+        },
+        {
+            "id": "f11_c70",
+            "step_id": "c_dissolved",
+            "type": "numberbox",
+            "label": "70°C — KNO₃ dissolved = _____ g",
+            "expected": "116",
+            "tolerance": 1,
+            "marks": 0.5,
+            "unit": "g",
+            "diagnostic_hint": "226 − 110 = 116 g",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Mass dissolved = 226 − 110 = 116 g."
+            }
+        }
+    ]
+}

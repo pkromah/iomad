@@ -1,0 +1,109 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JUN23-Q2ci", "PHY-JUN23-Q2cii", "PHY-JUN23-Q2ciii"],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q2(c)(i), Q2(c)(ii), and Q2(c)(iii)",
+        "subject": "Physics",
+        "topic": "Energy — Wind Turbine: Speed of Air, Input Power, Efficiency",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "authored": "2026-04-13",
+        "note": "Caribbean context: wind turbines in Caribbean countries. m=8.5kg of air per second, KE=2500J per second. Q2ci 3m: v=√(2KE/m)=√(2×2500/8.5)=√588.24=24.25 m/s. Q2cii 2m: P_in=KE/t=2500/1=2500W. Q2ciii 3m: η=P_out/P_in×100=1350/2500×100=54%."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q2c — Wind Turbine Speed of Air, Input Power, Efficiency",
+        "text": "<p>The mass of air passing through the circular area swept out by the turbine blades every second is <strong>8.5 kg</strong> and its kinetic energy during this time is <strong>2500 J</strong>.</p><p><strong>(i)</strong> Calculate the speed of the air. <em>(3 marks)</em></p><p><strong>(ii)</strong> Calculate the input power of the air. <em>(2 marks)</em></p><p><strong>(iii)</strong> Calculate the efficiency of the wind turbine, given that the output power of the generator is <strong>1350 W</strong>. <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q2c(i) — Speed of air:</strong></p><p>KE = ½mv² → v² = 2KE/m = (2 × 2500) / 8.5 = 5000 / 8.5 = 588.24 m² s⁻²</p><p>v = √588.24 ≈ <strong>24.25 m s⁻¹ ≈ 24.3 m s⁻¹</strong></p><p><strong>Q2c(ii) — Input power:</strong></p><p>Power = Energy / time = 2500 J / 1 s = <strong>2500 W</strong></p><p>(The KE given is per second, so it is already the power in watts.)</p><p><strong>Q2c(iii) — Efficiency:</strong></p><p>η = (P_output / P_input) × 100 = (1350 / 2500) × 100 = <strong>54%</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> m = 8.5 kg (per second) | KE = 2500 J (per second) | P_out = 1350 W<br><strong>Formulas:</strong> KE = ½mv² | P = E/t | η% = (P_out/P_in) × 100",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_speed",
+            "label": "Calculate the speed of the air. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_power_in",
+            "label": "Calculate the input power of the air. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_efficiency",
+            "label": "Calculate the efficiency of the wind turbine. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_v_squared",
+            "step_id": "step_speed",
+            "type": "numberbox",
+            "label": "v² = 2KE/m = _____ m² s⁻²",
+            "expected": "588.24",
+            "tolerance": 2.0,
+            "marks": 1.0,
+            "unit": "m² s⁻²",
+            "diagnostic_hint": "v² = 2×2500/8.5 = 5000/8.5 = 588.24 m² s⁻²",
+            "error_codes": {"SC_FORMULA_SELECTION_ERROR": "Rearrange KE = ½mv² to get v² = 2KE/m = (2 × 2500) / 8.5."}
+        },
+        {
+            "id": "f2_speed",
+            "step_id": "step_speed",
+            "type": "numberbox",
+            "label": "Speed of air v = _____ m s⁻¹",
+            "expected": "24.25",
+            "tolerance": 0.5,
+            "marks": 2.0,
+            "unit": "m s⁻¹",
+            "diagnostic_hint": "v = √588.24 ≈ 24.25 m s⁻¹",
+            "error_codes": {"SC_CALCULATION_ERROR": "v = √(2KE/m) = √(5000/8.5) = √588.24 ≈ 24.25 m s⁻¹."}
+        },
+        {
+            "id": "f3_power_in",
+            "step_id": "step_power_in",
+            "type": "numberbox",
+            "label": "Input power P_in = _____ W",
+            "expected": "2500",
+            "tolerance": 0,
+            "marks": 2.0,
+            "unit": "W",
+            "diagnostic_hint": "P_in = KE/t = 2500 J / 1 s = 2500 W (KE is given per second, so it is already the power)",
+            "error_codes": {"SC_METHOD_ERROR": "Power = energy per unit time. Since KE = 2500 J passes through every second, input power = 2500 J / 1 s = 2500 W."}
+        },
+        {
+            "id": "f4_efficiency",
+            "step_id": "step_efficiency",
+            "type": "numberbox",
+            "label": "Efficiency η = _____ %",
+            "expected": "54",
+            "tolerance": 1,
+            "marks": 3.0,
+            "unit": "%",
+            "diagnostic_hint": "η = (P_out/P_in) × 100 = (1350/2500) × 100 = 54%",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use: efficiency = (useful output power / total input power) × 100%.",
+                "SC_CALCULATION_ERROR": "η = (1350 / 2500) × 100 = 0.54 × 100 = 54%."
+            }
+        }
+    ]
+}

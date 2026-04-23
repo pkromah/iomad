@@ -1,0 +1,81 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-JUN23-Q5biv"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2023",
+        "question_ref": "Q5(b)(iv)",
+        "subject": "Physics",
+        "topic": "Electricity — Ohm's Law: Resistance from Voltage and Current",
+        "marks_total": 3,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-12",
+        "note": "Circuit diagram (Figure 9) shows 12V DC battery connected to a variable resistor and coil with an ammeter reading 1.5A when the switch is closed. R = V/I = 12/1.5 = 8Ω. Marks: 1m formula, 1m substitution, 1m correct answer."
+    },
+    "question": {
+        "name": "CSEC Phy Jun 2023 Q5b(iv) — Ohm's Law: Circuit Resistance",
+        "text": "<p>A circuit contains a <strong>12 V</strong> DC battery connected in series with a variable resistor, an electromagnet coil, an ammeter, and a switch (Figure 9).</p><p>When the switch is closed, the reading on the ammeter is <strong>1.5 A</strong>.</p><p>Calculate the resistance of the circuit. (3 marks)</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Ohm's Law: V = IR → R = V / I<br>R = 12 / 1.5 = <strong>8 Ω</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Voltage V = 12 V &nbsp;|&nbsp; Current I = 1.5 A<br><strong>Ohm's Law:</strong> V = IR → R = V / I",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Apply Ohm's Law to calculate the resistance R of the circuit. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_formula",
+            "step_id": "step1",
+            "type": "choice",
+            "label": "Formula used: R = _____",
+            "expected": "V/I",
+            "marks": 1.0,
+            "diagnostic_hint": "Ohm's Law: V = IR, rearranged to R = V/I",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use Ohm's Law: V = IR. Rearrange for R: R = V / I."
+            },
+            "options": {
+                "V/I": "V / I",
+                "I/V": "I / V",
+                "V×I": "V × I",
+                "V+I": "V + I"
+            }
+        },
+        {
+            "id": "f2_resistance",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Resistance R = _____ Ω",
+            "expected": "8.0",
+            "tolerance": 0.1,
+            "marks": 2.0,
+            "unit": "Ω",
+            "diagnostic_hint": "R = V / I = 12 / 1.5 = 8 Ω",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "R = V ÷ I = 12 ÷ 1.5 = 8 Ω.",
+                "SC_FORMULA_SELECTION_ERROR": "R = V / I. Do not use R = I / V (that would give 0.125, not 8)."
+            }
+        }
+    ]
+}

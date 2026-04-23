@@ -1,0 +1,89 @@
+{
+    "schema_version": "1.0",
+    "engine": "EvidenceTableEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "BIO-MAY23-Q1ci"
+        ],
+        "source_paper": "CSEC Biology Paper 02 May/June 2023",
+        "question_ref": "Q1(c)(i)",
+        "subject": "Biology",
+        "topic": "Cell Biology — Structural Differences Between Cell Types",
+        "marks_total": 4,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "4m: 2 comparison rows in a table. Row 1: red blood cell (RBC) vs skin cell — key difference is nucleus (RBC has no nucleus; skin cell has nucleus). Row 2: skin cell vs nerve cell — key difference is shape/structure (skin cell compact; nerve cell elongated with axon for impulse conduction). 2m per row (1m per cell × 2 columns per row). EvidenceTableEngine with structured_text fields."
+    },
+    "question": {
+        "name": "CSEC Bio May 2023 Q1c(i) — Structural Differences Between Cell Types",
+        "text": "<p>Complete Table 2 to show ONE structural difference between each pair of cells listed.</p><table><thead><tr><th>Cell Pair</th><th>Structural Difference</th></tr></thead><tbody><tr><td>Red blood cell vs. Skin cell</td><td>[[1]]</td></tr><tr><td>Skin cell vs. Nerve cell</td><td>[[2]]</td></tr></tbody></table>",
+        "general_feedback": "<p><strong>Structural differences between cell types:</strong></p><table><thead><tr><th>Cell Pair</th><th>Structural Difference</th></tr></thead><tbody><tr><td>Red blood cell vs. Skin (epidermal) cell</td><td>The red blood cell has <strong>no nucleus</strong> (anucleate); the skin cell <strong>has a nucleus</strong>. The RBC loses its nucleus during maturation to make more room for haemoglobin and to maximise oxygen-carrying capacity.</td></tr><tr><td>Skin (epidermal) cell vs. Nerve cell</td><td>The skin cell is <strong>compact/flat</strong> (polygonal shape); the nerve cell is <strong>elongated</strong>, with a long <strong>axon</strong> (sometimes over 1 metre long) for transmitting electrical impulses over long distances. Nerve cells also have <strong>dendrites</strong> for receiving impulses.</td></tr></tbody></table>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute",
+        "require_explanation": false
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Compare structural features:</strong> nucleus presence/absence; shape; organelles; adaptations",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_rbc_vs_skin",
+            "label": "State ONE structural difference between a red blood cell and a skin cell. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_skin_vs_nerve",
+            "label": "State ONE structural difference between a skin cell and a nerve cell. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_rbc_skin_feature",
+            "step_id": "step_rbc_vs_skin",
+            "type": "choice",
+            "label": "ONE structural difference between a red blood cell and a skin cell:",
+            "expected": "Red blood cell has no nucleus; skin cell has a nucleus",
+            "marks": 2.0,
+            "diagnostic_hint": "The most important structural difference is: the red blood cell has NO nucleus (it is anucleate), while the skin cell has a nucleus. A secondary acceptable answer is shape: RBC is biconcave disc vs. compact/polygonal skin cell.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Red blood cells (erythrocytes) lose their nucleus during maturation. This makes them anucleate (no nucleus). Skin (epidermal) cells are normal eukaryotic cells with a nucleus. This is the most prominent structural difference between these two cell types."
+            },
+            "options": {
+                "Red blood cell has no nucleus; skin cell has a nucleus": "Red blood cell has no nucleus; skin cell has a nucleus",
+                "Red blood cell is larger than the skin cell": "Red blood cell is larger than the skin cell",
+                "Red blood cell has a cell wall; skin cell does not": "Red blood cell has a cell wall; skin cell does not"
+            }
+        },
+        {
+            "id": "f2_skin_nerve_feature",
+            "step_id": "step_skin_vs_nerve",
+            "type": "choice",
+            "label": "ONE structural difference between a skin cell and a nerve cell:",
+            "expected": "Nerve cell is elongated with a long axon; skin cell is compact",
+            "marks": 2.0,
+            "diagnostic_hint": "The nerve cell is elongated with a long axon (for conducting electrical impulses) and dendrites. The skin cell is compact/flat (polygonal). The key structural difference is the long axon of the nerve cell.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Nerve cells (neurones) are adapted for conducting electrical impulses over long distances. They have a long fibre called an axon (which can be over 1 metre long) and branched extensions called dendrites. Skin (epidermal) cells are compact and polygonal in shape, with no long extensions."
+            },
+            "options": {
+                "Nerve cell is elongated with a long axon; skin cell is compact": "Nerve cell is elongated with a long axon; skin cell is compact",
+                "Nerve cell is smaller than the skin cell": "Nerve cell is smaller than the skin cell",
+                "Nerve cell has a cell wall; skin cell does not": "Nerve cell has a cell wall; skin cell does not"
+            }
+        }
+    ]
+}

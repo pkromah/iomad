@@ -1,0 +1,167 @@
+{
+    "schema_version": "1.0",
+    "engine": "DDWTOS",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "PHY-MAY22-Q4bi"
+        ],
+        "source_paper": "CSEC Physics Paper 02 May/June 2022",
+        "question_ref": "Q4(b)(i)",
+        "subject": "Physics",
+        "topic": "Forces and Pressure — Archimedes' Principle",
+        "marks_total": 3,
+        "difficulty": "P1",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "3m: state Archimedes' principle. Cloze: 'When an object is partially or fully [[1]] in a [[2]], it experiences an [[3]] equal to the [[4]] of fluid [[5]].' Tokens: immersed(0.75m)/fluid(0.75m)/upthrust(0.75m)/weight(0.75m)/displaced(0.75m). Distractors: volume/pressure/submerged-only."
+    },
+    "question": {
+        "name": "CSEC Phy May 2022 Q4b(i) — State Archimedes' Principle",
+        "text": "<p>State Archimedes' Principle by completing the statement below:</p><p>When an object is partially or fully [[1]] in a [[2]], it experiences an [[3]] (buoyant force) equal to the [[4]] of the [[2]] [[5]].</p>",
+        "general_feedback": "<p><strong>Archimedes' Principle:</strong></p><p>When an object is partially or fully <strong>immersed</strong> in a <strong>fluid</strong>, it experiences an <strong>upthrust</strong> (buoyant force) equal to the <strong>weight</strong> of the <strong>fluid</strong> <strong>displaced</strong>.</p><p><strong>Formula:</strong> Upthrust = weight of fluid displaced = ρ × V<sub>displaced</sub> × g</p><p><strong>Applications:</strong></p><ul><li>Floating ships: upthrust = weight of ship → ship displaces its own weight of water</li><li>Submarines: change ballast to control depth</li><li>Hot air balloons: upthrust from air displaced</li><li>Measuring density using displacement method</li></ul><p><em>Key word:</em> Upthrust equals the <strong>weight</strong> (not volume) of fluid displaced. A common error is saying 'volume of fluid displaced'.</p>"
+    },
+    "ddwtos": {
+        "cloze_html": "<p>When an object is partially or fully [[1]] in a [[2]], it experiences an [[3]] equal to the [[4]] of the [[2]] [[5]].</p>",
+        "groups": [
+            {
+                "id": 1,
+                "marks": 0.75,
+                "options": [
+                    {
+                        "text": "immersed",
+                        "correct": true
+                    },
+                    {
+                        "text": "submerged",
+                        "correct": true
+                    },
+                    {
+                        "text": "placed",
+                        "correct": false
+                    },
+                    {
+                        "text": "floating",
+                        "correct": false
+                    }
+                ],
+                "label": "Archimedes' Principle — when a body is ___ in a fluid",
+                "diagnostic_hint": "IMMERSED (or submerged) — Archimedes' Principle applies when an object is fully or partially immersed in a fluid (liquid or gas)."
+            },
+            {
+                "id": 2,
+                "marks": 0.75,
+                "options": [
+                    {
+                        "text": "fluid",
+                        "correct": true
+                    },
+                    {
+                        "text": "liquid",
+                        "correct": true
+                    },
+                    {
+                        "text": "container",
+                        "correct": false
+                    },
+                    {
+                        "text": "gas",
+                        "correct": false
+                    }
+                ],
+                "label": "Archimedes' Principle — immersed in a ___",
+                "diagnostic_hint": "Immersed in a FLUID (liquid or gas). The principle applies to both. Most CSEC questions use liquid, but the principle is general."
+            },
+            {
+                "id": 3,
+                "marks": 0.75,
+                "options": [
+                    {
+                        "text": "upthrust",
+                        "correct": true
+                    },
+                    {
+                        "text": "buoyant force",
+                        "correct": true
+                    },
+                    {
+                        "text": "pressure",
+                        "correct": false
+                    },
+                    {
+                        "text": "downthrust",
+                        "correct": false
+                    }
+                ],
+                "label": "Archimedes' Principle — the ___ force equals...",
+                "diagnostic_hint": "The UPTHRUST (buoyant force) equals the weight of the displaced fluid. Upthrust acts upward on the immersed object."
+            },
+            {
+                "id": 4,
+                "marks": 0.75,
+                "options": [
+                    {
+                        "text": "weight",
+                        "correct": true
+                    },
+                    {
+                        "text": "volume",
+                        "correct": false
+                    },
+                    {
+                        "text": "mass",
+                        "correct": false
+                    },
+                    {
+                        "text": "density",
+                        "correct": false
+                    }
+                ],
+                "label": "Archimedes' Principle — upthrust equals the ___ of displaced fluid",
+                "diagnostic_hint": "Upthrust = WEIGHT of the displaced fluid (not the volume or mass alone). Weight = mg, so upthrust = ρVg where ρ is fluid density, V is displaced volume, g is g."
+            },
+            {
+                "id": 5,
+                "marks": 0.0,
+                "options": [
+                    {
+                        "text": "displaced",
+                        "correct": true
+                    },
+                    {
+                        "text": "surrounding",
+                        "correct": false
+                    },
+                    {
+                        "text": "remaining",
+                        "correct": false
+                    }
+                ],
+                "label": "Archimedes' Principle — weight of ___ fluid",
+                "diagnostic_hint": "The \"DISPLACED\" fluid — the amount of fluid pushed aside by the immersed object. Its volume equals the volume of the submerged part of the object."
+            }
+        ],
+        "word_bank": [
+            "immersed",
+            "submerged",
+            "placed",
+            "floating",
+            "fluid",
+            "liquid",
+            "container",
+            "gas",
+            "upthrust",
+            "buoyant force",
+            "pressure",
+            "downthrust",
+            "weight",
+            "volume",
+            "mass",
+            "density",
+            "displaced",
+            "surrounding",
+            "remaining"
+        ],
+        "word_bank_note": "19 tokens for 5 slots. Slot 1 (immersed/submerged): both accepted as equivalent. 'Floating' is wrong — floating is a consequence, not the condition. Slot 2 (fluid/liquid): fluid is the more accurate term (includes liquids and gases); liquid also accepted. Slot 3 (upthrust/buoyant force): both terms for the same force; 'downthrust' does not exist as a standard physics term; 'pressure' is not a force. Slot 4 (weight): the CRITICAL discriminator — 'volume' is the most common wrong answer. The upthrust equals the WEIGHT, not the volume, of fluid displaced. Slot 5 (displaced): 0 marks — this word is context and is essentially given in the stem."
+    }
+}

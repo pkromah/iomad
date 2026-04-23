@@ -1,0 +1,131 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN22-Q4bi", "PHY-JAN22-Q4bii", "PHY-JAN22-Q4c"],
+        "source_paper": "CSEC Physics Paper 02 January 2022",
+        "question_ref": "Q4(b)(i), Q4(b)(ii), Q4(c)",
+        "subject": "Physics",
+        "topic": "Newton's Laws — Linear Momentum, Conservation, and Acceleration",
+        "marks_total": 9,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "caribbean_note": "Context: collision on the Sir George Walter Highway — a real road in Antigua and Barbuda, named after a local politician",
+        "authored": "2026-04-12"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2022 Q4b/c — Momentum Conservation and Acceleration",
+        "text": "<p>A truck, of mass <strong>945 kg</strong>, heading west on the Sir George Walter Highway, slammed head-on at <strong>20 m s⁻¹</strong> into a car of mass <strong>630 kg</strong>, heading east.</p><p>Both vehicles came to rest after the collision.</p><p>In a separate scenario, a car's velocity increases from <strong>20 m s⁻¹</strong> to <strong>45 m s⁻¹</strong> in <strong>10 s</strong>.</p>",
+        "general_feedback": "<p><strong>Q4b(i) — Momentum of truck:</strong><br>p = mv = 945 × 20 = <strong>18 900 kg m s⁻¹</strong> (west)</p><p><strong>Q4b(ii) — Initial velocity of car:</strong><br>Conservation of momentum: p_truck + p_car = 0 (both at rest after collision)<br>p_car = −p_truck = 18 900 kg m s⁻¹ (east)<br>v_car = p_car / m_car = 18 900 / 630 = <strong>30 m s⁻¹</strong> (east)</p><p><strong>Q4c — Acceleration of car:</strong><br>a = Δv / t = (45 − 20) / 10 = 25 / 10 = <strong>2.5 m s⁻²</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given (collision):</strong> Truck: m = 945 kg, v = 20 m s⁻¹ west &nbsp;|&nbsp; Car: m = 630 kg, v = ? east &nbsp;|&nbsp; After: both at rest<br><strong>Given (acceleration):</strong> v₁ = 20 m s⁻¹, v₂ = 45 m s⁻¹, t = 10 s<br><strong>Formulas:</strong> p = mv &nbsp;&nbsp; Σp(before) = Σp(after) &nbsp;&nbsp; a = Δv/t",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "Q4b(i) — Calculate the <strong>initial momentum of the truck</strong>. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step2",
+            "label": "Q4b(ii) — Using conservation of momentum, calculate the <strong>initial velocity of the car</strong>. (4 marks)",
+            "type": "computational",
+            "marks": 4
+        },
+        {
+            "id": "step3",
+            "label": "Q4c — Calculate the <strong>acceleration of the car</strong> whose velocity increases from 20 to 45 m s⁻¹ in 10 s. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_p_truck",
+            "step_id": "step1",
+            "type": "numberbox",
+            "label": "Momentum of truck p = _____ kg m s⁻¹",
+            "expected": "18900",
+            "tolerance": 190,
+            "marks": 2.0,
+            "unit": "kg m s⁻¹",
+            "diagnostic_hint": "p = m × v = 945 × 20 = 18 900 kg m s⁻¹ (west)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "p = mass × velocity = 945 × 20 = 18 900 kg m s⁻¹.",
+                "SC_FORMULA_SELECTION_ERROR": "Linear momentum: p = mv. Multiply mass by velocity."
+            }
+        },
+        {
+            "id": "f2_p_car",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Momentum of car (before collision) p_car = _____ kg m s⁻¹",
+            "expected": "18900",
+            "tolerance": 190,
+            "marks": 2.0,
+            "unit": "kg m s⁻¹",
+            "diagnostic_hint": "Both at rest → total momentum = 0. So p_car must equal p_truck in magnitude: p_car = 18 900 kg m s⁻¹ (east)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Conservation of momentum: p_total before = p_total after. After = 0 (both at rest). So p_truck (west) + p_car (east) = 0 → p_car = 18 900 kg m s⁻¹ east."
+            }
+        },
+        {
+            "id": "f3_v_car",
+            "step_id": "step2",
+            "type": "digitbox",
+            "label": "Initial velocity of car v_car = _____ m s⁻¹",
+            "expected": "30",
+            "tolerance": 0,
+            "marks": 2.0,
+            "unit": "m s⁻¹",
+            "diagnostic_hint": "v_car = p_car / m_car = 18 900 / 630 = 30 m s⁻¹ (east)",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "v = p ÷ m = 18 900 ÷ 630 = 30 m s⁻¹.",
+                "SC_FORMULA_SELECTION_ERROR": "Rearrange p = mv to get v = p/m = 18 900 / 630 = 30 m s⁻¹."
+            }
+        },
+        {
+            "id": "f4_delta_v",
+            "step_id": "step3",
+            "type": "digitbox",
+            "label": "Change in velocity Δv = _____ m s⁻¹",
+            "expected": "25",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "m s⁻¹",
+            "diagnostic_hint": "Δv = v₂ − v₁ = 45 − 20 = 25 m s⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Δv = final velocity − initial velocity = 45 − 20 = 25 m s⁻¹."
+            }
+        },
+        {
+            "id": "f5_acceleration",
+            "step_id": "step3",
+            "type": "numberbox",
+            "label": "Acceleration a = _____ m s⁻²",
+            "expected": "2.5",
+            "tolerance": 0.025,
+            "marks": 2.0,
+            "unit": "m s⁻²",
+            "diagnostic_hint": "a = Δv / t = 25 / 10 = 2.5 m s⁻²",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "a = Δv ÷ t = 25 ÷ 10 = 2.5 m s⁻².",
+                "SC_FORMULA_SELECTION_ERROR": "Acceleration formula: a = (v₂ − v₁) / t. Divide change in velocity by time."
+            }
+        }
+    ]
+}

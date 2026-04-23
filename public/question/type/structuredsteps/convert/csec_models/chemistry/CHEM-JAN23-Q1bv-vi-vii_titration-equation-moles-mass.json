@@ -1,0 +1,138 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": [
+            "CHEM-JAN23-Q1bv",
+            "CHEM-JAN23-Q1bvi",
+            "CHEM-JAN23-Q1bvii"
+        ],
+        "source_paper": "CSEC Chemistry Paper 02 January 2023",
+        "question_ref": "Q1(b)(v), Q1(b)(vi), and Q1(b)(vii)",
+        "subject": "Chemistry",
+        "topic": "Titration — Balanced Equation, Moles Calculation, Mass of Product",
+        "marks_total": 8,
+        "difficulty": "P0",
+        "caribbean_context": false,
+        "authored": "2026-04-13",
+        "note": "Q1bv 3m: balanced equation H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l). Q1bvi 2m: n(H₂SO₄) = c×V = (4.9/98) × (25.0/1000) = 0.05 × 0.025 = 1.25×10⁻³ mol. Q1bvii 3m: M(Na₂SO₄)=142 g/mol; mass = 1.25×10⁻³ × 142 = 0.1775 g ≈ 0.18 g. H₂SO₄ concentration = 4.9 g/dm³."
+    },
+    "question": {
+        "name": "CSEC Chem Jan 2023 Q1b(v/vi/vii) — Balanced Equation, Moles, and Mass of Na₂SO₄",
+        "text": "<p>Dilute sulfuric acid (concentration: <strong>4.9 g dm⁻³</strong>) was titrated against sodium hydroxide solution. The concordant titre was <strong>25.0 cm³</strong> of H₂SO₄.</p><p><strong>(v)</strong> Write a balanced equation, including state symbols, for the formation of the normal salt from sulfuric acid and sodium hydroxide. <em>(3 marks)</em></p><p><strong>(vi)</strong> Calculate the number of moles of sulfuric acid used to neutralize the sodium hydroxide. (Molar mass: H₂SO₄ = 98 g mol⁻¹) <em>(2 marks)</em></p><p><strong>(vii)</strong> Calculate the mass of the normal salt (Na₂SO₄) expected from the reaction. (R.A.M.: Na = 23, O = 16, S = 32) <em>(3 marks)</em></p>",
+        "general_feedback": "<p><strong>Q1b(v) — Balanced equation:</strong></p><p>H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)</p><p><em>Normal salt</em> = sodium sulfate (Na₂SO₄). State symbols: (aq) for solutions, (l) for liquid water.</p><p><strong>Q1b(vi) — Moles of H₂SO₄:</strong></p><p>Concentration = 4.9 g dm⁻³ ÷ 98 g mol⁻¹ = 0.05 mol dm⁻³</p><p>n = c × V = 0.05 × (25.0/1000) = 0.05 × 0.025 = <strong>1.25 × 10⁻³ mol</strong></p><p><strong>Q1b(vii) — Mass of Na₂SO₄:</strong></p><p>From equation: n(Na₂SO₄) = n(H₂SO₄) = 1.25 × 10⁻³ mol (1:1 molar ratio)</p><p>M(Na₂SO₄) = 2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 g mol⁻¹</p><p>mass = n × M = 1.25 × 10⁻³ × 142 = <strong>0.1775 g ≈ 0.178 g</strong></p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Reaction:</strong> Sulfuric acid + Sodium hydroxide → Normal salt (sodium sulfate) + Water<br><strong>Given:</strong> [H₂SO₄] = 4.9 g dm⁻³ | M(H₂SO₄) = 98 g/mol | V(H₂SO₄) = 25.0 cm³<br><strong>RAM:</strong> Na=23, O=16, S=32",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step_equation",
+            "label": "Write the balanced equation with state symbols. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        },
+        {
+            "id": "step_moles",
+            "label": "Calculate the moles of H₂SO₄ used. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        },
+        {
+            "id": "step_mass",
+            "label": "Calculate the expected mass of Na₂SO₄. (3 marks)",
+            "type": "computational",
+            "marks": 3
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_equation",
+            "step_id": "step_equation",
+            "type": "choice",
+            "label": "Balanced equation: _____",
+            "expected": "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)",
+            "marks": 3.0,
+            "diagnostic_hint": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. 2 moles of NaOH needed per mole of H₂SO₄ (diprotic acid). State symbols: (aq) for both reactants and Na₂SO₄; (l) for water.",
+            "error_codes": {
+                "SC_METHOD_ERROR": "Sulfuric acid (H₂SO₄) is a diprotic acid — it provides 2 H⁺ ions, so 2 moles of NaOH are needed to neutralize 1 mole of H₂SO₄. Balanced: H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)."
+            },
+            "options": {
+                "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)": "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)",
+                "H₂SO₄(aq) + NaOH(aq) → NaHSO₄(aq) + H₂O(l)": "H₂SO₄(aq) + NaOH(aq) → NaHSO₄(aq) + H₂O(l)",
+                "2NaOH(aq) + H₂SO₄(aq) → Na₂SO₄(aq) + H₂O(l)": "2NaOH(aq) + H₂SO₄(aq) → Na₂SO₄(aq) + H₂O(l)",
+                "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(l) + 2H₂O(g)": "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(l) + 2H₂O(g)"
+            }
+        },
+        {
+            "id": "f2_concentration_mol",
+            "step_id": "step_moles",
+            "type": "numberbox",
+            "label": "Concentration of H₂SO₄ in mol dm⁻³ = _____",
+            "expected": "0.05",
+            "tolerance": 0.001,
+            "marks": 0.5,
+            "unit": "mol dm⁻³",
+            "diagnostic_hint": "c = 4.9 g dm⁻³ ÷ 98 g mol⁻¹ = 0.05 mol dm⁻³",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Convert g dm⁻³ to mol dm⁻³: divide by molar mass. c = 4.9 ÷ 98 = 0.05 mol dm⁻³."
+            }
+        },
+        {
+            "id": "f3_moles_H2SO4",
+            "step_id": "step_moles",
+            "type": "numberbox",
+            "label": "Moles of H₂SO₄ = _____ mol",
+            "expected": "0.00125",
+            "tolerance": 5e-05,
+            "marks": 1.5,
+            "unit": "mol",
+            "diagnostic_hint": "n = c × V = 0.05 mol dm⁻³ × 0.025 dm³ = 1.25 × 10⁻³ mol",
+            "error_codes": {
+                "SC_FORMULA_SELECTION_ERROR": "Use n = c × V. Convert volume to dm³ first: 25.0 cm³ = 0.025 dm³.",
+                "SC_CALCULATION_ERROR": "n = 0.05 × 0.025 = 0.00125 mol = 1.25 × 10⁻³ mol."
+            }
+        },
+        {
+            "id": "f4_molar_mass_Na2SO4",
+            "step_id": "step_mass",
+            "type": "numberbox",
+            "label": "Molar mass of Na₂SO₄ = _____ g mol⁻¹",
+            "expected": "142",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "g mol⁻¹",
+            "diagnostic_hint": "M = 2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 g mol⁻¹",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Na₂SO₄: M = 2×Na + S + 4×O = 2(23) + 32 + 4(16) = 46 + 32 + 64 = 142 g mol⁻¹."
+            }
+        },
+        {
+            "id": "f5_mass_Na2SO4",
+            "step_id": "step_mass",
+            "type": "numberbox",
+            "label": "Expected mass of Na₂SO₄ = _____ g",
+            "expected": "0.1775",
+            "tolerance": 0.005,
+            "marks": 2.0,
+            "unit": "g",
+            "diagnostic_hint": "mass = n × M = 1.25×10⁻³ × 142 = 0.1775 g (≈ 0.18 g)",
+            "error_codes": {
+                "SC_METHOD_ERROR": "From the equation, the molar ratio of H₂SO₄ : Na₂SO₄ = 1:1, so n(Na₂SO₄) = n(H₂SO₄) = 1.25×10⁻³ mol.",
+                "SC_CALCULATION_ERROR": "mass = n × M = 1.25×10⁻³ × 142 = 0.1775 g."
+            }
+        }
+    ]
+}

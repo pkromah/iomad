@@ -1,0 +1,81 @@
+{
+    "schema_version": "1.0",
+    "engine": "StepCalculationEngine",
+    "engine_version": "1.0",
+    "metadata": {
+        "audit_id": ["PHY-JAN23-Q6di", "PHY-JAN23-Q6dii"],
+        "source_paper": "CSEC Physics Paper 02 January 2023",
+        "question_ref": "Q6(d)",
+        "subject": "Physics",
+        "topic": "Nuclear Physics — Half-Life Calculation",
+        "marks_total": 6,
+        "difficulty": "P0",
+        "caribbean_context": true,
+        "authored": "2026-04-12",
+        "note": "Q6d_i (alpha decay equation) authored separately as PHY-JAN23-Q6di_alpha-decay.json"
+    },
+    "question": {
+        "name": "CSEC Phy Jan 2023 Q6d(ii) — Polonium-210 Half-Life",
+        "text": "<p>Polonium-210 has a half-life of <strong>138 days</strong>. At a certain time, a sample contains <strong>6.4 × 10⁶</strong> polonium nuclei.</p><p>Calculate the number of polonium nuclei remaining after <strong>552 days</strong>.</p>",
+        "general_feedback": "<p><strong>Model solution:</strong><br>Step 1: Number of half-lives = 552 ÷ 138 = <strong>4</strong><br>Step 2: N = N₀ × (½)ⁿ = 6.4 × 10⁶ × (0.5)⁴ = 6.4 × 10⁶ × 0.0625 = <strong>400 000</strong></p><p>Common errors: multiplying by n instead of raising ½ to the power n; computing ½ × 4 = 2 instead of (½)⁴ = 0.0625.</p>"
+    },
+    "params": {
+        "partial_credit_enabled": true,
+        "method_marks_enabled": false,
+        "tolerance_mode": "absolute"
+    },
+    "grading": {
+        "mode": "field_sum"
+    },
+    "steps": [
+        {
+            "id": "context",
+            "label": "<strong>Given:</strong> Half-life t<sub>½</sub> = 138 days &nbsp;|&nbsp; N₀ = 6.4 × 10⁶ nuclei &nbsp;|&nbsp; Total time = 552 days<br><strong>Formula:</strong> N = N₀ × (½)ⁿ &nbsp; where n = number of half-lives elapsed",
+            "type": "context",
+            "marks": 0
+        },
+        {
+            "id": "step1",
+            "label": "How many half-lives have elapsed in 552 days? (1 mark)",
+            "type": "computational",
+            "marks": 1
+        },
+        {
+            "id": "step2",
+            "label": "Calculate the number of polonium nuclei remaining. (2 marks)",
+            "type": "computational",
+            "marks": 2
+        }
+    ],
+    "fields": [
+        {
+            "id": "f1_n_halflives",
+            "step_id": "step1",
+            "type": "digitbox",
+            "label": "Number of half-lives n = _____",
+            "expected": "4",
+            "tolerance": 0,
+            "marks": 1.0,
+            "unit": "",
+            "diagnostic_hint": "n = total time ÷ half-life = 552 ÷ 138 = 4",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Divide the total time (552 days) by the half-life (138 days). 552 ÷ 138 = 4"
+            }
+        },
+        {
+            "id": "f2_N_remaining",
+            "step_id": "step2",
+            "type": "numberbox",
+            "label": "Nuclei remaining N = _____",
+            "expected": "400000",
+            "tolerance": 8000,
+            "marks": 2.0,
+            "unit": "",
+            "diagnostic_hint": "N = 6 400 000 × (0.5)⁴ = 6 400 000 × 0.0625 = 400 000",
+            "error_codes": {
+                "SC_CALCULATION_ERROR": "Check: (½)⁴ = 0.5 × 0.5 × 0.5 × 0.5 = 0.0625. Do not multiply ½ × 4 — that gives the wrong answer.",
+                "SC_FORMULA_SELECTION_ERROR": "The formula is N = N₀ × (½)ⁿ. Raise ½ to the power of n (not multiply by n)."
+            }
+        }
+    ]
+}
